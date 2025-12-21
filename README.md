@@ -64,6 +64,10 @@ Label of score, for readability
 **Score**
 The score is calculated by comparing the Uncertainty to the Predicted Cost. 
 
+| Name                                                            |   Original Cost |   Predicted Cost | Uncertainty   | Quality   |   Score |
+|-----------------------------------------------------------------|-----------------|------------------|---------------|-----------|---------|
+| Legion Heavy Support Squad                                      |            50   |               72 | ±14.2         | GOOD      |      80 |
+| Land Speeder with Plasma                                        |            40   |               39 | ±14.8         | BAD       |      62 |
+
 For instance the Land Speeder with Plasma is currently scoring low because the uncertainty of 14 is about 38% of the predicted cost of 39, but Legion Heavy Support Squad gets a higher score while also having 14 points of uncertainty, but it's only about 20% of the predicted cost.
 
-It's impressive to see how close some predictions are to the original cost. 
