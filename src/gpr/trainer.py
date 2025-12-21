@@ -82,20 +82,23 @@ class GPRTrainer:
 
         predicted_cost = round(mean_cost[0], 0)
         uncertancy_comared =  std_dev[0] / mean_cost[0]
+        uncertancy = f"±{std_dev[0]:.1f}"
+        original_cost = round(unit.single_unit_cost, 1)
+        score = round((1 - uncertancy_comared)*100)
 
-        status = f"{C.BAD}BAD {round(uncertancy_comared, 1)}{C.ENDC}" 
+        quality = f"{C.BAD}BAD{C.ENDC}" 
         name = f"{C.BAD}{unit.name}{C.ENDC}" 
         if (uncertancy_comared <= 0.1):
-            status = f"{C.EXELENT}EXELENT {round(uncertancy_comared, 1)}{C.ENDC}"
+            quality = f"{C.EXELENT}EXELENT{C.ENDC}"
             name = f"{C.EXELENT}{unit.name}{C.ENDC}" 
         elif (uncertancy_comared <= 0.25):
-            status = f"{C.GOOD}GOOD {round(uncertancy_comared, 1)}{C.ENDC}"
+            quality = f"{C.GOOD}GOOD{C.ENDC}"
             name = f"{C.GOOD}{unit.name}{C.ENDC}" 
         elif (uncertancy_comared <= 0.35):
-            status = f"{C.MEDIOCRE}MEDIOCRE {round(uncertancy_comared, 1)}{C.ENDC}"
+            quality = f"{C.MEDIOCRE}MEDIOCRE{C.ENDC}"
             name = f"{C.MEDIOCRE}{unit.name}{C.ENDC}" 
 
-        return name, predicted_cost, std_dev[0], unit.single_unit_cost, status
+        return name, original_cost, predicted_cost, uncertancy, quality, score
 
 
 class C:
