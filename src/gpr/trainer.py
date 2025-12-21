@@ -89,8 +89,8 @@ class GPRTrainer:
         quality = f"{C.BAD}BAD{C.ENDC}" 
         name = f"{C.BAD}{unit.name}{C.ENDC}" 
         if (uncertancy_comared <= 0.1):
-            quality = f"{C.EXELENT}EXELENT{C.ENDC}"
-            name = f"{C.EXELENT}{unit.name}{C.ENDC}" 
+            quality = f"{C.EXCELLENT}EXCELLENT{C.ENDC}"
+            name = f"{C.EXCELLENT}{unit.name}{C.ENDC}" 
         elif (uncertancy_comared <= 0.25):
             quality = f"{C.GOOD}GOOD{C.ENDC}"
             name = f"{C.GOOD}{unit.name}{C.ENDC}" 
@@ -102,8 +102,8 @@ class GPRTrainer:
 
 
 class C:
-    # EXELENT = '\033[94m'
-    EXELENT = '\033[92m'
+    # EXCELLENT = '\033[94m'
+    EXCELLENT = '\033[92m'
     GOOD = '\033[92m'
     MEDIOCRE = '\033[93m'
     ENDC = '\033[0m'

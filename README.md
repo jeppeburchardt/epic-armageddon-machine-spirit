@@ -12,28 +12,32 @@ I want to adopt the new Legion Imperialis releases from Games Workshop into the 
 
 ## Current state
 
-By training on a small portion of Space Marines, Orks, Steel Legion and some Eldar and trying to predict the point cost of unis from the Horus Heresy Supplement.
+By training on a small portion of Space Marines, Orks, Steel Legion and some Eldar and trying to predict the point cost of unis from the Horus Heresy Supplement. 
+
+As the table shows, some predictions are quite accurate and some are not. 
+
+The model still needs more unit to train on and maybe the vector mapping needs to be improved.
 
 | Name                                                            |   Original Cost |   Predicted Cost | Uncertainty   | Quality   |   Score |
 |-----------------------------------------------------------------|-----------------|------------------|---------------|-----------|---------|
 | Legion Tactical Squad                                           |            34   |               38 | ±11.3         | MEDIOCRE  |      71 |
-| Legion Assault Squad                                            |            37.5 |               44 | ±2.7          | EXELENT   |      94 |
+| Legion Assault Squad                                            |            37.5 |               44 | ±2.7          | EXCELLENT |      94 |
 | Legion Tactical Support Squad                                   |            50   |               89 | ±30.4         | MEDIOCRE  |      66 |
 | Legion Heavy Support Squad                                      |            50   |               72 | ±14.2         | GOOD      |      80 |
 | Legion Terminator Squad                                         |            75   |               83 | ±21.4         | MEDIOCRE  |      74 |
 | Legion Sicaran Battle Tank (Accelerator Cannon + Heavy Bolters) |            75   |               78 | ±11.6         | GOOD      |      85 |
 | Legion Sicaran Battle Tank, with Omega plasma array             |            75   |               76 | ±11.4         | GOOD      |      85 |
-| Predator Annihilator                                            |            60   |               63 | ±2.7          | EXELENT   |      96 |
-| Predator Destructor                                             |            60   |               62 | ±2.7          | EXELENT   |      96 |
+| Predator Annihilator                                            |            60   |               63 | ±2.7          | EXCELLENT |      96 |
+| Predator Destructor                                             |            60   |               62 | ±2.7          | EXCELLENT |      96 |
 | Spartan Assault Tank                                            |           125   |              157 | ±28.4         | GOOD      |      82 |
 | Legion Thunderhawk Gunship                                      |           250   |              185 | ±35.2         | GOOD      |      81 |
 | Fire Raptor Gunship                                             |           150   |              139 | ±35.0         | MEDIOCRE  |      75 |
 | Storm Eagle Attack Ship                                         |           125   |              154 | ±31.5         | GOOD      |      80 |
 | Xiphon Interceptor                                              |           125   |               94 | ±26.1         | MEDIOCRE  |      72 |
 | Contemptor Dreadnought with Lascannon                           |            60   |               53 | ±6.5          | GOOD      |      88 |
-| Contemptor Dreadnought with Assault Cannon                      |            60   |               51 | ±2.9          | EXELENT   |      94 |
+| Contemptor Dreadnought with Assault Cannon                      |            60   |               51 | ±2.9          | EXCELLENT |      94 |
 | Deredo Dreadnought                                              |           100   |              100 | ±30.6         | MEDIOCRE  |      69 |
-| Vindicator                                                      |            50   |               56 | ±2.7          | EXELENT   |      95 |
+| Vindicator                                                      |            50   |               56 | ±2.7          | EXCELLENT |      95 |
 | Vindicator Laser Destroyer                                      |            70   |               50 | ±17.0         | MEDIOCRE  |      66 |
 | Legion Whirlwind                                                |            75   |               87 | ±13.8         | GOOD      |      84 |
 | Legion Whirlwind Scorpius                                       |            75   |               79 | ±11.7         | GOOD      |      85 |
@@ -47,7 +51,6 @@ By training on a small portion of Space Marines, Orks, Steel Legion and some Eld
 | Javelin Attack Speeder Cyclone                                  |            50   |               55 | ±13.6         | GOOD      |      75 |
 | Javelin Attack Speeder Lascannons                               |            50   |               50 | ±13.1         | MEDIOCRE  |      74 |
 | Outrider squad                                                  |            35   |               47 | ±19.0         | BAD       |      59 |
-| Leman Russ (Battle cannon + Las)                                |            58.3 |               69 | ±15.8         | GOOD      |      77 |
 
 **Original Cost**
 This is the cost from the epic armageddon AU, Horus Heresy suplement
