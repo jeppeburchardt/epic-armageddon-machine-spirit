@@ -1,4 +1,64 @@
 from data.models import RangedWeapon, SmallArms, Traits, UnitType, Unit, AssaultWeapon
+from .ea_hh_weapons import (
+    HeavyBolter,
+    LasCannon,
+    TwinLinkedLasCannon,
+    VanquisherBattleCannon,
+    BattleCannon,
+    DemolisherCannon,
+)
+
+infantry = Unit(
+    "Infantry Section",
+    3,
+    2,
+    UnitType.INFANTRY,
+    speed=15,
+    armour=5,
+    cc=6,
+    ff=5,
+    weapons=[SmallArms()],
+    single_unit_cost=100 / 7,
+)
+
+infantry_flamers = Unit(
+    "Infantry with flamers",
+    3,
+    2,
+    UnitType.INFANTRY,
+    speed=15,
+    armour=5,
+    cc=6,
+    ff=4,
+    weapons=[RangedWeapon(15, ap=5, traits=[Traits.IGNORE_COVER])],
+    single_unit_cost=75 / 4,
+)
+
+veletaris = Unit(
+    "Veletaris Storm Section",
+    3,
+    2,
+    UnitType.INFANTRY,
+    speed=15,
+    armour=5,
+    cc=4,
+    ff=6,
+    weapons=[AssaultWeapon([Traits.MW])],
+    single_unit_cost=75 / 4,
+)
+
+ogryn_charonite_squad = Unit(
+    "Ogryn Charonite Squad",
+    3,
+    2,
+    UnitType.INFANTRY,
+    speed=15,
+    armour=3,
+    cc=3,
+    ff=5,
+    weapons=[AssaultWeapon([Traits.EXTRA_ATTACK_1, Traits.MW])],
+    single_unit_cost=75 / 2,
+)
 
 leman_russ_bh = Unit(
     "Leman Russ (Battle cannon + H.B.)",
@@ -9,7 +69,7 @@ leman_russ_bh = Unit(
     armour=4,
     cc=6,
     ff=4,
-    weapons=[RangedWeapon(75, ap=4, at=4), RangedWeapon(30, ap=5)],
+    weapons=[BattleCannon(), HeavyBolter()],
     traits=[Traits.RIENFORCED_ARMOUR],
     single_unit_cost=350 / 6,
 )
@@ -22,7 +82,7 @@ leman_russ_bl = Unit(
     armour=4,
     cc=6,
     ff=5,
-    weapons=[RangedWeapon(75, ap=4, at=4), RangedWeapon(45, at=5)],
+    weapons=[VanquisherBattleCannon(), LasCannon()],
     traits=[Traits.RIENFORCED_ARMOUR],
     single_unit_cost=350 / 6,
 )
@@ -35,7 +95,7 @@ leman_russ_vh = Unit(
     armour=4,
     cc=6,
     ff=4,
-    weapons=[RangedWeapon(75, ap=6, at=3), RangedWeapon(30, ap=5)],
+    weapons=[VanquisherBattleCannon(), HeavyBolter()],
     traits=[Traits.RIENFORCED_ARMOUR],
     single_unit_cost=350 / 6,
 )
@@ -48,7 +108,7 @@ leman_russ_vl = Unit(
     armour=4,
     cc=6,
     ff=5,
-    weapons=[RangedWeapon(75, ap=6, at=3), RangedWeapon(45, at=5)],
+    weapons=[VanquisherBattleCannon(), LasCannon()],
     traits=[Traits.RIENFORCED_ARMOUR],
     single_unit_cost=350 / 6,
 )
@@ -61,7 +121,7 @@ leman_russ_annihilator = Unit(
     armour=4,
     cc=6,
     ff=5,
-    weapons=[RangedWeapon(45, at=5), RangedWeapon(45, at=5), RangedWeapon(45, at=5)],
+    weapons=[LasCannon(), TwinLinkedLasCannon()],
     traits=[Traits.RIENFORCED_ARMOUR],
     single_unit_cost=350 / 6,
 )
@@ -75,9 +135,8 @@ leman_russ_demolisher = Unit(
     cc=6,
     ff=5,
     weapons=[
-        RangedWeapon(30, ap=3, at=4, traits=[Traits.IGNORE_COVER, Traits.DISRUPT]),
-        SmallArms([Traits.IGNORE_COVER]),
-        RangedWeapon(45, at=5),
+        DemolisherCannon(),
+        LasCannon(),
     ],
     traits=[Traits.RIENFORCED_ARMOUR],
     single_unit_cost=350 / 6,
@@ -93,7 +152,7 @@ leman_russ_executioner = Unit(
     ff=4,
     weapons=[
         RangedWeapon(30, ap=4, at=4, traits=[]),  # TODO: fleshbane
-        RangedWeapon(45, at=5),
+        LasCannon(),
     ],
     traits=[Traits.RIENFORCED_ARMOUR],
     single_unit_cost=350 / 6,
@@ -109,14 +168,14 @@ leman_russ_exterminator = Unit(
     ff=4,
     weapons=[
         RangedWeapon(45, ap=4, at=5, traits=[]),  # TODO: fleshbane
-        RangedWeapon(45, at=5),
+        LasCannon(),
     ],
     traits=[Traits.RIENFORCED_ARMOUR],
     single_unit_cost=350 / 6,
 )
 
 malcador_a = Unit(
-    "Malcador (battle cannon, demiólisher, las.spon.)",
+    "Malcador (battle cannon, demolisher, las.spon.)",
     3,
     2,
     UnitType.ARMORED_VEHICLE,
@@ -125,10 +184,10 @@ malcador_a = Unit(
     cc=6,
     ff=5,
     weapons=[
-        RangedWeapon(75, ap=4, at=4),
-        RangedWeapon(30, ap=3, at=4, traits=[Traits.DISRUPT, Traits.IGNORE_COVER]),
-        RangedWeapon(45, at=5),
-        RangedWeapon(45, at=5),
+        BattleCannon(),
+        DemolisherCannon(),
+        LasCannon(),
+        LasCannon(),
     ],
     traits=[Traits.RIENFORCED_ARMOUR, Traits.THICK_REAR_ARMOUR],
     single_unit_cost=100,
@@ -144,10 +203,10 @@ malcador_b = Unit(
     cc=6,
     ff=4,
     weapons=[
-        RangedWeapon(75, ap=6, at=3),
-        RangedWeapon(30, ap=3, at=4, traits=[Traits.DISRUPT, Traits.IGNORE_COVER]),
-        RangedWeapon(30, ap=5),
-        RangedWeapon(30, ap=5),
+        VanquisherBattleCannon(),
+        DemolisherCannon(),
+        HeavyBolter(),
+        HeavyBolter(),
     ],
     traits=[Traits.RIENFORCED_ARMOUR, Traits.THICK_REAR_ARMOUR],
     single_unit_cost=100,
@@ -163,17 +222,54 @@ malcador_c = Unit(
     cc=6,
     ff=5,
     weapons=[
-        RangedWeapon(45, at=5),
-        RangedWeapon(45, at=5),
-        RangedWeapon(45, at=5),
-        RangedWeapon(45, at=5),
-        RangedWeapon(45, at=5),
+        TwinLinkedLasCannon(),
+        LasCannon(),
+        LasCannon(),
+        LasCannon(),
     ],
     traits=[Traits.RIENFORCED_ARMOUR, Traits.THICK_REAR_ARMOUR],
     single_unit_cost=70,
 )
 
+dracosan_las = Unit(
+    "Dracosan with las cannon",
+    3,
+    2,
+    UnitType.ARMORED_VEHICLE,
+    speed=20,
+    armour=4,
+    cc=6,
+    ff=5,
+    weapons=[
+        TwinLinkedLasCannon(),
+    ],
+    traits=[Traits.RIENFORCED_ARMOUR],
+    single_unit_cost=0,
+    transport_capacity=5,
+)
+dracosan_demo = Unit(
+    "Dracosan with demolisher",
+    3,
+    2,
+    UnitType.ARMORED_VEHICLE,
+    speed=20,
+    armour=4,
+    cc=6,
+    ff=4,
+    weapons=[
+        DemolisherCannon(),
+    ],
+    traits=[Traits.RIENFORCED_ARMOUR],
+    single_unit_cost=0,
+    transport_capacity=2,
+)
+
+
 ea_hh_solar_aux = [
+    infantry,
+    infantry_flamers,
+    veletaris,
+    ogryn_charonite_squad,
     leman_russ_bl,
     leman_russ_bh,
     leman_russ_vl,
@@ -185,4 +281,6 @@ ea_hh_solar_aux = [
     malcador_a,
     malcador_b,
     malcador_c,
+    dracosan_las,
+    dracosan_demo,
 ]

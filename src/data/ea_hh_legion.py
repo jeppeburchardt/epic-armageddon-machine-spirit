@@ -1,4 +1,12 @@
 from data.models import RangedWeapon, SmallArms, Traits, UnitType, Unit, AssaultWeapon
+from .ea_hh_weapons import (
+    HeavyBolter,
+    LasCannon,
+    TwinLinkedLasCannon,
+    VanquisherBattleCannon,
+    BattleCannon,
+    DemolisherCannon,
+)
 
 tactical_squad = Unit(
     "Legion Tactical Squad",
@@ -94,7 +102,7 @@ sicaran_battle_tank = Unit(
     6,
     4,
     300 / 4,
-    [RangedWeapon(45, 5, 4), RangedWeapon(45, 5, 4), RangedWeapon(45, at=5)],
+    [RangedWeapon(45, 5, 4), RangedWeapon(45, 5, 4), LasCannon()],
     [Traits.ASTARTES, Traits.RIENFORCED_ARMOUR],
 )
 
@@ -108,7 +116,7 @@ sicaran_battle_tank = Unit(
     6,
     3,
     300 / 4,
-    [RangedWeapon(45, 5, 4), RangedWeapon(45, 5, 4), RangedWeapon(30, ap=5)],
+    [RangedWeapon(45, 5, 4), RangedWeapon(45, 5, 4), HeavyBolter()],
     [Traits.ASTARTES, Traits.RIENFORCED_ARMOUR],
 )
 
@@ -122,7 +130,7 @@ sicaran_omega_plasma = Unit(
     6,
     3,
     300 / 4,
-    [RangedWeapon(45, 3, 0), RangedWeapon(45, 3, 0), RangedWeapon(45, 5, 0)],
+    [RangedWeapon(45, 3, 0), RangedWeapon(45, 3, 0), HeavyBolter()],
     [Traits.ASTARTES, Traits.RIENFORCED_ARMOUR],
 )
 
@@ -136,7 +144,7 @@ predator_annihilator = Unit(
     6,
     5,
     240 / 4,
-    [RangedWeapon(45, 4, 0), RangedWeapon(45, 5, 0), RangedWeapon(45, 5, 0)],
+    [TwinLinkedLasCannon(), LasCannon(), LasCannon()],
     [Traits.ASTARTES],
 )
 
@@ -150,7 +158,7 @@ predator_destructor = Unit(
     6,
     3,
     240 / 4,
-    [RangedWeapon(45, 5, 5), RangedWeapon(30, 0, 5), RangedWeapon(30, 0, 5)],
+    [RangedWeapon(45, 5, 5), HeavyBolter(), HeavyBolter()],
     [Traits.ASTARTES],
 )
 
@@ -213,8 +221,8 @@ fire_raptor = Unit(
     [
         RangedWeapon(30, ap=2, at=5),
         RangedWeapon(30, ap=2, at=5),
-        RangedWeapon(45, at=4),
-        RangedWeapon(45, at=4),
+        LasCannon(),
+        LasCannon(),
         RangedWeapon(15, ap=4, aa=6),
         RangedWeapon(15, ap=4, aa=6),
     ],
@@ -271,7 +279,7 @@ contemptor_dreadnought_a = Unit(
     4,
     60,
     [
-        RangedWeapon(45, 4, 0, 0),
+        LasCannon(),
         AssaultWeapon([Traits.MW, Traits.EXTRA_ATTACK_1]),
     ],
     [Traits.ASTARTES, Traits.WALKER],
@@ -337,10 +345,7 @@ vindicator = Unit(
     armour=4,
     cc=6,
     ff=4,
-    weapons=[
-        RangedWeapon(30, ap=3, at=4, traits=[Traits.IGNORE_COVER]),
-        # AssaultWeapon([Traits.IGNORE_COVER])
-    ],
+    weapons=[DemolisherCannon()],
     traits=[Traits.ASTARTES, Traits.WALKER],
     single_unit_cost=50,
 )
@@ -508,7 +513,7 @@ landspeeder_a = Unit(
     UnitType.LIGHT_VEHICLE,
     speed=35,
     armour=5,
-    cc=5,
+    cc=6,
     ff=5,
     weapons=[RangedWeapon(30, ap=5, at=5), RangedWeapon(30, ap=5)],
     traits=[Traits.ASTARTES, Traits.SKIMMER, Traits.SCOUT],
@@ -522,7 +527,7 @@ landspeeder_b = Unit(
     UnitType.LIGHT_VEHICLE,
     speed=35,
     armour=5,
-    cc=5,
+    cc=6,
     ff=5,
     weapons=[RangedWeapon(15, mw=5), SmallArms([Traits.MW])],
     traits=[Traits.ASTARTES, Traits.SKIMMER, Traits.SCOUT],
@@ -534,7 +539,7 @@ jabelin_a = Unit(
     5,
     1,
     UnitType.LIGHT_VEHICLE,
-    35,
+    speed=35,
     armour=4,
     cc=6,
     ff=5,
@@ -561,15 +566,16 @@ outriders = Unit(
     "Outrider squad",
     5,
     1,
-    UnitType.ARMORED_VEHICLE,
+    UnitType.INFANTRY,
     35,
     armour=4,
     cc=3,
-    ff=4,
-    weapons=[AssaultWeapon([])],
+    ff=5,
+    weapons=[SmallArms()],
     traits=[Traits.ASTARTES, Traits.MOUNTED, Traits.SCOUT],
     single_unit_cost=140 / 4,
 )
+
 
 ea_hh_legion_units = [
     tactical_squad,
