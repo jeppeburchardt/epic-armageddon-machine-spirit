@@ -130,6 +130,40 @@ vyper = Unit(
     single_unit_cost=200 / 6,
 )
 
+falcon = Unit(
+    "Falcon",
+    4,1,
+    UnitType.ARMORED_VEHICLE,
+    speed=35,
+    armour=5,
+    cc=6,
+    ff=4,
+    weapons=[
+        RangedWeapon(45, at=4), # Pulse Laser
+        RangedWeapon(45, at=4), 
+        RangedWeapon(30, ap=5, at=5) #Scatter Laser
+    ],
+    traits=[Traits.SKIMMER],
+    transport_capacity=1,
+    single_unit_cost=50,
+)
+
+wave_serpent = Unit(
+    "Wave Serpent",
+    4,1,
+    UnitType.ARMORED_VEHICLE,
+    speed=35,
+    armour=5,
+    cc=5,
+    ff=4,
+    weapons=[
+        RangedWeapon(30, ap=4) # Shuriken Cannon
+    ],
+    traits=[Traits.SKIMMER, Traits.RIENFORCED_ARMOUR],
+    transport_capacity=2,
+    single_unit_cost=25,
+)
+
 ea_40k_eldar = [
     dark_reapoers,
     dire_avengers,
@@ -140,4 +174,6 @@ ea_40k_eldar = [
     jet_bike,
     shining_spear,
     vyper,
+    falcon,
+    wave_serpent,
 ]

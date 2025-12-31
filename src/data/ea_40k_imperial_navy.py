@@ -33,7 +33,7 @@ thunderbolt = Unit(
     [],
 )
 
-ea40k_imperial_navy_units = [
+ea_40k_imperial_navy_units = [
     marauder,
     thunderbolt,
 ]

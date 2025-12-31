@@ -79,7 +79,19 @@ devastator = Unit(
     [Traits.ASTARTES],
 )
 
-bike = Unit("Bike Squad", 5, 1, UnitType.INFANTRY, 35, 4, 3, 5, 200 / 5, [SmallArms()])
+bike = Unit(
+    "Bike Squad",
+    5,
+    1,
+    UnitType.INFANTRY,
+    35,
+    4,
+    3,
+    5,
+    200 / 5,
+    weapons=[SmallArms()],
+    traits=[Traits.ASTARTES, Traits.MOUNTED],
+)
 
 predator_annihilator = Unit(
     "Predator Annihilator",
@@ -261,12 +273,46 @@ land_speeder = Unit(
     5,
     1,
     UnitType.LIGHT_VEHICLE,
-    35,
+    speed=35,
     armour=4,
     cc=6,
     ff=5,
     weapons=[RangedWeapon(15, mw=5), SmallArms([Traits.MW])],
     traits=[Traits.SKIMMER, Traits.ASTARTES, Traits.SCOUT],
+    single_unit_cost=40,
+)
+
+land_speeder_tornado = Unit(
+    "Land Speeder Tornado",
+    5,
+    1,
+    UnitType.LIGHT_VEHICLE,
+    speed=35,
+    armour=4,
+    cc=6,
+    ff=5,
+    weapons=[
+        RangedWeapon(30, ap=5, at=5),
+        RangedWeapon(30, ap=5),
+    ],
+    traits=[Traits.ASTARTES, Traits.SKIMMER, Traits.SCOUT],
+    single_unit_cost=40,
+)
+
+land_speeder_typhoon = Unit(
+    "Land Speeder Typhoon",
+    5,
+    1,
+    UnitType.LIGHT_VEHICLE,
+    speed=35,
+    armour=4,
+    cc=6,
+    ff=5,
+    weapons=[
+        RangedWeapon(45, ap=3, at=5),
+        RangedWeapon(30, ap=5),
+    ],
+    traits=[Traits.ASTARTES, Traits.SKIMMER, Traits.SCOUT],
     single_unit_cost=40,
 )
 
@@ -277,6 +323,8 @@ ea_40k_astartes_units = [
     scout,
     devastator,
     land_speeder,
+    land_speeder_tornado,
+    land_speeder_typhoon,
     predator_annihilator,
     predator_destructor,
     landraider,
