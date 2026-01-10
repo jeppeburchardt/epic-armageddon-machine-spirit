@@ -83,6 +83,13 @@ class Traits(Enum):
     FEARLESS = 23
     SKIMMER = 24
     LANCE = 25
+    SUPREME_COMMANDER = 26
+    LEADER = 27
+    COMMANDER = 28
+    INVULNERABLE_SAVE = 29
+    SLOW_FIRING = 30
+    REAR = 31
+    FxF = 32
 
 
 class RangedWeapon:

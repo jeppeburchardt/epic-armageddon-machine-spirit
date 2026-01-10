@@ -164,6 +164,37 @@ def map2(unit: Unit) -> np.ndarray:
             )
             else 0
         ),
+        (
+            1
+            if any(
+                hasattr(w, "traits") and Traits.LEADER in w.traits for w in unit.weapons
+            )
+            else 0
+        ),
+        (
+            1
+            if any(
+                hasattr(w, "traits") and Traits.COMMANDER in w.traits
+                for w in unit.weapons
+            )
+            else 0
+        ),
+        (
+            1
+            if any(
+                hasattr(w, "traits") and Traits.SUPREME_COMMANDER in w.traits
+                for w in unit.weapons
+            )
+            else 0
+        ),
+        (
+            1
+            if any(
+                hasattr(w, "traits") and Traits.INVULNERABLE_SAVE in w.traits
+                for w in unit.weapons
+            )
+            else 0
+        ),
     ]
     # print(f"Mapping unit '{vector}' {unit.name}")
     return np.array(vector)
