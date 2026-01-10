@@ -162,6 +162,24 @@ predator_destructor = Unit(
     [Traits.ASTARTES],
 )
 
+land_raider = Unit(
+    "Land Raider",
+    5,
+    1,
+    UnitType.ARMORED_VEHICLE,
+    speed=25,
+    armour=4,
+    cc=6,
+    ff=4,
+    weapons=[
+        RangedWeapon(45, at=4),
+        RangedWeapon(45, at=4),
+    ],
+    traits=[Traits.RIENFORCED_ARMOUR, Traits.THICK_REAR_ARMOUR],
+    transport_capacity=2,
+    single_unit_cost=75,
+)
+
 spartan = Unit(
     "Spartan Assault Tank",
     5,
@@ -587,6 +605,7 @@ ea_hh_legion_units = [
     sicaran_omega_plasma,
     predator_annihilator,
     predator_destructor,
+    land_raider,
     spartan,
     thunderhawk_gunship,
     fire_raptor,
