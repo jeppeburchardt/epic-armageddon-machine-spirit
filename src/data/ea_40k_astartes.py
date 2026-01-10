@@ -14,6 +14,40 @@ tactical_marines = Unit(
     [Traits.ASTARTES],
 )
 
+# tactical_marines_captain = Unit(
+#     "Tactical Marines Captain",
+#     5,
+#     1,
+#     UnitType.INFANTRY,
+#     speed=15,
+#     armour=4,
+#     cc=4,
+#     ff=4,
+#     weapons=[RangedWeapon(45, 6, 5), AssaultWeapon([Traits.EXTRA_ATTACK_1, Traits.MW])],
+#     traits=[Traits.ASTARTES, Traits.COMMANDER, Traits.LEADER, Traits.INVULNERABLE_SAVE],
+#     single_unit_cost=(275 / 6) + 50,
+# )
+
+# tactical_marines_supreme_commander = Unit(
+#     "Tactical Marines Supreme Commander",
+#     5,
+#     1,
+#     UnitType.INFANTRY,
+#     speed=15,
+#     armour=4,
+#     cc=4,
+#     ff=4,
+#     weapons=[RangedWeapon(45, 6, 5), AssaultWeapon([Traits.EXTRA_ATTACK_1, Traits.MW])],
+#     traits=[
+#         Traits.ASTARTES,
+#         Traits.COMMANDER,
+#         Traits.LEADER,
+#         Traits.INVULNERABLE_SAVE,
+#         Traits.SUPREME_COMMANDER,
+#     ],
+#     single_unit_cost=(275 / 6) + 100,
+# )
+
 terminators = Unit(
     "Terminators",
     5,
@@ -318,6 +352,8 @@ land_speeder_typhoon = Unit(
 
 ea_40k_astartes_units = [
     tactical_marines,
+    # tactical_marines_captain,
+    # tactical_marines_supreme_commander,
     terminators,
     assualt,
     scout,

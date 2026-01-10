@@ -52,7 +52,7 @@ class Unit:
         armour,
         cc,
         ff,
-        single_unit_cost,
+        single_unit_cost=0,
         weapons=[],
         traits=[],
         transport_capacity=0,

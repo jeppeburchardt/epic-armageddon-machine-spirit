@@ -52,7 +52,6 @@ def predict_army(trainer, army: Army):
             predictions,
             headers=[
                 "Name",
-                "Original Cost",
                 "Predicted Cost",
                 "Uncertainty",
                 "Quality",
@@ -61,7 +60,7 @@ def predict_army(trainer, army: Army):
             tablefmt="github",
         )
     )
-    avg_score = sum(p[5] for p in predictions) / len(predictions) if predictions else 0
+    avg_score = sum(p[4] for p in predictions) / len(predictions) if predictions else 0
     print(f"\nAverage Score: {avg_score:.2f}\n\n")
 
 

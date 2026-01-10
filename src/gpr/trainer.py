@@ -116,7 +116,7 @@ class GPRTrainer:
         predicted_cost = round(mean_cost[0], 0)
         uncertainty_comared = std_dev[0] / mean_cost[0]
         uncertainty = f"±{std_dev[0]:.1f}"
-        original_cost = round(unit.single_unit_cost, 0)
+        # original_cost = round(unit.single_unit_cost, 0)
         score = round((1 - uncertainty_comared) * 100)
 
         quality = f"{C.BAD}BAD{C.ENDC}"
@@ -131,7 +131,7 @@ class GPRTrainer:
             quality = f"{C.MEDIOCRE}MEDIOCRE{C.ENDC}"
             name = f"{C.MEDIOCRE}{unit.name}{C.ENDC}"
 
-        return name, original_cost, predicted_cost, uncertainty, quality, score
+        return name, predicted_cost, uncertainty, quality, score
 
 
 class C:

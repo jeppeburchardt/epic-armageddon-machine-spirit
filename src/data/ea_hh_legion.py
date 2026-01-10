@@ -47,7 +47,6 @@ legiones_astartes.add_unit(
         armour=4,
         cc=3,
         ff=5,
-        single_unit_cost=300 / 8,
         weapons=[SmallArms()],
         traits=[Traits.ASTARTES, Traits.JUMP_PACKS],
     )
@@ -63,12 +62,9 @@ legiones_astartes.add_unit(
         armour=4,
         cc=5,
         ff=3,
-        single_unit_cost=50,
         weapons=[
             SmallArms(),
-            RangedWeapon(45, at=6, ap=5),
-            RangedWeapon(45, at=6, ap=5),
-            RangedWeapon(30, aa=6),
+            RangedWeapon(45, name="Missile Launchers", at=5, ap=4, aa=6),
         ],
         traits=[Traits.ASTARTES],
     )
@@ -84,12 +80,11 @@ legiones_astartes.add_unit(
         armour=4,
         cc=4,
         ff=4,
-        single_unit_cost=50,
         weapons=[
             SmallArms(),
-            RangedWeapon(45, ap=4, traits=[Traits.IGNORE_COVER]),
-            RangedWeapon(45, ap=4, traits=[Traits.IGNORE_COVER]),
-            AssaultWeapon([Traits.EXTRA_ATTACK_1, Traits.IGNORE_COVER]),
+            RangedWeapon(
+                45, name="Plasma Guns", ap=5, at=5, traits=[Traits.IGNORE_COVER]
+            ),
         ],
         traits=[Traits.ASTARTES],
     )
@@ -105,13 +100,75 @@ legiones_astartes.add_unit(
         armour=4,
         cc=3,
         ff=3,
-        single_unit_cost=75,
         weapons=[
-            AssaultWeapon([Traits.EXTRA_ATTACK_1, Traits.MW]),
-            RangedWeapon(30, ap=4, at=6),
-            RangedWeapon(30, ap=4, at=6),
+            AssaultWeapon([Traits.EXTRA_ATTACK_1, Traits.MW], name="Power Fists"),
+            SmallArms(name="Storm Bolters"),
         ],
         traits=[Traits.ASTARTES, Traits.RIENFORCED_ARMOUR],
+    )
+)
+
+# Saturnine Terminators
+
+# Saturnine Dreadnoughts
+
+# Tarantula: Lascannon Battery
+
+# Tarantula: Hyperios Air-defence Missile Launcher
+
+# Rapier: Laser Destroyer Array
+
+# Rapier: Quad Launcher
+
+# Araknae: Orias heavy frag missiles
+
+# Araknae: quad accelerator autocannons
+
+# Araknae: twin punisher cannons
+
+legiones_astartes.add_unit(
+    Unit(
+        "Sabre Strike Tank with Anvilus Autocannon",
+        5,
+        1,
+        UnitType.ARMORED_VEHICLE,
+        speed=35,
+        armour=5,
+        cc=6,
+        ff=5,
+        weapons=[
+            RangedWeapon(
+                20, name="Anvilus Autocannon", ap=4, at=5, traits=[Traits.FIXED_FORWARD]
+            ),
+            RangedWeapon(
+                30, name="Sabre Missiles", at=4, traits=[Traits.FIXED_FORWARD]
+            ),
+        ],
+    )
+)
+
+legiones_astartes.add_unit(
+    Unit(
+        "Sabre Strike Tank with Neutron Blaster",
+        5,
+        1,
+        UnitType.ARMORED_VEHICLE,
+        speed=35,
+        armour=5,
+        cc=6,
+        ff=5,
+        weapons=[
+            RangedWeapon(
+                20,
+                name="Neutron Blaster",
+                ap=5,
+                at=5,
+                traits=[Traits.FIXED_FORWARD, Traits.DISRUPT],
+            ),
+            RangedWeapon(
+                30, name="Sabre Missiles", at=4, traits=[Traits.FIXED_FORWARD]
+            ),
+        ],
     )
 )
 
@@ -211,7 +268,6 @@ legiones_astartes.add_unit(
         ],
         traits=[Traits.ASTARTES, Traits.RIENFORCED_ARMOUR, Traits.THICK_REAR_ARMOUR],
         transport_capacity=2,
-        single_unit_cost=75,
     )
 )
 
@@ -232,7 +288,6 @@ legiones_astartes.add_unit(
         ],
         traits=[Traits.ASTARTES, Traits.RIENFORCED_ARMOUR, Traits.THICK_REAR_ARMOUR],
         damage_capacity=2,
-        single_unit_cost=125,
         transport_capacity=4,
     )
 )
@@ -370,7 +425,7 @@ legiones_astartes.add_unit(
 
 legiones_astartes.add_unit(
     Unit(
-        "Deredo Dreadnought",
+        "Deredeo Dreadnoughts with Anvilus Autocannon Battery",
         5,
         1,
         UnitType.ARMORED_VEHICLE,
@@ -379,29 +434,82 @@ legiones_astartes.add_unit(
         cc=5,
         ff=3,
         weapons=[
-            RangedWeapon(30, ap=4),
-            RangedWeapon(45, ap=5, at=6, traits=[Traits.DISRUPT]),
-            RangedWeapon(30, aa=5),
-            RangedWeapon(30, aa=5),
-            RangedWeapon(45, ap=5, at=2),
-            RangedWeapon(45, ap=5, at=2),
+            TwinHeavyBolter(),
+            RangedWeapon(45, name="Aiolos Missile Launcher", ap=5, at=5, aa=5),
+            RangedWeapon(45, name="Anvilus Autocannon Battery", ap=5, at=4),
+            RangedWeapon(45, name="Anvilus Autocannon Battery", ap=5, at=4),
         ],
-        traits=[Traits.ASTARTES, Traits.WALKER],
-        single_unit_cost=100,
+        traits=[Traits.ASTARTES, Traits.WALKER, Traits.INVULNERABLE_SAVE],
     )
 )
 
-# legiones_astartes.add_unit(Unit(
-#     "Leviathan Dreadnought",
-#     5,1,UnitType.ARMORED_VEHICLE,
-#     15,
-#     cc=4,
-#     ff=4,
-#     weapons=[ ##TODO, small arms with ap and at
+legiones_astartes.add_unit(
+    Unit(
+        "Deredeo Dreadnoughts with Hellfire Plasma Cannonade",
+        5,
+        1,
+        UnitType.ARMORED_VEHICLE,
+        speed=15,
+        armour=3,
+        cc=5,
+        ff=3,
+        weapons=[
+            TwinHeavyBolter(),
+            RangedWeapon(45, name="Aiolos Missile Launcher", ap=5, at=5, aa=5),
+            RangedWeapon(
+                45,
+                name="Hellfire Plasma Cannonade",
+                ap=4,
+                at=4,
+                traits=[Traits.SLOW_FIRING],
+            ),
+            RangedWeapon(
+                45,
+                name="Hellfire Plasma Cannonade",
+                ap=4,
+                at=4,
+                traits=[Traits.SLOW_FIRING],
+            ),
+        ],
+        traits=[Traits.ASTARTES, Traits.WALKER, Traits.INVULNERABLE_SAVE],
+    )
+)
 
-#     ]
-#     traits=[Traits.ASTARTES, Traits.WALKER, Traits.RIENFORCED_ARMOUR]
-# )
+legiones_astartes.add_unit(
+    Unit(
+        "Leviathan Siege Dreadnoughts with Cyclonic Melta Lance",
+        5,
+        1,
+        UnitType.ARMORED_VEHICLE,
+        speed=15,
+        armour=4,
+        cc=4,
+        ff=4,
+        weapons=[
+            AssaultWeapon([Traits.EXTRA_ATTACK_1, Traits.MW], name="Siege Claw"),
+            RangedWeapon(15, name="Cyclonic Melta Lance", at=3, mw=5),
+        ],
+        traits=[Traits.ASTARTES, Traits.WALKER, Traits.RIENFORCED_ARMOUR],
+    )
+)
+
+legiones_astartes.add_unit(
+    Unit(
+        "Leviathan Siege Dreadnoughts with Leviathan Storm Cannon",
+        5,
+        1,
+        UnitType.ARMORED_VEHICLE,
+        speed=15,
+        armour=4,
+        cc=4,
+        ff=4,
+        weapons=[
+            AssaultWeapon([Traits.EXTRA_ATTACK_1, Traits.MW], name="Siege Claw"),
+            RangedWeapon(15, name="Leviathan Storm Cannon", ap=4, at=4),
+        ],
+        traits=[Traits.ASTARTES, Traits.WALKER, Traits.RIENFORCED_ARMOUR],
+    )
+)
 
 legiones_astartes.add_unit(
     Unit(
@@ -415,27 +523,26 @@ legiones_astartes.add_unit(
         ff=4,
         weapons=[DemolisherCannon()],
         traits=[Traits.ASTARTES, Traits.WALKER],
-        single_unit_cost=50,
     )
 )
 
-legiones_astartes.add_unit(
-    Unit(
-        "Vindicator Laser Destroyer",
-        5,
-        1,
-        UnitType.ARMORED_VEHICLE,
-        speed=25,
-        armour=4,
-        cc=6,
-        ff=5,
-        weapons=[
-            RangedWeapon(60, name="Laser Destroyer Array", ap=6, at=3),
-        ],
-        traits=[Traits.ASTARTES, Traits.WALKER],
-        single_unit_cost=70,
-    )
-)
+# This unit does not exist in the Legions Imperialis range
+# legiones_astartes.add_unit(
+#     Unit(
+#         "Vindicator Laser Destroyer",
+#         5,
+#         1,
+#         UnitType.ARMORED_VEHICLE,
+#         speed=25,
+#         armour=4,
+#         cc=6,
+#         ff=5,
+#         weapons=[
+#             RangedWeapon(60, name="Laser Destroyer Array", ap=6, at=3),
+#         ],
+#         traits=[Traits.ASTARTES, Traits.WALKER],
+#     )
+# )
 
 legiones_astartes.add_unit(
     Unit(
@@ -447,8 +554,14 @@ legiones_astartes.add_unit(
         armour=5,
         cc=6,
         ff=5,
-        weapons=[RangedWeapon(45, bp=1, traits=[Traits.IGNORE_COVER, Traits.INDIRECT])],
-        single_unit_cost=300 / 4,
+        weapons=[
+            RangedWeapon(
+                45,
+                name="Vengeance & Castellan Missiles",
+                bp=1,
+                traits=[Traits.IGNORE_COVER, Traits.INDIRECT],
+            )
+        ],
         traits=[Traits.ASTARTES],
     )
 )
@@ -464,10 +577,13 @@ legiones_astartes.add_unit(
         cc=6,
         ff=5,
         weapons=[
-            RangedWeapon(45, ap=5, at=5, traits=[Traits.INDIRECT]),
-            RangedWeapon(45, ap=5, at=5, traits=[Traits.INDIRECT]),
+            RangedWeapon(
+                45, name="Scorpius Multi Launcher", ap=6, at=5, traits=[Traits.INDIRECT]
+            ),
+            RangedWeapon(
+                45, name="Scorpius Multi Launcher", ap=6, at=5, traits=[Traits.INDIRECT]
+            ),
         ],
-        single_unit_cost=300 / 4,
         traits=[Traits.ASTARTES],
     )
 )
@@ -482,7 +598,6 @@ legiones_astartes.add_unit(
         armour=4,
         cc=5,
         ff=4,
-        single_unit_cost=200,
         damage_capacity=4,
         transport_capacity=8,
         weapons=[
@@ -516,7 +631,6 @@ legiones_astartes.add_unit(
                 bp=3,
                 traits=[Traits.INDIRECT, Traits.IGNORE_COVER],
             ),
-            AssaultWeapon([Traits.IGNORE_COVER]),
             HeavyBolter(),
             HeavyBolter(),
         ],
@@ -537,8 +651,12 @@ legiones_astartes.add_unit(
         5,
         400 / 3,
         [
-            RangedWeapon(60, name="Neutron Laser Array", at=3, traits=[Traits.DISRUPT]),
-            RangedWeapon(60, name="Neutron Laser Array", at=3, traits=[Traits.DISRUPT]),
+            RangedWeapon(
+                60, name="Neutron Laser Array", at=3, mw=5, traits=[Traits.DISRUPT]
+            ),
+            RangedWeapon(
+                60, name="Neutron Laser Array", at=3, mw=5, traits=[Traits.DISRUPT]
+            ),
             HeavyBolter(),
             HeavyBolter(),
         ],
@@ -565,7 +683,6 @@ legiones_astartes.add_unit(
             HeavyBolter(),
             HeavyBolter(),
         ],
-        single_unit_cost=100,
         damage_capacity=2,
         traits=[Traits.ASTARTES, Traits.RIENFORCED_ARMOUR, Traits.THICK_REAR_ARMOUR],
     )
@@ -589,15 +706,22 @@ legiones_astartes.add_unit(
             LasCannon(),
             LasCannon(),
         ],
-        single_unit_cost=100,
         damage_capacity=2,
         traits=[Traits.ASTARTES, Traits.RIENFORCED_ARMOUR, Traits.THICK_REAR_ARMOUR],
     )
 )
 
+# Fellblade
+
+# Glaive
+
+# Falchion
+
+# Ascalon
+
 legiones_astartes.add_unit(
     Unit(
-        "Land Speeder with Plasma",
+        "Land Speeder with Plasma Cannon and Heavy Bolter",
         5,
         1,
         UnitType.LIGHT_VEHICLE,
@@ -607,13 +731,12 @@ legiones_astartes.add_unit(
         ff=5,
         weapons=[RangedWeapon(30, name="Plasma Cannon", ap=5, at=5), HeavyBolter()],
         traits=[Traits.ASTARTES, Traits.SKIMMER, Traits.SCOUT],
-        single_unit_cost=40,
     )
 )
 
 legiones_astartes.add_unit(
     Unit(
-        "Land Speeder with Melta",
+        "Land Speeder with Flamer and Multi-melta",
         5,
         1,
         UnitType.LIGHT_VEHICLE,
@@ -622,17 +745,16 @@ legiones_astartes.add_unit(
         cc=6,
         ff=5,
         weapons=[
-            RangedWeapon(15, name="Melta Cannon", mw=5),
-            SmallArms([Traits.MW], name="Melta Cannon"),
+            RangedWeapon(15, name="Multi-melta", mw=5),
+            SmallArms([Traits.MW], name="Multi-melta"),
         ],
         traits=[Traits.ASTARTES, Traits.SKIMMER, Traits.SCOUT],
-        single_unit_cost=40,
     )
 )
 
 legiones_astartes.add_unit(
     Unit(
-        "Javelin Attack Speeder Cyclone",
+        "Javelin Attack Speeder with Cyclone Missile Launcher",
         5,
         1,
         UnitType.LIGHT_VEHICLE,
@@ -644,14 +766,13 @@ legiones_astartes.add_unit(
             RangedWeapon(45, name="Cyclone Missile Launcher", ap=3, at=5),
             HeavyBolter(),
         ],
-        single_unit_cost=50,
         traits=[Traits.ASTARTES, Traits.SKIMMER, Traits.SCOUT],
     )
 )
 
 legiones_astartes.add_unit(
     Unit(
-        "Javelin Attack Speeder Lascannons",
+        "Javelin Attack Speeder with Lascannons",
         5,
         1,
         UnitType.LIGHT_VEHICLE,
@@ -660,7 +781,6 @@ legiones_astartes.add_unit(
         cc=6,
         ff=5,
         weapons=[TwinLinkedLasCannon(), HeavyBolter()],
-        single_unit_cost=50,
         traits=[Traits.ASTARTES, Traits.SKIMMER, Traits.SCOUT],
     )
 )
@@ -677,6 +797,20 @@ legiones_astartes.add_unit(
         ff=5,
         weapons=[SmallArms()],
         traits=[Traits.ASTARTES, Traits.MOUNTED, Traits.SCOUT],
-        single_unit_cost=140 / 4,
+    )
+)
+
+legiones_astartes.add_unit(
+    Unit(
+        "Scimitar Jetbike",
+        5,
+        1,
+        UnitType.INFANTRY,
+        35,
+        armour=4,
+        cc=4,
+        ff=4,
+        weapons=[SmallArms()],
+        traits=[Traits.ASTARTES, Traits.MOUNTED, Traits.SKIMMER, Traits.SCOUT],
     )
 )

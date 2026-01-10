@@ -32,7 +32,6 @@ solar_auxilia.add_unit(
         cc=6,
         ff=5,
         weapons=[SmallArms(name="Las-rifles")],
-        single_unit_cost=100 / 7,
     )
 )
 
@@ -47,7 +46,6 @@ solar_auxilia.add_unit(
         cc=6,
         ff=4,
         weapons=[RangedWeapon(15, name="Flamers", ap=5, traits=[Traits.IGNORE_COVER])],
-        single_unit_cost=75 / 4,
     )
 )
 
@@ -62,7 +60,6 @@ solar_auxilia.add_unit(
         cc=4,
         ff=6,
         weapons=[AssaultWeapon([Traits.MW], name="Power Axes")],
-        single_unit_cost=75 / 4,
     )
 )
 
@@ -79,7 +76,6 @@ solar_auxilia.add_unit(
         weapons=[
             AssaultWeapon([Traits.EXTRA_ATTACK_1, Traits.MW], name="Charonite Claws")
         ],
-        single_unit_cost=75 / 2,
     )
 )
 
@@ -95,7 +91,6 @@ solar_auxilia.add_unit(
         ff=5,
         weapons=[RangedWeapon(15, ap=4, at=5, name="Plasma Guns"), SmallArms()],
         traits=[Traits.COMMANDER],
-        single_unit_cost=50,
     )
 )
 
@@ -114,7 +109,6 @@ solar_auxilia.add_unit(
             SmallArms([Traits.MW, Traits.EXTRA_ATTACK_1], name="Archaeotech Pistol"),
         ],
         traits=[Traits.SUPREME_COMMANDER],
-        single_unit_cost=150,
     )
 )
 
@@ -133,7 +127,6 @@ solar_auxilia.add_unit(
                 30, name="Mole Mortar", bp=1, traits=[Traits.DISRUPT, Traits.INDIRECT]
             )
         ],
-        single_unit_cost=25,
     )
 )
 
@@ -148,7 +141,6 @@ solar_auxilia.add_unit(
         cc=6,
         ff=6,
         weapons=[RangedWeapon(45, name="Laser Destroyer", ap=6, at=4)],
-        single_unit_cost=25,
     )
 )
 
@@ -167,7 +159,6 @@ solar_auxilia.add_unit(
                 45, name="Light Artillery", ap=4, at=6, traits=[Traits.INDIRECT]
             )
         ],
-        single_unit_cost=25,
     )
 )
 
@@ -186,7 +177,6 @@ solar_auxilia.add_unit(
             RangedWeapon(45, name="Rockets", at=5, ap=3),
         ],
         traits=[Traits.SCOUT, Traits.WALKER],
-        single_unit_cost=0,
     )
 )
 
@@ -202,7 +192,6 @@ solar_auxilia.add_unit(
         ff=5,
         weapons=[TwinLinkedLasCannon()],
         traits=[Traits.SCOUT, Traits.TELEPORT],
-        single_unit_cost=25,
     )
 )
 
@@ -218,7 +207,6 @@ solar_auxilia.add_unit(
         ff=5,
         weapons=[RangedWeapon(30, name="Hyperios Missiles", aa=4)],
         traits=[Traits.SCOUT, Traits.TELEPORT],
-        single_unit_cost=25,
     )
 )
 
@@ -236,7 +224,6 @@ solar_auxilia.add_unit(
         ff=4,
         weapons=[BattleCannon(), HeavyBolter()],
         traits=[Traits.RIENFORCED_ARMOUR],
-        single_unit_cost=350 / 6,
     )
 )
 solar_auxilia.add_unit(
@@ -251,7 +238,6 @@ solar_auxilia.add_unit(
         ff=5,
         weapons=[VanquisherBattleCannon(), LasCannon()],
         traits=[Traits.RIENFORCED_ARMOUR],
-        single_unit_cost=350 / 6,
     )
 )
 solar_auxilia.add_unit(
@@ -266,7 +252,6 @@ solar_auxilia.add_unit(
         ff=4,
         weapons=[VanquisherBattleCannon(), HeavyBolter()],
         traits=[Traits.RIENFORCED_ARMOUR],
-        single_unit_cost=350 / 6,
     )
 )
 solar_auxilia.add_unit(
@@ -281,7 +266,6 @@ solar_auxilia.add_unit(
         ff=5,
         weapons=[VanquisherBattleCannon(), LasCannon()],
         traits=[Traits.RIENFORCED_ARMOUR],
-        single_unit_cost=350 / 6,
     )
 )
 solar_auxilia.add_unit(
@@ -296,7 +280,6 @@ solar_auxilia.add_unit(
         ff=5,
         weapons=[LasCannon(), TwinLinkedLasCannon()],
         traits=[Traits.RIENFORCED_ARMOUR],
-        single_unit_cost=350 / 6,
     )
 )
 solar_auxilia.add_unit(
@@ -314,7 +297,6 @@ solar_auxilia.add_unit(
             LasCannon(),
         ],
         traits=[Traits.RIENFORCED_ARMOUR],
-        single_unit_cost=350 / 6,
     )
 )
 solar_auxilia.add_unit(
@@ -334,7 +316,6 @@ solar_auxilia.add_unit(
             LasCannon(),
         ],
         traits=[Traits.RIENFORCED_ARMOUR],
-        single_unit_cost=350 / 6,
     )
 )
 solar_auxilia.add_unit(
@@ -352,7 +333,6 @@ solar_auxilia.add_unit(
             LasCannon(),
         ],
         traits=[Traits.RIENFORCED_ARMOUR],
-        single_unit_cost=350 / 6,
     )
 )
 
@@ -373,7 +353,6 @@ solar_auxilia.add_unit(
             LasCannon(),
         ],
         traits=[Traits.RIENFORCED_ARMOUR, Traits.THICK_REAR_ARMOUR],
-        single_unit_cost=100,
     )
 )
 
@@ -394,7 +373,6 @@ solar_auxilia.add_unit(
             HeavyBolter(),
         ],
         traits=[Traits.RIENFORCED_ARMOUR, Traits.THICK_REAR_ARMOUR],
-        single_unit_cost=100,
     )
 )
 
@@ -415,7 +393,6 @@ solar_auxilia.add_unit(
             LasCannon(),
         ],
         traits=[Traits.RIENFORCED_ARMOUR, Traits.THICK_REAR_ARMOUR],
-        single_unit_cost=70,
     )
 )
 
@@ -433,7 +410,6 @@ solar_auxilia.add_unit(
             TwinLinkedLasCannon(),
         ],
         traits=[Traits.RIENFORCED_ARMOUR],
-        single_unit_cost=0,
         transport_capacity=5,
     )
 )
@@ -451,7 +427,6 @@ solar_auxilia.add_unit(
             DemolisherCannon(),
         ],
         traits=[Traits.RIENFORCED_ARMOUR],
-        single_unit_cost=0,
         transport_capacity=2,
     )
 )
@@ -473,7 +448,6 @@ solar_auxilia.add_unit(
             SmallArms([Traits.MW, Traits.IGNORE_COVER], name="Medusa Siege Cannon"),
             HeavyBolter(),
         ],
-        single_unit_cost=83,
     )
 )
 
@@ -491,7 +465,6 @@ solar_auxilia.add_unit(
             RangedWeapon(120, name="Earthshaker Cannon", ap=4, at=4),
             HeavyBolter(),
         ],
-        single_unit_cost=83,
     )
 )
 solar_auxilia.add_unit(
@@ -510,7 +483,6 @@ solar_auxilia.add_unit(
             ),
             HeavyBolter(),
         ],
-        single_unit_cost=83,
     )
 )
 
@@ -527,7 +499,6 @@ solar_auxilia.add_unit(
         weapons=[SmallArms(name="Multi-Laser")],
         traits=[Traits.SKIMMER, Traits.PLANETFALL],
         transport_capacity=2,
-        single_unit_cost=25,
     )
 )
 
@@ -547,7 +518,6 @@ solar_auxilia.add_unit(
             AutoCannon(),
         ],
         traits=[Traits.RIENFORCED_ARMOUR, Traits.THICK_REAR_ARMOUR],
-        single_unit_cost=70,
     )
 )
 
@@ -566,7 +536,6 @@ solar_auxilia.add_unit(
             AutoCannon(),
         ],
         traits=[Traits.RIENFORCED_ARMOUR, Traits.THICK_REAR_ARMOUR],
-        single_unit_cost=83,
     )
 )
 
@@ -592,7 +561,6 @@ solar_auxilia.add_unit(
         ],
         damage_capacity=3,
         traits=[Traits.RIENFORCED_ARMOUR],
-        single_unit_cost=200,
     )
 )
 
@@ -616,7 +584,6 @@ solar_auxilia.add_unit(
         ],
         damage_capacity=3,
         traits=[Traits.RIENFORCED_ARMOUR],
-        single_unit_cost=200,
     )
 )
 
@@ -645,7 +612,6 @@ solar_auxilia.add_unit(
         ],
         damage_capacity=3,
         traits=[Traits.RIENFORCED_ARMOUR],
-        single_unit_cost=200,
     )
 )
 
@@ -671,7 +637,6 @@ solar_auxilia.add_unit(
         ],
         damage_capacity=3,
         traits=[Traits.RIENFORCED_ARMOUR],
-        single_unit_cost=200,
     )
 )
 
@@ -698,7 +663,6 @@ solar_auxilia.add_unit(
         ],
         damage_capacity=3,
         traits=[Traits.RIENFORCED_ARMOUR],
-        single_unit_cost=200,
     )
 )
 
@@ -719,7 +683,6 @@ solar_auxilia.add_unit(
             LasCannon(),
             RangedWeapon(30, name="Heavy Stubber", aa=6, traits=[Traits.REAR]),
         ],
-        single_unit_cost=125,
     )
 )
 
@@ -738,7 +701,6 @@ solar_auxilia.add_unit(
             RangedWeapon(30, name="Rockets", at=4, traits=[Traits.FxF]),
             RangedWeapon(15, name="Storm Bolters", aa=5, ap=4, traits=[Traits.FxF]),
         ],
-        single_unit_cost=112,
     )
 )
 
@@ -764,7 +726,6 @@ solar_auxilia.add_unit(
             AutoCannon(aa=5),
             AutoCannon(aa=5),
         ],
-        single_unit_cost=112,
     )
 )
 
@@ -783,6 +744,5 @@ solar_auxilia.add_unit(
             RangedWeapon(15, name="Bomb Rack", bp=3),
             TwinHeavyBolter(aa=5),
         ],
-        single_unit_cost=125,
     )
 )
