@@ -2,13 +2,15 @@ from data.models import RangedWeapon, Traits
 
 
 class HeavyBolter(RangedWeapon):
-    def __init__(self):
-        super().__init__(30, ap=5, name="Heavy Bolter")
+    def __init__(self, aa=0, traits=[]):
+        super().__init__(30, ap=5, aa=aa, name="Heavy Bolter", traits=traits)
 
 
 class TwinHeavyBolter(RangedWeapon):
-    def __init__(self, aa=0):
-        super().__init__(30, ap=4, aa=aa, name="Twin-linked Heavy Bolter")
+    def __init__(self, aa=0, traits=[]):
+        super().__init__(
+            30, ap=4, aa=aa, name="Twin-linked Heavy Bolter", traits=traits
+        )
 
 
 class LasCannon(RangedWeapon):
@@ -17,8 +19,8 @@ class LasCannon(RangedWeapon):
 
 
 class TwinLinkedLasCannon(RangedWeapon):
-    def __init__(self, aa=0):
-        super().__init__(45, at=4, aa=aa, name="Twin-linked Lascannon")
+    def __init__(self, aa=0, traits=[]):
+        super().__init__(45, at=4, aa=aa, name="Twin-linked Lascannon", traits=traits)
 
 
 class QuadLasCannon(RangedWeapon):
@@ -37,9 +39,13 @@ class VanquisherBattleCannon(RangedWeapon):
 
 
 class DemolisherCannon(RangedWeapon):
-    def __init__(self):
+    def __init__(self, traits=[]):
         super().__init__(
-            30, ap=3, at=4, traits=[Traits.IGNORE_COVER], name="Demolisher Cannon"
+            30,
+            ap=3,
+            at=4,
+            traits=[Traits.IGNORE_COVER] + traits,
+            name="Demolisher Cannon",
         )
 
 

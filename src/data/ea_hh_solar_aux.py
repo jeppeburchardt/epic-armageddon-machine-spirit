@@ -146,7 +146,7 @@ solar_auxilia.add_unit(
 
 solar_auxilia.add_unit(
     Unit(
-        "Rapier Light Artillery",
+        "Rapier Quad Launcher",
         3,
         2,
         UnitType.INFANTRY,
@@ -156,7 +156,11 @@ solar_auxilia.add_unit(
         ff=6,
         weapons=[
             RangedWeapon(
-                45, name="Light Artillery", ap=4, at=6, traits=[Traits.INDIRECT]
+                45,
+                name="Quad Launcher",
+                ap=5,
+                at=6,
+                traits=[Traits.INDIRECT, Traits.DISRUPT],
             )
         ],
     )

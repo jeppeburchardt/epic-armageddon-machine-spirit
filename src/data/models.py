@@ -130,18 +130,21 @@ class Traits(Enum):
     WALKER = 18
     PLANETFALL = 19
     TITAN_KILLER_D3 = 20
-    VOID_SHIELDS = 21
-    DISRUPT = 22
-    FEARLESS = 23
-    SKIMMER = 24
-    LANCE = 25
-    SUPREME_COMMANDER = 26
-    LEADER = 27
-    COMMANDER = 28
-    INVULNERABLE_SAVE = 29
-    SLOW_FIRING = 30
-    REAR = 31
-    FxF = 32
+    TITAN_KILLER_1 = 21
+    VOID_SHIELDS = 22
+    DISRUPT = 23
+    FEARLESS = 24
+    SKIMMER = 25
+    LANCE = 26
+    SUPREME_COMMANDER = 27
+    LEADER = 28
+    COMMANDER = 29
+    INVULNERABLE_SAVE = 30
+    SLOW_FIRING = 31
+    REAR = 32
+    FxF = 33
+    LEFT = 34
+    RIGHT = 35
 
 
 def trait_to_string(trait):

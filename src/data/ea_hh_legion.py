@@ -13,8 +13,6 @@ from .ea_hh_weapons import (
     TwinLinkedLasCannon,
     QuadLasCannon,
     TwinHeavyBolter,
-    VanquisherBattleCannon,
-    BattleCannon,
     DemolisherCannon,
 )
 
@@ -23,7 +21,7 @@ legiones_astartes = Army("Legiones Astartes")
 
 legiones_astartes.add_unit(
     Unit(
-        "Legion Tactical Squad",
+        "Tactical Squad",
         5,
         1,
         UnitType.INFANTRY,
@@ -39,7 +37,7 @@ legiones_astartes.add_unit(
 
 legiones_astartes.add_unit(
     Unit(
-        "Legion Assault Squad",
+        "Assault Squad",
         strategy_rating=5,
         initiative=1,
         type=UnitType.INFANTRY,
@@ -54,7 +52,7 @@ legiones_astartes.add_unit(
 
 legiones_astartes.add_unit(
     Unit(
-        "Legion Heavy Support Squad",
+        "Heavy Support Squad",
         strategy_rating=5,
         initiative=1,
         type=UnitType.INFANTRY,
@@ -72,7 +70,7 @@ legiones_astartes.add_unit(
 
 legiones_astartes.add_unit(
     Unit(
-        "Legion Tactical Support Squad",
+        "Tactical Support Squad",
         strategy_rating=5,
         initiative=1,
         type=UnitType.INFANTRY,
@@ -92,7 +90,7 @@ legiones_astartes.add_unit(
 
 legiones_astartes.add_unit(
     Unit(
-        "Legion Terminator Squad",
+        "Terminator Squad",
         strategy_rating=5,
         initiative=1,
         type=UnitType.INFANTRY,
@@ -108,17 +106,144 @@ legiones_astartes.add_unit(
     )
 )
 
-# Saturnine Terminators
+legiones_astartes.add_unit(
+    Unit(
+        "Saturnine Terminator Squad (Plasma Bombards)",
+        strategy_rating=5,
+        initiative=1,
+        type=UnitType.INFANTRY,
+        speed=15,
+        armour=3,
+        cc=3,
+        ff=3,
+        weapons=[
+            AssaultWeapon([Traits.EXTRA_ATTACK_1, Traits.MW], name="Disruption Fists"),
+            RangedWeapon(name="Plasma Bombards", range=20, at=4),
+        ],
+        traits=[Traits.ASTARTES, Traits.RIENFORCED_ARMOUR, Traits.TELEPORT],
+    )
+)
 
-# Saturnine Dreadnoughts
+legiones_astartes.add_unit(
+    Unit(
+        "Saturnine Terminator Squad (Twin Heavy Disintegrators)",
+        strategy_rating=5,
+        initiative=1,
+        type=UnitType.INFANTRY,
+        speed=15,
+        armour=3,
+        cc=3,
+        ff=3,
+        weapons=[
+            AssaultWeapon([Traits.EXTRA_ATTACK_1, Traits.MW], name="Disruption Fists"),
+            RangedWeapon(name="Twin Heavy Disintegrators", range=20, ap=4),
+        ],
+        traits=[Traits.ASTARTES, Traits.RIENFORCED_ARMOUR, Traits.TELEPORT],
+    )
+)
 
-# Tarantula: Lascannon Battery
+legiones_astartes.add_unit(
+    Unit(
+        "Saturnine Dreadnought a",
+        5,
+        1,
+        UnitType.ARMORED_VEHICLE,
+        speed=15,
+        armour=4,
+        cc=4,
+        ff=4,
+        weapons=[
+            RangedWeapon(30, name="Heavy Plasma Bombards", at=3),
+            RangedWeapon(15, name="Inversion Beamer", at=2, traits=[Traits.MW]),
+        ],
+        traits=[Traits.ASTARTES, Traits.WALKER, Traits.RIENFORCED_ARMOUR],
+    )
+)
 
-# Tarantula: Hyperios Air-defence Missile Launcher
+legiones_astartes.add_unit(
+    Unit(
+        "Saturnine Dreadnought b",
+        5,
+        1,
+        UnitType.ARMORED_VEHICLE,
+        speed=15,
+        armour=4,
+        cc=4,
+        ff=4,
+        weapons=[
+            RangedWeapon(30, name="Disintegrator Cannons", ap=3),
+            RangedWeapon(15, name="Graviton Pulverisers", ap=2),
+            RangedWeapon(15, name="Graviton Pulverisers", ap=2),
+        ],
+        traits=[Traits.ASTARTES, Traits.WALKER, Traits.RIENFORCED_ARMOUR],
+    )
+)
 
-# Rapier: Laser Destroyer Array
+legiones_astartes.add_unit(
+    Unit(
+        "Tarantula, Twin Lascannon",
+        3,
+        2,
+        UnitType.LIGHT_VEHICLE,
+        speed=0,
+        armour=6,
+        cc=6,
+        ff=5,
+        weapons=[TwinLinkedLasCannon()],
+        traits=[Traits.SCOUT, Traits.TELEPORT],
+    )
+)
 
-# Rapier: Quad Launcher
+legiones_astartes.add_unit(
+    Unit(
+        "Tarantula, Hyperios air-defence missile launcher",
+        3,
+        2,
+        UnitType.LIGHT_VEHICLE,
+        speed=0,
+        armour=6,
+        cc=6,
+        ff=5,
+        weapons=[RangedWeapon(30, name="Hyperios Missiles", aa=4)],
+        traits=[Traits.SCOUT, Traits.TELEPORT],
+    )
+)
+
+legiones_astartes.add_unit(
+    Unit(
+        "Rapier, Laser Destroyer Array",
+        5,
+        1,
+        UnitType.INFANTRY,
+        speed=10,
+        armour=4,
+        cc=6,
+        ff=5,
+        weapons=[RangedWeapon(45, name="Laser Destroyer Array", ap=6, at=4)],
+    )
+)
+
+legiones_astartes.add_unit(
+    Unit(
+        "Rapier, Quad Launcher",
+        5,
+        1,
+        UnitType.INFANTRY,
+        speed=10,
+        armour=4,
+        cc=6,
+        ff=5,
+        weapons=[
+            RangedWeapon(
+                45,
+                name="Quad Launcher",
+                ap=5,
+                at=6,
+                traits=[Traits.INDIRECT, Traits.DISRUPT],
+            )
+        ],
+    )
+)
 
 # Araknae: Orias heavy frag missiles
 
@@ -304,13 +429,17 @@ legiones_astartes.add_unit(
         4,
         250,
         [
-            RangedWeapon(45, 3, 6),
-            RangedWeapon(45, 3, 6),
-            RangedWeapon(45, 4, 0, 5),
-            RangedWeapon(30, 0, 4),
-            RangedWeapon(30, 0, 4),
-            RangedWeapon(15, 0, 4),
-            RangedWeapon(15, 0, 4),
+            RangedWeapon(
+                45, name="Laser Destroyer", at=3, ap=6, traits=[Traits.FIXED_FORWARD]
+            ),
+            RangedWeapon(
+                45, name="Laser Destroyer", at=3, ap=6, traits=[Traits.FIXED_FORWARD]
+            ),
+            TwinLinkedLasCannon(aa=5, traits=[Traits.FIXED_FORWARD]),
+            TwinHeavyBolter(traits=[Traits.FIXED_FORWARD]),
+            TwinHeavyBolter(traits=[Traits.FIXED_FORWARD]),
+            TwinHeavyBolter(traits=[Traits.LEFT]),
+            TwinHeavyBolter(traits=[Traits.RIGHT]),
         ],
         [Traits.ASTARTES, Traits.PLANETFALL, Traits.RIENFORCED_ARMOUR],
         8,
@@ -711,13 +840,154 @@ legiones_astartes.add_unit(
     )
 )
 
-# Fellblade
+legiones_astartes.add_unit(
+    Unit(
+        "Fellblade Super Heavy Tank",
+        5,
+        1,
+        UnitType.WAR_ENGINE,
+        speed=20,
+        armour=4,
+        cc=5,
+        ff=5,
+        weapons=[
+            RangedWeapon(
+                name="Fellblade Cannon",
+                range=75,
+                ap=2,
+                at=2,
+                traits=[Traits.MW, Traits.TITAN_KILLER_1],
+            ),
+            QuadLasCannon(),
+            QuadLasCannon(),
+            TwinHeavyBolter(traits=[Traits.FIXED_FORWARD]),
+            DemolisherCannon(traits=[Traits.FIXED_FORWARD]),
+        ],
+        damage_capacity=4,
+        traits=[Traits.ASTARTES, Traits.RIENFORCED_ARMOUR, Traits.THICK_REAR_ARMOUR],
+    )
+)
 
-# Glaive
+legiones_astartes.add_unit(
+    Unit(
+        "Glaive Super Heavy Tank",
+        5,
+        1,
+        UnitType.WAR_ENGINE,
+        speed=20,
+        armour=4,
+        cc=5,
+        ff=5,
+        weapons=[
+            RangedWeapon(
+                name="Volkite Carronade",
+                range=75,
+                ap=3,
+                at=5,
+                traits=[Traits.DISRUPT, Traits.IGNORE_COVER],
+            ),
+            RangedWeapon(
+                name="Volkite Carronade",
+                range=75,
+                ap=3,
+                at=5,
+                traits=[Traits.DISRUPT, Traits.IGNORE_COVER],
+            ),
+            RangedWeapon(
+                name="Volkite Carronade",
+                range=75,
+                ap=3,
+                at=5,
+                traits=[Traits.DISRUPT, Traits.IGNORE_COVER],
+            ),
+            RangedWeapon(
+                name="Volkite Carronade",
+                range=75,
+                ap=3,
+                at=5,
+                traits=[Traits.DISRUPT, Traits.IGNORE_COVER],
+            ),
+            QuadLasCannon(),
+            QuadLasCannon(),
+            TwinHeavyBolter(traits=[Traits.FIXED_FORWARD]),
+        ],
+        damage_capacity=4,
+        traits=[Traits.ASTARTES, Traits.RIENFORCED_ARMOUR, Traits.THICK_REAR_ARMOUR],
+    )
+)
 
-# Falchion
+legiones_astartes.add_unit(
+    Unit(
+        "Falchion Super Heavy Tank Destroyer",
+        5,
+        1,
+        UnitType.WAR_ENGINE,
+        speed=20,
+        armour=4,
+        cc=5,
+        ff=5,
+        weapons=[
+            RangedWeapon(
+                name="Twin Linked Volcano Cannon",
+                range=90,
+                ap=2,
+                at=2,
+                traits=[Traits.MW, Traits.TITAN_KILLER_D3, Traits.FIXED_FORWARD],
+            ),
+            QuadLasCannon(),
+            QuadLasCannon(),
+        ],
+        damage_capacity=4,
+        traits=[Traits.ASTARTES, Traits.RIENFORCED_ARMOUR, Traits.THICK_REAR_ARMOUR],
+    )
+)
 
-# Ascalon
+legiones_astartes.add_unit(
+    Unit(
+        "Ascalon Super Heavy Tank",
+        5,
+        1,
+        UnitType.WAR_ENGINE,
+        speed=20,
+        armour=4,
+        cc=5,
+        ff=5,
+        weapons=[
+            RangedWeapon(
+                name="Inferno gun",
+                range=30,
+                ap=2,
+                at=6,
+                traits=[Traits.FIXED_FORWARD, Traits.FIXED_FORWARD],
+            ),
+            RangedWeapon(
+                name="Inferno gun",
+                range=30,
+                ap=2,
+                at=6,
+                traits=[Traits.FIXED_FORWARD, Traits.FIXED_FORWARD],
+            ),
+            RangedWeapon(
+                name="Inferno gun",
+                range=30,
+                ap=2,
+                at=6,
+                traits=[Traits.FIXED_FORWARD, Traits.FIXED_FORWARD],
+            ),
+            RangedWeapon(
+                name="Inferno gun",
+                range=30,
+                ap=2,
+                at=6,
+                traits=[Traits.FIXED_FORWARD, Traits.FIXED_FORWARD],
+            ),
+            QuadLasCannon(),
+            QuadLasCannon(),
+        ],
+        damage_capacity=4,
+        traits=[Traits.ASTARTES, Traits.RIENFORCED_ARMOUR, Traits.THICK_REAR_ARMOUR],
+    )
+)
 
 legiones_astartes.add_unit(
     Unit(

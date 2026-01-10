@@ -2,48 +2,50 @@
 
 ## Price Predictions
 
-| Name                                             |   Original Cost |   Predicted Cost | Uncertainty   | Quality   |   Score |
-|--------------------------------------------------|-----------------|------------------|---------------|-----------|---------|
-| Infantry Section                                 |              14 |               23 | ±8.1          | BAD       |      64 |
-| Infantry with flamers                            |              19 |               39 | ±16.2         | BAD       |      58 |
-| Veletaris Storm Section                          |              19 |               24 | ±16.0         | BAD       |      33 |
-| Ogryn Charonite Squad                            |              38 |               27 | ±12.6         | BAD       |      54 |
-| Tactical Command Unit                            |              50 |               25 | ±9.9          | BAD       |      61 |
-| Legate Command Unit                              |             150 |               26 | ±11.8         | BAD       |      54 |
-| Rapier Mole Mortar                               |              25 |               44 | ±21.3         | BAD       |      52 |
-| Rapier Laser Destroyer                           |              25 |               27 | ±7.9          | MEDIOCRE  |      71 |
-| Rapier Light Artillery                           |              25 |               41 | ±15.9         | BAD       |      62 |
-| Aethon Heavy Sentinel                            |               0 |               31 | ±8.5          | MEDIOCRE  |      73 |
-| Tarantula, Twin Lascannon                        |              25 |               36 | ±24.7         | BAD       |      31 |
-| Tarantula, Hyperios air-defence missile launcher |              25 |               39 | ±25.6         | BAD       |      35 |
-| Leman Russ (Battle cannon + H.B.)                |              58 |               60 | ±9.8          | GOOD      |      84 |
-| Leman Russ (Battle cannon + Las)                 |              58 |               63 | ±11.7         | GOOD      |      81 |
-| Leman Russ (Vanquisher + H.B.)                   |              58 |               59 | ±9.8          | GOOD      |      83 |
-| Leman Russ (Vanquisher + Las)                    |              58 |               63 | ±11.7         | GOOD      |      81 |
-| Leman Russ (Annihilator)                         |              58 |               50 | ±11.3         | GOOD      |      77 |
-| Leman Russ (Demolisher)                          |              58 |               59 | ±15.1         | MEDIOCRE  |      74 |
-| Leman Russ (Executioner)                         |              58 |               50 | ±9.6          | GOOD      |      81 |
-| Leman Russ (Exterminator)                        |              58 |               56 | ±9.9          | GOOD      |      82 |
-| Malcador (battle cannon, demolisher, las.spon.)  |             100 |               88 | ±16.1         | GOOD      |      82 |
-| Malcador (vanquisher, demiólisher, h.b.spon.)    |             100 |               75 | ±14.9         | GOOD      |      80 |
-| Malcador (las cannons)                           |              70 |               67 | ±14.5         | GOOD      |      78 |
-| Dracosan with las cannon                         |               0 |               36 | ±12.1         | MEDIOCRE  |      66 |
-| Dracosan with demolisher                         |               0 |               52 | ±14.7         | MEDIOCRE  |      72 |
-| Medusa                                           |              83 |               54 | ±22.3         | BAD       |      59 |
-| Basilisk                                         |              83 |               70 | ±7.9          | GOOD      |      89 |
-| Basilisk (Barrage)                               |              83 |               89 | ±15.7         | GOOD      |      82 |
-| Arvus Lighter                                    |              25 |               44 | ±32.0         | BAD       |      28 |
-| Malcador Infernus                                |              70 |               57 | ±10.0         | GOOD      |      82 |
-| Malcador Valdor                                  |              83 |               77 | ±22.9         | MEDIOCRE  |      70 |
-| Avenger Strike Fighter                           |             125 |               85 | ±14.5         | GOOD      |      83 |
-| Thunderbolt                                      |             112 |               78 | ±8.3          | GOOD      |      89 |
-| Lightning Fighter                                |             112 |              115 | ±22.4         | GOOD      |      81 |
-| Marauder Bomber                                  |             125 |              120 | ±15.3         | GOOD      |      87 |
-| Shadowsword                                      |             200 |              189 | ±9.9          | EXCELLENT |      95 |
-| Stromblade                                       |             200 |              175 | ±14.9         | EXCELLENT |      91 |
-| Stormsword                                       |             200 |              162 | ±29.5         | GOOD      |      82 |
-| Baneblade                                        |             200 |              166 | ±11.0         | EXCELLENT |      93 |
-| Stormhammer                                      |             200 |              159 | ±16.7         | GOOD      |      89 |
+| Name                                             |   Predicted Cost | Uncertainty   | Quality   |   Score |
+|--------------------------------------------------|------------------|---------------|-----------|---------|
+| Infantry Section                                 |               23 | ±8.1          | BAD       |      64 |
+| Infantry with flamers                            |               39 | ±16.2         | BAD       |      58 |
+| Veletaris Storm Section                          |               24 | ±16.0         | BAD       |      33 |
+| Ogryn Charonite Squad                            |               27 | ±12.6         | BAD       |      54 |
+| Tactical Command Unit                            |               25 | ±9.9          | BAD       |      61 |
+| Legate Command Unit                              |               26 | ±11.8         | BAD       |      54 |
+| Rapier Mole Mortar                               |               44 | ±21.3         | BAD       |      52 |
+| Rapier Laser Destroyer                           |               27 | ±7.9          | MEDIOCRE  |      71 |
+| Rapier Quad Launcher                             |               41 | ±23.2         | BAD       |      43 |
+| Aethon Heavy Sentinel                            |               31 | ±8.5          | MEDIOCRE  |      73 |
+| Tarantula, Twin Lascannon                        |               36 | ±24.7         | BAD       |      31 |
+| Tarantula, Hyperios air-defence missile launcher |               39 | ±25.6         | BAD       |      35 |
+| Leman Russ (Battle cannon + H.B.)                |               60 | ±9.8          | GOOD      |      84 |
+| Leman Russ (Battle cannon + Las)                 |               63 | ±11.7         | GOOD      |      81 |
+| Leman Russ (Vanquisher + H.B.)                   |               59 | ±9.8          | GOOD      |      83 |
+| Leman Russ (Vanquisher + Las)                    |               63 | ±11.7         | GOOD      |      81 |
+| Leman Russ (Annihilator)                         |               50 | ±11.3         | GOOD      |      77 |
+| Leman Russ (Demolisher)                          |               59 | ±15.1         | MEDIOCRE  |      74 |
+| Leman Russ (Executioner)                         |               50 | ±9.6          | GOOD      |      81 |
+| Leman Russ (Exterminator)                        |               56 | ±9.9          | GOOD      |      82 |
+| Malcador (battle cannon, demolisher, las.spon.)  |               88 | ±16.1         | GOOD      |      82 |
+| Malcador (vanquisher, demiólisher, h.b.spon.)    |               75 | ±14.9         | GOOD      |      80 |
+| Malcador (las cannons)                           |               67 | ±14.5         | GOOD      |      78 |
+| Dracosan with las cannon                         |               36 | ±12.1         | MEDIOCRE  |      66 |
+| Dracosan with demolisher                         |               52 | ±14.7         | MEDIOCRE  |      72 |
+| Medusa                                           |               54 | ±22.3         | BAD       |      59 |
+| Basilisk                                         |               70 | ±7.9          | GOOD      |      89 |
+| Basilisk (Barrage)                               |               89 | ±15.7         | GOOD      |      82 |
+| Arvus Lighter                                    |               44 | ±32.0         | BAD       |      28 |
+| Malcador Infernus                                |               57 | ±10.0         | GOOD      |      82 |
+| Malcador Valdor                                  |               77 | ±22.9         | MEDIOCRE  |      70 |
+| Avenger Strike Fighter                           |               85 | ±14.5         | GOOD      |      83 |
+| Thunderbolt                                      |               78 | ±8.3          | GOOD      |      89 |
+| Lightning Fighter                                |              115 | ±22.4         | GOOD      |      81 |
+| Marauder Bomber                                  |              120 | ±15.3         | GOOD      |      87 |
+| Shadowsword                                      |              189 | ±9.9          | EXCELLENT |      95 |
+| Stromblade                                       |              175 | ±14.9         | EXCELLENT |      91 |
+| Stormsword                                       |              162 | ±29.5         | GOOD      |      82 |
+| Baneblade                                        |              166 | ±11.0         | EXCELLENT |      93 |
+| Stormhammer                                      |              159 | ±16.7         | GOOD      |      89 |
+
+Average Score: 71.25
 
 ## Unit Profiles
 
@@ -59,7 +61,7 @@
 |                                                  |        |         |          |      |      | Archaeotech Pistol        | (15cm)         | Macro-Weapon, Extra Attack +1 |                                      |
 | Rapier Mole Mortar                               | INF    | 10      | 6        | 6    | 6    | Mole Mortar               | 30             | 1BP, Disrupt, Indirect        |                                      |
 | Rapier Laser Destroyer                           | INF    | 10      | 6        | 6    | 6    | Laser Destroyer           | 45             | AT4+ AP6+                     |                                      |
-| Rapier Light Artillery                           | INF    | 10      | 6        | 6    | 6    | Light Artillery           | 45             | AT6+ AP4+, Indirect           |                                      |
+| Rapier Quad Launcher                             | INF    | 10      | 6        | 6    | 6    | Quad Launcher             | 45             | AT6+ AP5+, Indirect, Disrupt  |                                      |
 | Aethon Heavy Sentinel                            | LV     | 20      | 5        | 6    | 5    | Multilaser                | 30             | AT6+ AP5+                     | Scout, Walker                        |
 |                                                  |        |         |          |      |      | Rockets                   | 45             | AT5+ AP3+                     |                                      |
 | Tarantula, Twin Lascannon                        | LV     | 0       | 6        | 6    | 5    | Twin-linked Lascannon     | 45             | AT4+                          | Scout, Teleport                      |
