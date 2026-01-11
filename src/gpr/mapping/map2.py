@@ -28,20 +28,34 @@ def map2(unit: Unit) -> np.ndarray:
         dice_test_to_score(unit.cc),
         unit.damage_capacity,
         unit.void_shields,
-        (1 if unit.type == UnitType.CHARACTER else 0),
-        (1 if unit.type == UnitType.INFANTRY else 0),
-        (1 if unit.type == UnitType.LIGHT_VEHICLE else 0),
-        (1 if unit.type == UnitType.ARMORED_VEHICLE else 0),
-        (1 if unit.type == UnitType.CHARACTER else 0),
-        (1 if unit.type == UnitType.WAR_ENGINE else 0),
-        (1 if unit.type == UnitType.AIRCRAFT else 0),
-        (1 if Traits.TELEPORT in unit.traits else 0),
+        (1 if unit.type == UnitType.CHARACTER or unit.type == UnitType.INFANTRY else 0),
+        (
+            1
+            if unit.type == UnitType.LIGHT_VEHICLE
+            or unit.type == UnitType.ARMORED_VEHICLE
+            else 0
+        ),
+        (
+            1
+            if unit.type == UnitType.WAR_ENGINE
+            or unit.type == UnitType.AIRCRAFT_WAR_ENGINE
+            else 0
+        ),
+        (
+            1
+            if unit.type == UnitType.AIRCRAFT
+            or unit.type == UnitType.AIRCRAFT_WAR_ENGINE
+            else 0
+        ),
+        # (1 if Traits.TELEPORT in unit.traits else 0),
         (1 if Traits.KNOW_NO_FEAR in unit.traits else 0),
         (1 if Traits.WALKER in unit.traits else 0),
-        (1 if Traits.PLANETFALL in unit.traits else 0),
-        (1 if Traits.REINFORCED_ARMOUR in unit.traits else 0),
-        (1 if Traits.JUMP_PACKS in unit.traits else 0),
-        (1 if Traits.INFILTRATOR in unit.traits else 0),
+        # (1 if Traits.SCOUT in unit.traits else 0),
+        # (1 if Traits.PLANET_FALL in unit.traits else 0),
+        # (1 if Traits.REINFORCED_ARMOUR in unit.traits else 0),
+        # (1 if Traits.THICK_REAR_ARMOUR in unit.traits else 0),
+        # (1 if Traits.JUMP_PACKS in unit.traits else 0),
+        # (1 if Traits.INFILTRATOR in unit.traits else 0),
         unit.transport_capacity,
         # weapon count:
         sum(1 for w in weapons if isinstance(w, RangedWeapon) and w.range >= 100),
@@ -56,8 +70,8 @@ def map2(unit: Unit) -> np.ndarray:
             if isinstance(w, RangedWeapon) and w.range > 30 and w.range < 50
         ),
         sum(1 for w in weapons if isinstance(w, RangedWeapon) and w.range < 30),
-        sum(1 for w in weapons if isinstance(w, SmallArms)),
-        sum(1 for w in weapons if isinstance(w, AssaultWeapon)),
+        # sum(1 for w in weapons if isinstance(w, SmallArms)),
+        # sum(1 for w in weapons if isinstance(w, AssaultWeapon)),
         # at total:
         sum(
             (
@@ -104,84 +118,145 @@ def map2(unit: Unit) -> np.ndarray:
         # sum(1 for w in weapons if hasattr(w, 'traits') and Traits.EXTRA_ATTACK_1 in w.traits),
         # sum(1 for w in weapons if hasattr(w, 'traits') and Traits.IGNORE_COVER in w.traits),
         # sum(1 for w in weapons if hasattr(w, 'traits') and Traits.INDIRECT in w.traits),
+        # Has any MW Assault Weapon:
+        (
+            1
+            if any(
+                isinstance(w, AssaultWeapon)
+                and hasattr(w, "traits")
+                and Traits.MW in w.traits
+                for w in weapons
+            )
+            else 0
+        ),
+        # Sum titan killer stats:
+        (
+            sum(
+                (
+                    (1 if Traits.TITAN_KILLER_1 in w.traits else 0)
+                    + (1.5 if Traits.TITAN_KILLER_D3 in w.traits else 0)
+                    + (3 if Traits.TITAN_KILLER_D6 in w.traits else 0)
+                    for w in weapons
+                    if hasattr(w, "traits")
+                )
+            )
+        ),
+        # Sum Assault Weapons extra attacks:
+        (
+            sum(
+                (
+                    (1 if Traits.EXTRA_ATTACK_1 in w.traits else 0)
+                    + (2 if Traits.EXTRA_ATTACK_2 in w.traits else 0)
+                    + (3 if Traits.EXTRA_ATTACK_3 in w.traits else 0)
+                    for w in weapons
+                    if isinstance(w, AssaultWeapon) and hasattr(w, "traits")
+                )
+            )
+        ),
+        # Sum ranged weapons traits:
+        (
+            sum(
+                (
+                    (1 if Traits.INDIRECT in w.traits else 0)
+                    + (1 if Traits.IGNORE_COVER in w.traits else 0)
+                    + (1 if Traits.DISRUPT in w.traits else 0)
+                    + (1 if Traits.LANCE in w.traits else 0)
+                    + (1 if Traits.MW in w.traits else 0)
+                    for w in weapons
+                    if isinstance(w, RangedWeapon) and hasattr(w, "traits")
+                )
+            )
+        ),
+        # Mobility traits:
+        (
+            (1 if Traits.SKIMMER in unit.traits else 0)
+            + (1 if Traits.PLANET_FALL in unit.traits else 0)
+            + (1 if Traits.TELEPORT in unit.traits else 0)
+            + (1 if Traits.JUMP_PACKS in unit.traits else 0)
+            + (1 if Traits.SCOUT in unit.traits else 0)
+            + (1 if Traits.INFILTRATOR in unit.traits else 0)
+        ),
+        # Survivability traits:
+        (
+            # boost REINFORCED_ARMOUR
+            (2 if Traits.REINFORCED_ARMOUR in unit.traits else 0)
+            + (1 if Traits.THICK_REAR_ARMOUR in unit.traits else 0)
+            + (1 if Traits.FEARLESS in unit.traits else 0)
+            + (1 if Traits.INVULNERABLE_SAVE in unit.traits else 0)
+        ),
         # bool weapon traits:
-        (
-            1
-            if any(hasattr(w, "traits") and Traits.MW in w.traits for w in weapons)
-            else 0
-        ),
-        (
-            1
-            if any(
-                hasattr(w, "traits") and Traits.FIRST_STRIKE in w.traits
-                for w in weapons
-            )
-            else 0
-        ),
-        (
-            1
-            if any(
-                hasattr(w, "traits") and Traits.EXTRA_ATTACK_1 in w.traits
-                for w in weapons
-            )
-            else 0
-        ),
-        (
-            1
-            if any(
-                hasattr(w, "traits") and Traits.EXTRA_ATTACK_2 in w.traits
-                for w in weapons
-            )
-            else 0
-        ),
-        (
-            1
-            if any(
-                hasattr(w, "traits") and Traits.IGNORE_COVER in w.traits
-                for w in weapons
-            )
-            else 0
-        ),
-        (
-            1
-            if any(
-                hasattr(w, "traits") and Traits.INDIRECT in w.traits for w in weapons
-            )
-            else 0
-        ),
-        (
-            1
-            if any(hasattr(w, "traits") and Traits.DISRUPT in w.traits for w in weapons)
-            else 0
-        ),
-        (
-            1
-            if any(hasattr(w, "traits") and Traits.LEADER in w.traits for w in weapons)
-            else 0
-        ),
-        (
-            1
-            if any(
-                hasattr(w, "traits") and Traits.COMMANDER in w.traits for w in weapons
-            )
-            else 0
-        ),
-        (
-            1
-            if any(
-                hasattr(w, "traits") and Traits.SUPREME_COMMANDER in w.traits
-                for w in weapons
-            )
-            else 0
-        ),
-        (
-            1
-            if any(
-                hasattr(w, "traits") and Traits.INVULNERABLE_SAVE in w.traits
-                for w in weapons
-            )
-            else 0
-        ),
+        # (
+        #     1
+        #     if any(
+        #         hasattr(w, "traits") and Traits.FIRST_STRIKE in w.traits
+        #         for w in weapons
+        #     )
+        #     else 0
+        # ),
+        # (
+        #     1
+        #     if any(
+        #         hasattr(w, "traits") and Traits.EXTRA_ATTACK_1 in w.traits
+        #         for w in weapons
+        #     )
+        #     else 0
+        # ),
+        # (
+        #     1
+        #     if any(
+        #         hasattr(w, "traits") and Traits.EXTRA_ATTACK_2 in w.traits
+        #         for w in weapons
+        #     )
+        #     else 0
+        # ),
+        # (
+        #     1
+        #     if any(
+        #         hasattr(w, "traits") and Traits.IGNORE_COVER in w.traits
+        #         for w in weapons
+        #     )
+        #     else 0
+        # ),
+        # (
+        #     1
+        #     if any(
+        #         hasattr(w, "traits") and Traits.INDIRECT in w.traits for w in weapons
+        #     )
+        #     else 0
+        # ),
+        # (
+        #     1
+        #     if any(hasattr(w, "traits") and Traits.DISRUPT in w.traits for w in weapons)
+        #     else 0
+        # ),
+        # (
+        #     1
+        #     if any(hasattr(w, "traits") and Traits.LEADER in w.traits for w in weapons)
+        #     else 0
+        # ),
+        # (
+        #     1
+        #     if any(
+        #         hasattr(w, "traits") and Traits.COMMANDER in w.traits for w in weapons
+        #     )
+        #     else 0
+        # ),
+        # (
+        #     1
+        #     if any(
+        #         hasattr(w, "traits") and Traits.SUPREME_COMMANDER in w.traits
+        #         for w in weapons
+        #     )
+        #     else 0
+        # ),
+        # (
+        #     1
+        #     if any(
+        #         hasattr(w, "traits") and Traits.INVULNERABLE_SAVE in w.traits
+        #         for w in weapons
+        #     )
+        #     else 0
+        # ),
     ]
     # print(f"Mapping unit '{vector}' {unit.name}")
     return np.array(vector)

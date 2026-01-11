@@ -145,7 +145,7 @@ class Traits(Enum):
     MOUNTED = 16
     FIRST_STRIKE = 17
     WALKER = 18
-    PLANETFALL = 19
+    PLANET_FALL = 19
     TITAN_KILLER_D3 = 20
     TITAN_KILLER_1 = 21
     EXPENDABLE = 22
@@ -190,7 +190,7 @@ def trait_to_string(trait):
         Traits.MOUNTED: "Mounted",
         Traits.FIRST_STRIKE: "First Strike",
         Traits.WALKER: "Walker",
-        Traits.PLANETFALL: "Planetfall",
+        Traits.PLANET_FALL: "PLANET_FALL",
         Traits.TITAN_KILLER_D3: "Titan Killer (D3)",
         Traits.DISRUPT: "Disrupt",
         Traits.FEARLESS: "Fearless",

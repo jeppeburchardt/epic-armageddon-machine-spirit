@@ -273,7 +273,7 @@ thunderhawk_gunship = Unit(
         RangedWeapon(30, 4, 0, 5),
         RangedWeapon(30, 4, 0, 5),
     ],
-    [Traits.KNOW_NO_FEAR, Traits.REINFORCED_ARMOUR, Traits.PLANETFALL],
+    [Traits.KNOW_NO_FEAR, Traits.REINFORCED_ARMOUR, Traits.PLANET_FALL],
     8,
     2,
 )

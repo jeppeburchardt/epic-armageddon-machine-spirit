@@ -36,7 +36,7 @@ def map1(unit: Unit) -> np.ndarray:
         (1 if Traits.TELEPORT in unit.traits else 0),
         (1 if Traits.KNOW_NO_FEAR in unit.traits else 0),
         (1 if Traits.WALKER in unit.traits else 0),
-        (1 if Traits.PLANETFALL in unit.traits else 0),
+        (1 if Traits.PLANET_FALL in unit.traits else 0),
         (1 if Traits.REINFORCED_ARMOUR in unit.traits else 0),
         unit.transport_capacity,
         # weapon count:

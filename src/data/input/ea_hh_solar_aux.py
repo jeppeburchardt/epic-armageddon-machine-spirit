@@ -500,7 +500,7 @@ solar_auxilia.add_unit(
         cc=0,
         ff=6,
         weapons=[SmallArms(name="Multi-Laser")],
-        traits=[Traits.SKIMMER, Traits.PLANETFALL],
+        traits=[Traits.SKIMMER, Traits.PLANET_FALL],
         transport_capacity=2,
     )
 )

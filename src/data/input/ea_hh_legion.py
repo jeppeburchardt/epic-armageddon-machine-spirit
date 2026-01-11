@@ -452,7 +452,7 @@ legiones_astartes.add_unit(
             TwinHeavyBolter(traits=[Traits.LEFT]),
             TwinHeavyBolter(traits=[Traits.RIGHT]),
         ],
-        [Traits.KNOW_NO_FEAR, Traits.PLANETFALL, Traits.REINFORCED_ARMOUR],
+        [Traits.KNOW_NO_FEAR, Traits.PLANET_FALL, Traits.REINFORCED_ARMOUR],
         8,
         2,
     )
@@ -518,7 +518,7 @@ legiones_astartes.add_unit(
             RangedWeapon(45, bp=1),
             RangedWeapon(30, ap=4, aa=5),
         ],
-        traits=[Traits.KNOW_NO_FEAR, Traits.REINFORCED_ARMOUR, Traits.PLANETFALL],
+        traits=[Traits.KNOW_NO_FEAR, Traits.REINFORCED_ARMOUR, Traits.PLANET_FALL],
         transport_capacity=4,
         damage_capacity=1,
     )
@@ -627,7 +627,7 @@ legiones_astartes.add_unit(
         ff=4,
         weapons=[
             AssaultWeapon([Traits.EXTRA_ATTACK_1, Traits.MW], name="Siege Claw"),
-            RangedWeapon(15, name="Cyclonic Melta Lance", at=3, mw=5),
+            RangedWeapon(20, name="Cyclonic Melta Lance", at=3, mw=5),
         ],
         traits=[Traits.KNOW_NO_FEAR, Traits.WALKER, Traits.REINFORCED_ARMOUR],
     )
@@ -645,7 +645,7 @@ legiones_astartes.add_unit(
         ff=4,
         weapons=[
             AssaultWeapon([Traits.EXTRA_ATTACK_1, Traits.MW], name="Siege Claw"),
-            RangedWeapon(15, name="Leviathan Storm Cannon", ap=4, at=4),
+            RangedWeapon(20, name="Leviathan Storm Cannon", ap=4, at=4),
         ],
         traits=[Traits.KNOW_NO_FEAR, Traits.WALKER, Traits.REINFORCED_ARMOUR],
     )

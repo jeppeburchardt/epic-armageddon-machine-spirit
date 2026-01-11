@@ -1,59 +1,62 @@
 # Solar Auxilia
 
-## Price Predictions
+## Predicted unit cost:
 
 | Name                                             |   Predicted Cost | Uncertainty   | Quality   |   Score |
 |--------------------------------------------------|------------------|---------------|-----------|---------|
-| Infantry Section                                 |               23 | ±8.1          | BAD       |      64 |
-| Infantry with flamers                            |               39 | ±16.2         | BAD       |      58 |
-| Veletaris Storm Section                          |               24 | ±16.0         | BAD       |      33 |
-| Ogryn Charonite Squad                            |               27 | ±12.6         | BAD       |      54 |
-| Tactical Command Unit                            |               25 | ±9.9          | BAD       |      61 |
-| Legate Command Unit                              |               26 | ±11.8         | BAD       |      54 |
-| Rapier Mole Mortar                               |               44 | ±21.3         | BAD       |      52 |
-| Rapier Laser Destroyer                           |               27 | ±7.9          | MEDIOCRE  |      71 |
-| Rapier Quad Launcher                             |               41 | ±23.2         | BAD       |      43 |
-| Aethon Heavy Sentinel                            |               31 | ±8.5          | MEDIOCRE  |      73 |
-| Tarantula, Twin Lascannon                        |               36 | ±24.7         | BAD       |      31 |
-| Tarantula, Hyperios air-defence missile launcher |               39 | ±25.6         | BAD       |      35 |
-| Leman Russ (Battle cannon + H.B.)                |               60 | ±9.8          | GOOD      |      84 |
-| Leman Russ (Battle cannon + Las)                 |               63 | ±11.7         | GOOD      |      81 |
-| Leman Russ (Vanquisher + H.B.)                   |               59 | ±9.8          | GOOD      |      83 |
-| Leman Russ (Vanquisher + Las)                    |               63 | ±11.7         | GOOD      |      81 |
-| Leman Russ (Annihilator)                         |               50 | ±11.3         | GOOD      |      77 |
-| Leman Russ (Demolisher)                          |               59 | ±15.1         | MEDIOCRE  |      74 |
-| Leman Russ (Executioner)                         |               50 | ±9.6          | GOOD      |      81 |
-| Leman Russ (Exterminator)                        |               56 | ±9.9          | GOOD      |      82 |
-| Malcador (battle cannon, demolisher, las.spon.)  |               88 | ±16.1         | GOOD      |      82 |
-| Malcador (vanquisher, demiólisher, h.b.spon.)    |               75 | ±14.9         | GOOD      |      80 |
-| Malcador (las cannons)                           |               67 | ±14.5         | GOOD      |      78 |
-| Dracosan with las cannon                         |               36 | ±12.1         | MEDIOCRE  |      66 |
-| Dracosan with demolisher                         |               52 | ±14.7         | MEDIOCRE  |      72 |
-| Medusa                                           |               54 | ±22.3         | BAD       |      59 |
-| Basilisk                                         |               70 | ±7.9          | GOOD      |      89 |
-| Basilisk (Barrage)                               |               89 | ±15.7         | GOOD      |      82 |
-| Arvus Lighter                                    |               44 | ±32.0         | BAD       |      28 |
-| Malcador Infernus                                |               57 | ±10.0         | GOOD      |      82 |
-| Malcador Valdor                                  |               77 | ±22.9         | MEDIOCRE  |      70 |
-| Avenger Strike Fighter                           |               85 | ±14.5         | GOOD      |      83 |
-| Thunderbolt                                      |               78 | ±8.3          | GOOD      |      89 |
-| Lightning Fighter                                |              115 | ±22.4         | GOOD      |      81 |
-| Marauder Bomber                                  |              120 | ±15.3         | GOOD      |      87 |
-| Shadowsword                                      |              189 | ±9.9          | EXCELLENT |      95 |
-| Stromblade                                       |              175 | ±14.9         | EXCELLENT |      91 |
-| Stormsword                                       |              162 | ±29.5         | GOOD      |      82 |
-| Baneblade                                        |              166 | ±11.0         | EXCELLENT |      93 |
-| Stormhammer                                      |              159 | ±16.7         | GOOD      |      89 |
+| Infantry Section                                 |               19 | ±8.0          | TBD       |      59 |
+| Infantry with flamers                            |               27 | ±10.0         | TBD       |      65 |
+| Veletaris Storm Section                          |               30 | ±11.0         | TBD       |      63 |
+| Ogryn Charonite Squad                            |               29 | ±10.0         | TBD       |      66 |
+| Tactical Command Unit                            |               19 | ±10.0         | TBD       |      51 |
+| Legate Command Unit                              |               25 | ±9.0          | TBD       |      63 |
+| Rapier Mole Mortar                               |               39 | ±9.0          | TBD       |      78 |
+| Rapier Laser Destroyer                           |               27 | ±8.0          | TBD       |      71 |
+| Rapier Quad Launcher                             |               32 | ±8.0          | TBD       |      74 |
+| Aethon Heavy Sentinel                            |               33 | ±10.0         | TBD       |      69 |
+| Tarantula, Twin Lascannon                        |               27 | ±10.0         | TBD       |      65 |
+| Tarantula, Hyperios air-defence missile launcher |               28 | ±13.0         | TBD       |      54 |
+| Leman Russ (Battle cannon + H.B.)                |               63 | ±9.0          | TBD       |      85 |
+| Leman Russ (Battle cannon + Las)                 |               67 | ±10.0         | TBD       |      85 |
+| Leman Russ (Vanquisher + H.B.)                   |               63 | ±9.0          | TBD       |      85 |
+| Leman Russ (Vanquisher + Las)                    |               67 | ±10.0         | TBD       |      85 |
+| Leman Russ (Annihilator)                         |               59 | ±10.0         | TBD       |      83 |
+| Leman Russ (Demolisher)                          |               64 | ±10.0         | TBD       |      85 |
+| Leman Russ (Executioner)                         |               59 | ±9.0          | TBD       |      85 |
+| Leman Russ (Exterminator)                        |               64 | ±9.0          | TBD       |      86 |
+| Malcador (battle cannon, demolisher, las.spon.)  |               93 | ±12.0         | TBD       |      87 |
+| Malcador (vanquisher, demiólisher, h.b.spon.)    |               81 | ±11.0         | TBD       |      86 |
+| Malcador (las cannons)                           |               80 | ±14.0         | TBD       |      83 |
+| Dracosan with las cannon                         |               32 | ±12.0         | TBD       |      62 |
+| Dracosan with demolisher                         |               52 | ±9.0          | TBD       |      82 |
+| Medusa                                           |               53 | ±9.0          | TBD       |      82 |
+| Basilisk                                         |               69 | ±10.0         | TBD       |      86 |
+| Basilisk (Barrage)                               |               81 | ±9.0          | TBD       |      88 |
+| Arvus Lighter                                    |               20 | ±17.0         | TBD       |      16 |
+| Malcador Infernus                                |               69 | ±11.0         | TBD       |      85 |
+| Malcador Valdor                                  |               92 | ±14.0         | TBD       |      85 |
+| Avenger Strike Fighter                           |               90 | ±17.0         | TBD       |      81 |
+| Thunderbolt                                      |               80 | ±11.0         | TBD       |      86 |
+| Lightning Fighter                                |              123 | ±25.0         | TBD       |      79 |
+| Marauder Bomber                                  |              116 | ±15.0         | TBD       |      87 |
+| Shadowsword                                      |              189 | ±12.0         | TBD       |      94 |
+| Stromblade                                       |              164 | ±15.0         | TBD       |      91 |
+| Stormsword                                       |              164 | ±14.0         | TBD       |      91 |
+| Baneblade                                        |              162 | ±11.0         | TBD       |      93 |
+| Stormhammer                                      |              152 | ±12.0         | TBD       |      92 |
 
-Average Score: 71.25
+Average Score: 77.33
+Average Uncertainty: 11.27
 
-## Unit Profiles
+
+
+## Unit stats:
 
 | Name                                             | Type   | Speed   | Armour   | CC   | FF   | Weapons                   | Range          | Firepower                     | Notes                                |
 |--------------------------------------------------|--------|---------|----------|------|------|---------------------------|----------------|-------------------------------|--------------------------------------|
 | Infantry Section                                 | INF    | 15      | 5        | 6    | 5    | Las-rifles                | (15cm)         |                               |                                      |
 | Infantry with flamers                            | INF    | 15      | 5        | 6    | 4    | Flamers                   | 15             | AP5+, Ignore Cover            |                                      |
-| Veletaris Storm Section                          | INF    | 15      | 5        | 4    | 6    | Power Axes                | (base contact) | Macro-Weapon                  |                                      |
+| Veletaris Storm Section                          | INF    | 15      | 5        | 4    | 6    | Power Axes                | (base contact) | Macro-Weapon, Extra Attack +1 |                                      |
 | Ogryn Charonite Squad                            | INF    | 15      | 3        | 3    | 5    | Charonite Claws           | (base contact) | Extra Attack +1, Macro-Weapon |                                      |
 | Tactical Command Unit                            | INF    | 15      | 5        | 6    | 5    | Plasma Guns               | 15             | AT5+ AP4+                     | Commander                            |
 |                                                  |        |         |          |      |      | Small Arms                | (15cm)         |                               |                                      |
@@ -61,11 +64,11 @@ Average Score: 71.25
 |                                                  |        |         |          |      |      | Archaeotech Pistol        | (15cm)         | Macro-Weapon, Extra Attack +1 |                                      |
 | Rapier Mole Mortar                               | INF    | 10      | 6        | 6    | 6    | Mole Mortar               | 30             | 1BP, Disrupt, Indirect        |                                      |
 | Rapier Laser Destroyer                           | INF    | 10      | 6        | 6    | 6    | Laser Destroyer           | 45             | AT4+ AP6+                     |                                      |
-| Rapier Quad Launcher                             | INF    | 10      | 6        | 6    | 6    | Quad Launcher             | 45             | AT6+ AP5+, Indirect, Disrupt  |                                      |
+| Rapier Quad Launcher                             | INF    | 10      | 6        | 6    | 6    | Quad Launcher             | 45             | AT6+ AP4+, Indirect           |                                      |
 | Aethon Heavy Sentinel                            | LV     | 20      | 5        | 6    | 5    | Multilaser                | 30             | AT6+ AP5+                     | Scout, Walker                        |
 |                                                  |        |         |          |      |      | Rockets                   | 45             | AT5+ AP3+                     |                                      |
-| Tarantula, Twin Lascannon                        | LV     | 0       | 6        | 6    | 5    | Twin-linked Lascannon     | 45             | AT4+                          | Scout, Teleport                      |
-| Tarantula, Hyperios air-defence missile launcher | LV     | 0       | 6        | 6    | 5    | Hyperios Missiles         | 30             | AA4+                          | Scout, Teleport                      |
+| Tarantula, Twin Lascannon                        | LV     | 0       | 6        | 6    | 6    | Twin-linked Lascannon     | 45             | AT4+                          | Scout                                |
+| Tarantula, Hyperios air-defence missile launcher | LV     | 0       | 6        | 6    | 6    | Hyperios Missiles         | 30             | AA4+                          | Scout                                |
 | Leman Russ (Battle cannon + H.B.)                | AV     | 25      | 4        | 6    | 4    | Battle Cannon             | 75             | AT4+ AP4+                     | Reinforced Armour                    |
 |                                                  |        |         |          |      |      | Heavy Bolter              | 30             | AP5+                          |                                      |
 | Leman Russ (Battle cannon + Las)                 | AV     | 25      | 4        | 6    | 5    | Vanquisher Cannon         | 75             | AT3+ AP6+                     | Reinforced Armour                    |
@@ -97,37 +100,36 @@ Average Score: 71.25
 | Dracosan with las cannon                         | AV     | 20      | 4        | 6    | 5    | Twin-linked Lascannon     | 45             | AT4+                          | Reinforced Armour                    |
 | Dracosan with demolisher                         | AV     | 20      | 4        | 6    | 4    | Demolisher Cannon         | 30             | AT4+ AP3+, Ignore Cover       | Reinforced Armour                    |
 | Medusa                                           | AV     | 20      | 5        | 6    | 5    | Medusa Siege Cannon       | 30             | MW4+, Ignore Cover            |                                      |
-|                                                  |        |         |          |      |      | Medusa Siege Cannon       | (15cm)         | Macro-Weapon, Ignore Cover    |                                      |
 |                                                  |        |         |          |      |      | Heavy Bolter              | 30             | AP5+                          |                                      |
 | Basilisk                                         | AV     | 20      | 5        | 6    | 5    | Earthshaker Cannon        | 120            | AT4+ AP4+                     |                                      |
 |                                                  |        |         |          |      |      | Heavy Bolter              | 30             | AP5+                          |                                      |
 | Basilisk (Barrage)                               | AV     | 20      | 5        | 6    | 5    | Earthshaker Cannon        | 120            | 1BP, Ignore Cover             |                                      |
 |                                                  |        |         |          |      |      | Heavy Bolter              | 30             | AP5+                          |                                      |
-| Arvus Lighter                                    | AV     | 30      | 5        | 0    | 6    | Multi-Laser               | (15cm)         |                               | Skimmer, Planetfall                  |
+| Arvus Lighter                                    | AV     | 30      | 5        | 0    | 6    | Multi-Laser               | (15cm)         |                               | Skimmer, PLANET_FALL                 |
 | Malcador Infernus                                | AV     | 20      | 4        | 6    | 3    | Infernus Cannon           | 30             | AP3+                          | Reinforced Armour, Thick Rear Armour |
 |                                                  |        |         |          |      |      | Auto Cannon               | 45             | AT6+ AP5+                     |                                      |
 |                                                  |        |         |          |      |      | Auto Cannon               | 45             | AT6+ AP5+                     |                                      |
 | Malcador Valdor                                  | AV     | 20      | 4        | 6    | 5    | Neutron Beam Laser        | 45             | MW3+, Disrupt                 | Reinforced Armour, Thick Rear Armour |
 |                                                  |        |         |          |      |      | Auto Cannon               | 45             | AT6+ AP5+                     |                                      |
-| Shadowsword                                      | WE     | 15      | 4        | 6    | 6    | Volcano Cannon            | 90             | MW2+, Titan Killer (D3)       | Reinforced Armour                    |
+| Shadowsword                                      | WE     | 15      | 4        | 6    | 6    | Volcano Cannon            | 90             | MW2+, Titan Killer (D3)       | Reinforced Armour, DC3               |
 |                                                  |        |         |          |      |      | Twin-linked Heavy Bolter  | 30             | AP4+                          |                                      |
 |                                                  |        |         |          |      |      | Heavy Bolter              | 30             | AP5+                          |                                      |
 |                                                  |        |         |          |      |      | Heavy Bolter              | 30             | AP5+                          |                                      |
 |                                                  |        |         |          |      |      | Lascannon                 | 45             | AT5+                          |                                      |
 |                                                  |        |         |          |      |      | Lascannon                 | 45             | AT5+                          |                                      |
-| Stromblade                                       | WE     | 15      | 4        | 6    | 6    | Plasma Blastgun           | 45             | MW2+, Slow Firing             | Reinforced Armour                    |
+| Stromblade                                       | WE     | 15      | 4        | 6    | 6    | Plasma Blastgun           | 45             | MW2+, Slow Firing             | Reinforced Armour, DC3               |
 |                                                  |        |         |          |      |      | Twin-linked Heavy Bolter  | 30             | AP4+                          |                                      |
 |                                                  |        |         |          |      |      | Heavy Bolter              | 30             | AP5+                          |                                      |
 |                                                  |        |         |          |      |      | Heavy Bolter              | 30             | AP5+                          |                                      |
 |                                                  |        |         |          |      |      | Lascannon                 | 45             | AT5+                          |                                      |
 |                                                  |        |         |          |      |      | Lascannon                 | 45             | AT5+                          |                                      |
-| Stormsword                                       | WE     | 15      | 4        | 6    | 6    | Stormsword Siege Cannon   | 30             | 3BP, Disrupt, Ignore Cover    | Reinforced Armour                    |
+| Stormsword                                       | WE     | 15      | 4        | 6    | 6    | Stormsword Siege Cannon   | 30             | 3BP, Disrupt, Ignore Cover    | Reinforced Armour, DC3               |
 |                                                  |        |         |          |      |      | Twin-linked Heavy Bolter  | 30             | AP4+                          |                                      |
 |                                                  |        |         |          |      |      | Heavy Bolter              | 30             | AP5+                          |                                      |
 |                                                  |        |         |          |      |      | Heavy Bolter              | 30             | AP5+                          |                                      |
 |                                                  |        |         |          |      |      | Lascannon                 | 45             | AT5+                          |                                      |
 |                                                  |        |         |          |      |      | Lascannon                 | 45             | AT5+                          |                                      |
-| Baneblade                                        | WE     | 15      | 4        | 6    | 4    | Baneblade Cannon          | 75             | AT3+ AP3+                     | Reinforced Armour                    |
+| Baneblade                                        | WE     | 15      | 4        | 6    | 4    | Baneblade Cannon          | 75             | AT3+ AP3+                     | Reinforced Armour, DC3               |
 |                                                  |        |         |          |      |      | Twin-linked Heavy Bolter  | 30             | AP4+                          |                                      |
 |                                                  |        |         |          |      |      | Twin-linked Heavy Bolter  | 30             | AP4+                          |                                      |
 |                                                  |        |         |          |      |      | Twin-linked Heavy Bolter  | 30             | AP4+                          |                                      |
@@ -135,7 +137,7 @@ Average Score: 71.25
 |                                                  |        |         |          |      |      | Lascannon                 | 45             | AT5+                          |                                      |
 |                                                  |        |         |          |      |      | Lascannon                 | 45             | AT5+                          |                                      |
 |                                                  |        |         |          |      |      | Demolisher Cannon         | 30             | AT4+ AP3+, Ignore Cover       |                                      |
-| Stormhammer                                      | WE     | 15      | 4        | 6    | 4    | Stormhammer Cannon        | 60             | AT3+ AP3+                     | Reinforced Armour                    |
+| Stormhammer                                      | WE     | 15      | 4        | 6    | 4    | Stormhammer Cannon        | 60             | AT3+ AP3+                     | Reinforced Armour, DC3               |
 |                                                  |        |         |          |      |      | Heavy Bolter              | 30             | AP5+                          |                                      |
 |                                                  |        |         |          |      |      | Heavy Bolter              | 30             | AP5+                          |                                      |
 |                                                  |        |         |          |      |      | Heavy Bolter              | 30             | AP5+                          |                                      |
@@ -160,3 +162,4 @@ Average Score: 71.25
 | Marauder Bomber                                  | AC     | 200     | 4        | 0    | 0    | Twin-linked Lascannon     | 45             | AT4+ AA4+                     |                                      |
 |                                                  |        |         |          |      |      | Bomb Rack                 | 15             | 3BP                           |                                      |
 |                                                  |        |         |          |      |      | Twin-linked Heavy Bolter  | 30             | AP4+ AA5+                     |                                      |
+
