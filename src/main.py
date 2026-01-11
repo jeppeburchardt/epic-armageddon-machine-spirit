@@ -69,10 +69,10 @@ trainer.train(ea_40k_units)
 
 # predict_army(trainer, legiones_astartes)
 
-print_army(solar_auxilia)
+# print_army(solar_auxilia)
 predict_army(trainer, solar_auxilia)
 
-print_army(legiones_astartes)
+# print_army(legiones_astartes)
 predict_army(trainer, legiones_astartes)
 
 

@@ -302,6 +302,32 @@ imp_fists_fellblade = Unit(
     ],
 )
 
+imp_fists_tarantula_a = Unit(
+    "Tarantula Platform",
+    5,
+    1,
+    UnitType.LIGHT_VEHICLE,
+    speed=0,
+    armour=6,
+    cc=6,
+    ff=6,
+    weapons=[RangedWeapon(45, at=4)],
+    single_unit_cost=25,
+)
+
+
+imp_fists_tarantula_b = Unit(
+    "Tarantula Platform",
+    5,
+    1,
+    UnitType.LIGHT_VEHICLE,
+    speed=0,
+    armour=6,
+    cc=6,
+    ff=5,
+    weapons=[RangedWeapon(30, ap=4)],
+    single_unit_cost=25,
+)
 land_speeder = Unit(
     "Land Speeder",
     5,
@@ -372,4 +398,6 @@ ea_40k_astartes_units = [
     whirlwind,
     thunderhawk_gunship,
     imp_fists_fellblade,
+    imp_fists_tarantula_a,
+    imp_fists_tarantula_b,
 ]

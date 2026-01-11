@@ -158,9 +158,9 @@ solar_auxilia.add_unit(
             RangedWeapon(
                 45,
                 name="Quad Launcher",
-                ap=5,
+                ap=4,
                 at=6,
-                traits=[Traits.INDIRECT, Traits.DISRUPT],
+                traits=[Traits.INDIRECT],
             )
         ],
     )
@@ -193,9 +193,9 @@ solar_auxilia.add_unit(
         speed=0,
         armour=6,
         cc=6,
-        ff=5,
+        ff=6,
         weapons=[TwinLinkedLasCannon()],
-        traits=[Traits.SCOUT, Traits.TELEPORT],
+        traits=[Traits.SCOUT],
     )
 )
 
@@ -208,9 +208,9 @@ solar_auxilia.add_unit(
         speed=0,
         armour=6,
         cc=6,
-        ff=5,
+        ff=6,
         weapons=[RangedWeapon(30, name="Hyperios Missiles", aa=4)],
-        traits=[Traits.SCOUT, Traits.TELEPORT],
+        traits=[Traits.SCOUT],
     )
 )
 
@@ -449,7 +449,6 @@ solar_auxilia.add_unit(
             RangedWeapon(
                 30, name="Medusa Siege Cannon", mw=4, traits=[Traits.IGNORE_COVER]
             ),
-            SmallArms([Traits.MW, Traits.IGNORE_COVER], name="Medusa Siege Cannon"),
             HeavyBolter(),
         ],
     )

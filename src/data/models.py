@@ -145,6 +145,7 @@ class Traits(Enum):
     FxF = 33
     LEFT = 34
     RIGHT = 35
+    INSPIRING = 36
 
 
 def trait_to_string(trait):
