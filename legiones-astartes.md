@@ -2,60 +2,60 @@
 
 ## Predicted unit cost:
 
-| Name                                                     |   Predicted Cost | Uncertainty   | Quality      |   Score |
-|----------------------------------------------------------|------------------|---------------|--------------|---------|
-| Tactical Squad                                           |               44 | ±8.0          | Safe         |      81 |
-| Assault Squad                                            |               44 | ±8.0          | Safe         |      82 |
-| Heavy Support Squad                                      |               54 | ±8.0          | Safe         |      85 |
-| Tactical Support Squad                                   |               60 | ±8.0          | Safe         |      86 |
-| Terminator Squad                                         |               72 | ±11.0         | Safe         |      85 |
-| Saturnine Terminator Squad (Plasma Bombards)             |               71 | ±12.0         | Safe         |      83 |
-| Saturnine Terminator Squad (Twin Heavy Disintegrators)   |               68 | ±12.0         | Safe         |      82 |
-| Rapier, Laser Destroyer Array                            |               35 | ±8.0          | Safe         |      77 |
-| Rapier, Quad Launcher                                    |               37 | ±9.0          | Safe         |      77 |
-| Outrider squad                                           |               45 | ±8.0          | Safe         |      82 |
-| Scimitar Jetbike                                         |               44 | ±9.0          | Safe         |      80 |
-| Tarantula, Twin Lascannon                                |               29 | ±9.0          | Safe         |      68 |
-| Tarantula, Hyperios air-defence missile launcher         |               30 | ±20.0         | Experimental |      35 |
-| Land Speeder with Plasma Cannon and Heavy Bolter         |               34 | ±8.0          | Safe         |      76 |
-| Land Speeder with Flamer and Multi-melta                 |               38 | ±9.0          | Safe         |      77 |
-| Javelin Attack Speeder with Cyclone Missile Launcher     |               45 | ±8.0          | Safe         |      82 |
-| Javelin Attack Speeder with Lascannons                   |               44 | ±8.0          | Safe         |      82 |
-| Saturnine Dreadnought a                                  |               72 | ±13.0         | Safe         |      81 |
-| Saturnine Dreadnought b                                  |               54 | ±22.0         | Experimental |      59 |
-| Sabre Strike Tank with Anvilus Autocannon                |               38 | ±10.0         | Review       |      73 |
-| Sabre Strike Tank with Neutron Blaster                   |               47 | ±10.0         | Review       |      78 |
-| Sicaran Battle Tank (Accelerator Cannon + Lascannons)    |               92 | ±11.0         | Safe         |      88 |
-| Sicaran Battle Tank (Accelerator Cannon + Heavy Bolters) |               73 | ±10.0         | Safe         |      86 |
-| Sicaran Battle Tank, with Omega plasma array             |               98 | ±10.0         | Safe         |      90 |
-| Sicaran Punisher                                         |               63 | ±11.0         | Safe         |      82 |
-| Sicaran Arcus                                            |               91 | ±10.0         | Safe         |      89 |
-| Predator Annihilator                                     |               64 | ±8.0          | Safe         |      87 |
-| Predator Destructor                                      |               56 | ±8.0          | Safe         |      86 |
-| Land Raider                                              |               77 | ±9.0          | Safe         |      88 |
-| Contemptor Dreadnought with Lascannon                    |               56 | ±10.0         | Safe         |      83 |
-| Contemptor Dreadnought with Assault Cannon               |               51 | ±9.0          | Safe         |      82 |
-| Deredeo Dreadnoughts with Anvilus Autocannon Battery     |               97 | ±15.0         | Safe         |      85 |
-| Deredeo Dreadnoughts with Hellfire Plasma Cannonade      |               98 | ±16.0         | Safe         |      84 |
-| Leviathan Siege Dreadnoughts with Cyclonic Melta Lance   |               72 | ±13.0         | Safe         |      82 |
-| Leviathan Siege Dreadnoughts with Leviathan Storm Cannon |               61 | ±13.0         | Review       |      79 |
-| Vindicator                                               |               55 | ±8.0          | Safe         |      85 |
-| Legion Whirlwind                                         |               69 | ±9.0          | Safe         |      87 |
-| Legion Whirlwind Scorpius                                |               71 | ±10.0         | Safe         |      86 |
-| Fire Raptor Gunship                                      |              117 | ±37.0         | Experimental |      68 |
-| Xiphon Interceptor                                       |              113 | ±25.0         | Review       |      78 |
-| Spartan Assault Tank                                     |              155 | ±22.0         | Safe         |      86 |
-| Legion Mastodon Armored Transport                        |              255 | ±36.0         | Safe         |      86 |
-| Typhon Siege Tank                                        |              175 | ±21.0         | Safe         |      88 |
-| Cerberus Heavy Tank Destroyer                            |              205 | ±21.0         | Safe         |      90 |
-| Kratos Battle Tank with H.B.                             |              156 | ±22.0         | Safe         |      86 |
-| Kratos Battle Tank with Las.                             |              189 | ±25.0         | Safe         |      87 |
-| Fellblade Super Heavy Tank                               |              245 | ±24.0         | Safe         |      90 |
-| Glaive Super Heavy Tank                                  |              314 | ±39.0         | Safe         |      88 |
-| Falchion Super Heavy Tank Destroyer                      |              235 | ±25.0         | Safe         |      89 |
-| Ascalon Super Heavy Tank                                 |              196 | ±25.0         | Safe         |      87 |
-| Legion Thunderhawk Gunship                               |              180 | ±28.0         | Safe         |      84 |
-| Storm Eagle Attack Ship                                  |              166 | ±30.0         | Safe         |      82 |
+| Name                                                     |   Predicted Cost | Uncertainty   | Quality      |
+|----------------------------------------------------------|------------------|---------------|--------------|
+| Tactical Squad                                           |               44 | ±8.0          | Safe         |
+| Assault Squad                                            |               44 | ±8.0          | Safe         |
+| Heavy Support Squad                                      |               54 | ±8.0          | Safe         |
+| Tactical Support Squad                                   |               60 | ±8.0          | Safe         |
+| Terminator Squad                                         |               72 | ±11.0         | Safe         |
+| Saturnine Terminator Squad (Plasma Bombards)             |               71 | ±12.0         | Safe         |
+| Saturnine Terminator Squad (Twin Heavy Disintegrators)   |               68 | ±12.0         | Safe         |
+| Rapier, Laser Destroyer Array                            |               35 | ±8.0          | Safe         |
+| Rapier, Quad Launcher                                    |               37 | ±9.0          | Safe         |
+| Outrider squad                                           |               45 | ±8.0          | Safe         |
+| Scimitar Jetbike                                         |               44 | ±9.0          | Safe         |
+| Tarantula, Twin Lascannon                                |               29 | ±9.0          | Safe         |
+| Tarantula, Hyperios air-defence missile launcher         |               30 | ±20.0         | Experimental |
+| Land Speeder with Plasma Cannon and Heavy Bolter         |               34 | ±8.0          | Safe         |
+| Land Speeder with Flamer and Multi-melta                 |               38 | ±9.0          | Safe         |
+| Javelin Attack Speeder with Cyclone Missile Launcher     |               45 | ±8.0          | Safe         |
+| Javelin Attack Speeder with Lascannons                   |               44 | ±8.0          | Safe         |
+| Saturnine Dreadnought a                                  |               72 | ±13.0         | Safe         |
+| Saturnine Dreadnought b                                  |               54 | ±22.0         | Experimental |
+| Sabre Strike Tank with Anvilus Autocannon                |               38 | ±10.0         | Review       |
+| Sabre Strike Tank with Neutron Blaster                   |               47 | ±10.0         | Review       |
+| Sicaran Battle Tank (Accelerator Cannon + Lascannons)    |               92 | ±11.0         | Safe         |
+| Sicaran Battle Tank (Accelerator Cannon + Heavy Bolters) |               73 | ±10.0         | Safe         |
+| Sicaran Battle Tank, with Omega plasma array             |               98 | ±10.0         | Safe         |
+| Sicaran Punisher                                         |               63 | ±11.0         | Safe         |
+| Sicaran Arcus                                            |               91 | ±10.0         | Safe         |
+| Predator Annihilator                                     |               64 | ±8.0          | Safe         |
+| Predator Destructor                                      |               56 | ±8.0          | Safe         |
+| Land Raider                                              |               77 | ±9.0          | Safe         |
+| Contemptor Dreadnought with Lascannon                    |               56 | ±10.0         | Safe         |
+| Contemptor Dreadnought with Assault Cannon               |               51 | ±9.0          | Safe         |
+| Deredeo Dreadnoughts with Anvilus Autocannon Battery     |               97 | ±15.0         | Safe         |
+| Deredeo Dreadnoughts with Hellfire Plasma Cannonade      |               98 | ±16.0         | Safe         |
+| Leviathan Siege Dreadnoughts with Cyclonic Melta Lance   |               72 | ±13.0         | Safe         |
+| Leviathan Siege Dreadnoughts with Leviathan Storm Cannon |               61 | ±13.0         | Review       |
+| Vindicator                                               |               55 | ±8.0          | Safe         |
+| Legion Whirlwind                                         |               69 | ±9.0          | Safe         |
+| Legion Whirlwind Scorpius                                |               71 | ±10.0         | Safe         |
+| Fire Raptor Gunship                                      |              117 | ±37.0         | Experimental |
+| Xiphon Interceptor                                       |              113 | ±25.0         | Review       |
+| Spartan Assault Tank                                     |              155 | ±22.0         | Safe         |
+| Legion Mastodon Armored Transport                        |              255 | ±36.0         | Safe         |
+| Typhon Siege Tank                                        |              175 | ±21.0         | Safe         |
+| Cerberus Heavy Tank Destroyer                            |              205 | ±21.0         | Safe         |
+| Kratos Battle Tank with H.B.                             |              156 | ±22.0         | Safe         |
+| Kratos Battle Tank with Las.                             |              189 | ±25.0         | Safe         |
+| Fellblade Super Heavy Tank                               |              245 | ±24.0         | Safe         |
+| Glaive Super Heavy Tank                                  |              314 | ±39.0         | Safe         |
+| Falchion Super Heavy Tank Destroyer                      |              235 | ±25.0         | Safe         |
+| Ascalon Super Heavy Tank                                 |              196 | ±25.0         | Safe         |
+| Legion Thunderhawk Gunship                               |              180 | ±28.0         | Safe         |
+| Storm Eagle Attack Ship                                  |              166 | ±30.0         | Safe         |
 
 Average Score: 81.71
 Average Uncertainty: 14.93
@@ -66,14 +66,14 @@ Average Uncertainty: 14.93
 
 | Name                                                     | Type   | Speed          | Armour   | CC   | FF   | Weapons                        | Range          | Firepower                                                 | Notes                                                   |
 |----------------------------------------------------------|--------|----------------|----------|------|------|--------------------------------|----------------|-----------------------------------------------------------|---------------------------------------------------------|
-| Tactical Squad                                           | INF    | 15cm           | 4        | 4    | 4    | Small Arms                     | (15cm)         |                                                           | Know no fear                                            |
-| Assault Squad                                            | INF    | 30cm           | 4        | 3    | 5    | Small Arms                     | (15cm)         |                                                           | Know no fear, Jump Packs                                |
-| Heavy Support Squad                                      | INF    | 15cm           | 4        | 5    | 3    | Small Arms                     | (15cm)         |                                                           | Know no fear                                            |
+| Tactical Squad                                           | INF    | 15cm           | 4        | 4    | 4    | Bolters                        | (Small Arms)   |                                                           | Know no fear                                            |
+| Assault Squad                                            | INF    | 30cm           | 4        | 3    | 5    | Bolt Pistols and Chainswords   | (base contact) |                                                           | Know no fear, Jump Packs                                |
+| Heavy Support Squad                                      | INF    | 15cm           | 4        | 5    | 3    | Bolters                        | (Small Arms)   |                                                           | Know no fear                                            |
 |                                                          |        |                |          |      |      | Missile Launchers              | 45             | AT5+ AP4+ AA6+                                            |                                                         |
-| Tactical Support Squad                                   | INF    | 15cm           | 4        | 4    | 4    | Small Arms                     | (15cm)         |                                                           | Know no fear                                            |
+| Tactical Support Squad                                   | INF    | 15cm           | 4        | 4    | 4    | Bolters                        | (Small Arms)   |                                                           | Know no fear                                            |
 |                                                          |        |                |          |      |      | Plasma Guns                    | 45             | AT5+ AP5+, Ignore Cover                                   |                                                         |
 | Terminator Squad                                         | INF    | 15cm           | 4        | 3    | 3    | Power Fists                    | (base contact) | Extra Attack +1, Macro-Weapon                             | Know no fear, Reinforced Armour                         |
-|                                                          |        |                |          |      |      | Storm Bolters                  | (15cm)         |                                                           |                                                         |
+|                                                          |        |                |          |      |      | Storm Bolters                  | (Small Arms)   |                                                           |                                                         |
 | Saturnine Terminator Squad (Plasma Bombards)             | INF    | 15cm           | 3        | 3    | 3    | Disruption Fists               | (base contact) | Extra Attack +1, Macro-Weapon                             | Know no fear, Reinforced Armour, Teleport               |
 |                                                          |        |                |          |      |      | Plasma Bombards                | 20             | AT4+                                                      |                                                         |
 | Saturnine Terminator Squad (Twin Heavy Disintegrators)   | INF    | 15cm           | 3        | 3    | 3    | Disruption Fists               | (base contact) | Extra Attack +1, Macro-Weapon                             | Know no fear, Reinforced Armour, Teleport               |
@@ -156,7 +156,7 @@ Average Uncertainty: 14.93
 | Vindicator                                               | AV     | 25cm           | 4        | 6    | 4    | Demolisher Cannon              | 30             | AT4+ AP3+, Ignore Cover                                   | Know no fear, Walker                                    |
 | Legion Whirlwind                                         | AV     | 30cm           | 5        | 6    | 5    | Vengeance & Castellan Missiles | 45             | 1BP, Ignore Cover, Indirect                               | Know no fear                                            |
 | Legion Whirlwind Scorpius                                | AV     | 30cm           | 5        | 6    | 5    | 2X Scorpius Multi Launcher     | 45             | AT5+ AP6+, Indirect                                       | Know no fear                                            |
-| Legion Mastodon Armored Transport                        | WE     | 20cm           | 4        | 5    | 4    | Small Arms                     | (15cm)         | Extra Attack +1, Macro-Weapon                             | Know no fear, Reinforced Armour, DC4, Void Shields (2)  |
+| Legion Mastodon Armored Transport                        | WE     | 20cm           | 4        | 5    | 4    | Small Arms                     | (Small Arms)   | Extra Attack +1, Macro-Weapon                             | Know no fear, Reinforced Armour, DC4, Void Shields (2)  |
 |                                                          |        |                |          |      |      | Lascannon                      | 45             | AT5+                                                      |                                                         |
 |                                                          |        |                |          |      |      | Lascannon                      | 45             | AT5+                                                      |                                                         |
 |                                                          |        |                |          |      |      | --                             | 15             | AP4+, Ignore Cover                                        |                                                         |
@@ -203,11 +203,11 @@ Average Uncertainty: 14.93
 | Land Speeder with Plasma Cannon and Heavy Bolter         | LV     | 35cm           | 5        | 6    | 5    | Plasma Cannon                  | 30             | AT5+ AP5+                                                 | Know no fear, Skimmer, Scout                            |
 |                                                          |        |                |          |      |      | Heavy Bolter                   | 30             | AP5+                                                      |                                                         |
 | Land Speeder with Flamer and Multi-melta                 | LV     | 35cm           | 5        | 6    | 5    | Multi-melta                    | 15             | MW5+                                                      | Know no fear, Skimmer, Scout                            |
-|                                                          |        |                |          |      |      | Multi-melta                    | (15cm)         | Macro-Weapon                                              |                                                         |
+|                                                          |        |                |          |      |      | Multi-melta                    | (Small Arms)   | Macro-Weapon                                              |                                                         |
 | Javelin Attack Speeder with Cyclone Missile Launcher     | LV     | 35cm           | 4        | 6    | 5    | Cyclone Missile Launcher       | 45             | AT5+ AP3+                                                 | Know no fear, Skimmer, Scout                            |
 |                                                          |        |                |          |      |      | Heavy Bolter                   | 30             | AP5+                                                      |                                                         |
 | Javelin Attack Speeder with Lascannons                   | LV     | 35cm           | 4        | 6    | 5    | Twin-linked Lascannon          | 45             | AT4+                                                      | Know no fear, Skimmer, Scout                            |
 |                                                          |        |                |          |      |      | Heavy Bolter                   | 30             | AP5+                                                      |                                                         |
-| Outrider squad                                           | INF    | 35cm           | 4        | 3    | 5    | Small Arms                     | (15cm)         |                                                           | Know no fear, Mounted, Scout                            |
-| Scimitar Jetbike                                         | INF    | 35cm           | 4        | 4    | 4    | Small Arms                     | (15cm)         |                                                           | Know no fear, Mounted, Skimmer, Scout                   |
+| Outrider squad                                           | INF    | 35cm           | 4        | 3    | 5    | Small Arms                     | (Small Arms)   |                                                           | Know no fear, Mounted, Scout                            |
+| Scimitar Jetbike                                         | INF    | 35cm           | 4        | 4    | 4    | Small Arms                     | (Small Arms)   |                                                           | Know no fear, Mounted, Skimmer, Scout                   |
 

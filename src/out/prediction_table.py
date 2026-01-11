@@ -11,7 +11,6 @@ def get_markdown_prediction_table(results: list[Result], army: Army) -> str:
                 round(r.predicted_cost, 0),
                 f"±{round(r.uncertainty, 0)}",
                 quality_to_str(r.quality),
-                r.score,
             ),
             results,
         ),
@@ -20,7 +19,6 @@ def get_markdown_prediction_table(results: list[Result], army: Army) -> str:
             "Predicted Cost",
             "Uncertainty",
             "Quality",
-            "Score",
         ],
         tablefmt="github",
     )

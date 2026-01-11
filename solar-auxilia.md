@@ -2,48 +2,48 @@
 
 ## Predicted unit cost:
 
-| Name                                             |   Predicted Cost | Uncertainty   | Quality      |   Score |
-|--------------------------------------------------|------------------|---------------|--------------|---------|
-| Infantry Section                                 |               19 | ±7.0          | Safe         |      61 |
-| Infantry with flamers                            |               26 | ±8.0          | Safe         |      69 |
-| Veletaris Storm Section                          |               27 | ±10.0         | Safe         |      63 |
-| Ogryn Charonite Squad                            |               32 | ±9.0          | Safe         |      71 |
-| Tactical Command Unit                            |               19 | ±8.0          | Safe         |      59 |
-| Legate Command Unit                              |               26 | ±8.0          | Safe         |      70 |
-| Rapier Mole Mortar                               |               36 | ±8.0          | Safe         |      78 |
-| Rapier Laser Destroyer                           |               25 | ±8.0          | Safe         |      68 |
-| Rapier Quad Launcher                             |               26 | ±8.0          | Safe         |      70 |
-| Aethon Heavy Sentinel                            |               36 | ±10.0         | Safe         |      73 |
-| Tarantula, Twin Lascannon                        |               29 | ±9.0          | Safe         |      68 |
-| Tarantula, Hyperios air-defence missile launcher |               30 | ±20.0         | Experimental |      35 |
-| Leman Russ (Battle cannon + H.B.)                |               59 | ±8.0          | Safe         |      86 |
-| Leman Russ (Battle cannon + Las)                 |               65 | ±9.0          | Safe         |      86 |
-| Leman Russ (Vanquisher + H.B.)                   |               61 | ±9.0          | Safe         |      85 |
-| Leman Russ (Vanquisher + Las)                    |               65 | ±9.0          | Safe         |      86 |
-| Leman Russ (Annihilator)                         |               57 | ±9.0          | Safe         |      84 |
-| Leman Russ (Demolisher)                          |               60 | ±8.0          | Safe         |      86 |
-| Leman Russ (Executioner)                         |               55 | ±8.0          | Safe         |      86 |
-| Leman Russ (Exterminator)                        |               60 | ±8.0          | Safe         |      86 |
-| Malcador (battle cannon, demolisher, las.spon.)  |               95 | ±11.0         | Safe         |      89 |
-| Malcador (vanquisher, demiólisher, h.b.spon.)    |               84 | ±11.0         | Safe         |      87 |
-| Malcador (las cannons)                           |               82 | ±13.0         | Safe         |      84 |
-| Dracosan with las cannon                         |               31 | ±10.0         | Review       |      68 |
-| Dracosan with demolisher                         |               49 | ±8.0          | Safe         |      83 |
-| Medusa                                           |               55 | ±9.0          | Safe         |      84 |
-| Basilisk                                         |               68 | ±9.0          | Safe         |      87 |
-| Basilisk (Barrage)                               |               81 | ±9.0          | Safe         |      89 |
-| Arvus Lighter                                    |               24 | ±18.0         | Experimental |      25 |
-| Malcador Infernus                                |               69 | ±11.0         | Safe         |      84 |
-| Malcador Valdor                                  |               99 | ±15.0         | Safe         |      85 |
-| Avenger Strike Fighter                           |               96 | ±23.0         | Review       |      76 |
-| Thunderbolt                                      |               80 | ±10.0         | Safe         |      87 |
-| Lightning Fighter                                |              120 | ±25.0         | Review       |      79 |
-| Marauder Bomber                                  |              120 | ±14.0         | Safe         |      88 |
-| Shadowsword                                      |              184 | ±11.0         | Safe         |      94 |
-| Stromblade                                       |              173 | ±15.0         | Safe         |      91 |
-| Stormsword                                       |              163 | ±14.0         | Safe         |      91 |
-| Baneblade                                        |              159 | ±10.0         | Safe         |      94 |
-| Stormhammer                                      |              154 | ±12.0         | Safe         |      92 |
+| Name                                             |   Predicted Cost | Uncertainty   | Quality      |
+|--------------------------------------------------|------------------|---------------|--------------|
+| Infantry Section                                 |               19 | ±7.0          | Safe         |
+| Infantry with flamers                            |               26 | ±8.0          | Safe         |
+| Veletaris Storm Section                          |               27 | ±10.0         | Safe         |
+| Ogryn Charonite Squad                            |               32 | ±9.0          | Safe         |
+| Tactical Command Unit                            |               19 | ±8.0          | Safe         |
+| Legate Command Unit                              |               26 | ±8.0          | Safe         |
+| Rapier Mole Mortar                               |               36 | ±8.0          | Safe         |
+| Rapier Laser Destroyer                           |               25 | ±8.0          | Safe         |
+| Rapier Quad Launcher                             |               26 | ±8.0          | Safe         |
+| Aethon Heavy Sentinel                            |               36 | ±10.0         | Safe         |
+| Tarantula, Twin Lascannon                        |               29 | ±9.0          | Safe         |
+| Tarantula, Hyperios air-defence missile launcher |               30 | ±20.0         | Experimental |
+| Leman Russ (Battle cannon + H.B.)                |               59 | ±8.0          | Safe         |
+| Leman Russ (Battle cannon + Las)                 |               65 | ±9.0          | Safe         |
+| Leman Russ (Vanquisher + H.B.)                   |               61 | ±9.0          | Safe         |
+| Leman Russ (Vanquisher + Las)                    |               65 | ±9.0          | Safe         |
+| Leman Russ (Annihilator)                         |               57 | ±9.0          | Safe         |
+| Leman Russ (Demolisher)                          |               60 | ±8.0          | Safe         |
+| Leman Russ (Executioner)                         |               55 | ±8.0          | Safe         |
+| Leman Russ (Exterminator)                        |               60 | ±8.0          | Safe         |
+| Malcador (battle cannon, demolisher, las.spon.)  |               95 | ±11.0         | Safe         |
+| Malcador (vanquisher, demiólisher, h.b.spon.)    |               84 | ±11.0         | Safe         |
+| Malcador (las cannons)                           |               82 | ±13.0         | Safe         |
+| Dracosan with las cannon                         |               31 | ±10.0         | Review       |
+| Dracosan with demolisher                         |               49 | ±8.0          | Safe         |
+| Medusa                                           |               55 | ±9.0          | Safe         |
+| Basilisk                                         |               68 | ±9.0          | Safe         |
+| Basilisk (Barrage)                               |               81 | ±9.0          | Safe         |
+| Arvus Lighter                                    |               24 | ±18.0         | Experimental |
+| Malcador Infernus                                |               69 | ±11.0         | Safe         |
+| Malcador Valdor                                  |               99 | ±15.0         | Safe         |
+| Avenger Strike Fighter                           |               96 | ±23.0         | Review       |
+| Thunderbolt                                      |               80 | ±10.0         | Safe         |
+| Lightning Fighter                                |              120 | ±25.0         | Review       |
+| Marauder Bomber                                  |              120 | ±14.0         | Safe         |
+| Shadowsword                                      |              184 | ±11.0         | Safe         |
+| Stromblade                                       |              173 | ±15.0         | Safe         |
+| Stormsword                                       |              163 | ±14.0         | Safe         |
+| Baneblade                                        |              159 | ±10.0         | Safe         |
+| Stormhammer                                      |              154 | ±12.0         | Safe         |
 
 Average Score: 78.17
 Average Uncertainty: 10.97
@@ -54,14 +54,14 @@ Average Uncertainty: 10.97
 
 | Name                                             | Type   | Speed   | Armour   | CC   | FF   | Weapons                   | Range          | Firepower                     | Notes                                |
 |--------------------------------------------------|--------|---------|----------|------|------|---------------------------|----------------|-------------------------------|--------------------------------------|
-| Infantry Section                                 | INF    | 15cm    | 5        | 6    | 5    | Las-rifles                | (15cm)         |                               |                                      |
+| Infantry Section                                 | INF    | 15cm    | 5        | 6    | 5    | Las-rifles                | (Small Arms)   |                               |                                      |
 | Infantry with flamers                            | INF    | 15cm    | 5        | 6    | 4    | Flamers                   | 15             | AP5+, Ignore Cover            |                                      |
 | Veletaris Storm Section                          | INF    | 15cm    | 5        | 4    | 6    | Power Axes                | (base contact) | Macro-Weapon, Extra Attack +1 |                                      |
 | Ogryn Charonite Squad                            | INF    | 15cm    | 3        | 3    | 5    | Charonite Claws           | (base contact) | Extra Attack +1, Macro-Weapon |                                      |
 | Tactical Command Unit                            | INF    | 15cm    | 5        | 6    | 5    | Plasma Guns               | 15             | AT5+ AP4+                     | Commander                            |
-|                                                  |        |         |          |      |      | Small Arms                | (15cm)         |                               |                                      |
+|                                                  |        |         |          |      |      | Small Arms                | (Small Arms)   |                               |                                      |
 | Legate Command Unit                              | INF    | 15cm    | 5        | 5    | 4    | Volkite Chargers          | 15             | AT5+ AP4+                     | Supreme Commander                    |
-|                                                  |        |         |          |      |      | Archaeotech Pistol        | (15cm)         | Macro-Weapon, Extra Attack +1 |                                      |
+|                                                  |        |         |          |      |      | Archaeotech Pistol        | (Small Arms)   | Macro-Weapon, Extra Attack +1 |                                      |
 | Rapier Mole Mortar                               | INF    | 10cm    | 6        | 6    | 6    | Mole Mortar               | 30             | 1BP, Disrupt, Indirect        |                                      |
 | Rapier Laser Destroyer                           | INF    | 10cm    | 6        | 6    | 6    | Laser Destroyer           | 45             | AT4+ AP6+                     |                                      |
 | Rapier Quad Launcher                             | INF    | 10cm    | 6        | 6    | 6    | Quad Launcher             | 45             | AT6+ AP4+, Indirect           |                                      |
@@ -105,7 +105,7 @@ Average Uncertainty: 10.97
 |                                                  |        |         |          |      |      | Heavy Bolter              | 30             | AP5+                          |                                      |
 | Basilisk (Barrage)                               | AV     | 20cm    | 5        | 6    | 5    | Earthshaker Cannon        | 120            | 1BP, Ignore Cover             |                                      |
 |                                                  |        |         |          |      |      | Heavy Bolter              | 30             | AP5+                          |                                      |
-| Arvus Lighter                                    | AV     | 30cm    | 5        | 0    | 6    | Multi-Laser               | (15cm)         |                               | Skimmer, PLANET_FALL                 |
+| Arvus Lighter                                    | AV     | 30cm    | 5        | 0    | 6    | Multi-Laser               | (Small Arms)   |                               | Skimmer, PLANET_FALL                 |
 | Malcador Infernus                                | AV     | 20cm    | 4        | 6    | 3    | Infernus Cannon           | 30             | AP3+                          | Reinforced Armour, Thick Rear Armour |
 |                                                  |        |         |          |      |      | Auto Cannon               | 45             | AT6+ AP5+                     |                                      |
 |                                                  |        |         |          |      |      | Auto Cannon               | 45             | AT6+ AP5+                     |                                      |

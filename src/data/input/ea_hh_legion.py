@@ -32,7 +32,7 @@ legiones_astartes.add_unit(
         4,
         4,
         34,
-        [SmallArms()],
+        [SmallArms(name="Bolters")],
         [Traits.KNOW_NO_FEAR],
     )
 )
@@ -47,7 +47,7 @@ legiones_astartes.add_unit(
         armour=4,
         cc=3,
         ff=5,
-        weapons=[SmallArms()],
+        weapons=[AssaultWeapon(name="Bolt Pistols and Chainswords")],
         traits=[Traits.KNOW_NO_FEAR, Traits.JUMP_PACKS],
     )
 )
@@ -63,7 +63,7 @@ legiones_astartes.add_unit(
         cc=5,
         ff=3,
         weapons=[
-            SmallArms(),
+            SmallArms(name="Bolters"),
             RangedWeapon(45, name="Missile Launchers", at=5, ap=4, aa=6),
         ],
         traits=[Traits.KNOW_NO_FEAR],
@@ -81,7 +81,7 @@ legiones_astartes.add_unit(
         cc=4,
         ff=4,
         weapons=[
-            SmallArms(),
+            SmallArms(name="Bolters"),
             RangedWeapon(
                 45, name="Plasma Guns", ap=5, at=5, traits=[Traits.IGNORE_COVER]
             ),

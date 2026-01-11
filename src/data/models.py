@@ -316,6 +316,6 @@ class SmallArms:
     def to_list(self):
         return [
             self.name,
-            "(15cm)",
+            "(Small Arms)",
             ", ".join(map(trait_to_string, self.traits)),
         ]
