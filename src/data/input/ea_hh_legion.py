@@ -1,5 +1,6 @@
 from data.models import (
     RangedWeapon,
+    Multiplier,
     SmallArms,
     Traits,
     UnitType,
@@ -269,6 +270,7 @@ legiones_astartes.add_unit(
                 30, name="Sabre Missiles", at=4, traits=[Traits.FIXED_FORWARD]
             ),
         ],
+        traits=[Traits.ASTARTES],
     )
 )
 
@@ -294,6 +296,7 @@ legiones_astartes.add_unit(
                 30, name="Sabre Missiles", at=4, traits=[Traits.FIXED_FORWARD]
             ),
         ],
+        traits=[Traits.ASTARTES],
     )
 )
 
@@ -953,33 +956,15 @@ legiones_astartes.add_unit(
         cc=5,
         ff=5,
         weapons=[
-            RangedWeapon(
-                name="Inferno gun",
-                range=30,
-                ap=2,
-                at=6,
-                traits=[Traits.FIXED_FORWARD, Traits.FIXED_FORWARD],
-            ),
-            RangedWeapon(
-                name="Inferno gun",
-                range=30,
-                ap=2,
-                at=6,
-                traits=[Traits.FIXED_FORWARD, Traits.FIXED_FORWARD],
-            ),
-            RangedWeapon(
-                name="Inferno gun",
-                range=30,
-                ap=2,
-                at=6,
-                traits=[Traits.FIXED_FORWARD, Traits.FIXED_FORWARD],
-            ),
-            RangedWeapon(
-                name="Inferno gun",
-                range=30,
-                ap=2,
-                at=6,
-                traits=[Traits.FIXED_FORWARD, Traits.FIXED_FORWARD],
+            Multiplier(
+                4,
+                RangedWeapon(
+                    name="Inferno gun",
+                    range=30,
+                    ap=2,
+                    at=6,
+                    traits=[Traits.FIXED_FORWARD, Traits.FIXED_FORWARD],
+                ),
             ),
             QuadLasCannon(),
             QuadLasCannon(),
