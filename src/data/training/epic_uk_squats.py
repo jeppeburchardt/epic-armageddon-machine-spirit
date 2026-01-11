@@ -6,6 +6,7 @@ from data.models import (
     Unit,
     AssaultWeapon,
     Army,
+    Multiplier,
 )
 
 squats = Army("Epic UK Squats")
@@ -114,5 +115,83 @@ squats.add_unit(
         weapons=[AssaultWeapon(), RangedWeapon(30, ap=5, at=5)],
         traits=[Traits.INSPIRING, Traits.LEADER],
         single_unit_cost=25,
+    )
+)
+
+
+squats.add_unit(
+    Unit(
+        "Colossus",
+        2,
+        2,
+        UnitType.WAR_ENGINE,
+        speed=15,
+        armour=4,
+        cc=5,
+        ff=4,
+        weapons=[
+            RangedWeapon(90, bp=3, traits=[Traits.MW, Traits.FIXED_FORWARD]),
+            Multiplier(4, RangedWeapon(75, ap=4, at=4, traits=[Traits.FIXED_FORWARD])),
+            RangedWeapon(
+                30, ap=3, at=4, traits=[Traits.IGNORE_COVER, Traits.FIXED_FORWARD]
+            ),
+            Multiplier(
+                4,
+                RangedWeapon(
+                    60,
+                    bp=2,
+                    traits=[Traits.FIXED_FORWARD, Traits.INDIRECT, Traits.SINGLE_SHOT],
+                ),
+            ),
+            SmallArms(traits=[Traits.EXTRA_ATTACK_1]),
+        ],
+        traits=[
+            Traits.VOID_SHIELDS,
+            Traits.FEARLESS,
+            Traits.RIENFORCED_ARMOUR,
+            Traits.THICK_REAR_ARMOUR,
+        ],
+        damage_capacity=5,
+        single_unit_cost=525,
+    )
+)
+
+squats.add_unit(
+    Unit(
+        "Cyclop",
+        2,
+        2,
+        UnitType.WAR_ENGINE,
+        speed=15,
+        armour=4,
+        cc=5,
+        ff=4,
+        weapons=[
+            RangedWeapon(
+                90, mw=2, traits=[Traits.TITAN_KILLER_D6, Traits.FIXED_FORWARD]
+            ),
+            RangedWeapon(75, ap=4, at=4),
+            Multiplier(
+                2,
+                RangedWeapon(
+                    30, ap=3, at=4, traits=[Traits.IGNORE_COVER, Traits.FIXED_FORWARD]
+                ),
+            ),
+            Multiplier(
+                6,
+                RangedWeapon(
+                    90, at=2, traits=[Traits.SINGLE_SHOT, Traits.FIXED_FORWARD]
+                ),
+            ),
+            SmallArms(traits=[Traits.EXTRA_ATTACK_1]),
+        ],
+        traits=[
+            Traits.VOID_SHIELDS,
+            Traits.FEARLESS,
+            Traits.RIENFORCED_ARMOUR,
+            Traits.THICK_REAR_ARMOUR,
+        ],
+        damage_capacity=5,
+        single_unit_cost=525,
     )
 )
