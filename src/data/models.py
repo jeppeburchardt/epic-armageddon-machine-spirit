@@ -85,6 +85,15 @@ class Unit:
     def traits_to_str(self):
         return ", ".join(map(trait_to_string, self.traits))
 
+    def get_all_ranged_weapons(self):
+        result = []
+        for w in self.weapons:
+            if isinstance(w, Multiplier):
+                result.extend([w.weapon] * w.times)
+            else:
+                result.append(w)
+        return result
+
 
 class Army:
     name: str
@@ -146,6 +155,7 @@ class Traits(Enum):
     LEFT = 34
     RIGHT = 35
     INSPIRING = 36
+    TITAN_KILLER_D6 = 37
 
 
 def trait_to_string(trait):
@@ -232,6 +242,20 @@ class RangedWeapon:
             self.range,
             firepower,
         ]
+
+
+class Multiplier:
+    times: int
+    weapon: RangedWeapon
+
+    def __init__(self, times, weapon):
+        self.times = times
+        self.weapon = weapon
+
+    def to_list(self):
+        parts = self.weapon.to_list()
+        parts[0] = f"{self.times}X " + parts[0]
+        return parts
 
 
 class AssaultWeapon:

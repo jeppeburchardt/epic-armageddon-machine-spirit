@@ -18,6 +18,7 @@ def dice_test_to_score(dice_test: int) -> int:
 
 
 def map2(unit: Unit) -> np.ndarray:
+    weapons = unit.get_all_ranged_weapons()
     vector = [
         unit.strategy_rating,
         dice_test_to_score(unit.initiative),
@@ -42,25 +43,25 @@ def map2(unit: Unit) -> np.ndarray:
         (1 if Traits.INFILTRQATOR in unit.traits else 0),
         unit.transport_capacity,
         # weapon count:
-        sum(1 for w in unit.weapons if isinstance(w, RangedWeapon) and w.range >= 100),
+        sum(1 for w in weapons if isinstance(w, RangedWeapon) and w.range >= 100),
         sum(
             1
-            for w in unit.weapons
+            for w in weapons
             if isinstance(w, RangedWeapon) and w.range >= 50 and w.range < 100
         ),
         sum(
             1
-            for w in unit.weapons
+            for w in weapons
             if isinstance(w, RangedWeapon) and w.range > 30 and w.range < 50
         ),
-        sum(1 for w in unit.weapons if isinstance(w, RangedWeapon) and w.range < 30),
-        sum(1 for w in unit.weapons if isinstance(w, SmallArms)),
-        sum(1 for w in unit.weapons if isinstance(w, AssaultWeapon)),
+        sum(1 for w in weapons if isinstance(w, RangedWeapon) and w.range < 30),
+        sum(1 for w in weapons if isinstance(w, SmallArms)),
+        sum(1 for w in weapons if isinstance(w, AssaultWeapon)),
         # at total:
         sum(
             (
                 dice_test_to_score(weapon.at)
-                for weapon in unit.weapons
+                for weapon in weapons
                 if hasattr(weapon, "at") and weapon.at > 0
             )
         ),
@@ -68,7 +69,7 @@ def map2(unit: Unit) -> np.ndarray:
         sum(
             (
                 dice_test_to_score(weapon.ap)
-                for weapon in unit.weapons
+                for weapon in weapons
                 if hasattr(weapon, "ap") and weapon.ap > 0
             )
         ),
@@ -76,7 +77,7 @@ def map2(unit: Unit) -> np.ndarray:
         sum(
             (
                 dice_test_to_score(weapon.aa)
-                for weapon in unit.weapons
+                for weapon in weapons
                 if hasattr(weapon, "aa") and weapon.aa > 0
             )
         ),
@@ -84,7 +85,7 @@ def map2(unit: Unit) -> np.ndarray:
         sum(
             (
                 (weapon.bp)
-                for weapon in unit.weapons
+                for weapon in weapons
                 if hasattr(weapon, "bp") and weapon.bp > 0
             )
         ),
@@ -92,27 +93,27 @@ def map2(unit: Unit) -> np.ndarray:
         sum(
             (
                 dice_test_to_score(weapon.mw)
-                for weapon in unit.weapons
+                for weapon in weapons
                 if hasattr(weapon, "mw") and weapon.mw > 0
             )
         ),
         # sum weapon traits:
-        # sum(1 for w in unit.weapons if hasattr(w, 'traits') and Traits.MW in w.traits),
-        # sum(1 for w in unit.weapons if hasattr(w, 'traits') and Traits.FIRST_STRIKE in w.traits),
-        # sum(1 for w in unit.weapons if hasattr(w, 'traits') and Traits.EXTRA_ATTACK_1 in w.traits),
-        # sum(1 for w in unit.weapons if hasattr(w, 'traits') and Traits.IGNORE_COVER in w.traits),
-        # sum(1 for w in unit.weapons if hasattr(w, 'traits') and Traits.INDIRECT in w.traits),
+        # sum(1 for w in weapons if hasattr(w, 'traits') and Traits.MW in w.traits),
+        # sum(1 for w in weapons if hasattr(w, 'traits') and Traits.FIRST_STRIKE in w.traits),
+        # sum(1 for w in weapons if hasattr(w, 'traits') and Traits.EXTRA_ATTACK_1 in w.traits),
+        # sum(1 for w in weapons if hasattr(w, 'traits') and Traits.IGNORE_COVER in w.traits),
+        # sum(1 for w in weapons if hasattr(w, 'traits') and Traits.INDIRECT in w.traits),
         # bool weapon traits:
         (
             1
-            if any(hasattr(w, "traits") and Traits.MW in w.traits for w in unit.weapons)
+            if any(hasattr(w, "traits") and Traits.MW in w.traits for w in weapons)
             else 0
         ),
         (
             1
             if any(
                 hasattr(w, "traits") and Traits.FIRST_STRIKE in w.traits
-                for w in unit.weapons
+                for w in weapons
             )
             else 0
         ),
@@ -120,7 +121,7 @@ def map2(unit: Unit) -> np.ndarray:
             1
             if any(
                 hasattr(w, "traits") and Traits.EXTRA_ATTACK_1 in w.traits
-                for w in unit.weapons
+                for w in weapons
             )
             else 0
         ),
@@ -128,7 +129,7 @@ def map2(unit: Unit) -> np.ndarray:
             1
             if any(
                 hasattr(w, "traits") and Traits.EXTRA_ATTACK_2 in w.traits
-                for w in unit.weapons
+                for w in weapons
             )
             else 0
         ),
@@ -136,46 +137,39 @@ def map2(unit: Unit) -> np.ndarray:
             1
             if any(
                 hasattr(w, "traits") and Traits.IGNORE_COVER in w.traits
-                for w in unit.weapons
+                for w in weapons
             )
             else 0
         ),
         (
             1
             if any(
-                hasattr(w, "traits") and Traits.INDIRECT in w.traits
-                for w in unit.weapons
+                hasattr(w, "traits") and Traits.INDIRECT in w.traits for w in weapons
             )
             else 0
         ),
         (
             1
-            if any(
-                hasattr(w, "traits") and Traits.DISRUPT in w.traits
-                for w in unit.weapons
-            )
+            if any(hasattr(w, "traits") and Traits.DISRUPT in w.traits for w in weapons)
             else 0
         ),
         (
             1
             if any(
                 hasattr(w, "traits") and Traits.VOID_SHIELDS in w.traits
-                for w in unit.weapons
+                for w in weapons
             )
             else 0
         ),
         (
             1
-            if any(
-                hasattr(w, "traits") and Traits.LEADER in w.traits for w in unit.weapons
-            )
+            if any(hasattr(w, "traits") and Traits.LEADER in w.traits for w in weapons)
             else 0
         ),
         (
             1
             if any(
-                hasattr(w, "traits") and Traits.COMMANDER in w.traits
-                for w in unit.weapons
+                hasattr(w, "traits") and Traits.COMMANDER in w.traits for w in weapons
             )
             else 0
         ),
@@ -183,7 +177,7 @@ def map2(unit: Unit) -> np.ndarray:
             1
             if any(
                 hasattr(w, "traits") and Traits.SUPREME_COMMANDER in w.traits
-                for w in unit.weapons
+                for w in weapons
             )
             else 0
         ),
@@ -191,7 +185,7 @@ def map2(unit: Unit) -> np.ndarray:
             1
             if any(
                 hasattr(w, "traits") and Traits.INVULNERABLE_SAVE in w.traits
-                for w in unit.weapons
+                for w in weapons
             )
             else 0
         ),
