@@ -42,7 +42,7 @@ minervan.add_unit(
             RangedWeapon(30, ap=3, at=4, traits=[Traits.IGNORE_COVER]),
             RangedWeapon(45, at=5),
         ],
-        traits=[Traits.RIENFORCED_ARMOUR],
+        traits=[Traits.REINFORCED_ARMOUR],
         single_unit_cost=68,
     )
 )

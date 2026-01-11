@@ -39,6 +39,7 @@ class Unit:
     transport_capacity: int
     damage_capacity: int
     single_unit_cost: int
+    void_shields: int
     weapons: list["RangedWeapon", "AssaultWeapon", "SmallArms"]
     traits: list["Traits"] = []
 
@@ -48,15 +49,16 @@ class Unit:
         strategy_rating,
         initiative,
         type,
-        speed,
-        armour,
-        cc,
-        ff,
+        speed=0,
+        armour=0,
+        cc=0,
+        ff=0,
         single_unit_cost=0,
         weapons=[],
         traits=[],
         transport_capacity=0,
         damage_capacity=1,
+        void_shields=0,
     ):
         self.name = name
         self.strategy_rating = strategy_rating
@@ -71,6 +73,7 @@ class Unit:
         self.single_unit_cost = single_unit_cost
         self.weapons = weapons
         self.traits = traits
+        self.void_shields = void_shields
 
     def to_list(self):
         return [
@@ -83,7 +86,12 @@ class Unit:
         ]
 
     def traits_to_str(self):
-        return ", ".join(map(trait_to_string, self.traits))
+        parts = []
+        if self.type == UnitType.WAR_ENGINE:
+            parts.append(f"DC{self.damage_capacity}")
+        if self.void_shields:
+            parts.append(f"Void Shields ({self.void_shields})")
+        return ", ".join(list(map(trait_to_string, self.traits)) + parts)
 
     def get_all_ranged_weapons(self):
         result = []
@@ -126,21 +134,21 @@ class Traits(Enum):
     SINGLE_SHOT = 5
     IGNORE_COVER = 6
     FIXED_FORWARD = 7
-    RIENFORCED_ARMOUR = 8
+    REINFORCED_ARMOUR = 8
     TELEPORT = 9
     THICK_REAR_ARMOUR = 10
     MW = 11
-    ASTARTES = 12
+    KNOW_NO_FEAR = 12
     JUMP_PACKS = 13
     SCOUT = 14
-    INFILTRQATOR = 15
+    INFILTRATOR = 15
     MOUNTED = 16
     FIRST_STRIKE = 17
     WALKER = 18
     PLANETFALL = 19
     TITAN_KILLER_D3 = 20
     TITAN_KILLER_1 = 21
-    VOID_SHIELDS = 22
+    EXPENDABLE = 22
     DISRUPT = 23
     FEARLESS = 24
     SKIMMER = 25
@@ -156,6 +164,7 @@ class Traits(Enum):
     RIGHT = 35
     INSPIRING = 36
     TITAN_KILLER_D6 = 37
+    TUNNELER = 38
 
 
 def trait_to_string(trait):
@@ -170,20 +179,19 @@ def trait_to_string(trait):
         Traits.SINGLE_SHOT: "Single Shot",
         Traits.IGNORE_COVER: "Ignore Cover",
         Traits.FIXED_FORWARD: "Fixed Forward",
-        Traits.RIENFORCED_ARMOUR: "Reinforced Armour",
+        Traits.REINFORCED_ARMOUR: "Reinforced Armour",
         Traits.TELEPORT: "Teleport",
         Traits.THICK_REAR_ARMOUR: "Thick Rear Armour",
         Traits.MW: "Macro-Weapon",
-        Traits.ASTARTES: "Astartes",
+        Traits.KNOW_NO_FEAR: "Know no fear",
         Traits.JUMP_PACKS: "Jump Packs",
         Traits.SCOUT: "Scout",
-        Traits.INFILTRQATOR: "Infiltrator",
+        Traits.INFILTRATOR: "Infiltrator",
         Traits.MOUNTED: "Mounted",
         Traits.FIRST_STRIKE: "First Strike",
         Traits.WALKER: "Walker",
         Traits.PLANETFALL: "Planetfall",
         Traits.TITAN_KILLER_D3: "Titan Killer (D3)",
-        Traits.VOID_SHIELDS: "Void Shields",
         Traits.DISRUPT: "Disrupt",
         Traits.FEARLESS: "Fearless",
         Traits.SKIMMER: "Skimmer",

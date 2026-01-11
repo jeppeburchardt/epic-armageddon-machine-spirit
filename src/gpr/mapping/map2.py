@@ -27,6 +27,7 @@ def map2(unit: Unit) -> np.ndarray:
         dice_test_to_score(unit.ff),
         dice_test_to_score(unit.cc),
         unit.damage_capacity,
+        unit.void_shields,
         (1 if unit.type == UnitType.CHARACTER else 0),
         (1 if unit.type == UnitType.INFANTRY else 0),
         (1 if unit.type == UnitType.LIGHT_VEHICLE else 0),
@@ -35,12 +36,12 @@ def map2(unit: Unit) -> np.ndarray:
         (1 if unit.type == UnitType.WAR_ENGINE else 0),
         (1 if unit.type == UnitType.AIRCRAFT else 0),
         (1 if Traits.TELEPORT in unit.traits else 0),
-        (1 if Traits.ASTARTES in unit.traits else 0),
+        (1 if Traits.KNOW_NO_FEAR in unit.traits else 0),
         (1 if Traits.WALKER in unit.traits else 0),
         (1 if Traits.PLANETFALL in unit.traits else 0),
-        (1 if Traits.RIENFORCED_ARMOUR in unit.traits else 0),
+        (1 if Traits.REINFORCED_ARMOUR in unit.traits else 0),
         (1 if Traits.JUMP_PACKS in unit.traits else 0),
-        (1 if Traits.INFILTRQATOR in unit.traits else 0),
+        (1 if Traits.INFILTRATOR in unit.traits else 0),
         unit.transport_capacity,
         # weapon count:
         sum(1 for w in weapons if isinstance(w, RangedWeapon) and w.range >= 100),
@@ -151,14 +152,6 @@ def map2(unit: Unit) -> np.ndarray:
         (
             1
             if any(hasattr(w, "traits") and Traits.DISRUPT in w.traits for w in weapons)
-            else 0
-        ),
-        (
-            1
-            if any(
-                hasattr(w, "traits") and Traits.VOID_SHIELDS in w.traits
-                for w in weapons
-            )
             else 0
         ),
         (

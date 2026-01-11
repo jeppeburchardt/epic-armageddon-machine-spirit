@@ -59,7 +59,7 @@ solar_auxilia.add_unit(
         armour=5,
         cc=4,
         ff=6,
-        weapons=[AssaultWeapon([Traits.MW], name="Power Axes")],
+        weapons=[AssaultWeapon([Traits.MW, Traits.EXTRA_ATTACK_1], name="Power Axes")],
     )
 )
 
@@ -227,7 +227,7 @@ solar_auxilia.add_unit(
         cc=6,
         ff=4,
         weapons=[BattleCannon(), HeavyBolter()],
-        traits=[Traits.RIENFORCED_ARMOUR],
+        traits=[Traits.REINFORCED_ARMOUR],
     )
 )
 solar_auxilia.add_unit(
@@ -241,7 +241,7 @@ solar_auxilia.add_unit(
         cc=6,
         ff=5,
         weapons=[VanquisherBattleCannon(), LasCannon()],
-        traits=[Traits.RIENFORCED_ARMOUR],
+        traits=[Traits.REINFORCED_ARMOUR],
     )
 )
 solar_auxilia.add_unit(
@@ -255,7 +255,7 @@ solar_auxilia.add_unit(
         cc=6,
         ff=4,
         weapons=[VanquisherBattleCannon(), HeavyBolter()],
-        traits=[Traits.RIENFORCED_ARMOUR],
+        traits=[Traits.REINFORCED_ARMOUR],
     )
 )
 solar_auxilia.add_unit(
@@ -269,7 +269,7 @@ solar_auxilia.add_unit(
         cc=6,
         ff=5,
         weapons=[VanquisherBattleCannon(), LasCannon()],
-        traits=[Traits.RIENFORCED_ARMOUR],
+        traits=[Traits.REINFORCED_ARMOUR],
     )
 )
 solar_auxilia.add_unit(
@@ -283,7 +283,7 @@ solar_auxilia.add_unit(
         cc=6,
         ff=5,
         weapons=[LasCannon(), TwinLinkedLasCannon()],
-        traits=[Traits.RIENFORCED_ARMOUR],
+        traits=[Traits.REINFORCED_ARMOUR],
     )
 )
 solar_auxilia.add_unit(
@@ -300,7 +300,7 @@ solar_auxilia.add_unit(
             DemolisherCannon(),
             LasCannon(),
         ],
-        traits=[Traits.RIENFORCED_ARMOUR],
+        traits=[Traits.REINFORCED_ARMOUR],
     )
 )
 solar_auxilia.add_unit(
@@ -319,7 +319,7 @@ solar_auxilia.add_unit(
             ),
             LasCannon(),
         ],
-        traits=[Traits.RIENFORCED_ARMOUR],
+        traits=[Traits.REINFORCED_ARMOUR],
     )
 )
 solar_auxilia.add_unit(
@@ -336,7 +336,7 @@ solar_auxilia.add_unit(
             TwinAutoCannon(),
             LasCannon(),
         ],
-        traits=[Traits.RIENFORCED_ARMOUR],
+        traits=[Traits.REINFORCED_ARMOUR],
     )
 )
 
@@ -356,7 +356,7 @@ solar_auxilia.add_unit(
             LasCannon(),
             LasCannon(),
         ],
-        traits=[Traits.RIENFORCED_ARMOUR, Traits.THICK_REAR_ARMOUR],
+        traits=[Traits.REINFORCED_ARMOUR, Traits.THICK_REAR_ARMOUR],
     )
 )
 
@@ -376,7 +376,7 @@ solar_auxilia.add_unit(
             HeavyBolter(),
             HeavyBolter(),
         ],
-        traits=[Traits.RIENFORCED_ARMOUR, Traits.THICK_REAR_ARMOUR],
+        traits=[Traits.REINFORCED_ARMOUR, Traits.THICK_REAR_ARMOUR],
     )
 )
 
@@ -396,7 +396,7 @@ solar_auxilia.add_unit(
             LasCannon(),
             LasCannon(),
         ],
-        traits=[Traits.RIENFORCED_ARMOUR, Traits.THICK_REAR_ARMOUR],
+        traits=[Traits.REINFORCED_ARMOUR, Traits.THICK_REAR_ARMOUR],
     )
 )
 
@@ -413,7 +413,7 @@ solar_auxilia.add_unit(
         weapons=[
             TwinLinkedLasCannon(),
         ],
-        traits=[Traits.RIENFORCED_ARMOUR],
+        traits=[Traits.REINFORCED_ARMOUR],
         transport_capacity=5,
     )
 )
@@ -430,7 +430,7 @@ solar_auxilia.add_unit(
         weapons=[
             DemolisherCannon(),
         ],
-        traits=[Traits.RIENFORCED_ARMOUR],
+        traits=[Traits.REINFORCED_ARMOUR],
         transport_capacity=2,
     )
 )
@@ -520,7 +520,7 @@ solar_auxilia.add_unit(
             AutoCannon(),
             AutoCannon(),
         ],
-        traits=[Traits.RIENFORCED_ARMOUR, Traits.THICK_REAR_ARMOUR],
+        traits=[Traits.REINFORCED_ARMOUR, Traits.THICK_REAR_ARMOUR],
     )
 )
 
@@ -538,7 +538,7 @@ solar_auxilia.add_unit(
             RangedWeapon(45, name="Neutron Beam Laser", mw=3, traits=[Traits.DISRUPT]),
             AutoCannon(),
         ],
-        traits=[Traits.RIENFORCED_ARMOUR, Traits.THICK_REAR_ARMOUR],
+        traits=[Traits.REINFORCED_ARMOUR, Traits.THICK_REAR_ARMOUR],
     )
 )
 
@@ -563,7 +563,7 @@ solar_auxilia.add_unit(
             LasCannon(),
         ],
         damage_capacity=3,
-        traits=[Traits.RIENFORCED_ARMOUR],
+        traits=[Traits.REINFORCED_ARMOUR],
     )
 )
 
@@ -586,7 +586,7 @@ solar_auxilia.add_unit(
             LasCannon(),
         ],
         damage_capacity=3,
-        traits=[Traits.RIENFORCED_ARMOUR],
+        traits=[Traits.REINFORCED_ARMOUR],
     )
 )
 
@@ -614,7 +614,7 @@ solar_auxilia.add_unit(
             LasCannon(),
         ],
         damage_capacity=3,
-        traits=[Traits.RIENFORCED_ARMOUR],
+        traits=[Traits.REINFORCED_ARMOUR],
     )
 )
 
@@ -639,7 +639,7 @@ solar_auxilia.add_unit(
             DemolisherCannon(),
         ],
         damage_capacity=3,
-        traits=[Traits.RIENFORCED_ARMOUR],
+        traits=[Traits.REINFORCED_ARMOUR],
     )
 )
 
@@ -665,7 +665,7 @@ solar_auxilia.add_unit(
             RangedWeapon(75, name="Twin-linked Battle Cannon", ap=3, at=4),
         ],
         damage_capacity=3,
-        traits=[Traits.RIENFORCED_ARMOUR],
+        traits=[Traits.REINFORCED_ARMOUR],
     )
 )
 

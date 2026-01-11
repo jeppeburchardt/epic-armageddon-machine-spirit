@@ -47,7 +47,7 @@ squiggoth = Unit(
         AssaultWeapon([Traits.MW, Traits.EXTRA_ATTACK_2]),  # TODO: D3 extra attacks
     ],
     transport_capacity=4,
-    traits=[Traits.RIENFORCED_ARMOUR, Traits.THICK_REAR_ARMOUR],
+    traits=[Traits.REINFORCED_ARMOUR, Traits.THICK_REAR_ARMOUR],
 )
 
 orkeosaurus = Unit(
@@ -71,7 +71,7 @@ orkeosaurus = Unit(
     ],
     damage_capacity=6,
     transport_capacity=12,
-    traits=[Traits.RIENFORCED_ARMOUR, Traits.THICK_REAR_ARMOUR],
+    traits=[Traits.REINFORCED_ARMOUR, Traits.THICK_REAR_ARMOUR],
 )
 
 steam_gargant = Unit(
@@ -90,7 +90,7 @@ steam_gargant = Unit(
         RangedWeapon(45, mw=5, aa=5, traits=[Traits.MW]),
     ],
     damage_capacity=4,
-    traits=[Traits.FEARLESS, Traits.RIENFORCED_ARMOUR, Traits.WALKER],
+    traits=[Traits.FEARLESS, Traits.REINFORCED_ARMOUR, Traits.WALKER],
 )
 
 ea_40k_feral_orks = [

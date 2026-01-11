@@ -132,16 +132,17 @@ vyper = Unit(
 
 falcon = Unit(
     "Falcon",
-    4,1,
+    4,
+    1,
     UnitType.ARMORED_VEHICLE,
     speed=35,
     armour=5,
     cc=6,
     ff=4,
     weapons=[
-        RangedWeapon(45, at=4), # Pulse Laser
-        RangedWeapon(45, at=4), 
-        RangedWeapon(30, ap=5, at=5) #Scatter Laser
+        RangedWeapon(45, at=4),  # Pulse Laser
+        RangedWeapon(45, at=4),
+        RangedWeapon(30, ap=5, at=5),  # Scatter Laser
     ],
     traits=[Traits.SKIMMER],
     transport_capacity=1,
@@ -150,16 +151,17 @@ falcon = Unit(
 
 wave_serpent = Unit(
     "Wave Serpent",
-    4,1,
+    4,
+    1,
     UnitType.ARMORED_VEHICLE,
     speed=35,
     armour=5,
     cc=5,
     ff=4,
     weapons=[
-        RangedWeapon(30, ap=4) # Shuriken Cannon
+        RangedWeapon(30, ap=4)  # Shuriken Cannon
     ],
-    traits=[Traits.SKIMMER, Traits.RIENFORCED_ARMOUR],
+    traits=[Traits.SKIMMER, Traits.REINFORCED_ARMOUR],
     transport_capacity=2,
     single_unit_cost=25,
 )

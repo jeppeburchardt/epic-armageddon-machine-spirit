@@ -53,7 +53,7 @@ rought_riders = Unit(
     5,
     150 / 6,
     [SmallArms(), AssaultWeapon([Traits.EXTRA_ATTACK_1, Traits.FIRST_STRIKE])],
-    [Traits.INFILTRQATOR, Traits.MOUNTED],
+    [Traits.INFILTRATOR, Traits.MOUNTED],
 )
 
 storm_troopers = Unit(
@@ -103,7 +103,7 @@ baneblade = Unit(
         RangedWeapon(30, 0, 4),
         RangedWeapon(30, 0, 4),
     ],
-    [Traits.RIENFORCED_ARMOUR],
+    [Traits.REINFORCED_ARMOUR],
     0,
     3,
 )
@@ -123,7 +123,7 @@ shadowsword = Unit(
         RangedWeapon(30, ap=5),
         RangedWeapon(30, ap=5),
     ],
-    [Traits.RIENFORCED_ARMOUR],
+    [Traits.REINFORCED_ARMOUR],
     0,
     3,
 )

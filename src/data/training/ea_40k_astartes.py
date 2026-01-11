@@ -11,7 +11,7 @@ tactical_marines = Unit(
     4,
     275 / 6,
     [RangedWeapon(45, 6, 5)],
-    [Traits.ASTARTES],
+    [Traits.KNOW_NO_FEAR],
 )
 
 # tactical_marines_captain = Unit(
@@ -24,7 +24,7 @@ tactical_marines = Unit(
 #     cc=4,
 #     ff=4,
 #     weapons=[RangedWeapon(45, 6, 5), AssaultWeapon([Traits.EXTRA_ATTACK_1, Traits.MW])],
-#     traits=[Traits.ASTARTES, Traits.COMMANDER, Traits.LEADER, Traits.INVULNERABLE_SAVE],
+#     traits=[Traits.KNOW_NO_FEAR, Traits.COMMANDER, Traits.LEADER, Traits.INVULNERABLE_SAVE],
 #     single_unit_cost=(275 / 6) + 50,
 # )
 
@@ -39,7 +39,7 @@ tactical_marines = Unit(
 #     ff=4,
 #     weapons=[RangedWeapon(45, 6, 5), AssaultWeapon([Traits.EXTRA_ATTACK_1, Traits.MW])],
 #     traits=[
-#         Traits.ASTARTES,
+#         Traits.KNOW_NO_FEAR,
 #         Traits.COMMANDER,
 #         Traits.LEADER,
 #         Traits.INVULNERABLE_SAVE,
@@ -65,9 +65,9 @@ terminators = Unit(
     ],
     [
         Traits.TELEPORT,
-        Traits.RIENFORCED_ARMOUR,
+        Traits.REINFORCED_ARMOUR,
         Traits.THICK_REAR_ARMOUR,
-        Traits.ASTARTES,
+        Traits.KNOW_NO_FEAR,
     ],
 )
 
@@ -82,7 +82,7 @@ assualt = Unit(
     5,
     175 / 4,
     [SmallArms()],
-    [Traits.ASTARTES, Traits.JUMP_PACKS],
+    [Traits.KNOW_NO_FEAR, Traits.JUMP_PACKS],
 )
 
 scout = Unit(
@@ -96,7 +96,7 @@ scout = Unit(
     5,
     150 / 4,
     [RangedWeapon(30, 0, 5)],
-    [Traits.ASTARTES, Traits.SCOUT, Traits.INFILTRQATOR],
+    [Traits.KNOW_NO_FEAR, Traits.SCOUT, Traits.INFILTRATOR],
 )
 
 devastator = Unit(
@@ -110,7 +110,7 @@ devastator = Unit(
     3,
     250 / 4,
     [RangedWeapon(45, 6, 5), RangedWeapon(45, 6, 5)],
-    [Traits.ASTARTES],
+    [Traits.KNOW_NO_FEAR],
 )
 
 bike = Unit(
@@ -124,7 +124,7 @@ bike = Unit(
     5,
     200 / 5,
     weapons=[SmallArms()],
-    traits=[Traits.ASTARTES, Traits.MOUNTED],
+    traits=[Traits.KNOW_NO_FEAR, Traits.MOUNTED],
 )
 
 predator_annihilator = Unit(
@@ -138,7 +138,7 @@ predator_annihilator = Unit(
     5,
     250 / 4,
     [RangedWeapon(45, 4, 0), RangedWeapon(45, 5, 0), RangedWeapon(45, 5, 0)],
-    [Traits.ASTARTES],
+    [Traits.KNOW_NO_FEAR],
 )
 
 predator_destructor = Unit(
@@ -152,7 +152,7 @@ predator_destructor = Unit(
     3,
     250 / 4,
     [RangedWeapon(45, 6, 5), RangedWeapon(30, 0, 5), RangedWeapon(30, 0, 5)],
-    [Traits.ASTARTES],
+    [Traits.KNOW_NO_FEAR],
 )
 
 landraider = Unit(
@@ -166,7 +166,7 @@ landraider = Unit(
     4,
     325 / 4,
     [RangedWeapon(45, 4, 0), RangedWeapon(45, 4, 0), RangedWeapon(30, 0, 4)],
-    [Traits.ASTARTES, Traits.RIENFORCED_ARMOUR, Traits.THICK_REAR_ARMOUR],
+    [Traits.KNOW_NO_FEAR, Traits.REINFORCED_ARMOUR, Traits.THICK_REAR_ARMOUR],
     2,
 )
 
@@ -181,7 +181,7 @@ dreadnought_a = Unit(
     4,
     50,
     [RangedWeapon(45, 6, 5), RangedWeapon(30, 4, 0)],
-    [Traits.WALKER, Traits.ASTARTES],
+    [Traits.WALKER, Traits.KNOW_NO_FEAR],
 )
 
 dreadnought_b = Unit(
@@ -195,7 +195,7 @@ dreadnought_b = Unit(
     4,
     50,
     [RangedWeapon(30, 5, 5), AssaultWeapon([Traits.EXTRA_ATTACK_1, Traits.MW])],
-    [Traits.WALKER, Traits.ASTARTES],
+    [Traits.WALKER, Traits.KNOW_NO_FEAR],
 )
 
 razorback_a = Unit(
@@ -209,7 +209,7 @@ razorback_a = Unit(
     5,
     25,
     [RangedWeapon(45, 4, 0)],
-    [Traits.ASTARTES],
+    [Traits.KNOW_NO_FEAR],
     1,
 )
 
@@ -224,7 +224,7 @@ razorback_b = Unit(
     4,
     25,
     [RangedWeapon(30, 0, 5)],
-    [Traits.ASTARTES],
+    [Traits.KNOW_NO_FEAR],
     1,
 )
 
@@ -239,7 +239,7 @@ vindicator = Unit(
     4,
     225 / 4,
     [RangedWeapon(30, 4, 3, 0, 0, [Traits.IGNORE_COVER])],
-    [Traits.ASTARTES, Traits.WALKER],
+    [Traits.KNOW_NO_FEAR, Traits.WALKER],
 )
 
 whirlwind = Unit(
@@ -253,7 +253,7 @@ whirlwind = Unit(
     5,
     275 / 4,
     [RangedWeapon(45, bp=1, traits=[Traits.INDIRECT])],
-    [Traits.ASTARTES],
+    [Traits.KNOW_NO_FEAR],
 )
 
 thunderhawk_gunship = Unit(
@@ -273,7 +273,7 @@ thunderhawk_gunship = Unit(
         RangedWeapon(30, 4, 0, 5),
         RangedWeapon(30, 4, 0, 5),
     ],
-    [Traits.ASTARTES, Traits.RIENFORCED_ARMOUR, Traits.PLANETFALL],
+    [Traits.KNOW_NO_FEAR, Traits.REINFORCED_ARMOUR, Traits.PLANETFALL],
     8,
     2,
 )
@@ -289,7 +289,7 @@ imp_fists_fellblade = Unit(
     ff=4,
     damage_capacity=4,
     single_unit_cost=325,
-    traits=[Traits.ASTARTES, Traits.RIENFORCED_ARMOUR],
+    traits=[Traits.KNOW_NO_FEAR, Traits.REINFORCED_ARMOUR],
     weapons=[
         RangedWeapon(75, mw=3),
         RangedWeapon(75, mw=3),
@@ -338,7 +338,7 @@ land_speeder = Unit(
     cc=6,
     ff=5,
     weapons=[RangedWeapon(15, mw=5), SmallArms([Traits.MW])],
-    traits=[Traits.SKIMMER, Traits.ASTARTES, Traits.SCOUT],
+    traits=[Traits.SKIMMER, Traits.KNOW_NO_FEAR, Traits.SCOUT],
     single_unit_cost=40,
 )
 
@@ -355,7 +355,7 @@ land_speeder_tornado = Unit(
         RangedWeapon(30, ap=5, at=5),
         RangedWeapon(30, ap=5),
     ],
-    traits=[Traits.ASTARTES, Traits.SKIMMER, Traits.SCOUT],
+    traits=[Traits.KNOW_NO_FEAR, Traits.SKIMMER, Traits.SCOUT],
     single_unit_cost=40,
 )
 
@@ -372,7 +372,7 @@ land_speeder_typhoon = Unit(
         RangedWeapon(45, ap=3, at=5),
         RangedWeapon(30, ap=5),
     ],
-    traits=[Traits.ASTARTES, Traits.SKIMMER, Traits.SCOUT],
+    traits=[Traits.KNOW_NO_FEAR, Traits.SKIMMER, Traits.SCOUT],
     single_unit_cost=40,
 )
 

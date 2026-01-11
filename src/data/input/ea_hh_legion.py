@@ -32,7 +32,7 @@ legiones_astartes.add_unit(
         4,
         34,
         [SmallArms()],
-        [Traits.ASTARTES],
+        [Traits.KNOW_NO_FEAR],
     )
 )
 
@@ -47,7 +47,7 @@ legiones_astartes.add_unit(
         cc=3,
         ff=5,
         weapons=[SmallArms()],
-        traits=[Traits.ASTARTES, Traits.JUMP_PACKS],
+        traits=[Traits.KNOW_NO_FEAR, Traits.JUMP_PACKS],
     )
 )
 
@@ -65,7 +65,7 @@ legiones_astartes.add_unit(
             SmallArms(),
             RangedWeapon(45, name="Missile Launchers", at=5, ap=4, aa=6),
         ],
-        traits=[Traits.ASTARTES],
+        traits=[Traits.KNOW_NO_FEAR],
     )
 )
 
@@ -85,7 +85,7 @@ legiones_astartes.add_unit(
                 45, name="Plasma Guns", ap=5, at=5, traits=[Traits.IGNORE_COVER]
             ),
         ],
-        traits=[Traits.ASTARTES],
+        traits=[Traits.KNOW_NO_FEAR],
     )
 )
 
@@ -103,7 +103,7 @@ legiones_astartes.add_unit(
             AssaultWeapon([Traits.EXTRA_ATTACK_1, Traits.MW], name="Power Fists"),
             SmallArms(name="Storm Bolters"),
         ],
-        traits=[Traits.ASTARTES, Traits.RIENFORCED_ARMOUR],
+        traits=[Traits.KNOW_NO_FEAR, Traits.REINFORCED_ARMOUR],
     )
 )
 
@@ -121,7 +121,7 @@ legiones_astartes.add_unit(
             AssaultWeapon([Traits.EXTRA_ATTACK_1, Traits.MW], name="Disruption Fists"),
             RangedWeapon(name="Plasma Bombards", range=20, at=4),
         ],
-        traits=[Traits.ASTARTES, Traits.RIENFORCED_ARMOUR, Traits.TELEPORT],
+        traits=[Traits.KNOW_NO_FEAR, Traits.REINFORCED_ARMOUR, Traits.TELEPORT],
     )
 )
 
@@ -139,7 +139,7 @@ legiones_astartes.add_unit(
             AssaultWeapon([Traits.EXTRA_ATTACK_1, Traits.MW], name="Disruption Fists"),
             RangedWeapon(name="Twin Heavy Disintegrators", range=20, ap=4),
         ],
-        traits=[Traits.ASTARTES, Traits.RIENFORCED_ARMOUR, Traits.TELEPORT],
+        traits=[Traits.KNOW_NO_FEAR, Traits.REINFORCED_ARMOUR, Traits.TELEPORT],
     )
 )
 
@@ -157,7 +157,7 @@ legiones_astartes.add_unit(
             RangedWeapon(30, name="Heavy Plasma Bombards", at=3),
             RangedWeapon(15, name="Inversion Beamer", at=2, traits=[Traits.MW]),
         ],
-        traits=[Traits.ASTARTES, Traits.WALKER, Traits.RIENFORCED_ARMOUR],
+        traits=[Traits.KNOW_NO_FEAR, Traits.WALKER, Traits.REINFORCED_ARMOUR],
     )
 )
 
@@ -176,7 +176,7 @@ legiones_astartes.add_unit(
             RangedWeapon(15, name="Graviton Pulverisers", ap=2),
             RangedWeapon(15, name="Graviton Pulverisers", ap=2),
         ],
-        traits=[Traits.ASTARTES, Traits.WALKER, Traits.RIENFORCED_ARMOUR],
+        traits=[Traits.KNOW_NO_FEAR, Traits.WALKER, Traits.REINFORCED_ARMOUR],
     )
 )
 
@@ -270,7 +270,7 @@ legiones_astartes.add_unit(
                 30, name="Sabre Missiles", at=4, traits=[Traits.FIXED_FORWARD]
             ),
         ],
-        traits=[Traits.ASTARTES],
+        traits=[Traits.KNOW_NO_FEAR],
     )
 )
 
@@ -296,7 +296,7 @@ legiones_astartes.add_unit(
                 30, name="Sabre Missiles", at=4, traits=[Traits.FIXED_FORWARD]
             ),
         ],
-        traits=[Traits.ASTARTES],
+        traits=[Traits.KNOW_NO_FEAR],
     )
 )
 
@@ -312,7 +312,7 @@ legiones_astartes.add_unit(
         4,
         300 / 4,
         [RangedWeapon(45, 5, 4), RangedWeapon(45, 5, 4), LasCannon()],
-        [Traits.ASTARTES, Traits.RIENFORCED_ARMOUR],
+        [Traits.KNOW_NO_FEAR, Traits.REINFORCED_ARMOUR],
     )
 )
 
@@ -328,7 +328,7 @@ legiones_astartes.add_unit(
         3,
         300 / 4,
         [RangedWeapon(45, 5, 4), RangedWeapon(45, 5, 4), HeavyBolter()],
-        [Traits.ASTARTES, Traits.RIENFORCED_ARMOUR],
+        [Traits.KNOW_NO_FEAR, Traits.REINFORCED_ARMOUR],
     )
 )
 
@@ -344,7 +344,7 @@ legiones_astartes.add_unit(
         3,
         300 / 4,
         [RangedWeapon(45, 3, 0), RangedWeapon(45, 3, 0), HeavyBolter()],
-        [Traits.ASTARTES, Traits.RIENFORCED_ARMOUR],
+        [Traits.KNOW_NO_FEAR, Traits.REINFORCED_ARMOUR],
     )
 )
 
@@ -360,7 +360,7 @@ legiones_astartes.add_unit(
         5,
         240 / 4,
         [TwinLinkedLasCannon(), LasCannon(), LasCannon()],
-        [Traits.ASTARTES],
+        [Traits.KNOW_NO_FEAR],
     )
 )
 
@@ -376,7 +376,7 @@ legiones_astartes.add_unit(
         3,
         240 / 4,
         [RangedWeapon(45, 5, 5), HeavyBolter(), HeavyBolter()],
-        [Traits.ASTARTES],
+        [Traits.KNOW_NO_FEAR],
     )
 )
 
@@ -394,7 +394,11 @@ legiones_astartes.add_unit(
             TwinLinkedLasCannon(),
             TwinLinkedLasCannon(),
         ],
-        traits=[Traits.ASTARTES, Traits.RIENFORCED_ARMOUR, Traits.THICK_REAR_ARMOUR],
+        traits=[
+            Traits.KNOW_NO_FEAR,
+            Traits.REINFORCED_ARMOUR,
+            Traits.THICK_REAR_ARMOUR,
+        ],
         transport_capacity=2,
     )
 )
@@ -414,7 +418,11 @@ legiones_astartes.add_unit(
             QuadLasCannon(),
             TwinHeavyBolter(),
         ],
-        traits=[Traits.ASTARTES, Traits.RIENFORCED_ARMOUR, Traits.THICK_REAR_ARMOUR],
+        traits=[
+            Traits.KNOW_NO_FEAR,
+            Traits.REINFORCED_ARMOUR,
+            Traits.THICK_REAR_ARMOUR,
+        ],
         damage_capacity=2,
         transport_capacity=4,
     )
@@ -444,7 +452,7 @@ legiones_astartes.add_unit(
             TwinHeavyBolter(traits=[Traits.LEFT]),
             TwinHeavyBolter(traits=[Traits.RIGHT]),
         ],
-        [Traits.ASTARTES, Traits.PLANETFALL, Traits.RIENFORCED_ARMOUR],
+        [Traits.KNOW_NO_FEAR, Traits.PLANETFALL, Traits.REINFORCED_ARMOUR],
         8,
         2,
     )
@@ -469,7 +477,7 @@ legiones_astartes.add_unit(
             RangedWeapon(15, ap=4, aa=6),
             RangedWeapon(15, ap=4, aa=6),
         ],
-        traits=[Traits.ASTARTES, Traits.RIENFORCED_ARMOUR],
+        traits=[Traits.KNOW_NO_FEAR, Traits.REINFORCED_ARMOUR],
     )
 )
 
@@ -489,7 +497,7 @@ legiones_astartes.add_unit(
             RangedWeapon(30, at=4, aa=5),
             RangedWeapon(45, at=5),
         ],
-        traits=[Traits.ASTARTES],
+        traits=[Traits.KNOW_NO_FEAR],
     )
 )
 
@@ -510,7 +518,7 @@ legiones_astartes.add_unit(
             RangedWeapon(45, bp=1),
             RangedWeapon(30, ap=4, aa=5),
         ],
-        traits=[Traits.ASTARTES, Traits.RIENFORCED_ARMOUR, Traits.PLANETFALL],
+        traits=[Traits.KNOW_NO_FEAR, Traits.REINFORCED_ARMOUR, Traits.PLANETFALL],
         transport_capacity=4,
         damage_capacity=1,
     )
@@ -531,7 +539,7 @@ legiones_astartes.add_unit(
             LasCannon(),
             AssaultWeapon([Traits.MW, Traits.EXTRA_ATTACK_1]),
         ],
-        [Traits.ASTARTES, Traits.WALKER],
+        [Traits.KNOW_NO_FEAR, Traits.WALKER],
     )
 )
 
@@ -550,7 +558,7 @@ legiones_astartes.add_unit(
             RangedWeapon(30, 5, 4, 0, name="Assault Cannon"),
             AssaultWeapon([Traits.MW, Traits.EXTRA_ATTACK_1]),
         ],
-        [Traits.ASTARTES, Traits.WALKER],
+        [Traits.KNOW_NO_FEAR, Traits.WALKER],
     )
 )
 
@@ -571,7 +579,7 @@ legiones_astartes.add_unit(
             RangedWeapon(45, name="Anvilus Autocannon Battery", ap=5, at=4),
             RangedWeapon(45, name="Anvilus Autocannon Battery", ap=5, at=4),
         ],
-        traits=[Traits.ASTARTES, Traits.WALKER, Traits.INVULNERABLE_SAVE],
+        traits=[Traits.KNOW_NO_FEAR, Traits.WALKER, Traits.INVULNERABLE_SAVE],
     )
 )
 
@@ -603,7 +611,7 @@ legiones_astartes.add_unit(
                 traits=[Traits.SLOW_FIRING],
             ),
         ],
-        traits=[Traits.ASTARTES, Traits.WALKER, Traits.INVULNERABLE_SAVE],
+        traits=[Traits.KNOW_NO_FEAR, Traits.WALKER, Traits.INVULNERABLE_SAVE],
     )
 )
 
@@ -621,7 +629,7 @@ legiones_astartes.add_unit(
             AssaultWeapon([Traits.EXTRA_ATTACK_1, Traits.MW], name="Siege Claw"),
             RangedWeapon(15, name="Cyclonic Melta Lance", at=3, mw=5),
         ],
-        traits=[Traits.ASTARTES, Traits.WALKER, Traits.RIENFORCED_ARMOUR],
+        traits=[Traits.KNOW_NO_FEAR, Traits.WALKER, Traits.REINFORCED_ARMOUR],
     )
 )
 
@@ -639,7 +647,7 @@ legiones_astartes.add_unit(
             AssaultWeapon([Traits.EXTRA_ATTACK_1, Traits.MW], name="Siege Claw"),
             RangedWeapon(15, name="Leviathan Storm Cannon", ap=4, at=4),
         ],
-        traits=[Traits.ASTARTES, Traits.WALKER, Traits.RIENFORCED_ARMOUR],
+        traits=[Traits.KNOW_NO_FEAR, Traits.WALKER, Traits.REINFORCED_ARMOUR],
     )
 )
 
@@ -654,7 +662,7 @@ legiones_astartes.add_unit(
         cc=6,
         ff=4,
         weapons=[DemolisherCannon()],
-        traits=[Traits.ASTARTES, Traits.WALKER],
+        traits=[Traits.KNOW_NO_FEAR, Traits.WALKER],
     )
 )
 
@@ -672,7 +680,7 @@ legiones_astartes.add_unit(
 #         weapons=[
 #             RangedWeapon(60, name="Laser Destroyer Array", ap=6, at=3),
 #         ],
-#         traits=[Traits.ASTARTES, Traits.WALKER],
+#         traits=[Traits.KNOW_NO_FEAR, Traits.WALKER],
 #     )
 # )
 
@@ -694,7 +702,7 @@ legiones_astartes.add_unit(
                 traits=[Traits.IGNORE_COVER, Traits.INDIRECT],
             )
         ],
-        traits=[Traits.ASTARTES],
+        traits=[Traits.KNOW_NO_FEAR],
     )
 )
 
@@ -716,7 +724,7 @@ legiones_astartes.add_unit(
                 45, name="Scorpius Multi Launcher", ap=6, at=5, traits=[Traits.INDIRECT]
             ),
         ],
-        traits=[Traits.ASTARTES],
+        traits=[Traits.KNOW_NO_FEAR],
     )
 )
 
@@ -731,6 +739,7 @@ legiones_astartes.add_unit(
         cc=5,
         ff=4,
         damage_capacity=4,
+        void_shields=2,
         transport_capacity=8,
         weapons=[
             SmallArms([Traits.EXTRA_ATTACK_1, Traits.MW]),
@@ -741,7 +750,7 @@ legiones_astartes.add_unit(
             RangedWeapon(30, ap=4, at=4, aa=5),
             RangedWeapon(30, ap=4, at=4, aa=5),
         ],
-        traits=[Traits.ASTARTES, Traits.RIENFORCED_ARMOUR, Traits.VOID_SHIELDS],
+        traits=[Traits.KNOW_NO_FEAR, Traits.REINFORCED_ARMOUR],
     )
 )
 
@@ -767,7 +776,7 @@ legiones_astartes.add_unit(
             HeavyBolter(),
         ],
         damage_capacity=2,
-        traits=[Traits.ASTARTES, Traits.RIENFORCED_ARMOUR],
+        traits=[Traits.KNOW_NO_FEAR, Traits.REINFORCED_ARMOUR],
     )
 )
 
@@ -793,7 +802,7 @@ legiones_astartes.add_unit(
             HeavyBolter(),
         ],
         damage_capacity=2,
-        traits=[Traits.ASTARTES, Traits.RIENFORCED_ARMOUR],
+        traits=[Traits.KNOW_NO_FEAR, Traits.REINFORCED_ARMOUR],
     )
 )
 
@@ -816,7 +825,11 @@ legiones_astartes.add_unit(
             HeavyBolter(),
         ],
         damage_capacity=2,
-        traits=[Traits.ASTARTES, Traits.RIENFORCED_ARMOUR, Traits.THICK_REAR_ARMOUR],
+        traits=[
+            Traits.KNOW_NO_FEAR,
+            Traits.REINFORCED_ARMOUR,
+            Traits.THICK_REAR_ARMOUR,
+        ],
     )
 )
 
@@ -839,7 +852,11 @@ legiones_astartes.add_unit(
             LasCannon(),
         ],
         damage_capacity=2,
-        traits=[Traits.ASTARTES, Traits.RIENFORCED_ARMOUR, Traits.THICK_REAR_ARMOUR],
+        traits=[
+            Traits.KNOW_NO_FEAR,
+            Traits.REINFORCED_ARMOUR,
+            Traits.THICK_REAR_ARMOUR,
+        ],
     )
 )
 
@@ -867,7 +884,11 @@ legiones_astartes.add_unit(
             DemolisherCannon(traits=[Traits.FIXED_FORWARD]),
         ],
         damage_capacity=4,
-        traits=[Traits.ASTARTES, Traits.RIENFORCED_ARMOUR, Traits.THICK_REAR_ARMOUR],
+        traits=[
+            Traits.KNOW_NO_FEAR,
+            Traits.REINFORCED_ARMOUR,
+            Traits.THICK_REAR_ARMOUR,
+        ],
     )
 )
 
@@ -915,7 +936,11 @@ legiones_astartes.add_unit(
             TwinHeavyBolter(traits=[Traits.FIXED_FORWARD]),
         ],
         damage_capacity=4,
-        traits=[Traits.ASTARTES, Traits.RIENFORCED_ARMOUR, Traits.THICK_REAR_ARMOUR],
+        traits=[
+            Traits.KNOW_NO_FEAR,
+            Traits.REINFORCED_ARMOUR,
+            Traits.THICK_REAR_ARMOUR,
+        ],
     )
 )
 
@@ -941,7 +966,11 @@ legiones_astartes.add_unit(
             QuadLasCannon(),
         ],
         damage_capacity=4,
-        traits=[Traits.ASTARTES, Traits.RIENFORCED_ARMOUR, Traits.THICK_REAR_ARMOUR],
+        traits=[
+            Traits.KNOW_NO_FEAR,
+            Traits.REINFORCED_ARMOUR,
+            Traits.THICK_REAR_ARMOUR,
+        ],
     )
 )
 
@@ -970,7 +999,11 @@ legiones_astartes.add_unit(
             QuadLasCannon(),
         ],
         damage_capacity=4,
-        traits=[Traits.ASTARTES, Traits.RIENFORCED_ARMOUR, Traits.THICK_REAR_ARMOUR],
+        traits=[
+            Traits.KNOW_NO_FEAR,
+            Traits.REINFORCED_ARMOUR,
+            Traits.THICK_REAR_ARMOUR,
+        ],
     )
 )
 
@@ -985,7 +1018,7 @@ legiones_astartes.add_unit(
         cc=6,
         ff=5,
         weapons=[RangedWeapon(30, name="Plasma Cannon", ap=5, at=5), HeavyBolter()],
-        traits=[Traits.ASTARTES, Traits.SKIMMER, Traits.SCOUT],
+        traits=[Traits.KNOW_NO_FEAR, Traits.SKIMMER, Traits.SCOUT],
     )
 )
 
@@ -1003,7 +1036,7 @@ legiones_astartes.add_unit(
             RangedWeapon(15, name="Multi-melta", mw=5),
             SmallArms([Traits.MW], name="Multi-melta"),
         ],
-        traits=[Traits.ASTARTES, Traits.SKIMMER, Traits.SCOUT],
+        traits=[Traits.KNOW_NO_FEAR, Traits.SKIMMER, Traits.SCOUT],
     )
 )
 
@@ -1021,7 +1054,7 @@ legiones_astartes.add_unit(
             RangedWeapon(45, name="Cyclone Missile Launcher", ap=3, at=5),
             HeavyBolter(),
         ],
-        traits=[Traits.ASTARTES, Traits.SKIMMER, Traits.SCOUT],
+        traits=[Traits.KNOW_NO_FEAR, Traits.SKIMMER, Traits.SCOUT],
     )
 )
 
@@ -1036,7 +1069,7 @@ legiones_astartes.add_unit(
         cc=6,
         ff=5,
         weapons=[TwinLinkedLasCannon(), HeavyBolter()],
-        traits=[Traits.ASTARTES, Traits.SKIMMER, Traits.SCOUT],
+        traits=[Traits.KNOW_NO_FEAR, Traits.SKIMMER, Traits.SCOUT],
     )
 )
 
@@ -1051,7 +1084,7 @@ legiones_astartes.add_unit(
         cc=3,
         ff=5,
         weapons=[SmallArms()],
-        traits=[Traits.ASTARTES, Traits.MOUNTED, Traits.SCOUT],
+        traits=[Traits.KNOW_NO_FEAR, Traits.MOUNTED, Traits.SCOUT],
     )
 )
 
@@ -1066,6 +1099,6 @@ legiones_astartes.add_unit(
         cc=4,
         ff=4,
         weapons=[SmallArms()],
-        traits=[Traits.ASTARTES, Traits.MOUNTED, Traits.SKIMMER, Traits.SCOUT],
+        traits=[Traits.KNOW_NO_FEAR, Traits.MOUNTED, Traits.SKIMMER, Traits.SCOUT],
     )
 )
