@@ -1,4 +1,4 @@
-from gpr.result import Result
+from gpr.result import Result, quality_to_str
 from tabulate import tabulate
 from data.models import Army
 
@@ -10,7 +10,7 @@ def get_markdown_prediction_table(results: list[Result], army: Army) -> str:
                 r.unit.name,
                 round(r.predicted_cost, 0),
                 f"±{round(r.uncertainty, 0)}",
-                r.quality,
+                quality_to_str(r.quality),
                 r.score,
             ),
             results,

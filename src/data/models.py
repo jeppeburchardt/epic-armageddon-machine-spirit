@@ -11,7 +11,7 @@ class UnitType(Enum):
     AIRCRAFT_WAR_ENGINE = 6
 
 
-def unit_type_to_string(unit_type):
+def unit_type_to_string(unit_type: UnitType):
     """
     Maps a UnitType enum value to a human-readable string.
     """
