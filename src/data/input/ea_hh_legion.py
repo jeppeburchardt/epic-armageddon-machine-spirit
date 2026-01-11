@@ -7,6 +7,7 @@ from data.models import (
     Unit,
     AssaultWeapon,
     Army,
+    AircraftSpeed,
 )
 from .ea_hh_weapons import (
     HeavyBolter,
@@ -519,6 +520,7 @@ legiones_astartes.add_unit(
         [Traits.KNOW_NO_FEAR, Traits.PLANET_FALL, Traits.REINFORCED_ARMOUR],
         8,
         2,
+        aircraft_speed=AircraftSpeed.BOMBER,
     )
 )
 
@@ -542,6 +544,7 @@ legiones_astartes.add_unit(
             RangedWeapon(15, ap=4, aa=6),
         ],
         traits=[Traits.KNOW_NO_FEAR, Traits.REINFORCED_ARMOUR],
+        aircraft_speed=AircraftSpeed.FIGHTER_BOMBER,
     )
 )
 
@@ -562,6 +565,7 @@ legiones_astartes.add_unit(
             RangedWeapon(45, at=5),
         ],
         traits=[Traits.KNOW_NO_FEAR],
+        aircraft_speed=AircraftSpeed.FIGHTER,
     )
 )
 
@@ -585,6 +589,7 @@ legiones_astartes.add_unit(
         traits=[Traits.KNOW_NO_FEAR, Traits.REINFORCED_ARMOUR, Traits.PLANET_FALL],
         transport_capacity=4,
         damage_capacity=1,
+        aircraft_speed=AircraftSpeed.FIGHTER_BOMBER,
     )
 )
 

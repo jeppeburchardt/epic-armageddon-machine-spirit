@@ -9,12 +9,17 @@ class UnitType(Enum):
     AIRCRAFT = 4
     WAR_ENGINE = 5
     AIRCRAFT_WAR_ENGINE = 6
+    SPACESHIP = 7
+
+
+class AircraftSpeed(Enum):
+    NONE = None
+    FIGHTER = 0
+    BOMBER = 1
+    FIGHTER_BOMBER = 2
 
 
 def unit_type_to_string(unit_type: UnitType):
-    """
-    Maps a UnitType enum value to a human-readable string.
-    """
     mapping = {
         UnitType.CHARACTER: "CHR",
         UnitType.INFANTRY: "INF",
@@ -25,6 +30,15 @@ def unit_type_to_string(unit_type: UnitType):
         UnitType.AIRCRAFT_WAR_ENGINE: "AC/WE",
     }
     return mapping.get(unit_type, str(unit_type))
+
+
+def aircraft_speed_to_string(speed: AircraftSpeed):
+    mapping = {
+        AircraftSpeed.FIGHTER: "Fighter",
+        AircraftSpeed.BOMBER: "Bomber",
+        AircraftSpeed.FIGHTER_BOMBER: "Fighter bomber",
+    }
+    return mapping.get(speed, str(speed))
 
 
 class Unit:
@@ -42,6 +56,7 @@ class Unit:
     void_shields: int
     weapons: list["RangedWeapon", "AssaultWeapon", "SmallArms"]
     traits: list["Traits"] = []
+    aircraft_speed: AircraftSpeed
 
     def __init__(
         self,
@@ -59,6 +74,7 @@ class Unit:
         transport_capacity=0,
         damage_capacity=1,
         void_shields=0,
+        aircraft_speed=AircraftSpeed.NONE,
     ):
         self.name = name
         self.strategy_rating = strategy_rating
@@ -74,12 +90,13 @@ class Unit:
         self.weapons = weapons
         self.traits = traits
         self.void_shields = void_shields
+        self.aircraft_speed = aircraft_speed
 
     def to_list(self):
         return [
             self.name,
             unit_type_to_string(self.type),
-            self.speed,
+            self.unit_speed_to_string(),
             self.armour,
             self.cc,
             self.ff,
@@ -101,6 +118,12 @@ class Unit:
             else:
                 result.append(w)
         return result
+
+    def unit_speed_to_string(self):
+        if self.type == UnitType.AIRCRAFT or self.type == UnitType.AIRCRAFT_WAR_ENGINE:
+            return aircraft_speed_to_string(self.aircraft_speed)
+        else:
+            return f"{self.speed}cm"
 
 
 class Army:

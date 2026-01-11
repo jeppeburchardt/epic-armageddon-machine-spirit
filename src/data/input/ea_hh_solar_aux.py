@@ -6,6 +6,7 @@ from data.models import (
     Unit,
     AssaultWeapon,
     Army,
+    AircraftSpeed,
 )
 from .ea_hh_weapons import (
     HeavyBolter,
@@ -686,6 +687,7 @@ solar_auxilia.add_unit(
             LasCannon(),
             RangedWeapon(30, name="Heavy Stubber", aa=6, traits=[Traits.REAR]),
         ],
+        aircraft_speed=AircraftSpeed.FIGHTER,
     )
 )
 
@@ -704,6 +706,7 @@ solar_auxilia.add_unit(
             RangedWeapon(30, name="Rockets", at=4, traits=[Traits.FxF]),
             RangedWeapon(15, name="Storm Bolters", aa=5, ap=4, traits=[Traits.FxF]),
         ],
+        aircraft_speed=AircraftSpeed.FIGHTER,
     )
 )
 
@@ -729,6 +732,7 @@ solar_auxilia.add_unit(
             AutoCannon(aa=5),
             AutoCannon(aa=5),
         ],
+        aircraft_speed=AircraftSpeed.FIGHTER,
     )
 )
 
@@ -747,5 +751,6 @@ solar_auxilia.add_unit(
             RangedWeapon(15, name="Bomb Rack", bp=3),
             TwinHeavyBolter(aa=5),
         ],
+        aircraft_speed=AircraftSpeed.BOMBER,
     )
 )
