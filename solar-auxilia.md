@@ -2,51 +2,51 @@
 
 ## Predicted unit cost:
 
-| Name                                             |   Predicted Cost | Uncertainty   | Quality   |   Score |
-|--------------------------------------------------|------------------|---------------|-----------|---------|
-| Infantry Section                                 |               19 | ±8.0          | TBD       |      59 |
-| Infantry with flamers                            |               27 | ±10.0         | TBD       |      65 |
-| Veletaris Storm Section                          |               30 | ±11.0         | TBD       |      63 |
-| Ogryn Charonite Squad                            |               29 | ±10.0         | TBD       |      66 |
-| Tactical Command Unit                            |               19 | ±10.0         | TBD       |      51 |
-| Legate Command Unit                              |               25 | ±9.0          | TBD       |      63 |
-| Rapier Mole Mortar                               |               39 | ±9.0          | TBD       |      78 |
-| Rapier Laser Destroyer                           |               27 | ±8.0          | TBD       |      71 |
-| Rapier Quad Launcher                             |               32 | ±8.0          | TBD       |      74 |
-| Aethon Heavy Sentinel                            |               33 | ±10.0         | TBD       |      69 |
-| Tarantula, Twin Lascannon                        |               27 | ±10.0         | TBD       |      65 |
-| Tarantula, Hyperios air-defence missile launcher |               28 | ±13.0         | TBD       |      54 |
-| Leman Russ (Battle cannon + H.B.)                |               63 | ±9.0          | TBD       |      85 |
-| Leman Russ (Battle cannon + Las)                 |               67 | ±10.0         | TBD       |      85 |
-| Leman Russ (Vanquisher + H.B.)                   |               63 | ±9.0          | TBD       |      85 |
-| Leman Russ (Vanquisher + Las)                    |               67 | ±10.0         | TBD       |      85 |
-| Leman Russ (Annihilator)                         |               59 | ±10.0         | TBD       |      83 |
-| Leman Russ (Demolisher)                          |               64 | ±10.0         | TBD       |      85 |
-| Leman Russ (Executioner)                         |               59 | ±9.0          | TBD       |      85 |
-| Leman Russ (Exterminator)                        |               64 | ±9.0          | TBD       |      86 |
-| Malcador (battle cannon, demolisher, las.spon.)  |               93 | ±12.0         | TBD       |      87 |
-| Malcador (vanquisher, demiólisher, h.b.spon.)    |               81 | ±11.0         | TBD       |      86 |
-| Malcador (las cannons)                           |               80 | ±14.0         | TBD       |      83 |
-| Dracosan with las cannon                         |               32 | ±12.0         | TBD       |      62 |
-| Dracosan with demolisher                         |               52 | ±9.0          | TBD       |      82 |
-| Medusa                                           |               53 | ±9.0          | TBD       |      82 |
-| Basilisk                                         |               69 | ±10.0         | TBD       |      86 |
-| Basilisk (Barrage)                               |               81 | ±9.0          | TBD       |      88 |
-| Arvus Lighter                                    |               20 | ±17.0         | TBD       |      16 |
-| Malcador Infernus                                |               69 | ±11.0         | TBD       |      85 |
-| Malcador Valdor                                  |               92 | ±14.0         | TBD       |      85 |
-| Avenger Strike Fighter                           |               90 | ±17.0         | TBD       |      81 |
-| Thunderbolt                                      |               80 | ±11.0         | TBD       |      86 |
-| Lightning Fighter                                |              123 | ±25.0         | TBD       |      79 |
-| Marauder Bomber                                  |              116 | ±15.0         | TBD       |      87 |
-| Shadowsword                                      |              189 | ±12.0         | TBD       |      94 |
-| Stromblade                                       |              164 | ±15.0         | TBD       |      91 |
-| Stormsword                                       |              164 | ±14.0         | TBD       |      91 |
-| Baneblade                                        |              162 | ±11.0         | TBD       |      93 |
-| Stormhammer                                      |              152 | ±12.0         | TBD       |      92 |
+| Name                                             |   Predicted Cost | Uncertainty   | Quality      |   Score |
+|--------------------------------------------------|------------------|---------------|--------------|---------|
+| Infantry Section                                 |               19 | ±8.0          | Safe         |      60 |
+| Infantry with flamers                            |               27 | ±9.0          | Safe         |      65 |
+| Veletaris Storm Section                          |               31 | ±11.0         | Review       |      64 |
+| Ogryn Charonite Squad                            |               29 | ±10.0         | Safe         |      66 |
+| Tactical Command Unit                            |               19 | ±9.0          | Safe         |      51 |
+| Legate Command Unit                              |               25 | ±9.0          | Safe         |      63 |
+| Rapier Mole Mortar                               |               39 | ±9.0          | Safe         |      78 |
+| Rapier Laser Destroyer                           |               27 | ±8.0          | Safe         |      71 |
+| Rapier Quad Launcher                             |               32 | ±8.0          | Safe         |      75 |
+| Aethon Heavy Sentinel                            |               33 | ±10.0         | Review       |      70 |
+| Tarantula, Twin Lascannon                        |               27 | ±9.0          | Safe         |      66 |
+| Tarantula, Hyperios air-defence missile launcher |               28 | ±13.0         | Review       |      54 |
+| Leman Russ (Battle cannon + H.B.)                |               62 | ±9.0          | Safe         |      86 |
+| Leman Russ (Battle cannon + Las)                 |               65 | ±9.0          | Safe         |      86 |
+| Leman Russ (Vanquisher + H.B.)                   |               62 | ±9.0          | Safe         |      85 |
+| Leman Russ (Vanquisher + Las)                    |               65 | ±9.0          | Safe         |      86 |
+| Leman Russ (Annihilator)                         |               58 | ±9.0          | Safe         |      84 |
+| Leman Russ (Demolisher)                          |               63 | ±9.0          | Safe         |      86 |
+| Leman Russ (Executioner)                         |               59 | ±9.0          | Safe         |      86 |
+| Leman Russ (Exterminator)                        |               63 | ±9.0          | Safe         |      86 |
+| Malcador (battle cannon, demolisher, las.spon.)  |               97 | ±12.0         | Safe         |      88 |
+| Malcador (vanquisher, demiólisher, h.b.spon.)    |               85 | ±11.0         | Safe         |      87 |
+| Malcador (las cannons)                           |               83 | ±14.0         | Safe         |      84 |
+| Dracosan with las cannon                         |               31 | ±12.0         | Review       |      61 |
+| Dracosan with demolisher                         |               51 | ±9.0          | Safe         |      82 |
+| Medusa                                           |               53 | ±9.0          | Safe         |      83 |
+| Basilisk                                         |               69 | ±10.0         | Safe         |      86 |
+| Basilisk (Barrage)                               |               81 | ±9.0          | Safe         |      88 |
+| Arvus Lighter                                    |               20 | ±17.0         | Experimental |      14 |
+| Malcador Infernus                                |               73 | ±11.0         | Safe         |      85 |
+| Malcador Valdor                                  |               95 | ±13.0         | Safe         |      86 |
+| Avenger Strike Fighter                           |               91 | ±17.0         | Safe         |      81 |
+| Thunderbolt                                      |               80 | ±11.0         | Safe         |      87 |
+| Lightning Fighter                                |              124 | ±25.0         | Review       |      80 |
+| Marauder Bomber                                  |              116 | ±14.0         | Safe         |      88 |
+| Shadowsword                                      |              189 | ±11.0         | Safe         |      94 |
+| Stromblade                                       |              165 | ±15.0         | Safe         |      91 |
+| Stormsword                                       |              164 | ±14.0         | Safe         |      91 |
+| Baneblade                                        |              162 | ±10.0         | Safe         |      94 |
+| Stormhammer                                      |              152 | ±12.0         | Safe         |      92 |
 
-Average Score: 77.33
-Average Uncertainty: 11.27
+Average Score: 77.75
+Average Uncertainty: 11.08
 
 
 

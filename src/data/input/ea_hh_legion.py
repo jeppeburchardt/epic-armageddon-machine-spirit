@@ -302,49 +302,109 @@ legiones_astartes.add_unit(
 
 legiones_astartes.add_unit(
     Unit(
-        "Legion Sicaran Battle Tank (Accelerator Cannon + Lascannons)",
+        "Sicaran Battle Tank (Accelerator Cannon + Lascannons)",
         5,
         1,
         UnitType.ARMORED_VEHICLE,
-        35,
-        5,
-        6,
-        4,
-        300 / 4,
-        [RangedWeapon(45, 5, 4), RangedWeapon(45, 5, 4), LasCannon()],
-        [Traits.KNOW_NO_FEAR, Traits.REINFORCED_ARMOUR],
+        speed=35,
+        armour=5,
+        cc=6,
+        ff=4,
+        weapons=[
+            Multiplier(
+                2, RangedWeapon(name="Accelerator Cannon", range=45, at=5, ap=4)
+            ),
+            Multiplier(2, LasCannon()),
+            HeavyBolter(traits=[Traits.FIXED_FORWARD]),
+        ],
+        traits=[Traits.KNOW_NO_FEAR, Traits.REINFORCED_ARMOUR],
     )
 )
 
 legiones_astartes.add_unit(
     Unit(
-        "Legion Sicaran Battle Tank (Accelerator Cannon + Heavy Bolters)",
+        "Sicaran Battle Tank (Accelerator Cannon + Heavy Bolters)",
         5,
         1,
         UnitType.ARMORED_VEHICLE,
-        35,
-        5,
-        6,
-        3,
-        300 / 4,
-        [RangedWeapon(45, 5, 4), RangedWeapon(45, 5, 4), HeavyBolter()],
-        [Traits.KNOW_NO_FEAR, Traits.REINFORCED_ARMOUR],
+        speed=35,
+        armour=5,
+        cc=6,
+        ff=4,
+        weapons=[
+            Multiplier(
+                2, RangedWeapon(name="Accelerator Cannon", range=45, at=5, ap=4)
+            ),
+            Multiplier(2, HeavyBolter()),
+            HeavyBolter(traits=[Traits.FIXED_FORWARD]),
+        ],
+        traits=[Traits.KNOW_NO_FEAR, Traits.REINFORCED_ARMOUR],
     )
 )
 
 legiones_astartes.add_unit(
     Unit(
-        "Legion Sicaran Battle Tank, with Omega plasma array",
+        "Sicaran Battle Tank, with Omega plasma array",
         5,
         1,
         UnitType.ARMORED_VEHICLE,
-        35,
+        speed=35,
+        armour=5,
+        cc=6,
+        ff=4,
+        weapons=[
+            Multiplier(2, RangedWeapon(name="Omega Plasma Array", range=45, at=3)),
+            Multiplier(2, LasCannon()),
+            HeavyBolter(traits=[Traits.FIXED_FORWARD]),
+        ],
+        traits=[Traits.KNOW_NO_FEAR, Traits.REINFORCED_ARMOUR],
+    )
+)
+
+legiones_astartes.add_unit(
+    Unit(
+        "Sicaran Punisher",
         5,
-        6,
-        3,
-        300 / 4,
-        [RangedWeapon(45, 3, 0), RangedWeapon(45, 3, 0), HeavyBolter()],
-        [Traits.KNOW_NO_FEAR, Traits.REINFORCED_ARMOUR],
+        1,
+        UnitType.ARMORED_VEHICLE,
+        speed=35,
+        armour=5,
+        cc=6,
+        ff=4,
+        weapons=[
+            Multiplier(4, RangedWeapon(name="Punisher Cannon", range=30, at=5, ap=5)),
+            Multiplier(2, HeavyBolter()),
+            HeavyBolter(traits=[Traits.FIXED_FORWARD]),
+        ],
+        traits=[Traits.KNOW_NO_FEAR, Traits.REINFORCED_ARMOUR],
+    )
+)
+
+legiones_astartes.add_unit(
+    Unit(
+        "Sicaran Arcus",
+        5,
+        1,
+        UnitType.ARMORED_VEHICLE,
+        speed=35,
+        armour=5,
+        cc=6,
+        ff=4,
+        weapons=[
+            Multiplier(
+                2,
+                RangedWeapon(
+                    45,
+                    name="Arcus Missile Launcher",
+                    ap=6,
+                    at=5,
+                    traits=[Traits.INDIRECT],
+                ),
+            ),
+            Multiplier(2, HeavyBolter()),
+            HeavyBolter(traits=[Traits.FIXED_FORWARD]),
+        ],
+        traits=[Traits.KNOW_NO_FEAR, Traits.REINFORCED_ARMOUR],
     )
 )
 
@@ -359,7 +419,11 @@ legiones_astartes.add_unit(
         6,
         5,
         240 / 4,
-        [TwinLinkedLasCannon(), LasCannon(), LasCannon()],
+        [
+            TwinLinkedLasCannon(),
+            LasCannon(),
+            LasCannon(),
+        ],
         [Traits.KNOW_NO_FEAR],
     )
 )
@@ -717,11 +781,15 @@ legiones_astartes.add_unit(
         cc=6,
         ff=5,
         weapons=[
-            RangedWeapon(
-                45, name="Scorpius Multi Launcher", ap=6, at=5, traits=[Traits.INDIRECT]
-            ),
-            RangedWeapon(
-                45, name="Scorpius Multi Launcher", ap=6, at=5, traits=[Traits.INDIRECT]
+            Multiplier(
+                2,
+                RangedWeapon(
+                    45,
+                    name="Scorpius Multi Launcher",
+                    ap=6,
+                    at=5,
+                    traits=[Traits.INDIRECT],
+                ),
             ),
         ],
         traits=[Traits.KNOW_NO_FEAR],
