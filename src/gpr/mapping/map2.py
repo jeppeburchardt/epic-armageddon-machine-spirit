@@ -3,18 +3,7 @@ from data.models import Traits, Unit, UnitType, RangedWeapon, SmallArms, Assault
 
 
 def dice_test_to_score(dice_test: int) -> int:
-    if dice_test <= 2:
-        return 5
-    elif dice_test <= 4:
-        return 4
-    elif dice_test <= 6:
-        return 3
-    elif dice_test <= 8:
-        return 2
-    elif dice_test <= 10:
-        return 1
-    else:
-        return 0
+    return (6 - dice_test) / 6
 
 
 def map2(unit: Unit) -> np.ndarray:
