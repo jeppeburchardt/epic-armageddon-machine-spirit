@@ -6,6 +6,7 @@ from .training.ea_40k_eldar import ea_40k_eldar
 from .training.ea_40k_ork_war_horde import ea_40k_ork_war_horde
 from .training.epic_uk_squats import squats
 from .training.ea_40k_minervan import minervan
+from .training.ea_40k_tyranid import tyranids
 
 from .input.ea_hh_legion import legiones_astartes
 from .input.ea_hh_solar_aux import solar_auxilia
@@ -19,4 +20,5 @@ ea_40k_units = (
     + ea_40k_eldar
     + squats.get_sorted_units()
     + minervan.get_sorted_units()
+    + tyranids.get_sorted_units()
 )
