@@ -118,6 +118,64 @@ squats.add_unit(
     )
 )
 
+squats.add_unit(
+    Unit(
+        "Rhino",
+        2,
+        2,
+        UnitType.ARMORED_VEHICLE,
+        30,
+        armour=5,
+        cc=6,
+        ff=6,
+        weapons=[SmallArms()],
+        transport_capacity=2,
+        single_unit_cost=10,
+    )
+)
+
+squats.add_unit(
+    Unit(
+        "Iron Eagle",
+        2,
+        2,
+        UnitType.ARMORED_VEHICLE,
+        speed=35,
+        armour=4,
+        cc=6,
+        ff=5,
+        weapons=[
+            Multiplier(2, RangedWeapon(45, ap=5, at=6)),
+            RangedWeapon(75, ap=4, at=4),
+        ],
+        traits=[Traits.SCOUT, Traits.SKIMMER],
+        single_unit_cost=63,
+    )
+)
+
+squats.add_unit(
+    Unit(
+        "Overlord",
+        2,
+        2,
+        UnitType.WAR_ENGINE,
+        speed=20,
+        armour=4,
+        cc=0,
+        ff=4,
+        weapons=[
+            Multiplier(3, RangedWeapon(75, ap=4, at=5, traits=[Traits.LEFT])),
+            Multiplier(3, RangedWeapon(75, ap=4, at=5, traits=[Traits.RIGHT])),
+            Multiplier(4, RangedWeapon(45, ap=5, at=6, traits=[Traits.FIXED_FORWARD])),
+            RangedWeapon(45, aa=5),
+            RangedWeapon(15, bp=2),
+        ],
+        traits=[Traits.REINFORCED_ARMOUR],
+        damage_capacity=3,
+        single_unit_cost=250,
+    )
+)
+
 
 squats.add_unit(
     Unit(
@@ -146,12 +204,12 @@ squats.add_unit(
             SmallArms(traits=[Traits.EXTRA_ATTACK_1]),
         ],
         traits=[
-            Traits.VOID_SHIELDS,
             Traits.FEARLESS,
-            Traits.RIENFORCED_ARMOUR,
+            Traits.REINFORCED_ARMOUR,
             Traits.THICK_REAR_ARMOUR,
         ],
         damage_capacity=5,
+        void_shields=4,
         single_unit_cost=525,
     )
 )
@@ -186,12 +244,12 @@ squats.add_unit(
             SmallArms(traits=[Traits.EXTRA_ATTACK_1]),
         ],
         traits=[
-            Traits.VOID_SHIELDS,
             Traits.FEARLESS,
-            Traits.RIENFORCED_ARMOUR,
+            Traits.REINFORCED_ARMOUR,
             Traits.THICK_REAR_ARMOUR,
         ],
         damage_capacity=5,
+        void_shields=4,
         single_unit_cost=525,
     )
 )
