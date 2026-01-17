@@ -1,14 +1,14 @@
 import numpy as np
 import warnings
 from .result import Result, TrainingSetValidationResult
-
-warnings.filterwarnings("ignore", category=UserWarning, module="sklearn")
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.gaussian_process.kernels import RBF, WhiteKernel, ConstantKernel
 from sklearn.gaussian_process import GaussianProcessRegressor
 from sklearn.model_selection import LeaveOneOut
 
 from data.models import Unit
+
+warnings.filterwarnings("ignore", category=UserWarning, module="sklearn")
 
 
 def unit_to_cost(unit: Unit) -> int:

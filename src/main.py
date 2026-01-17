@@ -1,7 +1,7 @@
 from data import ea_40k_units, legiones_astartes, solar_auxilia
 from gpr.trainer import GPRTrainer
 from data.models import Army
-from gpr.mapping.map2 import map2
+from src.gpr.mapping.universal_unit import universal_unit
 
 # from out.unit_stats_table import get_markdown_unit_table
 from out.prediction_table import get_markdown_prediction_table
@@ -16,7 +16,7 @@ def predict_army(trainer: GPRTrainer, army: Army):
     # print(get_markdown_unit_table(army))
 
 
-trainer = GPRTrainer(mapper=map2)
+trainer = GPRTrainer(mapper=universal_unit)
 trainer.train(ea_40k_units)
 
 
