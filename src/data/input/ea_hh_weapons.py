@@ -1,4 +1,4 @@
-from data.models import RangedWeapon, Traits
+from models.units import RangedWeapon, Traits
 
 
 class HeavyBolter(RangedWeapon):

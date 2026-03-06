@@ -1,4 +1,4 @@
-from data.models import Traits, Unit, AssaultWeapon
+from models.units import Traits, Unit, AssaultWeapon
 
 
 def assault(unit: Unit) -> list[float]:

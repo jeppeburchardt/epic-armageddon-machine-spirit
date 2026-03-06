@@ -1,4 +1,13 @@
-from data.models import Unit, RangedWeapon, AssaultWeapon, Traits, UnitType, SmallArms
+from models.units import (
+    Unit,
+    RangedWeapon,
+    AssaultWeapon,
+    Traits,
+    UnitType,
+    SmallArms,
+    AircraftSpeed,
+    Multiplier,
+)
 
 battle_wagon = Unit(
     "Battle Wagon",
@@ -182,6 +191,39 @@ stompa = Unit(
     single_unit_cost=50,
 )
 
+fighta_bommer = Unit(
+    "Fighta Bommer",
+    3,
+    3,
+    UnitType.AIRCRAFT,
+    speed=200,
+    armour=6,
+    cc=0,
+    ff=0,
+    weapons=[RangedWeapon(15, ap=5, aa=5), RangedWeapon(30, at=4)],
+    aircraft_speed=AircraftSpeed.FIGHTER,
+    single_unit_cost=50,
+)
+
+landa = Unit(
+    "Landa",
+    3,
+    3,
+    UnitType.AIRCRAFT_WAR_ENGINE,
+    speed=200,
+    armour=5,
+    cc=6,
+    ff=4,
+    weapons=[
+        Multiplier(6, RangedWeapon(15, ap=5, aa=5)),
+        Multiplier(2, RangedWeapon(30, at=4, traits=[Traits.FIXED_FORWARD])),
+    ],
+    single_unit_cost=200,
+    damage_capacity=3,
+    traits=[Traits.PLANET_FALL, Traits.REINFORCED_ARMOUR],
+    aircraft_speed=AircraftSpeed.BOMBER,
+)
+
 
 ea_40k_ork_war_horde = [
     battle_wagon,
@@ -195,4 +237,6 @@ ea_40k_ork_war_horde = [
     dreadnought,
     killer_kan,
     stompa,
+    fighta_bommer,
+    landa,
 ]

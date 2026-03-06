@@ -1,6 +1,6 @@
-from gpr.result import Result, quality_to_str
+from models.result import Result, quality_to_str
 from tabulate import tabulate
-from data.models import Army
+from models.units import Army
 
 
 def get_markdown_prediction_table(results: list[Result], army: Army) -> str:

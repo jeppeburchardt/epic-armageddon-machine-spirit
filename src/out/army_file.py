@@ -1,7 +1,7 @@
 from re import sub
 
-from data.models import Army
-from gpr.result import Result
+from models.units import Army
+from models.result import Result
 
 from out.unit_stats_table import get_markdown_unit_table
 from out.prediction_table import get_markdown_prediction_table

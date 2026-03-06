@@ -1,4 +1,4 @@
-from data.models import Unit, Traits, AssaultWeapon
+from models.units import Unit, Traits, AssaultWeapon
 
 
 def extra_damage(unit: Unit) -> list[float]:

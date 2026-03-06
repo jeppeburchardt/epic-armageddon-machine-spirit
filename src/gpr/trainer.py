@@ -1,12 +1,12 @@
 import numpy as np
 import warnings
-from .result import Result, TrainingSetValidationResult
+from models.result import Result, TrainingSetValidationResult
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.gaussian_process.kernels import RBF, WhiteKernel, ConstantKernel
 from sklearn.gaussian_process import GaussianProcessRegressor
 from sklearn.model_selection import LeaveOneOut
 
-from data.models import Unit
+from models.units import Unit
 
 warnings.filterwarnings("ignore", category=UserWarning, module="sklearn")
 

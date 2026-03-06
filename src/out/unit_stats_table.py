@@ -1,4 +1,4 @@
-from data.models import Unit
+from models.units import Unit
 from tabulate import tabulate
 
 

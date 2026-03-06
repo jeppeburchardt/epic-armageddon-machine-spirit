@@ -1,4 +1,4 @@
-from data.models import Unit, RangedWeapon
+from models.units import Unit, RangedWeapon
 
 
 def range_bands(unit: Unit) -> list[float]:

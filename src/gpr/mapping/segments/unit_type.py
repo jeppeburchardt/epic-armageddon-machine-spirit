@@ -1,4 +1,4 @@
-from data.models import Unit, UnitType
+from models.units import Unit, UnitType
 
 
 def unit_type(unit: Unit) -> list[float]:

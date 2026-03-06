@@ -1,4 +1,4 @@
-from data.models import (
+from models.units import (
     RangedWeapon,
     SmallArms,
     Traits,

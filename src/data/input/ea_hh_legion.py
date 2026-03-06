@@ -1,4 +1,4 @@
-from data.models import (
+from models.units import (
     RangedWeapon,
     Multiplier,
     SmallArms,
@@ -495,7 +495,7 @@ legiones_astartes.add_unit(
 
 legiones_astartes.add_unit(
     Unit(
-        "Legion Thunderhawk Gunship",
+        "Thunderhawk Gunship",
         5,
         1,
         UnitType.AIRCRAFT_WAR_ENGINE,
@@ -803,7 +803,7 @@ legiones_astartes.add_unit(
 
 legiones_astartes.add_unit(
     Unit(
-        "Legion Mastodon Armored Transport",
+        "Mastodon Armored Transport",
         5,
         1,
         UnitType.WAR_ENGINE,

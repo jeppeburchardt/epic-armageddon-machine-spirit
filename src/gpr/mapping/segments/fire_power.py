@@ -1,4 +1,4 @@
-from data.models import Unit
+from models.units import Unit
 
 
 def dice_test_to_score(dice_test: int) -> int:

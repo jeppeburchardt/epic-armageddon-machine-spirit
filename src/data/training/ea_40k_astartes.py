@@ -1,4 +1,4 @@
-from data.models import Unit, RangedWeapon, AssaultWeapon, Traits, UnitType, SmallArms
+from models.units import Unit, RangedWeapon, AssaultWeapon, Traits, UnitType, SmallArms
 
 tactical_marines = Unit(
     "Tactical Marines",

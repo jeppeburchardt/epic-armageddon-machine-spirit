@@ -4,49 +4,49 @@
 
 | Name                                             |   Predicted Cost | Uncertainty   | Quality      |
 |--------------------------------------------------|------------------|---------------|--------------|
-| Infantry Section                                 |               19 | ±7.0          | Safe         |
+| Infantry Section                                 |               17 | ±8.0          | Safe         |
 | Infantry with flamers                            |               26 | ±8.0          | Safe         |
-| Veletaris Storm Section                          |               27 | ±10.0         | Safe         |
-| Ogryn Charonite Squad                            |               32 | ±9.0          | Safe         |
-| Tactical Command Unit                            |               19 | ±8.0          | Safe         |
-| Legate Command Unit                              |               26 | ±8.0          | Safe         |
-| Rapier Mole Mortar                               |               36 | ±8.0          | Safe         |
-| Rapier Laser Destroyer                           |               25 | ±8.0          | Safe         |
-| Rapier Quad Launcher                             |               26 | ±8.0          | Safe         |
-| Aethon Heavy Sentinel                            |               36 | ±10.0         | Safe         |
-| Tarantula, Twin Lascannon                        |               29 | ±9.0          | Safe         |
-| Tarantula, Hyperios air-defence missile launcher |               30 | ±20.0         | Experimental |
-| Leman Russ (Battle cannon + H.B.)                |               59 | ±8.0          | Safe         |
-| Leman Russ (Battle cannon + Las)                 |               65 | ±9.0          | Safe         |
-| Leman Russ (Vanquisher + H.B.)                   |               61 | ±9.0          | Safe         |
-| Leman Russ (Vanquisher + Las)                    |               65 | ±9.0          | Safe         |
-| Leman Russ (Annihilator)                         |               57 | ±9.0          | Safe         |
-| Leman Russ (Demolisher)                          |               60 | ±8.0          | Safe         |
-| Leman Russ (Executioner)                         |               55 | ±8.0          | Safe         |
-| Leman Russ (Exterminator)                        |               60 | ±8.0          | Safe         |
-| Malcador (battle cannon, demolisher, las.spon.)  |               95 | ±11.0         | Safe         |
-| Malcador (vanquisher, demiólisher, h.b.spon.)    |               84 | ±11.0         | Safe         |
-| Malcador (las cannons)                           |               82 | ±13.0         | Safe         |
-| Dracosan with las cannon                         |               31 | ±10.0         | Review       |
-| Dracosan with demolisher                         |               49 | ±8.0          | Safe         |
-| Medusa                                           |               55 | ±9.0          | Safe         |
-| Basilisk                                         |               68 | ±9.0          | Safe         |
-| Basilisk (Barrage)                               |               81 | ±9.0          | Safe         |
-| Arvus Lighter                                    |               24 | ±18.0         | Experimental |
-| Malcador Infernus                                |               69 | ±11.0         | Safe         |
-| Malcador Valdor                                  |               99 | ±15.0         | Safe         |
-| Avenger Strike Fighter                           |               96 | ±23.0         | Review       |
-| Thunderbolt                                      |               80 | ±10.0         | Safe         |
-| Lightning Fighter                                |              120 | ±25.0         | Review       |
-| Marauder Bomber                                  |              120 | ±14.0         | Safe         |
-| Shadowsword                                      |              184 | ±11.0         | Safe         |
-| Stromblade                                       |              173 | ±15.0         | Safe         |
-| Stormsword                                       |              163 | ±14.0         | Safe         |
-| Baneblade                                        |              159 | ±10.0         | Safe         |
-| Stormhammer                                      |              154 | ±12.0         | Safe         |
+| Veletaris Storm Section                          |               27 | ±11.0         | Review       |
+| Ogryn Charonite Squad                            |               32 | ±10.0         | Safe         |
+| Tactical Command Unit                            |               21 | ±8.0          | Safe         |
+| Legate Command Unit                              |               27 | ±8.0          | Safe         |
+| Rapier Mole Mortar                               |               35 | ±9.0          | Safe         |
+| Rapier Laser Destroyer                           |               22 | ±8.0          | Safe         |
+| Rapier Quad Launcher                             |               27 | ±8.0          | Safe         |
+| Aethon Heavy Sentinel                            |               41 | ±11.0         | Review       |
+| Tarantula, Twin Lascannon                        |               23 | ±9.0          | Safe         |
+| Tarantula, Hyperios air-defence missile launcher |               25 | ±14.0         | Review       |
+| Leman Russ (Battle cannon + H.B.)                |               57 | ±9.0          | Safe         |
+| Leman Russ (Battle cannon + Las)                 |               59 | ±10.0         | Safe         |
+| Leman Russ (Vanquisher + H.B.)                   |               55 | ±9.0          | Safe         |
+| Leman Russ (Vanquisher + Las)                    |               59 | ±10.0         | Safe         |
+| Leman Russ (Annihilator)                         |               54 | ±9.0          | Safe         |
+| Leman Russ (Demolisher)                          |               61 | ±9.0          | Safe         |
+| Leman Russ (Executioner)                         |               53 | ±8.0          | Safe         |
+| Leman Russ (Exterminator)                        |               60 | ±9.0          | Safe         |
+| Malcador (battle cannon, demolisher, las.spon.)  |               94 | ±12.0         | Safe         |
+| Malcador (vanquisher, demiólisher, h.b.spon.)    |               80 | ±12.0         | Safe         |
+| Malcador (las cannons)                           |               79 | ±15.0         | Safe         |
+| Dracosan with las cannon                         |               33 | ±11.0         | Review       |
+| Dracosan with demolisher                         |               50 | ±9.0          | Safe         |
+| Medusa                                           |               58 | ±10.0         | Safe         |
+| Basilisk                                         |               70 | ±9.0          | Safe         |
+| Basilisk (Barrage)                               |               83 | ±9.0          | Safe         |
+| Arvus Lighter                                    |               19 | ±20.0         | Experimental |
+| Malcador Infernus                                |               71 | ±12.0         | Safe         |
+| Malcador Valdor                                  |              104 | ±16.0         | Safe         |
+| Avenger Strike Fighter                           |               81 | ±15.0         | Safe         |
+| Thunderbolt                                      |               75 | ±9.0          | Safe         |
+| Lightning Fighter                                |              110 | ±24.0         | Review       |
+| Marauder Bomber                                  |              118 | ±12.0         | Safe         |
+| Shadowsword                                      |              195 | ±12.0         | Safe         |
+| Stromblade                                       |              170 | ±16.0         | Safe         |
+| Stormsword                                       |              156 | ±15.0         | Safe         |
+| Baneblade                                        |              158 | ±10.0         | Safe         |
+| Stormhammer                                      |              145 | ±12.0         | Safe         |
 
-Average Score: 78.17
-Average Uncertainty: 10.97
+Average Score: 76.50
+Average Uncertainty: 11.16
 
 
 

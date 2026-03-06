@@ -1,4 +1,4 @@
-from data.models import Unit, Traits, RangedWeapon
+from models.units import Unit, Traits, RangedWeapon
 
 
 def trait_groups(unit: Unit) -> list[float]:

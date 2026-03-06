@@ -1,4 +1,4 @@
-from data.models import Unit, RangedWeapon, AssaultWeapon, Traits, UnitType, SmallArms
+from models.units import Unit, RangedWeapon, AssaultWeapon, Traits, UnitType, SmallArms
 
 boys = Unit(
     "Ork Boyz", 3, 3, UnitType.INFANTRY, 15, 5, 4, 6, 25, [RangedWeapon(30, ap=6, at=6)]

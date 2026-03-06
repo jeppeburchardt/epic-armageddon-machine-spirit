@@ -1,5 +1,5 @@
 import numpy as np
-from data.models import Unit
+from models.units import Unit
 
 from .segments.stats import stats
 from .segments.unit_type import unit_type

@@ -1,4 +1,12 @@
-from data.models import Unit, RangedWeapon, AssaultWeapon, Traits, UnitType, SmallArms
+from models.units import (
+    Unit,
+    RangedWeapon,
+    AssaultWeapon,
+    Traits,
+    UnitType,
+    SmallArms,
+    AircraftSpeed,
+)
 
 dark_reapoers = Unit(
     "Dark Reapers",
@@ -166,6 +174,64 @@ wave_serpent = Unit(
     single_unit_cost=25,
 )
 
+vampire_raider = Unit(
+    "xVampire Raider",
+    4,
+    1,
+    UnitType.AIRCRAFT_WAR_ENGINE,
+    speed=200,
+    armour=5,
+    cc=6,
+    ff=4,
+    weapons=[
+        RangedWeapon(45, at=4, traits=[Traits.FIXED_FORWARD]),
+        RangedWeapon(45, at=4, traits=[Traits.FIXED_FORWARD]),
+        RangedWeapon(30, ap=5, at=5, aa=5, traits=[Traits.FIXED_FORWARD]),
+    ],
+    transport_capacity=8,
+    traits=[Traits.PLANET_FALL, Traits.REINFORCED_ARMOUR],
+    aircraft_speed=AircraftSpeed.BOMBER,
+    damage_capacity=2,
+    single_unit_cost=200,
+)
+
+nightwing_interceptor = Unit(
+    "Nightwing Interceptor",
+    4,
+    1,
+    UnitType.AIRCRAFT,
+    speed=200,
+    armour=4,
+    cc=0,
+    ff=0,
+    weapons=[
+        RangedWeapon(30, ap=4, aa=5, traits=[Traits.FIXED_FORWARD]),
+        RangedWeapon(30, at=4, aa=5, traits=[Traits.FIXED_FORWARD, Traits.LANCE]),
+    ],
+    aircraft_speed=AircraftSpeed.FIGHTER,
+    single_unit_cost=100,
+)
+
+phoenix_bomber = Unit(
+    "Phoenix Bomber",
+    4,
+    1,
+    UnitType.AIRCRAFT,
+    speed=200,
+    armour=4,
+    cc=0,
+    ff=0,
+    weapons=[
+        RangedWeapon(30, ap=4, aa=5, traits=[Traits.FIXED_FORWARD]),
+        RangedWeapon(45, at=4, traits=[Traits.FIXED_FORWARD]),
+        RangedWeapon(45, at=4, traits=[Traits.FIXED_FORWARD]),
+        RangedWeapon(15, bp=1, traits=[Traits.FIXED_FORWARD, Traits.DISRUPT]),
+    ],
+    aircraft_speed=AircraftSpeed.FIGHTER_BOMBER,
+    traits=[Traits.REINFORCED_ARMOUR],
+    single_unit_cost=109,
+)
+
 ea_40k_eldar = [
     dark_reapoers,
     dire_avengers,
@@ -178,4 +244,7 @@ ea_40k_eldar = [
     vyper,
     falcon,
     wave_serpent,
+    nightwing_interceptor,
+    vampire_raider,
+    phoenix_bomber,
 ]
