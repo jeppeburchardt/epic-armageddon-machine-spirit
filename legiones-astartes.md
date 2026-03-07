@@ -7,7 +7,7 @@
 | Tactical Squad                                           |               41 | ±9.0          | Safe         |          |
 | Assault Squad                                            |               44 | ±8.0          | Safe         |          |
 | Heavy Support Squad                                      |               53 | ±8.0          | Safe         |          |
-| Tactical Support Squad                                   |               59 | ±9.0          | Safe         |          |
+| Tactical Support Squad                                   |               51 | ±10.0         | Review       |          |
 | Terminator Squad                                         |               71 | ±12.0         | Safe         |          |
 | Saturnine Terminator Squad (Plasma Bombards)             |               71 | ±12.0         | Safe         |          |
 | Saturnine Terminator Squad (Twin Heavy Disintegrators)   |               71 | ±12.0         | Safe         |          |
@@ -57,8 +57,8 @@
 | Thunderhawk Gunship                                      |              211 | ±21.0         | Safe         |          |
 | Storm Eagle Attack Ship                                  |              189 | ±23.0         | Safe         |          |
 
-Average Score: 81.15
-Average Uncertainty: 15.15
+Average Score: 81.06
+Average Uncertainty: 15.18
 
 
 
@@ -70,8 +70,8 @@ Average Uncertainty: 15.15
 | Assault Squad                                            | INF    | 30cm           | 4        | 3    | 5    | Bolt Pistols and Chainswords   | (base contact) |                                                           | Know no fear, Jump Packs                                |
 | Heavy Support Squad                                      | INF    | 15cm           | 4        | 5    | 3    | Bolters                        | (Small Arms)   |                                                           | Know no fear                                            |
 |                                                          |        |                |          |      |      | Missile Launchers              | 45             | AT5+ AP4+ AA6+                                            |                                                         |
-| Tactical Support Squad                                   | INF    | 15cm           | 4        | 4    | 4    | Bolters                        | (Small Arms)   |                                                           | Know no fear                                            |
-|                                                          |        |                |          |      |      | Plasma Guns                    | 45             | AT5+ AP5+, Ignore Cover                                   |                                                         |
+| Tactical Support Squad                                   | INF    | 15cm           | 4        | 4    | 4    | Plasma Guns                    | (Small Arms)   | Ignore Cover, Extra Attack +1                             | Know no fear                                            |
+|                                                          |        |                |          |      |      | Plasma Guns                    | 20             | AT5+ AP5+, Ignore Cover                                   |                                                         |
 | Terminator Squad                                         | INF    | 15cm           | 4        | 3    | 3    | Power Fists                    | (base contact) | Extra Attack +1, Macro-Weapon                             | Know no fear, Reinforced Armour                         |
 |                                                          |        |                |          |      |      | Storm Bolters                  | (Small Arms)   |                                                           |                                                         |
 | Saturnine Terminator Squad (Plasma Bombards)             | INF    | 15cm           | 3        | 3    | 3    | Disruption Fists               | (base contact) | Extra Attack +1, Macro-Weapon                             | Know no fear, Reinforced Armour, Teleport               |

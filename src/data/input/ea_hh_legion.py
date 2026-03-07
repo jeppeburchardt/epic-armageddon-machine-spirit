@@ -81,9 +81,11 @@ legiones_astartes.add_unit(
         cc=4,
         ff=4,
         weapons=[
-            SmallArms(name="Bolters"),
+            SmallArms(
+                name="Plasma Guns", traits=[Traits.IGNORE_COVER, Traits.EXTRA_ATTACK_1]
+            ),
             RangedWeapon(
-                45, name="Plasma Guns", ap=5, at=5, traits=[Traits.IGNORE_COVER]
+                20, name="Plasma Guns", ap=5, at=5, traits=[Traits.IGNORE_COVER]
             ),
         ],
         traits=[Traits.KNOW_NO_FEAR],

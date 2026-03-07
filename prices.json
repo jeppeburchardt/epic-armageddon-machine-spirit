@@ -208,9 +208,9 @@
       "quality": "Safe"
     },
     "Tactical Support Squad": {
-      "cost": 59,
-      "uncertainty": 9,
-      "quality": "Safe"
+      "cost": 51,
+      "uncertainty": 10,
+      "quality": "Review"
     },
     "Terminator Squad": {
       "cost": 71,
