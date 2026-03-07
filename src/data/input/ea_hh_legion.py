@@ -586,7 +586,7 @@ legiones_astartes.add_unit(
         4,
         60,
         [
-            AssaultWeapon([Traits.MW, Traits.EXTRA_ATTACK_1]),
+            AssaultWeapon([Traits.MW, Traits.EXTRA_ATTACK_1], name="Power Fist"),
             MultipleChoiceWeapon(
                 [
                     TwinLinkedLasCannon(),

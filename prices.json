@@ -2735,7 +2735,7 @@
       },
       "weapons": [
         {
-          "name": "--",
+          "name": "Power Fist",
           "type": "Assault Weapons",
           "range": "(bc)",
           "traits": [

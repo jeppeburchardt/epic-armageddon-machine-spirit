@@ -1,17 +1,32 @@
-from models.units import Unit
+from models.units import MultipleChoiceWeapon, Unit
 from tabulate import tabulate
 
 
 def format_unit_with_weapons(unit: Unit):
     table = []
-    if unit.weapons:
-        table.append(
-            unit.to_list() + unit.weapons[0].to_list() + [unit.traits_to_str()]
-        )
-        for weapon in unit.weapons[1:]:
-            table.append([""] * len(unit.to_list()) + weapon.to_list())
-    else:
+    if not unit.weapons:
         table.append(unit.to_list() + [""])
+        return table
+
+    first_row = True
+    for weapon in unit.weapons:
+        if isinstance(weapon, MultipleChoiceWeapon):
+            for i, option in enumerate(weapon.options):
+                weapon_row = option.to_list()
+                if i > 0:
+                    weapon_row = [f"(or) {weapon_row[0]}"] + weapon_row[1:]
+                if first_row:
+                    table.append(unit.to_list() + weapon_row + [unit.traits_to_str()])
+                    first_row = False
+                else:
+                    table.append([""] * len(unit.to_list()) + weapon_row + [""])
+        else:
+            weapon_row = weapon.to_list()
+            if first_row:
+                table.append(unit.to_list() + weapon_row + [unit.traits_to_str()])
+                first_row = False
+            else:
+                table.append([""] * len(unit.to_list()) + weapon_row + [""])
     return table
 
 
