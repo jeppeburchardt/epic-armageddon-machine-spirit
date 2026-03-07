@@ -1,7 +1,7 @@
 import json
 
 from models.units import Army
-from models.result import Result
+from models.result import Result, quality_to_str
 
 from out.army_file import kebab
 
@@ -14,6 +14,7 @@ def build_prices_json_file(army_results: list[tuple[Army, list[Result]]]):
             result.unit.name: {
                 "cost": int(round(result.predicted_cost)),
                 "uncertainty": int(round(result.uncertainty)),
+                "quality": quality_to_str(result.quality),
             }
             for result in results
         }

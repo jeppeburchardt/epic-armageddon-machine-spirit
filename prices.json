@@ -2,365 +2,455 @@
   "solar-auxilia": {
     "Infantry Section": {
       "cost": 17,
-      "uncertainty": 8
+      "uncertainty": 8,
+      "quality": "Safe"
     },
     "Infantry with flamers": {
       "cost": 26,
-      "uncertainty": 8
+      "uncertainty": 8,
+      "quality": "Safe"
     },
     "Veletaris Storm Section": {
       "cost": 27,
-      "uncertainty": 11
+      "uncertainty": 11,
+      "quality": "Review"
     },
     "Ogryn Charonite Squad": {
       "cost": 32,
-      "uncertainty": 10
+      "uncertainty": 10,
+      "quality": "Safe"
     },
     "Tactical Command Unit": {
       "cost": 21,
-      "uncertainty": 8
+      "uncertainty": 8,
+      "quality": "Safe"
     },
     "Legate Command Unit": {
       "cost": 27,
-      "uncertainty": 8
+      "uncertainty": 8,
+      "quality": "Safe"
     },
     "Rapier Mole Mortar": {
       "cost": 35,
-      "uncertainty": 9
+      "uncertainty": 9,
+      "quality": "Safe"
     },
     "Rapier Laser Destroyer": {
       "cost": 22,
-      "uncertainty": 8
+      "uncertainty": 8,
+      "quality": "Safe"
     },
     "Rapier Quad Launcher": {
       "cost": 27,
-      "uncertainty": 8
+      "uncertainty": 8,
+      "quality": "Safe"
     },
     "Aethon Heavy Sentinel": {
       "cost": 41,
-      "uncertainty": 11
+      "uncertainty": 11,
+      "quality": "Review"
     },
     "Tarantula, Twin Lascannon": {
       "cost": 23,
-      "uncertainty": 9
+      "uncertainty": 9,
+      "quality": "Safe"
     },
     "Tarantula, Hyperios air-defence missile launcher": {
       "cost": 25,
-      "uncertainty": 14
+      "uncertainty": 14,
+      "quality": "Review"
     },
     "Leman Russ (Battle cannon)": {
       "cost": 64,
-      "uncertainty": 9
+      "uncertainty": 9,
+      "quality": "Safe"
     },
     "Leman Russ (Vanquisher)": {
       "cost": 63,
-      "uncertainty": 10
+      "uncertainty": 10,
+      "quality": "Safe"
     },
     "Leman Russ (Annihilator)": {
       "cost": 54,
-      "uncertainty": 9
+      "uncertainty": 9,
+      "quality": "Safe"
     },
     "Leman Russ (Demolisher)": {
       "cost": 61,
-      "uncertainty": 9
+      "uncertainty": 9,
+      "quality": "Safe"
     },
     "Leman Russ (Executioner)": {
       "cost": 53,
-      "uncertainty": 8
+      "uncertainty": 8,
+      "quality": "Safe"
     },
     "Leman Russ (Exterminator)": {
       "cost": 60,
-      "uncertainty": 9
+      "uncertainty": 9,
+      "quality": "Safe"
     },
     "Malcador (battle cannon, demolisher, las.spon.)": {
       "cost": 94,
-      "uncertainty": 12
+      "uncertainty": 12,
+      "quality": "Safe"
     },
     "Malcador (vanquisher, demi\u00f3lisher, h.b.spon.)": {
       "cost": 80,
-      "uncertainty": 12
+      "uncertainty": 12,
+      "quality": "Safe"
     },
     "Malcador (las cannons)": {
       "cost": 79,
-      "uncertainty": 15
+      "uncertainty": 15,
+      "quality": "Safe"
     },
     "Dracosan with las cannon": {
       "cost": 33,
-      "uncertainty": 11
+      "uncertainty": 11,
+      "quality": "Review"
     },
     "Dracosan with demolisher": {
       "cost": 50,
-      "uncertainty": 9
+      "uncertainty": 9,
+      "quality": "Safe"
     },
     "Medusa": {
       "cost": 58,
-      "uncertainty": 10
+      "uncertainty": 10,
+      "quality": "Safe"
     },
     "Basilisk": {
       "cost": 70,
-      "uncertainty": 9
+      "uncertainty": 9,
+      "quality": "Safe"
     },
     "Basilisk (Barrage)": {
       "cost": 83,
-      "uncertainty": 9
+      "uncertainty": 9,
+      "quality": "Safe"
     },
     "Arvus Lighter": {
       "cost": 19,
-      "uncertainty": 20
+      "uncertainty": 20,
+      "quality": "Experimental"
     },
     "Malcador Infernus": {
       "cost": 71,
-      "uncertainty": 12
+      "uncertainty": 12,
+      "quality": "Safe"
     },
     "Malcador Valdor": {
       "cost": 104,
-      "uncertainty": 16
+      "uncertainty": 16,
+      "quality": "Safe"
     },
     "Avenger Strike Fighter": {
       "cost": 81,
-      "uncertainty": 15
+      "uncertainty": 15,
+      "quality": "Safe"
     },
     "Thunderbolt": {
       "cost": 75,
-      "uncertainty": 9
+      "uncertainty": 9,
+      "quality": "Safe"
     },
     "Lightning Fighter": {
       "cost": 110,
-      "uncertainty": 24
+      "uncertainty": 24,
+      "quality": "Review"
     },
     "Marauder Bomber": {
       "cost": 118,
-      "uncertainty": 12
+      "uncertainty": 12,
+      "quality": "Safe"
     },
     "Shadowsword": {
       "cost": 195,
-      "uncertainty": 12
+      "uncertainty": 12,
+      "quality": "Safe"
     },
     "Stromblade": {
       "cost": 170,
-      "uncertainty": 16
+      "uncertainty": 16,
+      "quality": "Safe"
     },
     "Stormsword": {
       "cost": 156,
-      "uncertainty": 15
+      "uncertainty": 15,
+      "quality": "Safe"
     },
     "Baneblade": {
       "cost": 158,
-      "uncertainty": 10
+      "uncertainty": 10,
+      "quality": "Safe"
     },
     "Stormhammer": {
       "cost": 145,
-      "uncertainty": 12
+      "uncertainty": 12,
+      "quality": "Safe"
     }
   },
   "legiones-astartes": {
     "Tactical Squad": {
       "cost": 41,
-      "uncertainty": 9
+      "uncertainty": 9,
+      "quality": "Safe"
     },
     "Assault Squad": {
       "cost": 44,
-      "uncertainty": 8
+      "uncertainty": 8,
+      "quality": "Safe"
     },
     "Heavy Support Squad": {
       "cost": 53,
-      "uncertainty": 8
+      "uncertainty": 8,
+      "quality": "Safe"
     },
     "Tactical Support Squad": {
       "cost": 59,
-      "uncertainty": 9
+      "uncertainty": 9,
+      "quality": "Safe"
     },
     "Terminator Squad": {
       "cost": 71,
-      "uncertainty": 12
+      "uncertainty": 12,
+      "quality": "Safe"
     },
     "Saturnine Terminator Squad (Plasma Bombards)": {
       "cost": 71,
-      "uncertainty": 12
+      "uncertainty": 12,
+      "quality": "Safe"
     },
     "Saturnine Terminator Squad (Twin Heavy Disintegrators)": {
       "cost": 71,
-      "uncertainty": 12
+      "uncertainty": 12,
+      "quality": "Safe"
     },
     "Rapier, Laser Destroyer Array": {
       "cost": 33,
-      "uncertainty": 9
+      "uncertainty": 9,
+      "quality": "Safe"
     },
     "Rapier, Quad Launcher": {
       "cost": 39,
-      "uncertainty": 9
+      "uncertainty": 9,
+      "quality": "Safe"
     },
     "Outrider squad": {
       "cost": 45,
-      "uncertainty": 8
+      "uncertainty": 8,
+      "quality": "Safe"
     },
     "Scimitar Jetbike": {
       "cost": 43,
-      "uncertainty": 9
+      "uncertainty": 9,
+      "quality": "Safe"
     },
     "Tarantula, Twin Lascannon": {
       "cost": 23,
-      "uncertainty": 9
+      "uncertainty": 9,
+      "quality": "Safe"
     },
     "Tarantula, Hyperios air-defence missile launcher": {
       "cost": 25,
-      "uncertainty": 14
+      "uncertainty": 14,
+      "quality": "Review"
     },
     "Land Speeder with Plasma Cannon and Heavy Bolter": {
       "cost": 31,
-      "uncertainty": 8
+      "uncertainty": 8,
+      "quality": "Safe"
     },
     "Land Speeder with Flamer and Multi-melta": {
       "cost": 38,
-      "uncertainty": 9
+      "uncertainty": 9,
+      "quality": "Safe"
     },
     "Javelin Attack Speeder with Cyclone Missile Launcher": {
       "cost": 46,
-      "uncertainty": 8
+      "uncertainty": 8,
+      "quality": "Safe"
     },
     "Javelin Attack Speeder with Lascannons": {
       "cost": 42,
-      "uncertainty": 8
+      "uncertainty": 8,
+      "quality": "Safe"
     },
     "Saturnine Dreadnought a": {
       "cost": 64,
-      "uncertainty": 14
+      "uncertainty": 14,
+      "quality": "Review"
     },
     "Saturnine Dreadnought b": {
       "cost": 65,
-      "uncertainty": 21
+      "uncertainty": 21,
+      "quality": "Experimental"
     },
     "Sabre Strike Tank with Anvilus Autocannon": {
       "cost": 36,
-      "uncertainty": 10
+      "uncertainty": 10,
+      "quality": "Review"
     },
     "Sabre Strike Tank with Neutron Blaster": {
       "cost": 45,
-      "uncertainty": 10
+      "uncertainty": 10,
+      "quality": "Review"
     },
     "Sicaran Battle Tank (Accelerator Cannon + Lascannons)": {
       "cost": 97,
-      "uncertainty": 12
+      "uncertainty": 12,
+      "quality": "Safe"
     },
     "Sicaran Battle Tank (Accelerator Cannon + Heavy Bolters)": {
       "cost": 79,
-      "uncertainty": 11
+      "uncertainty": 11,
+      "quality": "Safe"
     },
     "Sicaran Battle Tank, with Omega plasma array": {
       "cost": 96,
-      "uncertainty": 11
+      "uncertainty": 11,
+      "quality": "Safe"
     },
     "Sicaran Punisher": {
       "cost": 63,
-      "uncertainty": 12
+      "uncertainty": 12,
+      "quality": "Safe"
     },
     "Sicaran Arcus": {
       "cost": 94,
-      "uncertainty": 11
+      "uncertainty": 11,
+      "quality": "Safe"
     },
     "Predator Annihilator": {
       "cost": 64,
-      "uncertainty": 8
+      "uncertainty": 8,
+      "quality": "Safe"
     },
     "Predator Destructor": {
       "cost": 57,
-      "uncertainty": 8
+      "uncertainty": 8,
+      "quality": "Safe"
     },
     "Land Raider": {
       "cost": 74,
-      "uncertainty": 9
+      "uncertainty": 9,
+      "quality": "Safe"
     },
     "Contemptor Dreadnought with Lascannon": {
       "cost": 56,
-      "uncertainty": 10
+      "uncertainty": 10,
+      "quality": "Safe"
     },
     "Contemptor Dreadnought with Assault Cannon": {
       "cost": 52,
-      "uncertainty": 9
+      "uncertainty": 9,
+      "quality": "Safe"
     },
     "Deredeo Dreadnoughts with Anvilus Autocannon Battery": {
       "cost": 98,
-      "uncertainty": 15
+      "uncertainty": 15,
+      "quality": "Safe"
     },
     "Deredeo Dreadnoughts with Hellfire Plasma Cannonade": {
       "cost": 102,
-      "uncertainty": 16
+      "uncertainty": 16,
+      "quality": "Safe"
     },
     "Leviathan Siege Dreadnoughts with Cyclonic Melta Lance": {
       "cost": 72,
-      "uncertainty": 13
+      "uncertainty": 13,
+      "quality": "Safe"
     },
     "Leviathan Siege Dreadnoughts with Leviathan Storm Cannon": {
       "cost": 61,
-      "uncertainty": 13
+      "uncertainty": 13,
+      "quality": "Review"
     },
     "Vindicator": {
       "cost": 56,
-      "uncertainty": 9
+      "uncertainty": 9,
+      "quality": "Safe"
     },
     "Legion Whirlwind": {
       "cost": 70,
-      "uncertainty": 10
+      "uncertainty": 10,
+      "quality": "Safe"
     },
     "Legion Whirlwind Scorpius": {
       "cost": 72,
-      "uncertainty": 11
+      "uncertainty": 11,
+      "quality": "Safe"
     },
     "Fire Raptor Gunship": {
       "cost": 106,
-      "uncertainty": 30
+      "uncertainty": 30,
+      "quality": "Review"
     },
     "Xiphon Interceptor": {
       "cost": 87,
-      "uncertainty": 22
+      "uncertainty": 22,
+      "quality": "Review"
     },
     "Spartan Assault Tank": {
       "cost": 139,
-      "uncertainty": 24
+      "uncertainty": 24,
+      "quality": "Safe"
     },
     "Mastodon Armored Transport": {
       "cost": 255,
-      "uncertainty": 36
+      "uncertainty": 36,
+      "quality": "Safe"
     },
     "Typhon Siege Tank": {
       "cost": 162,
-      "uncertainty": 24
+      "uncertainty": 24,
+      "quality": "Safe"
     },
     "Cerberus Heavy Tank Destroyer": {
       "cost": 183,
-      "uncertainty": 23
+      "uncertainty": 23,
+      "quality": "Safe"
     },
     "Kratos Battle Tank with H.B.": {
       "cost": 145,
-      "uncertainty": 25
+      "uncertainty": 25,
+      "quality": "Safe"
     },
     "Kratos Battle Tank with Las.": {
       "cost": 182,
-      "uncertainty": 28
+      "uncertainty": 28,
+      "quality": "Safe"
     },
     "Fellblade Super Heavy Tank": {
       "cost": 240,
-      "uncertainty": 28
+      "uncertainty": 28,
+      "quality": "Safe"
     },
     "Glaive Super Heavy Tank": {
       "cost": 307,
-      "uncertainty": 44
+      "uncertainty": 44,
+      "quality": "Safe"
     },
     "Falchion Super Heavy Tank Destroyer": {
       "cost": 229,
-      "uncertainty": 29
+      "uncertainty": 29,
+      "quality": "Safe"
     },
     "Ascalon Super Heavy Tank": {
       "cost": 190,
-      "uncertainty": 28
+      "uncertainty": 28,
+      "quality": "Safe"
     },
     "Thunderhawk Gunship": {
       "cost": 211,
-      "uncertainty": 21
+      "uncertainty": 21,
+      "quality": "Safe"
     },
     "Storm Eagle Attack Ship": {
       "cost": 189,
-      "uncertainty": 23
+      "uncertainty": 23,
+      "quality": "Safe"
     }
   }
 }
