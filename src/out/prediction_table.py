@@ -1,6 +1,15 @@
-from models.result import Result, quality_to_str
+from models.result import Result, MultipleChoiceResult, quality_to_str
 from tabulate import tabulate
 from models.units import Army
+
+
+def _spread_str(result: Result) -> str:
+    if not isinstance(result, MultipleChoiceResult):
+        return ""
+    label = f"{result.spread:.0%}"
+    if result.is_wide_spread:
+        label += " ⚠"
+    return label
 
 
 def get_markdown_prediction_table(results: list[Result], army: Army) -> str:
@@ -11,6 +20,7 @@ def get_markdown_prediction_table(results: list[Result], army: Army) -> str:
                 round(r.predicted_cost, 0),
                 f"±{round(r.uncertainty, 0)}",
                 quality_to_str(r.quality),
+                _spread_str(r),
             ),
             results,
         ),
@@ -19,6 +29,7 @@ def get_markdown_prediction_table(results: list[Result], army: Army) -> str:
             "Predicted Cost",
             "Uncertainty",
             "Quality",
+            "Spread",
         ],
         tablefmt="github",
     )

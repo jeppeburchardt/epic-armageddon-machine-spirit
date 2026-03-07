@@ -7,6 +7,7 @@ from models.units import (
     AssaultWeapon,
     Army,
     AircraftSpeed,
+    MultipleChoiceWeapon,
 )
 from .ea_hh_weapons import (
     HeavyBolter,
@@ -219,7 +220,7 @@ solar_auxilia.add_unit(
 
 solar_auxilia.add_unit(
     Unit(
-        "Leman Russ (Battle cannon + H.B.)",
+        "Leman Russ (Battle cannon)",
         3,
         2,
         UnitType.ARMORED_VEHICLE,
@@ -227,27 +228,13 @@ solar_auxilia.add_unit(
         armour=4,
         cc=6,
         ff=4,
-        weapons=[BattleCannon(), HeavyBolter()],
+        weapons=[BattleCannon(), MultipleChoiceWeapon([HeavyBolter(), LasCannon()])],
         traits=[Traits.REINFORCED_ARMOUR],
     )
 )
 solar_auxilia.add_unit(
     Unit(
-        "Leman Russ (Battle cannon + Las)",
-        3,
-        2,
-        UnitType.ARMORED_VEHICLE,
-        speed=25,
-        armour=4,
-        cc=6,
-        ff=5,
-        weapons=[VanquisherBattleCannon(), LasCannon()],
-        traits=[Traits.REINFORCED_ARMOUR],
-    )
-)
-solar_auxilia.add_unit(
-    Unit(
-        "Leman Russ (Vanquisher + H.B.)",
+        "Leman Russ (Vanquisher)",
         3,
         2,
         UnitType.ARMORED_VEHICLE,
@@ -255,21 +242,10 @@ solar_auxilia.add_unit(
         armour=4,
         cc=6,
         ff=4,
-        weapons=[VanquisherBattleCannon(), HeavyBolter()],
-        traits=[Traits.REINFORCED_ARMOUR],
-    )
-)
-solar_auxilia.add_unit(
-    Unit(
-        "Leman Russ (Vanquisher + Las)",
-        3,
-        2,
-        UnitType.ARMORED_VEHICLE,
-        speed=25,
-        armour=4,
-        cc=6,
-        ff=5,
-        weapons=[VanquisherBattleCannon(), LasCannon()],
+        weapons=[
+            VanquisherBattleCannon(),
+            MultipleChoiceWeapon([HeavyBolter(), LasCannon()]),
+        ],
         traits=[Traits.REINFORCED_ARMOUR],
     )
 )

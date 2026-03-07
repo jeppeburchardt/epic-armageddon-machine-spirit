@@ -1,0 +1,366 @@
+{
+  "solar-auxilia": {
+    "Infantry Section": {
+      "cost": 17,
+      "uncertainty": 8
+    },
+    "Infantry with flamers": {
+      "cost": 26,
+      "uncertainty": 8
+    },
+    "Veletaris Storm Section": {
+      "cost": 27,
+      "uncertainty": 11
+    },
+    "Ogryn Charonite Squad": {
+      "cost": 32,
+      "uncertainty": 10
+    },
+    "Tactical Command Unit": {
+      "cost": 21,
+      "uncertainty": 8
+    },
+    "Legate Command Unit": {
+      "cost": 27,
+      "uncertainty": 8
+    },
+    "Rapier Mole Mortar": {
+      "cost": 35,
+      "uncertainty": 9
+    },
+    "Rapier Laser Destroyer": {
+      "cost": 22,
+      "uncertainty": 8
+    },
+    "Rapier Quad Launcher": {
+      "cost": 27,
+      "uncertainty": 8
+    },
+    "Aethon Heavy Sentinel": {
+      "cost": 41,
+      "uncertainty": 11
+    },
+    "Tarantula, Twin Lascannon": {
+      "cost": 23,
+      "uncertainty": 9
+    },
+    "Tarantula, Hyperios air-defence missile launcher": {
+      "cost": 25,
+      "uncertainty": 14
+    },
+    "Leman Russ (Battle cannon)": {
+      "cost": 64,
+      "uncertainty": 9
+    },
+    "Leman Russ (Vanquisher)": {
+      "cost": 63,
+      "uncertainty": 10
+    },
+    "Leman Russ (Annihilator)": {
+      "cost": 54,
+      "uncertainty": 9
+    },
+    "Leman Russ (Demolisher)": {
+      "cost": 61,
+      "uncertainty": 9
+    },
+    "Leman Russ (Executioner)": {
+      "cost": 53,
+      "uncertainty": 8
+    },
+    "Leman Russ (Exterminator)": {
+      "cost": 60,
+      "uncertainty": 9
+    },
+    "Malcador (battle cannon, demolisher, las.spon.)": {
+      "cost": 94,
+      "uncertainty": 12
+    },
+    "Malcador (vanquisher, demi\u00f3lisher, h.b.spon.)": {
+      "cost": 80,
+      "uncertainty": 12
+    },
+    "Malcador (las cannons)": {
+      "cost": 79,
+      "uncertainty": 15
+    },
+    "Dracosan with las cannon": {
+      "cost": 33,
+      "uncertainty": 11
+    },
+    "Dracosan with demolisher": {
+      "cost": 50,
+      "uncertainty": 9
+    },
+    "Medusa": {
+      "cost": 58,
+      "uncertainty": 10
+    },
+    "Basilisk": {
+      "cost": 70,
+      "uncertainty": 9
+    },
+    "Basilisk (Barrage)": {
+      "cost": 83,
+      "uncertainty": 9
+    },
+    "Arvus Lighter": {
+      "cost": 19,
+      "uncertainty": 20
+    },
+    "Malcador Infernus": {
+      "cost": 71,
+      "uncertainty": 12
+    },
+    "Malcador Valdor": {
+      "cost": 104,
+      "uncertainty": 16
+    },
+    "Avenger Strike Fighter": {
+      "cost": 81,
+      "uncertainty": 15
+    },
+    "Thunderbolt": {
+      "cost": 75,
+      "uncertainty": 9
+    },
+    "Lightning Fighter": {
+      "cost": 110,
+      "uncertainty": 24
+    },
+    "Marauder Bomber": {
+      "cost": 118,
+      "uncertainty": 12
+    },
+    "Shadowsword": {
+      "cost": 195,
+      "uncertainty": 12
+    },
+    "Stromblade": {
+      "cost": 170,
+      "uncertainty": 16
+    },
+    "Stormsword": {
+      "cost": 156,
+      "uncertainty": 15
+    },
+    "Baneblade": {
+      "cost": 158,
+      "uncertainty": 10
+    },
+    "Stormhammer": {
+      "cost": 145,
+      "uncertainty": 12
+    }
+  },
+  "legiones-astartes": {
+    "Tactical Squad": {
+      "cost": 41,
+      "uncertainty": 9
+    },
+    "Assault Squad": {
+      "cost": 44,
+      "uncertainty": 8
+    },
+    "Heavy Support Squad": {
+      "cost": 53,
+      "uncertainty": 8
+    },
+    "Tactical Support Squad": {
+      "cost": 59,
+      "uncertainty": 9
+    },
+    "Terminator Squad": {
+      "cost": 71,
+      "uncertainty": 12
+    },
+    "Saturnine Terminator Squad (Plasma Bombards)": {
+      "cost": 71,
+      "uncertainty": 12
+    },
+    "Saturnine Terminator Squad (Twin Heavy Disintegrators)": {
+      "cost": 71,
+      "uncertainty": 12
+    },
+    "Rapier, Laser Destroyer Array": {
+      "cost": 33,
+      "uncertainty": 9
+    },
+    "Rapier, Quad Launcher": {
+      "cost": 39,
+      "uncertainty": 9
+    },
+    "Outrider squad": {
+      "cost": 45,
+      "uncertainty": 8
+    },
+    "Scimitar Jetbike": {
+      "cost": 43,
+      "uncertainty": 9
+    },
+    "Tarantula, Twin Lascannon": {
+      "cost": 23,
+      "uncertainty": 9
+    },
+    "Tarantula, Hyperios air-defence missile launcher": {
+      "cost": 25,
+      "uncertainty": 14
+    },
+    "Land Speeder with Plasma Cannon and Heavy Bolter": {
+      "cost": 31,
+      "uncertainty": 8
+    },
+    "Land Speeder with Flamer and Multi-melta": {
+      "cost": 38,
+      "uncertainty": 9
+    },
+    "Javelin Attack Speeder with Cyclone Missile Launcher": {
+      "cost": 46,
+      "uncertainty": 8
+    },
+    "Javelin Attack Speeder with Lascannons": {
+      "cost": 42,
+      "uncertainty": 8
+    },
+    "Saturnine Dreadnought a": {
+      "cost": 64,
+      "uncertainty": 14
+    },
+    "Saturnine Dreadnought b": {
+      "cost": 65,
+      "uncertainty": 21
+    },
+    "Sabre Strike Tank with Anvilus Autocannon": {
+      "cost": 36,
+      "uncertainty": 10
+    },
+    "Sabre Strike Tank with Neutron Blaster": {
+      "cost": 45,
+      "uncertainty": 10
+    },
+    "Sicaran Battle Tank (Accelerator Cannon + Lascannons)": {
+      "cost": 97,
+      "uncertainty": 12
+    },
+    "Sicaran Battle Tank (Accelerator Cannon + Heavy Bolters)": {
+      "cost": 79,
+      "uncertainty": 11
+    },
+    "Sicaran Battle Tank, with Omega plasma array": {
+      "cost": 96,
+      "uncertainty": 11
+    },
+    "Sicaran Punisher": {
+      "cost": 63,
+      "uncertainty": 12
+    },
+    "Sicaran Arcus": {
+      "cost": 94,
+      "uncertainty": 11
+    },
+    "Predator Annihilator": {
+      "cost": 64,
+      "uncertainty": 8
+    },
+    "Predator Destructor": {
+      "cost": 57,
+      "uncertainty": 8
+    },
+    "Land Raider": {
+      "cost": 74,
+      "uncertainty": 9
+    },
+    "Contemptor Dreadnought with Lascannon": {
+      "cost": 56,
+      "uncertainty": 10
+    },
+    "Contemptor Dreadnought with Assault Cannon": {
+      "cost": 52,
+      "uncertainty": 9
+    },
+    "Deredeo Dreadnoughts with Anvilus Autocannon Battery": {
+      "cost": 98,
+      "uncertainty": 15
+    },
+    "Deredeo Dreadnoughts with Hellfire Plasma Cannonade": {
+      "cost": 102,
+      "uncertainty": 16
+    },
+    "Leviathan Siege Dreadnoughts with Cyclonic Melta Lance": {
+      "cost": 72,
+      "uncertainty": 13
+    },
+    "Leviathan Siege Dreadnoughts with Leviathan Storm Cannon": {
+      "cost": 61,
+      "uncertainty": 13
+    },
+    "Vindicator": {
+      "cost": 56,
+      "uncertainty": 9
+    },
+    "Legion Whirlwind": {
+      "cost": 70,
+      "uncertainty": 10
+    },
+    "Legion Whirlwind Scorpius": {
+      "cost": 72,
+      "uncertainty": 11
+    },
+    "Fire Raptor Gunship": {
+      "cost": 106,
+      "uncertainty": 30
+    },
+    "Xiphon Interceptor": {
+      "cost": 87,
+      "uncertainty": 22
+    },
+    "Spartan Assault Tank": {
+      "cost": 139,
+      "uncertainty": 24
+    },
+    "Mastodon Armored Transport": {
+      "cost": 255,
+      "uncertainty": 36
+    },
+    "Typhon Siege Tank": {
+      "cost": 162,
+      "uncertainty": 24
+    },
+    "Cerberus Heavy Tank Destroyer": {
+      "cost": 183,
+      "uncertainty": 23
+    },
+    "Kratos Battle Tank with H.B.": {
+      "cost": 145,
+      "uncertainty": 25
+    },
+    "Kratos Battle Tank with Las.": {
+      "cost": 182,
+      "uncertainty": 28
+    },
+    "Fellblade Super Heavy Tank": {
+      "cost": 240,
+      "uncertainty": 28
+    },
+    "Glaive Super Heavy Tank": {
+      "cost": 307,
+      "uncertainty": 44
+    },
+    "Falchion Super Heavy Tank Destroyer": {
+      "cost": 229,
+      "uncertainty": 29
+    },
+    "Ascalon Super Heavy Tank": {
+      "cost": 190,
+      "uncertainty": 28
+    },
+    "Thunderhawk Gunship": {
+      "cost": 211,
+      "uncertainty": 21
+    },
+    "Storm Eagle Attack Ship": {
+      "cost": 189,
+      "uncertainty": 23
+    }
+  }
+}

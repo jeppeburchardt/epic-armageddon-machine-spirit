@@ -1,4 +1,5 @@
 from enum import Enum
+from itertools import product as cartesian_product
 
 
 class UnitType(Enum):
@@ -115,9 +116,51 @@ class Unit:
         for w in self.weapons:
             if isinstance(w, Multiplier):
                 result.extend([w.weapon] * w.times)
+            elif isinstance(w, MultipleChoiceWeapon):
+                pass  # resolved via get_all_configurations()
             else:
                 result.append(w)
         return result
+
+    def get_all_configurations(self) -> list["Unit"]:
+        """Return one Unit per weapon-option combination.
+
+        If the unit has no MultipleChoiceWeapon slots, returns [self].
+        Otherwise each MultipleChoiceWeapon is expanded via Cartesian product,
+        producing one clone per combination with a bracketed suffix on the name.
+        """
+        choice_positions = [
+            i for i, w in enumerate(self.weapons) if isinstance(w, MultipleChoiceWeapon)
+        ]
+        if not choice_positions:
+            return [self]
+
+        option_lists = [self.weapons[i].options for i in choice_positions]
+        configs = []
+        for combo in cartesian_product(*option_lists):
+            new_weapons = list(self.weapons)
+            for pos, chosen in zip(choice_positions, combo):
+                new_weapons[pos] = chosen
+            label = " | ".join(w.name for w in combo)
+            variant = Unit(
+                f"{self.name} [{label}]",
+                self.strategy_rating,
+                self.initiative,
+                self.type,
+                speed=self.speed,
+                armour=self.armour,
+                cc=self.cc,
+                ff=self.ff,
+                single_unit_cost=self.single_unit_cost,
+                weapons=new_weapons,
+                traits=self.traits,
+                transport_capacity=self.transport_capacity,
+                damage_capacity=self.damage_capacity,
+                void_shields=self.void_shields,
+                aircraft_speed=self.aircraft_speed,
+            )
+            configs.append(variant)
+        return configs
 
     def unit_speed_to_string(self):
         if self.type == UnitType.AIRCRAFT or self.type == UnitType.AIRCRAFT_WAR_ENGINE:
@@ -318,4 +361,38 @@ class SmallArms:
             self.name,
             "(Small Arms)",
             ", ".join(map(trait_to_string, self.traits)),
+        ]
+
+
+class MultipleChoiceWeapon:
+    """A weapon slot that represents mutually exclusive weapon options.
+
+    Use this when a unit entry can take one of several weapons in a given
+    slot.  Call ``Unit.get_all_configurations()`` to expand the unit into
+    one concrete ``Unit`` per option combination.
+
+    Example::
+
+        Unit(
+            "Leman Russ",
+            ...
+            weapons=[
+                BattleCannon(),
+                MultipleChoiceWeapon([HeavyBolter(), LasCannon()]),
+            ],
+        )
+    """
+
+    options: list["RangedWeapon"]
+    name: str
+
+    def __init__(self, options: list["RangedWeapon"], name: str = ""):
+        self.options = options
+        self.name = name or " | ".join(o.name for o in options)
+
+    def to_list(self):
+        return [
+            f"({self.name})",
+            "choice",
+            "",
         ]
