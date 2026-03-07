@@ -359,7 +359,8 @@
           "traits": []
         },
         {
-          "choice": [
+          "name": "Heavy Bolter | Lascannon",
+          "options": [
             {
               "name": "Heavy Bolter",
               "type": "Ranged Weapon",
@@ -410,7 +411,8 @@
           "traits": []
         },
         {
-          "choice": [
+          "name": "Heavy Bolter | Lascannon",
+          "options": [
             {
               "name": "Heavy Bolter",
               "type": "Ranged Weapon",
@@ -1899,7 +1901,7 @@
         }
       ]
     },
-    "Rapier, Laser Destroyer Array": {
+    "Rapier": {
       "cost": 33,
       "uncertainty": 9,
       "quality": "Safe",
@@ -1913,40 +1915,32 @@
       },
       "weapons": [
         {
-          "name": "Laser Destroyer Array",
-          "type": "Ranged Weapon",
-          "range": 45,
-          "firepower": {
-            "at": "4+",
-            "ap": "6+"
-          },
-          "traits": []
-        }
-      ]
-    },
-    "Rapier, Quad Launcher": {
-      "cost": 39,
-      "uncertainty": 9,
-      "quality": "Safe",
-      "unit_profile": {
-        "type": "INF",
-        "speed": "10cm",
-        "armour": 4,
-        "cc": 6,
-        "ff": 5,
-        "traits": []
-      },
-      "weapons": [
-        {
-          "name": "Quad Launcher",
-          "type": "Ranged Weapon",
-          "range": 45,
-          "firepower": {
-            "at": "6+",
-            "ap": "4+"
-          },
-          "traits": [
-            "Indirect"
+          "name": "Laser Destroyer Array | Quad Launcher",
+          "options": [
+            {
+              "name": "Laser Destroyer Array",
+              "type": "Ranged Weapon",
+              "range": 45,
+              "firepower": {
+                "at": "4+",
+                "ap": "6+"
+              },
+              "traits": [],
+              "cost_delta": 0
+            },
+            {
+              "name": "Quad Launcher",
+              "type": "Ranged Weapon",
+              "range": 45,
+              "firepower": {
+                "at": "6+",
+                "ap": "4+"
+              },
+              "traits": [
+                "Indirect"
+              ],
+              "cost_delta": 6
+            }
           ]
         }
       ]
@@ -1969,7 +1963,7 @@
       },
       "weapons": [
         {
-          "name": "Small Arms",
+          "name": "Bolters",
           "type": "Small Arms",
           "range": "(15cm)",
           "traits": []
@@ -1977,7 +1971,7 @@
       ]
     },
     "Scimitar Jetbike": {
-      "cost": 43,
+      "cost": 45,
       "uncertainty": 9,
       "quality": "Safe",
       "unit_profile": {
@@ -1995,14 +1989,17 @@
       },
       "weapons": [
         {
-          "name": "Small Arms",
-          "type": "Small Arms",
-          "range": "(15cm)",
+          "name": "Heavy Bolter",
+          "type": "Ranged Weapon",
+          "range": 30,
+          "firepower": {
+            "ap": "5+"
+          },
           "traits": []
         }
       ]
     },
-    "Tarantula, Twin Lascannon": {
+    "Tarantula": {
       "cost": 23,
       "uncertainty": 9,
       "quality": "Safe",
@@ -2018,39 +2015,29 @@
       },
       "weapons": [
         {
-          "name": "Twin-linked Lascannon",
-          "type": "Ranged Weapon",
-          "range": 45,
-          "firepower": {
-            "at": "4+"
-          },
-          "traits": []
-        }
-      ]
-    },
-    "Tarantula, Hyperios air-defence missile launcher": {
-      "cost": 25,
-      "uncertainty": 14,
-      "quality": "Review",
-      "unit_profile": {
-        "type": "LV",
-        "speed": "0cm",
-        "armour": 6,
-        "cc": 6,
-        "ff": 6,
-        "traits": [
-          "Scout"
-        ]
-      },
-      "weapons": [
-        {
-          "name": "Hyperios Missiles",
-          "type": "Ranged Weapon",
-          "range": 30,
-          "firepower": {
-            "aa": "4+"
-          },
-          "traits": []
+          "name": "Twin-linked Lascannon | Hyperios Missiles",
+          "options": [
+            {
+              "name": "Twin-linked Lascannon",
+              "type": "Ranged Weapon",
+              "range": 45,
+              "firepower": {
+                "at": "4+"
+              },
+              "traits": [],
+              "cost_delta": 0
+            },
+            {
+              "name": "Hyperios Missiles",
+              "type": "Ranged Weapon",
+              "range": 30,
+              "firepower": {
+                "aa": "4+"
+              },
+              "traits": [],
+              "cost_delta": 1
+            }
+          ]
         }
       ]
     },
@@ -2128,45 +2115,7 @@
         }
       ]
     },
-    "Javelin Attack Speeder with Cyclone Missile Launcher": {
-      "cost": 46,
-      "uncertainty": 8,
-      "quality": "Safe",
-      "unit_profile": {
-        "type": "LV",
-        "speed": "35cm",
-        "armour": 4,
-        "cc": 6,
-        "ff": 5,
-        "traits": [
-          "Know no fear",
-          "Skimmer",
-          "Scout"
-        ]
-      },
-      "weapons": [
-        {
-          "name": "Cyclone Missile Launcher",
-          "type": "Ranged Weapon",
-          "range": 45,
-          "firepower": {
-            "at": "5+",
-            "ap": "3+"
-          },
-          "traits": []
-        },
-        {
-          "name": "Heavy Bolter",
-          "type": "Ranged Weapon",
-          "range": 30,
-          "firepower": {
-            "ap": "5+"
-          },
-          "traits": []
-        }
-      ]
-    },
-    "Javelin Attack Speeder with Lascannons": {
+    "Javelin Attack Speeder": {
       "cost": 42,
       "uncertainty": 8,
       "quality": "Safe",
@@ -2184,13 +2133,30 @@
       },
       "weapons": [
         {
-          "name": "Twin-linked Lascannon",
-          "type": "Ranged Weapon",
-          "range": 45,
-          "firepower": {
-            "at": "4+"
-          },
-          "traits": []
+          "name": "Cyclone Missile Launcher | Twin-linked Lascannon",
+          "options": [
+            {
+              "name": "Cyclone Missile Launcher",
+              "type": "Ranged Weapon",
+              "range": 45,
+              "firepower": {
+                "at": "5+",
+                "ap": "3+"
+              },
+              "traits": [],
+              "cost_delta": 4
+            },
+            {
+              "name": "Twin-linked Lascannon",
+              "type": "Ranged Weapon",
+              "range": 45,
+              "firepower": {
+                "at": "4+"
+              },
+              "traits": [],
+              "cost_delta": 0
+            }
+          ]
         },
         {
           "name": "Heavy Bolter",
@@ -2288,7 +2254,7 @@
         }
       ]
     },
-    "Sabre Strike Tank with Anvilus Autocannon": {
+    "Sabre Strike Tank": {
       "cost": 36,
       "uncertainty": 10,
       "quality": "Review",
@@ -2304,15 +2270,35 @@
       },
       "weapons": [
         {
-          "name": "Anvilus Autocannon",
-          "type": "Ranged Weapon",
-          "range": 20,
-          "firepower": {
-            "at": "5+",
-            "ap": "4+"
-          },
-          "traits": [
-            "Fixed Forward"
+          "name": "Anvilus Autocannon | Neutron Blaster",
+          "options": [
+            {
+              "name": "Anvilus Autocannon",
+              "type": "Ranged Weapon",
+              "range": 20,
+              "firepower": {
+                "at": "5+",
+                "ap": "4+"
+              },
+              "traits": [
+                "Fixed Forward"
+              ],
+              "cost_delta": 0
+            },
+            {
+              "name": "Neutron Blaster",
+              "type": "Ranged Weapon",
+              "range": 20,
+              "firepower": {
+                "at": "5+",
+                "ap": "5+"
+              },
+              "traits": [
+                "Fixed Forward",
+                "Disrupt"
+              ],
+              "cost_delta": 9
+            }
           ]
         },
         {
@@ -2328,98 +2314,7 @@
         }
       ]
     },
-    "Sabre Strike Tank with Neutron Blaster": {
-      "cost": 45,
-      "uncertainty": 10,
-      "quality": "Review",
-      "unit_profile": {
-        "type": "AV",
-        "speed": "35cm",
-        "armour": 5,
-        "cc": 6,
-        "ff": 5,
-        "traits": [
-          "Know no fear"
-        ]
-      },
-      "weapons": [
-        {
-          "name": "Neutron Blaster",
-          "type": "Ranged Weapon",
-          "range": 20,
-          "firepower": {
-            "at": "5+",
-            "ap": "5+"
-          },
-          "traits": [
-            "Fixed Forward",
-            "Disrupt"
-          ]
-        },
-        {
-          "name": "Sabre Missiles",
-          "type": "Ranged Weapon",
-          "range": 30,
-          "firepower": {
-            "at": "4+"
-          },
-          "traits": [
-            "Fixed Forward"
-          ]
-        }
-      ]
-    },
-    "Sicaran Battle Tank (Accelerator Cannon + Lascannons)": {
-      "cost": 97,
-      "uncertainty": 12,
-      "quality": "Safe",
-      "unit_profile": {
-        "type": "AV",
-        "speed": "35cm",
-        "armour": 5,
-        "cc": 6,
-        "ff": 4,
-        "traits": [
-          "Know no fear",
-          "Reinforced Armour"
-        ]
-      },
-      "weapons": [
-        {
-          "name": "Accelerator Cannon",
-          "type": "Ranged Weapon",
-          "range": 45,
-          "firepower": {
-            "at": "5+",
-            "ap": "4+"
-          },
-          "traits": [],
-          "count": 2
-        },
-        {
-          "name": "Lascannon",
-          "type": "Ranged Weapon",
-          "range": 45,
-          "firepower": {
-            "at": "5+"
-          },
-          "traits": [],
-          "count": 2
-        },
-        {
-          "name": "Heavy Bolter",
-          "type": "Ranged Weapon",
-          "range": 30,
-          "firepower": {
-            "ap": "5+"
-          },
-          "traits": [
-            "Fixed Forward"
-          ]
-        }
-      ]
-    },
-    "Sicaran Battle Tank (Accelerator Cannon + Heavy Bolters)": {
+    "Sicaran Battle Tank": {
       "cost": 79,
       "uncertainty": 11,
       "quality": "Safe",
@@ -2447,14 +2342,35 @@
           "count": 2
         },
         {
-          "name": "Heavy Bolter",
-          "type": "Ranged Weapon",
-          "range": 30,
-          "firepower": {
-            "ap": "5+"
-          },
-          "traits": [],
-          "count": 2
+          "name": "2X Lascannon | 2X Heavy Bolter",
+          "options": [
+            {
+              "name": "Lascannon",
+              "type": "Ranged Weapon",
+              "range": 45,
+              "firepower": {
+                "at": "5+"
+              },
+              "traits": [
+                "Fixed Forward"
+              ],
+              "count": 2,
+              "cost_delta": 18
+            },
+            {
+              "name": "Heavy Bolter",
+              "type": "Ranged Weapon",
+              "range": 30,
+              "firepower": {
+                "ap": "5+"
+              },
+              "traits": [
+                "Fixed Forward"
+              ],
+              "count": 2,
+              "cost_delta": 0
+            }
+          ]
         },
         {
           "name": "Heavy Bolter",
@@ -2469,9 +2385,9 @@
         }
       ]
     },
-    "Sicaran Battle Tank, with Omega plasma array": {
-      "cost": 96,
-      "uncertainty": 11,
+    "Sicaran Omega": {
+      "cost": 78,
+      "uncertainty": 9,
       "quality": "Safe",
       "unit_profile": {
         "type": "AV",
@@ -2496,14 +2412,35 @@
           "count": 2
         },
         {
-          "name": "Lascannon",
-          "type": "Ranged Weapon",
-          "range": 45,
-          "firepower": {
-            "at": "5+"
-          },
-          "traits": [],
-          "count": 2
+          "name": "2X Lascannon | 2X Heavy Bolter",
+          "options": [
+            {
+              "name": "Lascannon",
+              "type": "Ranged Weapon",
+              "range": 45,
+              "firepower": {
+                "at": "5+"
+              },
+              "traits": [
+                "Fixed Forward"
+              ],
+              "count": 2,
+              "cost_delta": 18
+            },
+            {
+              "name": "Heavy Bolter",
+              "type": "Ranged Weapon",
+              "range": 30,
+              "firepower": {
+                "ap": "5+"
+              },
+              "traits": [
+                "Fixed Forward"
+              ],
+              "count": 2,
+              "cost_delta": 0
+            }
+          ]
         },
         {
           "name": "Heavy Bolter",
@@ -2546,14 +2483,35 @@
           "count": 4
         },
         {
-          "name": "Heavy Bolter",
-          "type": "Ranged Weapon",
-          "range": 30,
-          "firepower": {
-            "ap": "5+"
-          },
-          "traits": [],
-          "count": 2
+          "name": "2X Lascannon | 2X Heavy Bolter",
+          "options": [
+            {
+              "name": "Lascannon",
+              "type": "Ranged Weapon",
+              "range": 45,
+              "firepower": {
+                "at": "5+"
+              },
+              "traits": [
+                "Fixed Forward"
+              ],
+              "count": 2,
+              "cost_delta": 18
+            },
+            {
+              "name": "Heavy Bolter",
+              "type": "Ranged Weapon",
+              "range": 30,
+              "firepower": {
+                "ap": "5+"
+              },
+              "traits": [
+                "Fixed Forward"
+              ],
+              "count": 2,
+              "cost_delta": 0
+            }
+          ]
         },
         {
           "name": "Heavy Bolter",
@@ -2598,14 +2556,35 @@
           "count": 2
         },
         {
-          "name": "Heavy Bolter",
-          "type": "Ranged Weapon",
-          "range": 30,
-          "firepower": {
-            "ap": "5+"
-          },
-          "traits": [],
-          "count": 2
+          "name": "2X Lascannon | 2X Heavy Bolter",
+          "options": [
+            {
+              "name": "Lascannon",
+              "type": "Ranged Weapon",
+              "range": 45,
+              "firepower": {
+                "at": "5+"
+              },
+              "traits": [
+                "Fixed Forward"
+              ],
+              "count": 2,
+              "cost_delta": 18
+            },
+            {
+              "name": "Heavy Bolter",
+              "type": "Ranged Weapon",
+              "range": 30,
+              "firepower": {
+                "ap": "5+"
+              },
+              "traits": [
+                "Fixed Forward"
+              ],
+              "count": 2,
+              "cost_delta": 0
+            }
+          ]
         },
         {
           "name": "Heavy Bolter",
@@ -2651,16 +2630,10 @@
           "firepower": {
             "at": "5+"
           },
-          "traits": []
-        },
-        {
-          "name": "Lascannon",
-          "type": "Ranged Weapon",
-          "range": 45,
-          "firepower": {
-            "at": "5+"
-          },
-          "traits": []
+          "traits": [
+            "Fixed Forward"
+          ],
+          "count": 2
         }
       ]
     },
@@ -2680,7 +2653,7 @@
       },
       "weapons": [
         {
-          "name": "--",
+          "name": "Predator Auto Cannon",
           "type": "Ranged Weapon",
           "range": 45,
           "firepower": {
@@ -2696,16 +2669,10 @@
           "firepower": {
             "ap": "5+"
           },
-          "traits": []
-        },
-        {
-          "name": "Heavy Bolter",
-          "type": "Ranged Weapon",
-          "range": 30,
-          "firepower": {
-            "ap": "5+"
-          },
-          "traits": []
+          "traits": [
+            "Fixed Forward"
+          ],
+          "count": 2
         }
       ]
     },
@@ -2734,7 +2701,9 @@
           "firepower": {
             "at": "4+"
           },
-          "traits": []
+          "traits": [
+            "Fixed Forward"
+          ]
         },
         {
           "name": "Twin-linked Lascannon",
@@ -2743,47 +2712,13 @@
           "firepower": {
             "at": "4+"
           },
-          "traits": []
-        }
-      ]
-    },
-    "Contemptor Dreadnought with Lascannon": {
-      "cost": 56,
-      "uncertainty": 10,
-      "quality": "Safe",
-      "unit_profile": {
-        "type": "AV",
-        "speed": "15cm",
-        "armour": 3,
-        "cc": 4,
-        "ff": 4,
-        "traits": [
-          "Know no fear",
-          "Walker"
-        ]
-      },
-      "weapons": [
-        {
-          "name": "Lascannon",
-          "type": "Ranged Weapon",
-          "range": 45,
-          "firepower": {
-            "at": "5+"
-          },
-          "traits": []
-        },
-        {
-          "name": "--",
-          "type": "Assault Weapons",
-          "range": "(bc)",
           "traits": [
-            "Macro-Weapon",
-            "Extra Attack +1"
+            "Fixed Forward"
           ]
         }
       ]
     },
-    "Contemptor Dreadnought with Assault Cannon": {
+    "Contemptor Dreadnought": {
       "cost": 52,
       "uncertainty": 9,
       "quality": "Safe",
@@ -2800,16 +2735,6 @@
       },
       "weapons": [
         {
-          "name": "Assault Cannon",
-          "type": "Ranged Weapon",
-          "range": 30,
-          "firepower": {
-            "at": "5+",
-            "ap": "4+"
-          },
-          "traits": []
-        },
-        {
           "name": "--",
           "type": "Assault Weapons",
           "range": "(bc)",
@@ -2817,10 +2742,36 @@
             "Macro-Weapon",
             "Extra Attack +1"
           ]
+        },
+        {
+          "name": "Twin-linked Lascannon | Assault Cannon",
+          "options": [
+            {
+              "name": "Twin-linked Lascannon",
+              "type": "Ranged Weapon",
+              "range": 45,
+              "firepower": {
+                "at": "4+"
+              },
+              "traits": [],
+              "cost_delta": 5
+            },
+            {
+              "name": "Assault Cannon",
+              "type": "Ranged Weapon",
+              "range": 30,
+              "firepower": {
+                "at": "5+",
+                "ap": "4+"
+              },
+              "traits": [],
+              "cost_delta": 0
+            }
+          ]
         }
       ]
     },
-    "Deredeo Dreadnoughts with Anvilus Autocannon Battery": {
+    "Deredeo Dreadnought": {
       "cost": 98,
       "uncertainty": 15,
       "quality": "Safe",
@@ -2858,129 +2809,39 @@
           "traits": []
         },
         {
-          "name": "Anvilus Autocannon Battery",
-          "type": "Ranged Weapon",
-          "range": 45,
-          "firepower": {
-            "at": "4+",
-            "ap": "5+"
-          },
-          "traits": []
-        },
-        {
-          "name": "Anvilus Autocannon Battery",
-          "type": "Ranged Weapon",
-          "range": 45,
-          "firepower": {
-            "at": "4+",
-            "ap": "5+"
-          },
-          "traits": []
-        }
-      ]
-    },
-    "Deredeo Dreadnoughts with Hellfire Plasma Cannonade": {
-      "cost": 102,
-      "uncertainty": 16,
-      "quality": "Safe",
-      "unit_profile": {
-        "type": "AV",
-        "speed": "15cm",
-        "armour": 3,
-        "cc": 5,
-        "ff": 3,
-        "traits": [
-          "Know no fear",
-          "Walker",
-          "Invulnerable Save"
-        ]
-      },
-      "weapons": [
-        {
-          "name": "Twin-linked Heavy Bolter",
-          "type": "Ranged Weapon",
-          "range": 30,
-          "firepower": {
-            "ap": "4+"
-          },
-          "traits": []
-        },
-        {
-          "name": "Aiolos Missile Launcher",
-          "type": "Ranged Weapon",
-          "range": 45,
-          "firepower": {
-            "at": "5+",
-            "ap": "5+",
-            "aa": "5+"
-          },
-          "traits": []
-        },
-        {
-          "name": "Hellfire Plasma Cannonade",
-          "type": "Ranged Weapon",
-          "range": 45,
-          "firepower": {
-            "at": "4+",
-            "ap": "4+"
-          },
-          "traits": [
-            "Slow Firing"
-          ]
-        },
-        {
-          "name": "Hellfire Plasma Cannonade",
-          "type": "Ranged Weapon",
-          "range": 45,
-          "firepower": {
-            "at": "4+",
-            "ap": "4+"
-          },
-          "traits": [
-            "Slow Firing"
+          "name": "2X Anvilus Autocannon Battery | 2X Hellfire Plasma Cannonade",
+          "options": [
+            {
+              "name": "Anvilus Autocannon Battery",
+              "type": "Ranged Weapon",
+              "range": 45,
+              "firepower": {
+                "at": "4+",
+                "ap": "5+"
+              },
+              "traits": [],
+              "count": 2,
+              "cost_delta": 0
+            },
+            {
+              "name": "Hellfire Plasma Cannonade",
+              "type": "Ranged Weapon",
+              "range": 45,
+              "firepower": {
+                "at": "4+",
+                "ap": "4+"
+              },
+              "traits": [
+                "Slow Firing"
+              ],
+              "count": 2,
+              "cost_delta": 4
+            }
           ]
         }
       ]
     },
-    "Leviathan Siege Dreadnoughts with Cyclonic Melta Lance": {
-      "cost": 72,
-      "uncertainty": 13,
-      "quality": "Safe",
-      "unit_profile": {
-        "type": "AV",
-        "speed": "15cm",
-        "armour": 4,
-        "cc": 4,
-        "ff": 4,
-        "traits": [
-          "Know no fear",
-          "Walker",
-          "Reinforced Armour"
-        ]
-      },
-      "weapons": [
-        {
-          "name": "Siege Claw",
-          "type": "Assault Weapons",
-          "range": "(bc)",
-          "traits": [
-            "Extra Attack +1",
-            "Macro-Weapon"
-          ]
-        },
-        {
-          "name": "Cyclonic Melta Lance",
-          "type": "Ranged Weapon",
-          "range": 20,
-          "firepower": {
-            "at": "3+",
-            "mw": "5+"
-          },
-          "traits": []
-        }
-      ]
-    },
-    "Leviathan Siege Dreadnoughts with Leviathan Storm Cannon": {
+    "Leviathan Siege Dreadnought": {
       "cost": 61,
       "uncertainty": 13,
       "quality": "Review",
@@ -3007,14 +2868,31 @@
           ]
         },
         {
-          "name": "Leviathan Storm Cannon",
-          "type": "Ranged Weapon",
-          "range": 20,
-          "firepower": {
-            "at": "4+",
-            "ap": "4+"
-          },
-          "traits": []
+          "name": "Leviathan Storm Cannon | Cyclonic Melta Lance",
+          "options": [
+            {
+              "name": "Leviathan Storm Cannon",
+              "type": "Ranged Weapon",
+              "range": 20,
+              "firepower": {
+                "at": "4+",
+                "ap": "4+"
+              },
+              "traits": [],
+              "cost_delta": 0
+            },
+            {
+              "name": "Cyclonic Melta Lance",
+              "type": "Ranged Weapon",
+              "range": 20,
+              "firepower": {
+                "at": "3+",
+                "mw": "5+"
+              },
+              "traits": [],
+              "cost_delta": 11
+            }
+          ]
         }
       ]
     },
@@ -3108,9 +2986,9 @@
       ]
     },
     "Fire Raptor Gunship": {
-      "cost": 106,
-      "uncertainty": 30,
-      "quality": "Review",
+      "cost": 95,
+      "uncertainty": 33,
+      "quality": "Experimental",
       "unit_profile": {
         "type": "AC",
         "speed": "Fighter bomber",
@@ -3124,62 +3002,65 @@
       },
       "weapons": [
         {
-          "name": "--",
+          "name": "Avenger Bolt Cannon",
           "type": "Ranged Weapon",
           "range": 30,
           "firepower": {
             "at": "5+",
-            "ap": "2+"
+            "ap": "3+"
           },
-          "traits": []
+          "traits": [],
+          "count": 2
         },
         {
-          "name": "--",
-          "type": "Ranged Weapon",
-          "range": 30,
-          "firepower": {
-            "at": "5+",
-            "ap": "2+"
-          },
-          "traits": []
-        },
-        {
-          "name": "Lascannon",
-          "type": "Ranged Weapon",
-          "range": 45,
-          "firepower": {
-            "at": "5+"
-          },
-          "traits": []
-        },
-        {
-          "name": "Lascannon",
-          "type": "Ranged Weapon",
-          "range": 45,
-          "firepower": {
-            "at": "5+"
-          },
-          "traits": []
-        },
-        {
-          "name": "--",
+          "name": "Tempest rockets",
           "type": "Ranged Weapon",
           "range": 15,
           "firepower": {
             "ap": "4+",
             "aa": "6+"
           },
-          "traits": []
+          "traits": [],
+          "count": 2
         },
         {
-          "name": "--",
-          "type": "Ranged Weapon",
-          "range": 15,
-          "firepower": {
-            "ap": "4+",
-            "aa": "6+"
-          },
-          "traits": []
+          "name": "2X Twin-linked Lascannon | 2X Twin-linked Heavy Bolter | 2X Twin-linked Auto Cannon",
+          "options": [
+            {
+              "name": "Twin-linked Lascannon",
+              "type": "Ranged Weapon",
+              "range": 45,
+              "firepower": {
+                "at": "4+"
+              },
+              "traits": [],
+              "count": 2,
+              "cost_delta": 10
+            },
+            {
+              "name": "Twin-linked Heavy Bolter",
+              "type": "Ranged Weapon",
+              "range": 30,
+              "firepower": {
+                "ap": "4+"
+              },
+              "traits": [],
+              "count": 2,
+              "cost_delta": 0
+            },
+            {
+              "name": "Twin-linked Auto Cannon",
+              "type": "Ranged Weapon",
+              "range": 45,
+              "firepower": {
+                "at": "5+",
+                "ap": "4+"
+              },
+              "traits": [],
+              "count": 2,
+              "cost_delta": 14
+            }
+          ]
         }
       ]
     },
@@ -3199,27 +3080,18 @@
       },
       "weapons": [
         {
-          "name": "--",
+          "name": "Rotary Missile Launcher",
           "type": "Ranged Weapon",
           "range": 30,
           "firepower": {
             "at": "4+",
             "aa": "5+"
           },
-          "traits": []
+          "traits": [],
+          "count": 2
         },
         {
-          "name": "--",
-          "type": "Ranged Weapon",
-          "range": 30,
-          "firepower": {
-            "at": "4+",
-            "aa": "5+"
-          },
-          "traits": []
-        },
-        {
-          "name": "--",
+          "name": "Lascannon",
           "type": "Ranged Weapon",
           "range": 45,
           "firepower": {
@@ -3255,7 +3127,9 @@
           "firepower": {
             "at": "3+"
           },
-          "traits": []
+          "traits": [
+            "Fixed Forward"
+          ]
         },
         {
           "name": "Quad Lascannon",
@@ -3264,7 +3138,9 @@
           "firepower": {
             "at": "3+"
           },
-          "traits": []
+          "traits": [
+            "Fixed Forward"
+          ]
         },
         {
           "name": "Twin-linked Heavy Bolter",
@@ -3273,12 +3149,14 @@
           "firepower": {
             "ap": "4+"
           },
-          "traits": []
+          "traits": [
+            "Fixed Forward"
+          ]
         }
       ]
     },
     "Mastodon Armored Transport": {
-      "cost": 255,
+      "cost": 235,
       "uncertainty": 36,
       "quality": "Safe",
       "unit_profile": {
@@ -3306,25 +3184,34 @@
           ]
         },
         {
-          "name": "Lascannon",
-          "type": "Ranged Weapon",
-          "range": 45,
-          "firepower": {
-            "at": "5+"
-          },
-          "traits": []
+          "name": "Sponson Weapons",
+          "options": [
+            {
+              "name": "Lascannon",
+              "type": "Ranged Weapon",
+              "range": 45,
+              "firepower": {
+                "at": "5+"
+              },
+              "traits": [],
+              "count": 2,
+              "cost_delta": 20
+            },
+            {
+              "name": "Heavy Bolter",
+              "type": "Ranged Weapon",
+              "range": 30,
+              "firepower": {
+                "ap": "5+"
+              },
+              "traits": [],
+              "count": 2,
+              "cost_delta": 0
+            }
+          ]
         },
         {
-          "name": "Lascannon",
-          "type": "Ranged Weapon",
-          "range": 45,
-          "firepower": {
-            "at": "5+"
-          },
-          "traits": []
-        },
-        {
-          "name": "--",
+          "name": "Sponson Mounted heavy flamers",
           "type": "Ranged Weapon",
           "range": 15,
           "firepower": {
@@ -3332,21 +3219,11 @@
           },
           "traits": [
             "Ignore Cover"
-          ]
+          ],
+          "count": 2
         },
         {
-          "name": "--",
-          "type": "Ranged Weapon",
-          "range": 15,
-          "firepower": {
-            "ap": "4+"
-          },
-          "traits": [
-            "Ignore Cover"
-          ]
-        },
-        {
-          "name": "--",
+          "name": "Skyreaper battery",
           "type": "Ranged Weapon",
           "range": 30,
           "firepower": {
@@ -3354,18 +3231,8 @@
             "ap": "4+",
             "aa": "5+"
           },
-          "traits": []
-        },
-        {
-          "name": "--",
-          "type": "Ranged Weapon",
-          "range": 30,
-          "firepower": {
-            "at": "4+",
-            "ap": "4+",
-            "aa": "5+"
-          },
-          "traits": []
+          "traits": [],
+          "count": 2
         }
       ]
     },
@@ -3405,16 +3272,8 @@
           "firepower": {
             "ap": "5+"
           },
-          "traits": []
-        },
-        {
-          "name": "Heavy Bolter",
-          "type": "Ranged Weapon",
-          "range": 30,
-          "firepower": {
-            "ap": "5+"
-          },
-          "traits": []
+          "traits": [],
+          "count": 2
         }
       ]
     },
@@ -3445,19 +3304,8 @@
           },
           "traits": [
             "Disrupt"
-          ]
-        },
-        {
-          "name": "Neutron Laser Array",
-          "type": "Ranged Weapon",
-          "range": 60,
-          "firepower": {
-            "at": "3+",
-            "mw": "5+"
-          },
-          "traits": [
-            "Disrupt"
-          ]
+          ],
+          "count": 2
         },
         {
           "name": "Heavy Bolter",
@@ -3466,20 +3314,12 @@
           "firepower": {
             "ap": "5+"
           },
-          "traits": []
-        },
-        {
-          "name": "Heavy Bolter",
-          "type": "Ranged Weapon",
-          "range": 30,
-          "firepower": {
-            "ap": "5+"
-          },
-          "traits": []
+          "traits": [],
+          "count": 2
         }
       ]
     },
-    "Kratos Battle Tank with H.B.": {
+    "Kratos Battle Tank": {
       "cost": 145,
       "uncertainty": 25,
       "quality": "Safe",
@@ -3518,116 +3358,58 @@
           "traits": []
         },
         {
-          "name": "Heavy Bolter",
-          "type": "Ranged Weapon",
-          "range": 30,
-          "firepower": {
-            "ap": "5+"
-          },
-          "traits": []
+          "name": "Sponsons",
+          "options": [
+            {
+              "name": "Heavy Bolter",
+              "type": "Ranged Weapon",
+              "range": 30,
+              "firepower": {
+                "ap": "5+"
+              },
+              "traits": [],
+              "count": 2,
+              "cost_delta": 10
+            },
+            {
+              "name": "Lascannon",
+              "type": "Ranged Weapon",
+              "range": 45,
+              "firepower": {
+                "at": "5+"
+              },
+              "traits": [],
+              "count": 2,
+              "cost_delta": 28
+            }
+          ]
         },
         {
-          "name": "Heavy Bolter",
-          "type": "Ranged Weapon",
-          "range": 30,
-          "firepower": {
-            "ap": "5+"
-          },
-          "traits": []
-        },
-        {
-          "name": "Heavy Bolter",
-          "type": "Ranged Weapon",
-          "range": 30,
-          "firepower": {
-            "ap": "5+"
-          },
-          "traits": []
-        },
-        {
-          "name": "Heavy Bolter",
-          "type": "Ranged Weapon",
-          "range": 30,
-          "firepower": {
-            "ap": "5+"
-          },
-          "traits": []
-        }
-      ]
-    },
-    "Kratos Battle Tank with Las.": {
-      "cost": 182,
-      "uncertainty": 28,
-      "quality": "Safe",
-      "unit_profile": {
-        "type": "WE",
-        "speed": "25cm",
-        "armour": 4,
-        "cc": 6,
-        "ff": 5,
-        "traits": [
-          "Know no fear",
-          "Reinforced Armour",
-          "Thick Rear Armour"
-        ],
-        "damage_capacity": 2
-      },
-      "weapons": [
-        {
-          "name": "Kratos Cannon",
-          "type": "Ranged Weapon",
-          "range": 45,
-          "firepower": {
-            "at": "3+",
-            "ap": "3+"
-          },
-          "traits": []
-        },
-        {
-          "name": "Co-axial Auto Cannon",
-          "type": "Ranged Weapon",
-          "range": 45,
-          "firepower": {
-            "at": "6+",
-            "ap": "5+"
-          },
-          "traits": []
-        },
-        {
-          "name": "Lascannon",
-          "type": "Ranged Weapon",
-          "range": 45,
-          "firepower": {
-            "at": "5+"
-          },
-          "traits": []
-        },
-        {
-          "name": "Lascannon",
-          "type": "Ranged Weapon",
-          "range": 45,
-          "firepower": {
-            "at": "5+"
-          },
-          "traits": []
-        },
-        {
-          "name": "Lascannon",
-          "type": "Ranged Weapon",
-          "range": 45,
-          "firepower": {
-            "at": "5+"
-          },
-          "traits": []
-        },
-        {
-          "name": "Lascannon",
-          "type": "Ranged Weapon",
-          "range": 45,
-          "firepower": {
-            "at": "5+"
-          },
-          "traits": []
+          "name": "Hull Weapons",
+          "options": [
+            {
+              "name": "Heavy Bolter",
+              "type": "Ranged Weapon",
+              "range": 30,
+              "firepower": {
+                "ap": "5+"
+              },
+              "traits": [],
+              "count": 2,
+              "cost_delta": 10
+            },
+            {
+              "name": "Lascannon",
+              "type": "Ranged Weapon",
+              "range": 45,
+              "firepower": {
+                "at": "5+"
+              },
+              "traits": [],
+              "count": 2,
+              "cost_delta": 28
+            }
+          ]
         }
       ]
     },
@@ -3669,16 +3451,10 @@
           "firepower": {
             "at": "3+"
           },
-          "traits": []
-        },
-        {
-          "name": "Quad Lascannon",
-          "type": "Ranged Weapon",
-          "range": 45,
-          "firepower": {
-            "at": "3+"
-          },
-          "traits": []
+          "traits": [
+            "Fixed Forward"
+          ],
+          "count": 2
         },
         {
           "name": "Twin-linked Heavy Bolter",
@@ -3735,46 +3511,8 @@
           "traits": [
             "Disrupt",
             "Ignore Cover"
-          ]
-        },
-        {
-          "name": "Volkite Carronade",
-          "type": "Ranged Weapon",
-          "range": 75,
-          "firepower": {
-            "at": "5+",
-            "ap": "3+"
-          },
-          "traits": [
-            "Disrupt",
-            "Ignore Cover"
-          ]
-        },
-        {
-          "name": "Volkite Carronade",
-          "type": "Ranged Weapon",
-          "range": 75,
-          "firepower": {
-            "at": "5+",
-            "ap": "3+"
-          },
-          "traits": [
-            "Disrupt",
-            "Ignore Cover"
-          ]
-        },
-        {
-          "name": "Volkite Carronade",
-          "type": "Ranged Weapon",
-          "range": 75,
-          "firepower": {
-            "at": "5+",
-            "ap": "3+"
-          },
-          "traits": [
-            "Disrupt",
-            "Ignore Cover"
-          ]
+          ],
+          "count": 4
         },
         {
           "name": "Quad Lascannon",
@@ -3783,16 +3521,10 @@
           "firepower": {
             "at": "3+"
           },
-          "traits": []
-        },
-        {
-          "name": "Quad Lascannon",
-          "type": "Ranged Weapon",
-          "range": 45,
-          "firepower": {
-            "at": "3+"
-          },
-          "traits": []
+          "traits": [
+            "Fixed Forward"
+          ],
+          "count": 2
         },
         {
           "name": "Twin-linked Heavy Bolter",
@@ -3846,16 +3578,10 @@
           "firepower": {
             "at": "3+"
           },
-          "traits": []
-        },
-        {
-          "name": "Quad Lascannon",
-          "type": "Ranged Weapon",
-          "range": 45,
-          "firepower": {
-            "at": "3+"
-          },
-          "traits": []
+          "traits": [
+            "Fixed Forward"
+          ],
+          "count": 2
         }
       ]
     },
@@ -3886,7 +3612,6 @@
             "ap": "2+"
           },
           "traits": [
-            "Fixed Forward",
             "Fixed Forward"
           ],
           "count": 4
@@ -3898,16 +3623,10 @@
           "firepower": {
             "at": "3+"
           },
-          "traits": []
-        },
-        {
-          "name": "Quad Lascannon",
-          "type": "Ranged Weapon",
-          "range": 45,
-          "firepower": {
-            "at": "3+"
-          },
-          "traits": []
+          "traits": [
+            "Fixed Forward"
+          ],
+          "count": 2
         }
       ]
     },
@@ -3940,19 +3659,8 @@
           },
           "traits": [
             "Fixed Forward"
-          ]
-        },
-        {
-          "name": "Laser Destroyer",
-          "type": "Ranged Weapon",
-          "range": 45,
-          "firepower": {
-            "at": "3+",
-            "ap": "6+"
-          },
-          "traits": [
-            "Fixed Forward"
-          ]
+          ],
+          "count": 2
         },
         {
           "name": "Twin-linked Lascannon",
@@ -3975,18 +3683,8 @@
           },
           "traits": [
             "Fixed Forward"
-          ]
-        },
-        {
-          "name": "Twin-linked Heavy Bolter",
-          "type": "Ranged Weapon",
-          "range": 30,
-          "firepower": {
-            "ap": "4+"
-          },
-          "traits": [
-            "Fixed Forward"
-          ]
+          ],
+          "count": 2
         },
         {
           "name": "Twin-linked Heavy Bolter",
@@ -4037,16 +3735,8 @@
           "firepower": {
             "at": "4+"
           },
-          "traits": []
-        },
-        {
-          "name": "--",
-          "type": "Ranged Weapon",
-          "range": 45,
-          "firepower": {
-            "at": "4+"
-          },
-          "traits": []
+          "traits": [],
+          "count": 2
         },
         {
           "name": "--",

@@ -8,6 +8,7 @@ from models.units import (
     AssaultWeapon,
     Army,
     AircraftSpeed,
+    MultipleChoiceWeapon,
 )
 from .ea_hh_weapons import (
     HeavyBolter,
@@ -16,6 +17,7 @@ from .ea_hh_weapons import (
     QuadLasCannon,
     TwinHeavyBolter,
     DemolisherCannon,
+    TwinAutoCannon,
 )
 
 legiones_astartes = Army("Legiones Astartes")
@@ -185,7 +187,7 @@ legiones_astartes.add_unit(
 
 legiones_astartes.add_unit(
     Unit(
-        "Tarantula, Twin Lascannon",
+        "Tarantula",
         3,
         2,
         UnitType.LIGHT_VEHICLE,
@@ -193,43 +195,21 @@ legiones_astartes.add_unit(
         armour=6,
         cc=6,
         ff=6,
-        weapons=[TwinLinkedLasCannon()],
+        weapons=[
+            MultipleChoiceWeapon(
+                [
+                    TwinLinkedLasCannon(),
+                    RangedWeapon(30, name="Hyperios Missiles", aa=4),
+                ]
+            ),
+        ],
         traits=[Traits.SCOUT],
     )
 )
 
 legiones_astartes.add_unit(
     Unit(
-        "Tarantula, Hyperios air-defence missile launcher",
-        3,
-        2,
-        UnitType.LIGHT_VEHICLE,
-        speed=0,
-        armour=6,
-        cc=6,
-        ff=6,
-        weapons=[RangedWeapon(30, name="Hyperios Missiles", aa=4)],
-        traits=[Traits.SCOUT],
-    )
-)
-
-legiones_astartes.add_unit(
-    Unit(
-        "Rapier, Laser Destroyer Array",
-        5,
-        1,
-        UnitType.INFANTRY,
-        speed=10,
-        armour=4,
-        cc=6,
-        ff=5,
-        weapons=[RangedWeapon(45, name="Laser Destroyer Array", ap=6, at=4)],
-    )
-)
-
-legiones_astartes.add_unit(
-    Unit(
-        "Rapier, Quad Launcher",
+        "Rapier",
         5,
         1,
         UnitType.INFANTRY,
@@ -238,12 +218,17 @@ legiones_astartes.add_unit(
         cc=6,
         ff=5,
         weapons=[
-            RangedWeapon(
-                45,
-                name="Quad Launcher",
-                ap=4,
-                at=6,
-                traits=[Traits.INDIRECT],
+            MultipleChoiceWeapon(
+                [
+                    RangedWeapon(45, name="Laser Destroyer Array", ap=6, at=4),
+                    RangedWeapon(
+                        45,
+                        name="Quad Launcher",
+                        ap=4,
+                        at=6,
+                        traits=[Traits.INDIRECT],
+                    ),
+                ]
             )
         ],
     )
@@ -257,7 +242,7 @@ legiones_astartes.add_unit(
 
 legiones_astartes.add_unit(
     Unit(
-        "Sabre Strike Tank with Anvilus Autocannon",
+        "Sabre Strike Tank",
         5,
         1,
         UnitType.ARMORED_VEHICLE,
@@ -266,8 +251,23 @@ legiones_astartes.add_unit(
         cc=6,
         ff=5,
         weapons=[
-            RangedWeapon(
-                20, name="Anvilus Autocannon", ap=4, at=5, traits=[Traits.FIXED_FORWARD]
+            MultipleChoiceWeapon(
+                [
+                    RangedWeapon(
+                        20,
+                        name="Anvilus Autocannon",
+                        ap=4,
+                        at=5,
+                        traits=[Traits.FIXED_FORWARD],
+                    ),
+                    RangedWeapon(
+                        20,
+                        name="Neutron Blaster",
+                        ap=5,
+                        at=5,
+                        traits=[Traits.FIXED_FORWARD, Traits.DISRUPT],
+                    ),
+                ]
             ),
             RangedWeapon(
                 30, name="Sabre Missiles", at=4, traits=[Traits.FIXED_FORWARD]
@@ -279,33 +279,7 @@ legiones_astartes.add_unit(
 
 legiones_astartes.add_unit(
     Unit(
-        "Sabre Strike Tank with Neutron Blaster",
-        5,
-        1,
-        UnitType.ARMORED_VEHICLE,
-        speed=35,
-        armour=5,
-        cc=6,
-        ff=5,
-        weapons=[
-            RangedWeapon(
-                20,
-                name="Neutron Blaster",
-                ap=5,
-                at=5,
-                traits=[Traits.FIXED_FORWARD, Traits.DISRUPT],
-            ),
-            RangedWeapon(
-                30, name="Sabre Missiles", at=4, traits=[Traits.FIXED_FORWARD]
-            ),
-        ],
-        traits=[Traits.KNOW_NO_FEAR],
-    )
-)
-
-legiones_astartes.add_unit(
-    Unit(
-        "Sicaran Battle Tank (Accelerator Cannon + Lascannons)",
+        "Sicaran Battle Tank",
         5,
         1,
         UnitType.ARMORED_VEHICLE,
@@ -317,28 +291,12 @@ legiones_astartes.add_unit(
             Multiplier(
                 2, RangedWeapon(name="Accelerator Cannon", range=45, at=5, ap=4)
             ),
-            Multiplier(2, LasCannon()),
-            HeavyBolter(traits=[Traits.FIXED_FORWARD]),
-        ],
-        traits=[Traits.KNOW_NO_FEAR, Traits.REINFORCED_ARMOUR],
-    )
-)
-
-legiones_astartes.add_unit(
-    Unit(
-        "Sicaran Battle Tank (Accelerator Cannon + Heavy Bolters)",
-        5,
-        1,
-        UnitType.ARMORED_VEHICLE,
-        speed=35,
-        armour=5,
-        cc=6,
-        ff=4,
-        weapons=[
-            Multiplier(
-                2, RangedWeapon(name="Accelerator Cannon", range=45, at=5, ap=4)
+            MultipleChoiceWeapon(
+                [
+                    Multiplier(2, LasCannon(traits=[Traits.FIXED_FORWARD])),
+                    Multiplier(2, HeavyBolter(traits=[Traits.FIXED_FORWARD])),
+                ]
             ),
-            Multiplier(2, HeavyBolter()),
             HeavyBolter(traits=[Traits.FIXED_FORWARD]),
         ],
         traits=[Traits.KNOW_NO_FEAR, Traits.REINFORCED_ARMOUR],
@@ -347,7 +305,7 @@ legiones_astartes.add_unit(
 
 legiones_astartes.add_unit(
     Unit(
-        "Sicaran Battle Tank, with Omega plasma array",
+        "Sicaran Omega",
         5,
         1,
         UnitType.ARMORED_VEHICLE,
@@ -357,7 +315,12 @@ legiones_astartes.add_unit(
         ff=4,
         weapons=[
             Multiplier(2, RangedWeapon(name="Omega Plasma Array", range=45, at=3)),
-            Multiplier(2, LasCannon()),
+            MultipleChoiceWeapon(
+                [
+                    Multiplier(2, LasCannon(traits=[Traits.FIXED_FORWARD])),
+                    Multiplier(2, HeavyBolter(traits=[Traits.FIXED_FORWARD])),
+                ]
+            ),
             HeavyBolter(traits=[Traits.FIXED_FORWARD]),
         ],
         traits=[Traits.KNOW_NO_FEAR, Traits.REINFORCED_ARMOUR],
@@ -376,7 +339,12 @@ legiones_astartes.add_unit(
         ff=4,
         weapons=[
             Multiplier(4, RangedWeapon(name="Punisher Cannon", range=30, at=5, ap=5)),
-            Multiplier(2, HeavyBolter()),
+            MultipleChoiceWeapon(
+                [
+                    Multiplier(2, LasCannon(traits=[Traits.FIXED_FORWARD])),
+                    Multiplier(2, HeavyBolter(traits=[Traits.FIXED_FORWARD])),
+                ]
+            ),
             HeavyBolter(traits=[Traits.FIXED_FORWARD]),
         ],
         traits=[Traits.KNOW_NO_FEAR, Traits.REINFORCED_ARMOUR],
@@ -404,7 +372,12 @@ legiones_astartes.add_unit(
                     traits=[Traits.INDIRECT],
                 ),
             ),
-            Multiplier(2, HeavyBolter()),
+            MultipleChoiceWeapon(
+                [
+                    Multiplier(2, LasCannon(traits=[Traits.FIXED_FORWARD])),
+                    Multiplier(2, HeavyBolter(traits=[Traits.FIXED_FORWARD])),
+                ]
+            ),
             HeavyBolter(traits=[Traits.FIXED_FORWARD]),
         ],
         traits=[Traits.KNOW_NO_FEAR, Traits.REINFORCED_ARMOUR],
@@ -424,8 +397,7 @@ legiones_astartes.add_unit(
         240 / 4,
         [
             TwinLinkedLasCannon(),
-            LasCannon(),
-            LasCannon(),
+            Multiplier(2, LasCannon(traits=[Traits.FIXED_FORWARD])),
         ],
         [Traits.KNOW_NO_FEAR],
     )
@@ -442,7 +414,10 @@ legiones_astartes.add_unit(
         6,
         3,
         240 / 4,
-        [RangedWeapon(45, 5, 5), HeavyBolter(), HeavyBolter()],
+        [
+            RangedWeapon(45, 5, 5, name="Predator Auto Cannon"),
+            Multiplier(2, HeavyBolter(traits=[Traits.FIXED_FORWARD])),
+        ],
         [Traits.KNOW_NO_FEAR],
     )
 )
@@ -458,8 +433,8 @@ legiones_astartes.add_unit(
         cc=6,
         ff=4,
         weapons=[
-            TwinLinkedLasCannon(),
-            TwinLinkedLasCannon(),
+            TwinLinkedLasCannon(traits=[Traits.FIXED_FORWARD]),
+            TwinLinkedLasCannon(traits=[Traits.FIXED_FORWARD]),
         ],
         traits=[
             Traits.KNOW_NO_FEAR,
@@ -481,9 +456,9 @@ legiones_astartes.add_unit(
         cc=6,
         ff=5,
         weapons=[
-            QuadLasCannon(),
-            QuadLasCannon(),
-            TwinHeavyBolter(),
+            QuadLasCannon(traits=[Traits.FIXED_FORWARD]),
+            QuadLasCannon(traits=[Traits.FIXED_FORWARD]),
+            TwinHeavyBolter(traits=[Traits.FIXED_FORWARD]),
         ],
         traits=[
             Traits.KNOW_NO_FEAR,
@@ -507,15 +482,18 @@ legiones_astartes.add_unit(
         4,
         250,
         [
-            RangedWeapon(
-                45, name="Laser Destroyer", at=3, ap=6, traits=[Traits.FIXED_FORWARD]
-            ),
-            RangedWeapon(
-                45, name="Laser Destroyer", at=3, ap=6, traits=[Traits.FIXED_FORWARD]
+            Multiplier(
+                2,
+                RangedWeapon(
+                    45,
+                    name="Laser Destroyer",
+                    at=3,
+                    ap=6,
+                    traits=[Traits.FIXED_FORWARD],
+                ),
             ),
             TwinLinkedLasCannon(aa=5, traits=[Traits.FIXED_FORWARD]),
-            TwinHeavyBolter(traits=[Traits.FIXED_FORWARD]),
-            TwinHeavyBolter(traits=[Traits.FIXED_FORWARD]),
+            Multiplier(2, TwinHeavyBolter(traits=[Traits.FIXED_FORWARD])),
             TwinHeavyBolter(traits=[Traits.LEFT]),
             TwinHeavyBolter(traits=[Traits.RIGHT]),
         ],
@@ -538,12 +516,15 @@ legiones_astartes.add_unit(
         0,
         150,
         [
-            RangedWeapon(30, ap=2, at=5),
-            RangedWeapon(30, ap=2, at=5),
-            LasCannon(),
-            LasCannon(),
-            RangedWeapon(15, ap=4, aa=6),
-            RangedWeapon(15, ap=4, aa=6),
+            Multiplier(2, RangedWeapon(30, name="Avenger Bolt Cannon", ap=3, at=5)),
+            Multiplier(2, RangedWeapon(15, name="Tempest rockets", ap=4, aa=6)),
+            MultipleChoiceWeapon(
+                [
+                    Multiplier(2, TwinLinkedLasCannon()),
+                    Multiplier(2, TwinHeavyBolter()),
+                    Multiplier(2, TwinAutoCannon()),
+                ]
+            ),
         ],
         traits=[Traits.KNOW_NO_FEAR, Traits.REINFORCED_ARMOUR],
         aircraft_speed=AircraftSpeed.FIGHTER_BOMBER,
@@ -562,9 +543,8 @@ legiones_astartes.add_unit(
         0,
         125,
         [
-            RangedWeapon(30, at=4, aa=5),
-            RangedWeapon(30, at=4, aa=5),
-            RangedWeapon(45, at=5),
+            Multiplier(2, RangedWeapon(30, name="Rotary Missile Launcher", at=4, aa=5)),
+            LasCannon(),
         ],
         traits=[Traits.KNOW_NO_FEAR],
         aircraft_speed=AircraftSpeed.FIGHTER,
@@ -583,8 +563,7 @@ legiones_astartes.add_unit(
         5,
         125,
         [
-            RangedWeapon(45, at=4),
-            RangedWeapon(45, at=4),
+            Multiplier(2, RangedWeapon(45, at=4)),
             RangedWeapon(45, bp=1),
             RangedWeapon(30, ap=4, aa=5),
         ],
@@ -597,7 +576,7 @@ legiones_astartes.add_unit(
 
 legiones_astartes.add_unit(
     Unit(
-        "Contemptor Dreadnought with Lascannon",
+        "Contemptor Dreadnought",
         5,
         1,
         UnitType.ARMORED_VEHICLE,
@@ -607,8 +586,13 @@ legiones_astartes.add_unit(
         4,
         60,
         [
-            LasCannon(),
             AssaultWeapon([Traits.MW, Traits.EXTRA_ATTACK_1]),
+            MultipleChoiceWeapon(
+                [
+                    TwinLinkedLasCannon(),
+                    RangedWeapon(30, 5, 4, 0, name="Assault Cannon"),
+                ],
+            ),
         ],
         [Traits.KNOW_NO_FEAR, Traits.WALKER],
     )
@@ -616,27 +600,7 @@ legiones_astartes.add_unit(
 
 legiones_astartes.add_unit(
     Unit(
-        "Contemptor Dreadnought with Assault Cannon",
-        5,
-        1,
-        UnitType.ARMORED_VEHICLE,
-        15,
-        3,
-        4,
-        4,
-        60,
-        [
-            RangedWeapon(30, 5, 4, 0, name="Assault Cannon"),
-            AssaultWeapon([Traits.MW, Traits.EXTRA_ATTACK_1]),
-        ],
-        [Traits.KNOW_NO_FEAR, Traits.WALKER],
-    )
-)
-
-
-legiones_astartes.add_unit(
-    Unit(
-        "Deredeo Dreadnoughts with Anvilus Autocannon Battery",
+        "Deredeo Dreadnought",
         5,
         1,
         UnitType.ARMORED_VEHICLE,
@@ -647,39 +611,23 @@ legiones_astartes.add_unit(
         weapons=[
             TwinHeavyBolter(),
             RangedWeapon(45, name="Aiolos Missile Launcher", ap=5, at=5, aa=5),
-            RangedWeapon(45, name="Anvilus Autocannon Battery", ap=5, at=4),
-            RangedWeapon(45, name="Anvilus Autocannon Battery", ap=5, at=4),
-        ],
-        traits=[Traits.KNOW_NO_FEAR, Traits.WALKER, Traits.INVULNERABLE_SAVE],
-    )
-)
-
-legiones_astartes.add_unit(
-    Unit(
-        "Deredeo Dreadnoughts with Hellfire Plasma Cannonade",
-        5,
-        1,
-        UnitType.ARMORED_VEHICLE,
-        speed=15,
-        armour=3,
-        cc=5,
-        ff=3,
-        weapons=[
-            TwinHeavyBolter(),
-            RangedWeapon(45, name="Aiolos Missile Launcher", ap=5, at=5, aa=5),
-            RangedWeapon(
-                45,
-                name="Hellfire Plasma Cannonade",
-                ap=4,
-                at=4,
-                traits=[Traits.SLOW_FIRING],
-            ),
-            RangedWeapon(
-                45,
-                name="Hellfire Plasma Cannonade",
-                ap=4,
-                at=4,
-                traits=[Traits.SLOW_FIRING],
+            MultipleChoiceWeapon(
+                [
+                    Multiplier(
+                        2,
+                        RangedWeapon(45, name="Anvilus Autocannon Battery", ap=5, at=4),
+                    ),
+                    Multiplier(
+                        2,
+                        RangedWeapon(
+                            45,
+                            name="Hellfire Plasma Cannonade",
+                            ap=4,
+                            at=4,
+                            traits=[Traits.SLOW_FIRING],
+                        ),
+                    ),
+                ]
             ),
         ],
         traits=[Traits.KNOW_NO_FEAR, Traits.WALKER, Traits.INVULNERABLE_SAVE],
@@ -688,7 +636,7 @@ legiones_astartes.add_unit(
 
 legiones_astartes.add_unit(
     Unit(
-        "Leviathan Siege Dreadnoughts with Cyclonic Melta Lance",
+        "Leviathan Siege Dreadnought",
         5,
         1,
         UnitType.ARMORED_VEHICLE,
@@ -698,25 +646,12 @@ legiones_astartes.add_unit(
         ff=4,
         weapons=[
             AssaultWeapon([Traits.EXTRA_ATTACK_1, Traits.MW], name="Siege Claw"),
-            RangedWeapon(20, name="Cyclonic Melta Lance", at=3, mw=5),
-        ],
-        traits=[Traits.KNOW_NO_FEAR, Traits.WALKER, Traits.REINFORCED_ARMOUR],
-    )
-)
-
-legiones_astartes.add_unit(
-    Unit(
-        "Leviathan Siege Dreadnoughts with Leviathan Storm Cannon",
-        5,
-        1,
-        UnitType.ARMORED_VEHICLE,
-        speed=15,
-        armour=4,
-        cc=4,
-        ff=4,
-        weapons=[
-            AssaultWeapon([Traits.EXTRA_ATTACK_1, Traits.MW], name="Siege Claw"),
-            RangedWeapon(20, name="Leviathan Storm Cannon", ap=4, at=4),
+            MultipleChoiceWeapon(
+                [
+                    RangedWeapon(20, name="Leviathan Storm Cannon", ap=4, at=4),
+                    RangedWeapon(20, name="Cyclonic Melta Lance", at=3, mw=5),
+                ]
+            ),
         ],
         traits=[Traits.KNOW_NO_FEAR, Traits.WALKER, Traits.REINFORCED_ARMOUR],
     )
@@ -818,12 +753,23 @@ legiones_astartes.add_unit(
         transport_capacity=8,
         weapons=[
             SmallArms([Traits.EXTRA_ATTACK_1, Traits.MW]),
-            LasCannon(),
-            LasCannon(),
-            RangedWeapon(15, ap=4, traits=[Traits.IGNORE_COVER]),
-            RangedWeapon(15, ap=4, traits=[Traits.IGNORE_COVER]),
-            RangedWeapon(30, ap=4, at=4, aa=5),
-            RangedWeapon(30, ap=4, at=4, aa=5),
+            MultipleChoiceWeapon(
+                [
+                    Multiplier(2, LasCannon()),
+                    Multiplier(2, HeavyBolter()),
+                ],
+                name="Sponson Weapons",
+            ),
+            Multiplier(
+                2,
+                RangedWeapon(
+                    15,
+                    name="Sponson Mounted heavy flamers",
+                    ap=4,
+                    traits=[Traits.IGNORE_COVER],
+                ),
+            ),
+            Multiplier(2, RangedWeapon(30, ap=4, at=4, aa=5, name="Skyreaper battery")),
         ],
         traits=[Traits.KNOW_NO_FEAR, Traits.REINFORCED_ARMOUR],
     )
@@ -847,8 +793,7 @@ legiones_astartes.add_unit(
                 bp=3,
                 traits=[Traits.INDIRECT, Traits.IGNORE_COVER],
             ),
-            HeavyBolter(),
-            HeavyBolter(),
+            Multiplier(2, HeavyBolter()),
         ],
         damage_capacity=2,
         traits=[Traits.KNOW_NO_FEAR, Traits.REINFORCED_ARMOUR],
@@ -867,14 +812,13 @@ legiones_astartes.add_unit(
         5,
         400 / 3,
         [
-            RangedWeapon(
-                60, name="Neutron Laser Array", at=3, mw=5, traits=[Traits.DISRUPT]
+            Multiplier(
+                2,
+                RangedWeapon(
+                    60, name="Neutron Laser Array", at=3, mw=5, traits=[Traits.DISRUPT]
+                ),
             ),
-            RangedWeapon(
-                60, name="Neutron Laser Array", at=3, mw=5, traits=[Traits.DISRUPT]
-            ),
-            HeavyBolter(),
-            HeavyBolter(),
+            Multiplier(2, HeavyBolter()),
         ],
         damage_capacity=2,
         traits=[Traits.KNOW_NO_FEAR, Traits.REINFORCED_ARMOUR],
@@ -883,7 +827,7 @@ legiones_astartes.add_unit(
 
 legiones_astartes.add_unit(
     Unit(
-        "Kratos Battle Tank with H.B.",
+        "Kratos Battle Tank",
         5,
         1,
         UnitType.WAR_ENGINE,
@@ -894,10 +838,20 @@ legiones_astartes.add_unit(
         weapons=[
             RangedWeapon(45, name="Kratos Cannon", at=3, ap=3),
             RangedWeapon(45, name="Co-axial Auto Cannon", at=6, ap=5),
-            HeavyBolter(),
-            HeavyBolter(),
-            HeavyBolter(),
-            HeavyBolter(),
+            MultipleChoiceWeapon(
+                [
+                    Multiplier(2, HeavyBolter()),
+                    Multiplier(2, LasCannon()),
+                ],
+                name="Sponsons",
+            ),
+            MultipleChoiceWeapon(
+                [
+                    Multiplier(2, HeavyBolter()),
+                    Multiplier(2, LasCannon()),
+                ],
+                name="Hull Weapons",
+            ),
         ],
         damage_capacity=2,
         traits=[
@@ -908,32 +862,6 @@ legiones_astartes.add_unit(
     )
 )
 
-legiones_astartes.add_unit(
-    Unit(
-        "Kratos Battle Tank with Las.",
-        5,
-        1,
-        UnitType.WAR_ENGINE,
-        25,
-        armour=4,
-        cc=6,
-        ff=5,
-        weapons=[
-            RangedWeapon(45, name="Kratos Cannon", at=3, ap=3),
-            RangedWeapon(45, name="Co-axial Auto Cannon", at=6, ap=5),
-            LasCannon(),
-            LasCannon(),
-            LasCannon(),
-            LasCannon(),
-        ],
-        damage_capacity=2,
-        traits=[
-            Traits.KNOW_NO_FEAR,
-            Traits.REINFORCED_ARMOUR,
-            Traits.THICK_REAR_ARMOUR,
-        ],
-    )
-)
 
 legiones_astartes.add_unit(
     Unit(
@@ -953,8 +881,10 @@ legiones_astartes.add_unit(
                 at=2,
                 traits=[Traits.MW, Traits.TITAN_KILLER_1],
             ),
-            QuadLasCannon(),
-            QuadLasCannon(),
+            Multiplier(
+                2,
+                QuadLasCannon(traits=[Traits.FIXED_FORWARD]),
+            ),
             TwinHeavyBolter(traits=[Traits.FIXED_FORWARD]),
             DemolisherCannon(traits=[Traits.FIXED_FORWARD]),
         ],
@@ -978,36 +908,20 @@ legiones_astartes.add_unit(
         cc=5,
         ff=5,
         weapons=[
-            RangedWeapon(
-                name="Volkite Carronade",
-                range=75,
-                ap=3,
-                at=5,
-                traits=[Traits.DISRUPT, Traits.IGNORE_COVER],
+            Multiplier(
+                4,
+                RangedWeapon(
+                    name="Volkite Carronade",
+                    range=75,
+                    ap=3,
+                    at=5,
+                    traits=[Traits.DISRUPT, Traits.IGNORE_COVER],
+                ),
             ),
-            RangedWeapon(
-                name="Volkite Carronade",
-                range=75,
-                ap=3,
-                at=5,
-                traits=[Traits.DISRUPT, Traits.IGNORE_COVER],
+            Multiplier(
+                2,
+                QuadLasCannon(traits=[Traits.FIXED_FORWARD]),
             ),
-            RangedWeapon(
-                name="Volkite Carronade",
-                range=75,
-                ap=3,
-                at=5,
-                traits=[Traits.DISRUPT, Traits.IGNORE_COVER],
-            ),
-            RangedWeapon(
-                name="Volkite Carronade",
-                range=75,
-                ap=3,
-                at=5,
-                traits=[Traits.DISRUPT, Traits.IGNORE_COVER],
-            ),
-            QuadLasCannon(),
-            QuadLasCannon(),
             TwinHeavyBolter(traits=[Traits.FIXED_FORWARD]),
         ],
         damage_capacity=4,
@@ -1037,8 +951,10 @@ legiones_astartes.add_unit(
                 at=2,
                 traits=[Traits.MW, Traits.TITAN_KILLER_D3, Traits.FIXED_FORWARD],
             ),
-            QuadLasCannon(),
-            QuadLasCannon(),
+            Multiplier(
+                2,
+                QuadLasCannon(traits=[Traits.FIXED_FORWARD]),
+            ),
         ],
         damage_capacity=4,
         traits=[
@@ -1067,11 +983,13 @@ legiones_astartes.add_unit(
                     range=30,
                     ap=2,
                     at=6,
-                    traits=[Traits.FIXED_FORWARD, Traits.FIXED_FORWARD],
+                    traits=[Traits.FIXED_FORWARD],
                 ),
             ),
-            QuadLasCannon(),
-            QuadLasCannon(),
+            Multiplier(
+                2,
+                QuadLasCannon(traits=[Traits.FIXED_FORWARD]),
+            ),
         ],
         damage_capacity=4,
         traits=[
@@ -1117,7 +1035,7 @@ legiones_astartes.add_unit(
 
 legiones_astartes.add_unit(
     Unit(
-        "Javelin Attack Speeder with Cyclone Missile Launcher",
+        "Javelin Attack Speeder",
         5,
         1,
         UnitType.LIGHT_VEHICLE,
@@ -1126,24 +1044,14 @@ legiones_astartes.add_unit(
         cc=6,
         ff=5,
         weapons=[
-            RangedWeapon(45, name="Cyclone Missile Launcher", ap=3, at=5),
+            MultipleChoiceWeapon(
+                [
+                    RangedWeapon(45, name="Cyclone Missile Launcher", ap=3, at=5),
+                    TwinLinkedLasCannon(),
+                ],
+            ),
             HeavyBolter(),
         ],
-        traits=[Traits.KNOW_NO_FEAR, Traits.SKIMMER, Traits.SCOUT],
-    )
-)
-
-legiones_astartes.add_unit(
-    Unit(
-        "Javelin Attack Speeder with Lascannons",
-        5,
-        1,
-        UnitType.LIGHT_VEHICLE,
-        35,
-        armour=4,
-        cc=6,
-        ff=5,
-        weapons=[TwinLinkedLasCannon(), HeavyBolter()],
         traits=[Traits.KNOW_NO_FEAR, Traits.SKIMMER, Traits.SCOUT],
     )
 )
@@ -1158,7 +1066,7 @@ legiones_astartes.add_unit(
         armour=4,
         cc=3,
         ff=5,
-        weapons=[SmallArms()],
+        weapons=[SmallArms(name="Bolters")],
         traits=[Traits.KNOW_NO_FEAR, Traits.MOUNTED, Traits.SCOUT],
     )
 )
@@ -1173,7 +1081,7 @@ legiones_astartes.add_unit(
         armour=4,
         cc=4,
         ff=4,
-        weapons=[SmallArms()],
+        weapons=[HeavyBolter()],
         traits=[Traits.KNOW_NO_FEAR, Traits.MOUNTED, Traits.SKIMMER, Traits.SCOUT],
     )
 )

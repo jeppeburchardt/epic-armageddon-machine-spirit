@@ -59,7 +59,10 @@ def weapon_to_dict(weapon) -> dict:
             "traits": list(map(trait_to_string, weapon.traits)),
         }
     if isinstance(weapon, MultipleChoiceWeapon):
-        return {"choice": [weapon_to_dict(o) for o in weapon.options]}
+        return {
+            "name": str(weapon.name),
+            "options": [weapon_to_dict(o) for o in weapon.options],
+        }
     return {"name": str(weapon)}
 
 
@@ -115,7 +118,7 @@ def _weapons_for_choice_result(result: MultipleChoiceResult) -> list:
                 opt_dict = weapon_to_dict(option)
                 opt_dict["cost_delta"] = delta
                 choice_list.append(opt_dict)
-            weapons.append({"choice": choice_list})
+            weapons.append({"name": w.name, "options": choice_list})
     return weapons
 
 

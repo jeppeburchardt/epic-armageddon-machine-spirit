@@ -319,12 +319,14 @@ class RangedWeapon:
 
 
 class Multiplier:
+    name: str
     times: int
     weapon: RangedWeapon
 
     def __init__(self, times, weapon):
         self.times = times
         self.weapon = weapon
+        self.name = f"{self.times}X {self.weapon.name}"
 
     def to_list(self):
         parts = self.weapon.to_list()

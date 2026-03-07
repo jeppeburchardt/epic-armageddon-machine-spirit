@@ -14,8 +14,8 @@ class TwinHeavyBolter(RangedWeapon):
 
 
 class LasCannon(RangedWeapon):
-    def __init__(self, aa=0):
-        super().__init__(45, at=5, aa=aa, name="Lascannon")
+    def __init__(self, aa=0, traits=[]):
+        super().__init__(45, at=5, aa=aa, name="Lascannon", traits=traits)
 
 
 class TwinLinkedLasCannon(RangedWeapon):
@@ -24,8 +24,8 @@ class TwinLinkedLasCannon(RangedWeapon):
 
 
 class QuadLasCannon(RangedWeapon):
-    def __init__(self, aa=0):
-        super().__init__(45, at=3, aa=aa, name="Quad Lascannon")
+    def __init__(self, aa=0, traits=[]):
+        super().__init__(45, at=3, aa=aa, name="Quad Lascannon", traits=traits)
 
 
 class BattleCannon(RangedWeapon):
@@ -50,10 +50,12 @@ class DemolisherCannon(RangedWeapon):
 
 
 class AutoCannon(RangedWeapon):
-    def __init__(self, aa=0):
-        super().__init__(45, ap=5, at=6, aa=aa, name="Auto Cannon")
+    def __init__(self, aa=0, traits=[]):
+        super().__init__(45, ap=5, at=6, aa=aa, name="Auto Cannon", traits=traits)
 
 
 class TwinAutoCannon(RangedWeapon):
-    def __init__(self, aa=0):
-        super().__init__(45, ap=4, at=5, aa=aa, name="Twin-linked Auto Cannon")
+    def __init__(self, aa=0, traits=[]):
+        super().__init__(
+            45, ap=4, at=5, aa=aa, name="Twin-linked Auto Cannon", traits=traits
+        )
