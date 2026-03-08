@@ -8,6 +8,7 @@ from models.units import (
     Army,
     AircraftSpeed,
     MultipleChoiceWeapon,
+    Multiplier,
 )
 from .ea_hh_weapons import (
     HeavyBolter,
@@ -318,7 +319,7 @@ solar_auxilia.add_unit(
 
 solar_auxilia.add_unit(
     Unit(
-        "Malcador (battle cannon, demolisher, las.spon.)",
+        "Malcador Battle Tank",
         3,
         2,
         UnitType.ARMORED_VEHICLE,
@@ -327,50 +328,28 @@ solar_auxilia.add_unit(
         cc=6,
         ff=5,
         weapons=[
-            BattleCannon(),
-            DemolisherCannon(),
-            LasCannon(),
-            LasCannon(),
-        ],
-        traits=[Traits.REINFORCED_ARMOUR, Traits.THICK_REAR_ARMOUR],
-    )
-)
-
-solar_auxilia.add_unit(
-    Unit(
-        "Malcador (vanquisher, demiólisher, h.b.spon.)",
-        3,
-        2,
-        UnitType.ARMORED_VEHICLE,
-        speed=15,
-        armour=4,
-        cc=6,
-        ff=4,
-        weapons=[
-            VanquisherBattleCannon(),
-            DemolisherCannon(),
-            HeavyBolter(),
-            HeavyBolter(),
-        ],
-        traits=[Traits.REINFORCED_ARMOUR, Traits.THICK_REAR_ARMOUR],
-    )
-)
-
-solar_auxilia.add_unit(
-    Unit(
-        "Malcador (las cannons)",
-        3,
-        2,
-        UnitType.ARMORED_VEHICLE,
-        speed=15,
-        armour=4,
-        cc=6,
-        ff=5,
-        weapons=[
-            TwinLinkedLasCannon(),
-            LasCannon(),
-            LasCannon(),
-            LasCannon(),
+            MultipleChoiceWeapon(
+                [
+                    BattleCannon(traits=[Traits.FIXED_FORWARD]),
+                    VanquisherBattleCannon(traits=[Traits.FIXED_FORWARD]),
+                    TwinLinkedLasCannon(traits=[Traits.FIXED_FORWARD]),
+                ],
+                name="Turret",
+            ),
+            MultipleChoiceWeapon(
+                [
+                    DemolisherCannon(traits=[Traits.FIXED_FORWARD]),
+                    LasCannon(traits=[Traits.FIXED_FORWARD]),
+                ],
+                name="Hull Mount",
+            ),
+            MultipleChoiceWeapon(
+                [
+                    Multiplier(2, LasCannon(traits=[Traits.FIXED_FORWARD])),
+                    Multiplier(2, AutoCannon(traits=[Traits.FIXED_FORWARD])),
+                ],
+                name="Sponsons",
+            ),
         ],
         traits=[Traits.REINFORCED_ARMOUR, Traits.THICK_REAR_ARMOUR],
     )
@@ -393,6 +372,7 @@ solar_auxilia.add_unit(
         transport_capacity=5,
     )
 )
+
 solar_auxilia.add_unit(
     Unit(
         "Dracosan with demolisher",

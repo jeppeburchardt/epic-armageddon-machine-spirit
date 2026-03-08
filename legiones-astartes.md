@@ -25,8 +25,7 @@
 | Sicaran Omega                                          | 78 - 96          | ±9.0          | Safe         | 19% ⚠    |
 | Sicaran Punisher                                       | 63 - 81          | ±12.0         | Safe         | 22% ⚠    |
 | Sicaran Arcus                                          | 94 - 112         | ±11.0         | Safe         | 16% ⚠    |
-| Predator Annihilator                                   | 64               | ±8.0          | Safe         |          |
-| Predator Destructor                                    | 57               | ±8.0          | Safe         |          |
+| Predator                                               | 46 - 65          | ±8.0          | Safe         | 29% ⚠    |
 | Land Raider                                            | 74               | ±9.0          | Safe         |          |
 | Contemptor Dreadnought                                 | 52 - 58          | ±9.0          | Safe         | 9%       |
 | Deredeo Dreadnought                                    | 98 - 102         | ±15.0         | Safe         | 4%       |
@@ -48,8 +47,8 @@
 | Thunderhawk Gunship                                    | 211              | ±21.0         | Safe         |          |
 | Storm Eagle Attack Ship                                | 189              | ±23.0         | Safe         |          |
 
-Average Score: 81.86
-Average Uncertainty: 15.88
+Average Score: 81.76
+Average Uncertainty: 16.07
 
 
 
@@ -97,14 +96,12 @@ Average Uncertainty: 15.88
 |                                                        |        |                |          |      |      | 2X Lascannon                      | 45             | AT5+, Fixed Forward                                       |                                                         |
 |                                                        |        |                |          |      |      | (or) 2X Heavy Bolter              | 30             | AP5+, Fixed Forward                                       |                                                         |
 |                                                        |        |                |          |      |      | Heavy Bolter                      | 30             | AP5+, Fixed Forward                                       |                                                         |
-| Predator Annihilator                                   | AV     | 30cm           | 4        | 6    | 5    | Twin-linked Lascannon             | 45             | AT4+                                                      | Know no fear                                            |
-|                                                        |        |                |          |      |      | 2X Lascannon                      | 45             | AT5+, Fixed Forward                                       |                                                         |
-| Predator Destructor                                    | AV     | 30cm           | 4        | 6    | 3    | Predator Auto Cannon              | 45             | AT5+ AP5+                                                 | Know no fear                                            |
+| Predator                                               | AV     | 30cm           | 4        | 6    | 5    | Predator Auto Cannon              | 45             | AT5+ AP5+                                                 | Know no fear                                            |
+|                                                        |        |                |          |      |      | (or) Twin-linked Lascannon        | 45             | AT4+                                                      |                                                         |
 |                                                        |        |                |          |      |      | 2X Heavy Bolter                   | 30             | AP5+, Fixed Forward                                       |                                                         |
-| Land Raider                                            | AV     | 25cm           | 4        | 6    | 4    | Twin-linked Lascannon             | 45             | AT4+, Fixed Forward                                       | Know no fear, Reinforced Armour, Thick Rear Armour      |
-|                                                        |        |                |          |      |      | Twin-linked Lascannon             | 45             | AT4+, Fixed Forward                                       |                                                         |
-| Spartan Assault Tank                                   | WE     | 25cm           | 4        | 6    | 5    | Quad Lascannon                    | 45             | AT3+, Fixed Forward                                       | Know no fear, Reinforced Armour, Thick Rear Armour, DC2 |
-|                                                        |        |                |          |      |      | Quad Lascannon                    | 45             | AT3+, Fixed Forward                                       |                                                         |
+|                                                        |        |                |          |      |      | (or) 2X Lascannon                 | 45             | AT5+, Fixed Forward                                       |                                                         |
+| Land Raider                                            | AV     | 25cm           | 4        | 6    | 4    | 2X Twin-linked Lascannon          | 45             | AT4+, Fixed Forward                                       | Know no fear, Reinforced Armour, Thick Rear Armour      |
+| Spartan Assault Tank                                   | WE     | 25cm           | 4        | 6    | 5    | 2X Quad Lascannon                 | 45             | AT3+, Fixed Forward                                       | Know no fear, Reinforced Armour, Thick Rear Armour, DC2 |
 |                                                        |        |                |          |      |      | Twin-linked Heavy Bolter          | 30             | AP4+, Fixed Forward                                       |                                                         |
 | Thunderhawk Gunship                                    | AC/WE  | Bomber         | 4        | 6    | 4    | 2X Laser Destroyer                | 45             | AT3+ AP6+, Fixed Forward                                  | Know no fear, PLANET_FALL, Reinforced Armour            |
 |                                                        |        |                |          |      |      | Twin-linked Lascannon             | 45             | AT4+ AA5+, Fixed Forward                                  |                                                         |
@@ -145,10 +142,12 @@ Average Uncertainty: 15.88
 |                                                        |        |                |          |      |      | 2X Heavy Bolter                   | 30             | AP5+                                                      |                                                         |
 | Kratos Battle Tank                                     | WE     | 25cm           | 4        | 6    | 5    | Kratos Cannon                     | 45             | AT3+ AP3+                                                 | Know no fear, Reinforced Armour, Thick Rear Armour, DC2 |
 |                                                        |        |                |          |      |      | Co-axial Auto Cannon              | 45             | AT6+ AP5+                                                 |                                                         |
-|                                                        |        |                |          |      |      | 2X Heavy Bolter                   | 30             | AP5+                                                      |                                                         |
-|                                                        |        |                |          |      |      | (or) 2X Lascannon                 | 45             | AT5+                                                      |                                                         |
-|                                                        |        |                |          |      |      | 2X Heavy Bolter                   | 30             | AP5+                                                      |                                                         |
-|                                                        |        |                |          |      |      | (or) 2X Lascannon                 | 45             | AT5+                                                      |                                                         |
+|                                                        |        |                |          |      |      | 2X Heavy Bolter                   | 30             | AP5+, Fixed Forward                                       |                                                         |
+|                                                        |        |                |          |      |      | (or) 2X Lascannon                 | 45             | AT5+, Fixed Forward                                       |                                                         |
+|                                                        |        |                |          |      |      | (or) 2X Auto Cannon               | 45             | AT6+ AP5+, Fixed Forward                                  |                                                         |
+|                                                        |        |                |          |      |      | 2X Heavy Bolter                   | 30             | AP5+, Fixed Forward                                       |                                                         |
+|                                                        |        |                |          |      |      | (or) 2X Lascannon                 | 45             | AT5+, Fixed Forward                                       |                                                         |
+|                                                        |        |                |          |      |      | (or) 2X Auto Cannon               | 45             | AT6+ AP5+, Fixed Forward                                  |                                                         |
 | Fellblade Super Heavy Tank                             | WE     | 20cm           | 4        | 5    | 5    | Fellblade Cannon                  | 75             | AT2+ AP2+, Macro-Weapon, Traits.TITAN_KILLER_1            | Know no fear, Reinforced Armour, Thick Rear Armour, DC4 |
 |                                                        |        |                |          |      |      | 2X Quad Lascannon                 | 45             | AT3+, Fixed Forward                                       |                                                         |
 |                                                        |        |                |          |      |      | Twin-linked Heavy Bolter          | 30             | AP4+, Fixed Forward                                       |                                                         |

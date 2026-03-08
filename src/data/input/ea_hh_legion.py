@@ -17,6 +17,7 @@ from .ea_hh_weapons import (
     QuadLasCannon,
     TwinHeavyBolter,
     DemolisherCannon,
+    AutoCannon,
     TwinAutoCannon,
 )
 
@@ -386,7 +387,7 @@ legiones_astartes.add_unit(
 
 legiones_astartes.add_unit(
     Unit(
-        "Predator Annihilator",
+        "Predator",
         5,
         1,
         UnitType.ARMORED_VEHICLE,
@@ -396,27 +397,25 @@ legiones_astartes.add_unit(
         5,
         240 / 4,
         [
-            TwinLinkedLasCannon(),
-            Multiplier(2, LasCannon(traits=[Traits.FIXED_FORWARD])),
-        ],
-        [Traits.KNOW_NO_FEAR],
-    )
-)
-
-legiones_astartes.add_unit(
-    Unit(
-        "Predator Destructor",
-        5,
-        1,
-        UnitType.ARMORED_VEHICLE,
-        30,
-        4,
-        6,
-        3,
-        240 / 4,
-        [
-            RangedWeapon(45, 5, 5, name="Predator Auto Cannon"),
-            Multiplier(2, HeavyBolter(traits=[Traits.FIXED_FORWARD])),
+            MultipleChoiceWeapon(
+                [
+                    RangedWeapon(45, 5, 5, name="Predator Auto Cannon"),
+                    TwinLinkedLasCannon(),
+                ],
+                name="Turret",
+            ),
+            MultipleChoiceWeapon(
+                [
+                    Multiplier(
+                        2,
+                        HeavyBolter(
+                            traits=[Traits.FIXED_FORWARD], stat_modifiers={"ff": -2}
+                        ),
+                    ),
+                    Multiplier(2, LasCannon(traits=[Traits.FIXED_FORWARD])),
+                ],
+                name="Sponsons",
+            ),
         ],
         [Traits.KNOW_NO_FEAR],
     )
@@ -432,10 +431,7 @@ legiones_astartes.add_unit(
         armour=4,
         cc=6,
         ff=4,
-        weapons=[
-            TwinLinkedLasCannon(traits=[Traits.FIXED_FORWARD]),
-            TwinLinkedLasCannon(traits=[Traits.FIXED_FORWARD]),
-        ],
+        weapons=[Multiplier(2, TwinLinkedLasCannon(traits=[Traits.FIXED_FORWARD]))],
         traits=[
             Traits.KNOW_NO_FEAR,
             Traits.REINFORCED_ARMOUR,
@@ -456,8 +452,10 @@ legiones_astartes.add_unit(
         cc=6,
         ff=5,
         weapons=[
-            QuadLasCannon(traits=[Traits.FIXED_FORWARD]),
-            QuadLasCannon(traits=[Traits.FIXED_FORWARD]),
+            Multiplier(
+                2,
+                QuadLasCannon(traits=[Traits.FIXED_FORWARD]),
+            ),
             TwinHeavyBolter(traits=[Traits.FIXED_FORWARD]),
         ],
         traits=[
@@ -840,15 +838,27 @@ legiones_astartes.add_unit(
             RangedWeapon(45, name="Co-axial Auto Cannon", at=6, ap=5),
             MultipleChoiceWeapon(
                 [
-                    Multiplier(2, HeavyBolter()),
-                    Multiplier(2, LasCannon()),
+                    Multiplier(
+                        2,
+                        HeavyBolter(
+                            traits=[Traits.FIXED_FORWARD], stat_modifiers={"ff": -1}
+                        ),
+                    ),
+                    Multiplier(2, LasCannon(traits=[Traits.FIXED_FORWARD])),
+                    Multiplier(2, AutoCannon(traits=[Traits.FIXED_FORWARD])),
                 ],
                 name="Sponsons",
             ),
             MultipleChoiceWeapon(
                 [
-                    Multiplier(2, HeavyBolter()),
-                    Multiplier(2, LasCannon()),
+                    Multiplier(
+                        2,
+                        HeavyBolter(
+                            traits=[Traits.FIXED_FORWARD], stat_modifiers={"ff": -1}
+                        ),
+                    ),
+                    Multiplier(2, LasCannon(traits=[Traits.FIXED_FORWARD])),
+                    Multiplier(2, AutoCannon(traits=[Traits.FIXED_FORWARD])),
                 ],
                 name="Hull Weapons",
             ),

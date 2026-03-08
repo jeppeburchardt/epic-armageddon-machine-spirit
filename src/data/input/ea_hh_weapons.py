@@ -36,13 +36,13 @@ class QuadLasCannon(RangedWeapon):
 
 
 class BattleCannon(RangedWeapon):
-    def __init__(self):
-        super().__init__(75, at=4, ap=4, name="Battle Cannon")
+    def __init__(self, traits=[]):
+        super().__init__(75, at=4, ap=4, name="Battle Cannon", traits=traits)
 
 
 class VanquisherBattleCannon(RangedWeapon):
-    def __init__(self):
-        super().__init__(75, at=3, ap=6, name="Vanquisher Cannon")
+    def __init__(self, traits=[]):
+        super().__init__(75, at=3, ap=6, name="Vanquisher Cannon", traits=traits)
 
 
 class DemolisherCannon(RangedWeapon):
