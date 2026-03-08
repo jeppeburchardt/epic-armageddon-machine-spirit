@@ -37,13 +37,16 @@ def weapon_to_dict(weapon) -> dict:
         d["count"] = weapon.times
         return d
     if isinstance(weapon, RangedWeapon):
-        return {
+        d = {
             "name": weapon.name,
             "type": "Ranged Weapon",
             "range": weapon.range,
             "firepower": _firepower_dict(weapon),
             "traits": list(map(trait_to_string, weapon.traits)),
         }
+        if weapon.stat_modifiers:
+            d["unit_stat_modifiers"] = weapon.stat_modifiers
+        return d
     if isinstance(weapon, AssaultWeapon):
         return {
             "name": weapon.name,

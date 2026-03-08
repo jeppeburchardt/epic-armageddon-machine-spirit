@@ -359,6 +359,9 @@
                 "ap": "5+"
               },
               "traits": [],
+              "unit_stat_modifiers": {
+                "ff": -1
+              },
               "cost_delta": 0
             },
             {
@@ -411,6 +414,9 @@
                 "ap": "5+"
               },
               "traits": [],
+              "unit_stat_modifiers": {
+                "ff": -1
+              },
               "cost_delta": 0
             },
             {
@@ -462,6 +468,9 @@
                 "ap": "5+"
               },
               "traits": [],
+              "unit_stat_modifiers": {
+                "ff": -1
+              },
               "cost_delta": 0
             },
             {
@@ -516,6 +525,9 @@
                 "ap": "5+"
               },
               "traits": [],
+              "unit_stat_modifiers": {
+                "ff": -1
+              },
               "cost_delta": 0
             },
             {
@@ -570,6 +582,9 @@
                 "ap": "5+"
               },
               "traits": [],
+              "unit_stat_modifiers": {
+                "ff": -1
+              },
               "cost_delta": 0
             },
             {
@@ -622,6 +637,9 @@
                 "ap": "5+"
               },
               "traits": [],
+              "unit_stat_modifiers": {
+                "ff": -1
+              },
               "cost_delta": 0
             },
             {
