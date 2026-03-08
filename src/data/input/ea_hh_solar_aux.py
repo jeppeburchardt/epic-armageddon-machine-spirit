@@ -188,7 +188,7 @@ solar_auxilia.add_unit(
 
 solar_auxilia.add_unit(
     Unit(
-        "Tarantula, Twin Lascannon",
+        "Tarantula",
         3,
         2,
         UnitType.LIGHT_VEHICLE,
@@ -196,31 +196,24 @@ solar_auxilia.add_unit(
         armour=6,
         cc=6,
         ff=6,
-        weapons=[TwinLinkedLasCannon()],
+        weapons=[
+            MultipleChoiceWeapon(
+                [
+                    TwinLinkedLasCannon(),
+                    RangedWeapon(30, name="Hyperios Missiles", aa=4),
+                ]
+            ),
+        ],
         traits=[Traits.SCOUT],
     )
 )
 
-solar_auxilia.add_unit(
-    Unit(
-        "Tarantula, Hyperios air-defence missile launcher",
-        3,
-        2,
-        UnitType.LIGHT_VEHICLE,
-        speed=0,
-        armour=6,
-        cc=6,
-        ff=6,
-        weapons=[RangedWeapon(30, name="Hyperios Missiles", aa=4)],
-        traits=[Traits.SCOUT],
-    )
-)
 
 # Cyclops
 
 solar_auxilia.add_unit(
     Unit(
-        "Leman Russ (Battle cannon)",
+        "Leman Russ Battle Tank",
         3,
         2,
         UnitType.ARMORED_VEHICLE,
@@ -228,13 +221,16 @@ solar_auxilia.add_unit(
         armour=4,
         cc=6,
         ff=4,
-        weapons=[BattleCannon(), MultipleChoiceWeapon([HeavyBolter(), LasCannon()])],
+        weapons=[
+            BattleCannon(),
+            MultipleChoiceWeapon([HeavyBolter(stat_modifiers={"ff": -1}), LasCannon()]),
+        ],
         traits=[Traits.REINFORCED_ARMOUR],
     )
 )
 solar_auxilia.add_unit(
     Unit(
-        "Leman Russ (Vanquisher)",
+        "Leman Russ Vanquisher",
         3,
         2,
         UnitType.ARMORED_VEHICLE,
@@ -244,14 +240,14 @@ solar_auxilia.add_unit(
         ff=4,
         weapons=[
             VanquisherBattleCannon(),
-            MultipleChoiceWeapon([HeavyBolter(), LasCannon()]),
+            MultipleChoiceWeapon([HeavyBolter(stat_modifiers={"ff": -1}), LasCannon()]),
         ],
         traits=[Traits.REINFORCED_ARMOUR],
     )
 )
 solar_auxilia.add_unit(
     Unit(
-        "Leman Russ (Annihilator)",
+        "Leman Russ Annihilator",
         3,
         2,
         UnitType.ARMORED_VEHICLE,
@@ -259,13 +255,16 @@ solar_auxilia.add_unit(
         armour=4,
         cc=6,
         ff=5,
-        weapons=[LasCannon(), TwinLinkedLasCannon()],
+        weapons=[
+            TwinLinkedLasCannon(),
+            MultipleChoiceWeapon([HeavyBolter(stat_modifiers={"ff": -1}), LasCannon()]),
+        ],
         traits=[Traits.REINFORCED_ARMOUR],
     )
 )
 solar_auxilia.add_unit(
     Unit(
-        "Leman Russ (Demolisher)",
+        "Leman Russ Demolisher",
         3,
         2,
         UnitType.ARMORED_VEHICLE,
@@ -275,14 +274,14 @@ solar_auxilia.add_unit(
         ff=5,
         weapons=[
             DemolisherCannon(),
-            LasCannon(),
+            MultipleChoiceWeapon([HeavyBolter(stat_modifiers={"ff": -1}), LasCannon()]),
         ],
         traits=[Traits.REINFORCED_ARMOUR],
     )
 )
 solar_auxilia.add_unit(
     Unit(
-        "Leman Russ (Executioner)",
+        "Leman Russ Executioner",
         3,
         2,
         UnitType.ARMORED_VEHICLE,
@@ -294,14 +293,14 @@ solar_auxilia.add_unit(
             RangedWeapon(
                 30, name="Plasma Cannon", ap=4, at=4, traits=[Traits.SLOW_FIRING]
             ),
-            LasCannon(),
+            MultipleChoiceWeapon([HeavyBolter(stat_modifiers={"ff": -1}), LasCannon()]),
         ],
         traits=[Traits.REINFORCED_ARMOUR],
     )
 )
 solar_auxilia.add_unit(
     Unit(
-        "Leman Russ (Exterminator)",
+        "Leman Russ Exterminator",
         3,
         2,
         UnitType.ARMORED_VEHICLE,
@@ -311,7 +310,7 @@ solar_auxilia.add_unit(
         ff=4,
         weapons=[
             TwinAutoCannon(),
-            LasCannon(),
+            MultipleChoiceWeapon([HeavyBolter(stat_modifiers={"ff": -1}), LasCannon()]),
         ],
         traits=[Traits.REINFORCED_ARMOUR],
     )

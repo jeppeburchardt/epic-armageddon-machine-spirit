@@ -139,8 +139,11 @@ class Unit:
         configs = []
         for combo in cartesian_product(*option_lists):
             new_weapons = list(self.weapons)
+            stat_delta: dict[str, int] = {}
             for pos, chosen in zip(choice_positions, combo):
                 new_weapons[pos] = chosen
+                for key, delta in getattr(chosen, "stat_modifiers", {}).items():
+                    stat_delta[key] = stat_delta.get(key, 0) + delta
             label = " | ".join(w.name for w in combo)
             variant = Unit(
                 f"{self.name} [{label}]",
@@ -149,8 +152,8 @@ class Unit:
                 self.type,
                 speed=self.speed,
                 armour=self.armour,
-                cc=self.cc,
-                ff=self.ff,
+                cc=self.cc + stat_delta.get("cc", 0),
+                ff=self.ff + stat_delta.get("ff", 0),
                 single_unit_cost=self.single_unit_cost,
                 weapons=new_weapons,
                 traits=self.traits,
@@ -282,8 +285,22 @@ class RangedWeapon:
     bp: int
     mw: int
     traits: list[Traits]
+    stat_modifiers: dict[
+        str, int
+    ]  # keys: "ff", "cc" — additive deltas on the unit's base stat
 
-    def __init__(self, range, at=0, ap=0, aa=0, bp=0, traits=[], mw=0, name="--"):
+    def __init__(
+        self,
+        range,
+        at=0,
+        ap=0,
+        aa=0,
+        bp=0,
+        traits=[],
+        mw=0,
+        name="--",
+        stat_modifiers: dict[str, int] = {},
+    ):
         self.name = name
         self.range = range
         self.at = at
@@ -292,6 +309,7 @@ class RangedWeapon:
         self.bp = bp
         self.mw = mw
         self.traits = traits
+        self.stat_modifiers = stat_modifiers
 
     def to_list(self):
         parts = []

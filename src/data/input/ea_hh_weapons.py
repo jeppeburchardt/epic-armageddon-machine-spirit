@@ -2,8 +2,15 @@ from models.units import RangedWeapon, Traits
 
 
 class HeavyBolter(RangedWeapon):
-    def __init__(self, aa=0, traits=[]):
-        super().__init__(30, ap=5, aa=aa, name="Heavy Bolter", traits=traits)
+    def __init__(self, aa=0, traits=[], stat_modifiers={}):
+        super().__init__(
+            30,
+            ap=5,
+            aa=aa,
+            name="Heavy Bolter",
+            traits=traits,
+            stat_modifiers=stat_modifiers,
+        )
 
 
 class TwinHeavyBolter(RangedWeapon):

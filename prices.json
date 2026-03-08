@@ -281,7 +281,7 @@
         }
       ]
     },
-    "Tarantula, Twin Lascannon": {
+    "Tarantula": {
       "cost": 23,
       "uncertainty": 9,
       "quality": "Safe",
@@ -297,44 +297,34 @@
       },
       "weapons": [
         {
-          "name": "Twin-linked Lascannon",
-          "type": "Ranged Weapon",
-          "range": 45,
-          "firepower": {
-            "at": "4+"
-          },
-          "traits": []
+          "name": "Twin-linked Lascannon | Hyperios Missiles",
+          "options": [
+            {
+              "name": "Twin-linked Lascannon",
+              "type": "Ranged Weapon",
+              "range": 45,
+              "firepower": {
+                "at": "4+"
+              },
+              "traits": [],
+              "cost_delta": 0
+            },
+            {
+              "name": "Hyperios Missiles",
+              "type": "Ranged Weapon",
+              "range": 30,
+              "firepower": {
+                "aa": "4+"
+              },
+              "traits": [],
+              "cost_delta": 1
+            }
+          ]
         }
       ]
     },
-    "Tarantula, Hyperios air-defence missile launcher": {
-      "cost": 25,
-      "uncertainty": 14,
-      "quality": "Review",
-      "unit_profile": {
-        "type": "LV",
-        "speed": "0cm",
-        "armour": 6,
-        "cc": 6,
-        "ff": 6,
-        "traits": [
-          "Scout"
-        ]
-      },
-      "weapons": [
-        {
-          "name": "Hyperios Missiles",
-          "type": "Ranged Weapon",
-          "range": 30,
-          "firepower": {
-            "aa": "4+"
-          },
-          "traits": []
-        }
-      ]
-    },
-    "Leman Russ (Battle cannon)": {
-      "cost": 57,
+    "Leman Russ Battle Tank": {
+      "cost": 60,
       "uncertainty": 9,
       "quality": "Safe",
       "unit_profile": {
@@ -379,15 +369,15 @@
                 "at": "5+"
               },
               "traits": [],
-              "cost_delta": 8
+              "cost_delta": 4
             }
           ]
         }
       ]
     },
-    "Leman Russ (Vanquisher)": {
-      "cost": 55,
-      "uncertainty": 9,
+    "Leman Russ Vanquisher": {
+      "cost": 58,
+      "uncertainty": 10,
       "quality": "Safe",
       "unit_profile": {
         "type": "AV",
@@ -431,15 +421,15 @@
                 "at": "5+"
               },
               "traits": [],
-              "cost_delta": 8
+              "cost_delta": 4
             }
           ]
         }
       ]
     },
-    "Leman Russ (Annihilator)": {
-      "cost": 54,
-      "uncertainty": 9,
+    "Leman Russ Annihilator": {
+      "cost": 50,
+      "uncertainty": 8,
       "quality": "Safe",
       "unit_profile": {
         "type": "AV",
@@ -453,15 +443,6 @@
       },
       "weapons": [
         {
-          "name": "Lascannon",
-          "type": "Ranged Weapon",
-          "range": 45,
-          "firepower": {
-            "at": "5+"
-          },
-          "traits": []
-        },
-        {
           "name": "Twin-linked Lascannon",
           "type": "Ranged Weapon",
           "range": 45,
@@ -469,11 +450,36 @@
             "at": "4+"
           },
           "traits": []
+        },
+        {
+          "name": "Heavy Bolter | Lascannon",
+          "options": [
+            {
+              "name": "Heavy Bolter",
+              "type": "Ranged Weapon",
+              "range": 30,
+              "firepower": {
+                "ap": "5+"
+              },
+              "traits": [],
+              "cost_delta": 0
+            },
+            {
+              "name": "Lascannon",
+              "type": "Ranged Weapon",
+              "range": 45,
+              "firepower": {
+                "at": "5+"
+              },
+              "traits": [],
+              "cost_delta": 4
+            }
+          ]
         }
       ]
     },
-    "Leman Russ (Demolisher)": {
-      "cost": 61,
+    "Leman Russ Demolisher": {
+      "cost": 57,
       "uncertainty": 9,
       "quality": "Safe",
       "unit_profile": {
@@ -500,19 +506,35 @@
           ]
         },
         {
-          "name": "Lascannon",
-          "type": "Ranged Weapon",
-          "range": 45,
-          "firepower": {
-            "at": "5+"
-          },
-          "traits": []
+          "name": "Heavy Bolter | Lascannon",
+          "options": [
+            {
+              "name": "Heavy Bolter",
+              "type": "Ranged Weapon",
+              "range": 30,
+              "firepower": {
+                "ap": "5+"
+              },
+              "traits": [],
+              "cost_delta": 0
+            },
+            {
+              "name": "Lascannon",
+              "type": "Ranged Weapon",
+              "range": 45,
+              "firepower": {
+                "at": "5+"
+              },
+              "traits": [],
+              "cost_delta": 4
+            }
+          ]
         }
       ]
     },
-    "Leman Russ (Executioner)": {
-      "cost": 53,
-      "uncertainty": 8,
+    "Leman Russ Executioner": {
+      "cost": 49,
+      "uncertainty": 9,
       "quality": "Safe",
       "unit_profile": {
         "type": "AV",
@@ -538,18 +560,34 @@
           ]
         },
         {
-          "name": "Lascannon",
-          "type": "Ranged Weapon",
-          "range": 45,
-          "firepower": {
-            "at": "5+"
-          },
-          "traits": []
+          "name": "Heavy Bolter | Lascannon",
+          "options": [
+            {
+              "name": "Heavy Bolter",
+              "type": "Ranged Weapon",
+              "range": 30,
+              "firepower": {
+                "ap": "5+"
+              },
+              "traits": [],
+              "cost_delta": 0
+            },
+            {
+              "name": "Lascannon",
+              "type": "Ranged Weapon",
+              "range": 45,
+              "firepower": {
+                "at": "5+"
+              },
+              "traits": [],
+              "cost_delta": 4
+            }
+          ]
         }
       ]
     },
-    "Leman Russ (Exterminator)": {
-      "cost": 60,
+    "Leman Russ Exterminator": {
+      "cost": 55,
       "uncertainty": 9,
       "quality": "Safe",
       "unit_profile": {
@@ -574,13 +612,29 @@
           "traits": []
         },
         {
-          "name": "Lascannon",
-          "type": "Ranged Weapon",
-          "range": 45,
-          "firepower": {
-            "at": "5+"
-          },
-          "traits": []
+          "name": "Heavy Bolter | Lascannon",
+          "options": [
+            {
+              "name": "Heavy Bolter",
+              "type": "Ranged Weapon",
+              "range": 30,
+              "firepower": {
+                "ap": "5+"
+              },
+              "traits": [],
+              "cost_delta": 0
+            },
+            {
+              "name": "Lascannon",
+              "type": "Ranged Weapon",
+              "range": 45,
+              "firepower": {
+                "at": "5+"
+              },
+              "traits": [],
+              "cost_delta": 4
+            }
+          ]
         }
       ]
     },
