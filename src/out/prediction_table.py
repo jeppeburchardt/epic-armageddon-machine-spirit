@@ -12,18 +12,36 @@ def _spread_str(result: Result) -> str:
     return label
 
 
+def _resolved(r):
+    """Return (predicted_cost, uncertainty, quality) aligned with the JSON output.
+
+    For MultipleChoiceResult the JSON uses the minimum-cost variant as the
+    base price, so we do the same here.
+    """
+    if isinstance(r, MultipleChoiceResult):
+        min_r = min(r.all_results, key=lambda x: x.predicted_cost)
+        return min_r.predicted_cost, min_r.uncertainty, min_r.quality
+    return r.predicted_cost, r.uncertainty, r.quality
+
+
 def get_markdown_prediction_table(results: list[Result], army: Army) -> str:
+    def _row(r):
+        cost, uncertainty, quality = _resolved(r)
+        if isinstance(r, MultipleChoiceResult):
+            max_cost = round(max(x.predicted_cost for x in r.all_results), 0)
+            cost_str = f"{round(cost, 0):.0f} - {max_cost:.0f}"
+        else:
+            cost_str = f"{round(cost, 0):.0f}"
+        return (
+            r.unit.name,
+            cost_str,
+            f"±{round(uncertainty, 0)}",
+            quality_to_str(quality),
+            _spread_str(r),
+        )
+
     md = tabulate(
-        map(
-            lambda r: (
-                r.unit.name,
-                round(r.predicted_cost, 0),
-                f"±{round(r.uncertainty, 0)}",
-                quality_to_str(r.quality),
-                _spread_str(r),
-            ),
-            results,
-        ),
+        map(_row, results),
         headers=[
             "Name",
             "Predicted Cost",
