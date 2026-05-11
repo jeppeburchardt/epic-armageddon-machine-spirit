@@ -9,6 +9,7 @@ from gpr.mapping.universal_unit import universal_unit
 from out.prediction_table import get_markdown_prediction_table
 from out.army_file import build_army_markdown_file
 from out.army_json import build_prices_json_file
+from out.army_list_json import build_army_json_files
 
 
 def predict_with_choices(trainer: GPRTrainer, unit: Unit):
@@ -58,3 +59,4 @@ results = [
     predict_army(trainer, legiones_astartes),
 ]
 build_prices_json_file(results)
+build_army_json_files(results)

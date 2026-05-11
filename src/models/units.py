@@ -22,7 +22,7 @@ class AircraftSpeed(Enum):
 
 def unit_type_to_string(unit_type: UnitType):
     mapping = {
-        UnitType.CHARACTER: "CHR",
+        UnitType.CHARACTER: "CH",
         UnitType.INFANTRY: "INF",
         UnitType.LIGHT_VEHICLE: "LV",
         UnitType.ARMORED_VEHICLE: "AV",
@@ -52,6 +52,9 @@ class Unit:
     cc: int
     ff: int
     transport_capacity: int
+    transport_capabilities: list[str]
+    transport_type: str
+    transport_cost: int
     damage_capacity: int
     single_unit_cost: int
     void_shields: int
@@ -73,12 +76,18 @@ class Unit:
         weapons=[],
         traits=[],
         transport_capacity=0,
+        transport_capabilities=[],
+        transport_type="",
+        transport_cost=0,
         damage_capacity=1,
         void_shields=0,
         aircraft_speed=AircraftSpeed.NONE,
     ):
         self.name = name
         self.strategy_rating = strategy_rating
+        self.transport_capabilities = transport_capabilities
+        self.transport_type = transport_type
+        self.transport_cost = transport_cost
         self.initiative = initiative
         self.type = type
         self.speed = speed
@@ -172,15 +181,107 @@ class Unit:
             return f"{self.speed}cm"
 
 
+class SpecialRule:
+    title: str
+    paragraphs: list["str"]
+
+    def __init__(self, title, paragraphs):
+        self.title = title
+        self.paragraphs = paragraphs
+
+
+class DetachmentUnit:
+    unit: Unit
+    count: int
+    max: int
+    min: int
+
+    def __init__(self, unit: Unit, count=0, max=0, min=0):
+        self.unit = unit
+        self.count = count
+        self.max = max or count
+        self.min = min or count
+
+
+class Detachment:
+    name: str
+    group: str
+    units: list[DetachmentUnit]
+    availableUpgrades: list[DetachmentUnit] = []
+
+    def __init__(self, name: str, group: str, units: list[DetachmentUnit]):
+        self.name = name
+        self.group = group
+        self.units = units
+        self.availableUpgrades = []
+
+    def add_upgrade(self, upgrade):
+        self.availableUpgrades.append(upgrade)
+
+
+class Upgrade:
+    name: str
+    type: str  # add or replace or character
+    transportWarning: bool
+
+    def __init__(self, name: str, type: str, transportWarning: bool = False):
+        self.name = name
+        self.type = type
+        self.transportWarning = transportWarning
+
+
+class UpgradeAdd(Upgrade):
+    adds: list[DetachmentUnit]
+    maxTotal: int
+
+    def __init__(
+        self,
+        name: str,
+        adds: list[DetachmentUnit],
+        maxTotal: int = 0,
+        transportWarning: bool = False,
+    ):
+        super().__init__(name, type="add", transportWarning=transportWarning)
+        self.adds = adds
+        self.maxTotal = maxTotal
+
+
+class UpgradeReplace(Upgrade):
+    fromUnit: Unit
+    toUnit: Unit
+    max: int
+
+    def __init__(self, name: str, fromUnit: str, toUnit: str, max: int):
+        super().__init__(name, type="replaces")
+        self.fromUnitName = fromUnit
+        self.toUnit = toUnit
+        self.max = max
+
+
+class UpgradeCharacter(Upgrade):
+    type = "character"
+    characterNames: list[str]
+
+
 class Army:
     name: str
+    slug: str
     units: list["Unit"]
+    detachments: list["Detachment"]
+    upgrades: list["Upgrade"]
+    strategyRating: int
+    specialRules: list["SpecialRule"]
     # strategy_rating: int
     # initiative: int
 
-    def __init__(self, name=""):
+    def __init__(self, slug: str, name="", strategyRating=1, specialRules=[]):
+        self.slug = slug
         self.name = name
         self.units = []
+        self.detachments = []
+        self.upgrades = []
+        self.strategyRating = strategyRating
+        self.specialRules = specialRules
         # self.strategy_rating = strategy_rating
         # self.initiative = initiative
 
@@ -188,6 +289,16 @@ class Army:
         if not hasattr(self, "units") or self.units is None:
             self.units = []
         self.units.append(unit)
+
+    def add_detachment(self, detachment: Detachment):
+        if not hasattr(self, "detachments") or self.detachments is None:
+            self.detachments = []
+        self.detachments.append(detachment)
+
+    def add_upgrade(self, upgrade: Upgrade):
+        if not hasattr(self, "upgrades") or self.upgrades is None:
+            self.upgrades = []
+        self.upgrades.append(upgrade)
 
     def get_sorted_units(self):
         if not hasattr(self, "units") or self.units is None:
@@ -408,7 +519,7 @@ class MultipleChoiceWeapon:
 
     def __init__(self, options: list["RangedWeapon"], name: str = ""):
         self.options = options
-        self.name = name or " | ".join(o.name for o in options)
+        self.name = name
 
     def to_list(self):
         return [

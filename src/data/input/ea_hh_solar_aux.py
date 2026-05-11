@@ -22,7 +22,7 @@ from .ea_hh_weapons import (
     TwinAutoCannon,
 )
 
-solar_auxilia = Army(name="Solar Auxilia")
+solar_auxilia = Army("solar-auxilia", name="Solar Auxilia")
 
 solar_auxilia.add_unit(
     Unit(

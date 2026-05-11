@@ -9,7 +9,7 @@ from models.units import (
     Multiplier,
 )
 
-tyranids = Army("Hive Fleet Onachus Tyranid")
+tyranids = Army("", "Hive Fleet Onachus Tyranid")
 # TODO: Brood and Synapse traits are not added to training set
 
 tyranids.add_unit(

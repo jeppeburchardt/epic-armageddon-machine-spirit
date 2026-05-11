@@ -6,7 +6,7 @@ from models.units import (
     Army,
 )
 
-minervan = Army("Minervan Tank Legion Forces")
+minervan = Army("", "Minervan Tank Legion Forces")
 
 
 minervan.add_unit(

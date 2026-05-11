@@ -2,6 +2,14 @@ from models.units import MultipleChoiceWeapon, Unit
 from tabulate import tabulate
 
 
+def format_stat_modifiers(modifiers: dict[str, int]) -> str:
+    parts = []
+    for stat, delta in modifiers.items():
+        sign = "+" if delta >= 0 else ""
+        parts.append(f"{stat.upper()}{sign}{delta}")
+    return ", ".join(parts)
+
+
 def format_unit_with_weapons(unit: Unit):
     table = []
     if not unit.weapons:
@@ -15,18 +23,28 @@ def format_unit_with_weapons(unit: Unit):
                 weapon_row = option.to_list()
                 if i > 0:
                     weapon_row = [f"(or) {weapon_row[0]}"] + weapon_row[1:]
+                modifier_str = format_stat_modifiers(
+                    getattr(option, "stat_modifiers", {})
+                )
                 if first_row:
-                    table.append(unit.to_list() + weapon_row + [unit.traits_to_str()])
+                    notes = ", ".join(
+                        filter(None, [unit.traits_to_str(), modifier_str])
+                    )
+                    table.append(unit.to_list() + weapon_row + [notes])
                     first_row = False
                 else:
-                    table.append([""] * len(unit.to_list()) + weapon_row + [""])
+                    table.append(
+                        [""] * len(unit.to_list()) + weapon_row + [modifier_str]
+                    )
         else:
             weapon_row = weapon.to_list()
+            modifier_str = format_stat_modifiers(getattr(weapon, "stat_modifiers", {}))
             if first_row:
-                table.append(unit.to_list() + weapon_row + [unit.traits_to_str()])
+                notes = ", ".join(filter(None, [unit.traits_to_str(), modifier_str]))
+                table.append(unit.to_list() + weapon_row + [notes])
                 first_row = False
             else:
-                table.append([""] * len(unit.to_list()) + weapon_row + [""])
+                table.append([""] * len(unit.to_list()) + weapon_row + [modifier_str])
     return table
 
 

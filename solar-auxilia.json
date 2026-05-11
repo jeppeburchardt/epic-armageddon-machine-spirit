@@ -1,0 +1,1364 @@
+{
+  "name": "Solar Auxilia",
+  "slug": "solar-auxilia",
+  "strategyRating": 1,
+  "specialRules": [],
+  "restrictions": [],
+  "units": [
+    {
+      "name": "Infantry Section",
+      "cost": 18,
+      "uncertainty": 8,
+      "quality": "Safe",
+      "weaponSlots": [
+        {
+          "kind": "fixed",
+          "weaponName": "Las-rifles",
+          "type": "Small Arms",
+          "range": "(15cm)",
+          "firepower": ""
+        }
+      ],
+      "type": "INF",
+      "speed": "15cm",
+      "armour": "5+",
+      "cc": "6+",
+      "ff": "5+",
+      "traits": []
+    },
+    {
+      "name": "Infantry with flamers",
+      "cost": 26,
+      "uncertainty": 8,
+      "quality": "Safe",
+      "weaponSlots": [
+        {
+          "kind": "fixed",
+          "weaponName": "Flamers",
+          "type": "Ranged Weapon",
+          "range": "15cm",
+          "firepower": "AP5+ Ignore Cover"
+        }
+      ],
+      "type": "INF",
+      "speed": "15cm",
+      "armour": "5+",
+      "cc": "6+",
+      "ff": "4+",
+      "traits": []
+    },
+    {
+      "name": "Veletaris Storm Section",
+      "cost": 28,
+      "uncertainty": 10,
+      "quality": "Review",
+      "weaponSlots": [
+        {
+          "kind": "fixed",
+          "weaponName": "Power Axes",
+          "type": "Assault Weapons",
+          "range": "(bc)",
+          "firepower": "Macro-Weapon Extra Attack +1"
+        }
+      ],
+      "type": "INF",
+      "speed": "15cm",
+      "armour": "5+",
+      "cc": "4+",
+      "ff": "6+",
+      "traits": []
+    },
+    {
+      "name": "Ogryn Charonite Squad",
+      "cost": 32,
+      "uncertainty": 10,
+      "quality": "Safe",
+      "weaponSlots": [
+        {
+          "kind": "fixed",
+          "weaponName": "Charonite Claws",
+          "type": "Assault Weapons",
+          "range": "(bc)",
+          "firepower": "Extra Attack +1 Macro-Weapon"
+        }
+      ],
+      "type": "INF",
+      "speed": "15cm",
+      "armour": "3+",
+      "cc": "3+",
+      "ff": "5+",
+      "traits": []
+    },
+    {
+      "name": "Tactical Command Unit",
+      "cost": 23,
+      "uncertainty": 8,
+      "quality": "Safe",
+      "weaponSlots": [
+        {
+          "kind": "fixed",
+          "weaponName": "Plasma Guns",
+          "type": "Ranged Weapon",
+          "range": "15cm",
+          "firepower": "AT5+ AP4+"
+        },
+        {
+          "kind": "fixed",
+          "weaponName": "Small Arms",
+          "type": "Small Arms",
+          "range": "(15cm)",
+          "firepower": ""
+        }
+      ],
+      "type": "INF",
+      "speed": "15cm",
+      "armour": "5+",
+      "cc": "6+",
+      "ff": "5+",
+      "traits": [
+        "Commander"
+      ]
+    },
+    {
+      "name": "Legate Command Unit",
+      "cost": 28,
+      "uncertainty": 8,
+      "quality": "Safe",
+      "weaponSlots": [
+        {
+          "kind": "fixed",
+          "weaponName": "Volkite Chargers",
+          "type": "Ranged Weapon",
+          "range": "15cm",
+          "firepower": "AT5+ AP4+"
+        },
+        {
+          "kind": "fixed",
+          "weaponName": "Archaeotech Pistol",
+          "type": "Small Arms",
+          "range": "(15cm)",
+          "firepower": "Macro-Weapon Extra Attack +1"
+        }
+      ],
+      "type": "INF",
+      "speed": "15cm",
+      "armour": "5+",
+      "cc": "5+",
+      "ff": "4+",
+      "traits": [
+        "Supreme Commander"
+      ]
+    },
+    {
+      "name": "Rapier Mole Mortar",
+      "cost": 36,
+      "uncertainty": 9,
+      "quality": "Safe",
+      "weaponSlots": [
+        {
+          "kind": "fixed",
+          "weaponName": "Mole Mortar",
+          "type": "Ranged Weapon",
+          "range": "30cm",
+          "firepower": "1BP Disrupt Indirect"
+        }
+      ],
+      "type": "INF",
+      "speed": "10cm",
+      "armour": "6+",
+      "cc": "6+",
+      "ff": "6+",
+      "traits": []
+    },
+    {
+      "name": "Rapier Laser Destroyer",
+      "cost": 24,
+      "uncertainty": 8,
+      "quality": "Safe",
+      "weaponSlots": [
+        {
+          "kind": "fixed",
+          "weaponName": "Laser Destroyer",
+          "type": "Ranged Weapon",
+          "range": "45cm",
+          "firepower": "AT4+ AP6+"
+        }
+      ],
+      "type": "INF",
+      "speed": "10cm",
+      "armour": "6+",
+      "cc": "6+",
+      "ff": "6+",
+      "traits": []
+    },
+    {
+      "name": "Rapier Quad Launcher",
+      "cost": 29,
+      "uncertainty": 8,
+      "quality": "Safe",
+      "weaponSlots": [
+        {
+          "kind": "fixed",
+          "weaponName": "Quad Launcher",
+          "type": "Ranged Weapon",
+          "range": "45cm",
+          "firepower": "AT6+ AP4+ Indirect"
+        }
+      ],
+      "type": "INF",
+      "speed": "10cm",
+      "armour": "6+",
+      "cc": "6+",
+      "ff": "6+",
+      "traits": []
+    },
+    {
+      "name": "Aethon Heavy Sentinel",
+      "cost": 41,
+      "uncertainty": 10,
+      "quality": "Review",
+      "weaponSlots": [
+        {
+          "kind": "fixed",
+          "weaponName": "Multilaser",
+          "type": "Ranged Weapon",
+          "range": "30cm",
+          "firepower": "AT6+ AP5+"
+        },
+        {
+          "kind": "fixed",
+          "weaponName": "Rockets",
+          "type": "Ranged Weapon",
+          "range": "45cm",
+          "firepower": "AT5+ AP3+"
+        }
+      ],
+      "type": "LV",
+      "speed": "20cm",
+      "armour": "5+",
+      "cc": "6+",
+      "ff": "5+",
+      "traits": [
+        "Scout",
+        "Walker"
+      ]
+    },
+    {
+      "name": "Tarantula",
+      "cost": 24,
+      "weaponSlots": [
+        {
+          "kind": "choice",
+          "name": "",
+          "choices": [
+            {
+              "weaponName": "Twin-linked Lascannon",
+              "type": "Ranged Weapon",
+              "range": "45cm",
+              "firepower": "AT4+",
+              "additionalCost": 0
+            },
+            {
+              "weaponName": "Hyperios Missiles",
+              "type": "Ranged Weapon",
+              "range": "30cm",
+              "firepower": "AA4+",
+              "additionalCost": 1
+            }
+          ]
+        }
+      ],
+      "type": "LV",
+      "speed": "0cm",
+      "armour": "6+",
+      "cc": "6+",
+      "ff": "6+",
+      "traits": [
+        "Scout"
+      ]
+    },
+    {
+      "name": "Leman Russ Battle Tank",
+      "cost": 61,
+      "weaponSlots": [
+        {
+          "kind": "fixed",
+          "weaponName": "Battle Cannon",
+          "type": "Ranged Weapon",
+          "range": "75cm",
+          "firepower": "AT4+ AP4+"
+        },
+        {
+          "kind": "choice",
+          "name": "",
+          "choices": [
+            {
+              "weaponName": "Heavy Bolter",
+              "type": "Ranged Weapon",
+              "range": "30cm",
+              "firepower": "AP5+",
+              "unitStatModifiers": {
+                "ff": -1
+              },
+              "additionalCost": 0
+            },
+            {
+              "weaponName": "Lascannon",
+              "type": "Ranged Weapon",
+              "range": "45cm",
+              "firepower": "AT5+",
+              "additionalCost": 4
+            }
+          ]
+        }
+      ],
+      "type": "AV",
+      "speed": "25cm",
+      "armour": "4+",
+      "cc": "6+",
+      "ff": "4+",
+      "traits": [
+        "Reinforced Armour"
+      ]
+    },
+    {
+      "name": "Leman Russ Vanquisher",
+      "cost": 58,
+      "weaponSlots": [
+        {
+          "kind": "fixed",
+          "weaponName": "Vanquisher Cannon",
+          "type": "Ranged Weapon",
+          "range": "75cm",
+          "firepower": "AT3+ AP6+"
+        },
+        {
+          "kind": "choice",
+          "name": "",
+          "choices": [
+            {
+              "weaponName": "Heavy Bolter",
+              "type": "Ranged Weapon",
+              "range": "30cm",
+              "firepower": "AP5+",
+              "unitStatModifiers": {
+                "ff": -1
+              },
+              "additionalCost": 0
+            },
+            {
+              "weaponName": "Lascannon",
+              "type": "Ranged Weapon",
+              "range": "45cm",
+              "firepower": "AT5+",
+              "additionalCost": 4
+            }
+          ]
+        }
+      ],
+      "type": "AV",
+      "speed": "25cm",
+      "armour": "4+",
+      "cc": "6+",
+      "ff": "4+",
+      "traits": [
+        "Reinforced Armour"
+      ]
+    },
+    {
+      "name": "Leman Russ Annihilator",
+      "cost": 50,
+      "weaponSlots": [
+        {
+          "kind": "fixed",
+          "weaponName": "Twin-linked Lascannon",
+          "type": "Ranged Weapon",
+          "range": "45cm",
+          "firepower": "AT4+"
+        },
+        {
+          "kind": "choice",
+          "name": "",
+          "choices": [
+            {
+              "weaponName": "Heavy Bolter",
+              "type": "Ranged Weapon",
+              "range": "30cm",
+              "firepower": "AP5+",
+              "unitStatModifiers": {
+                "ff": -1
+              },
+              "additionalCost": 0
+            },
+            {
+              "weaponName": "Lascannon",
+              "type": "Ranged Weapon",
+              "range": "45cm",
+              "firepower": "AT5+",
+              "additionalCost": 4
+            }
+          ]
+        }
+      ],
+      "type": "AV",
+      "speed": "25cm",
+      "armour": "4+",
+      "cc": "6+",
+      "ff": "5+",
+      "traits": [
+        "Reinforced Armour"
+      ]
+    },
+    {
+      "name": "Leman Russ Demolisher",
+      "cost": 59,
+      "weaponSlots": [
+        {
+          "kind": "fixed",
+          "weaponName": "Demolisher Cannon",
+          "type": "Ranged Weapon",
+          "range": "30cm",
+          "firepower": "AT4+ AP3+ Ignore Cover"
+        },
+        {
+          "kind": "choice",
+          "name": "",
+          "choices": [
+            {
+              "weaponName": "Heavy Bolter",
+              "type": "Ranged Weapon",
+              "range": "30cm",
+              "firepower": "AP5+",
+              "unitStatModifiers": {
+                "ff": -1
+              },
+              "additionalCost": 0
+            },
+            {
+              "weaponName": "Lascannon",
+              "type": "Ranged Weapon",
+              "range": "45cm",
+              "firepower": "AT5+",
+              "additionalCost": 3
+            }
+          ]
+        }
+      ],
+      "type": "AV",
+      "speed": "25cm",
+      "armour": "4+",
+      "cc": "6+",
+      "ff": "5+",
+      "traits": [
+        "Reinforced Armour"
+      ]
+    },
+    {
+      "name": "Leman Russ Executioner",
+      "cost": 51,
+      "weaponSlots": [
+        {
+          "kind": "fixed",
+          "weaponName": "Plasma Cannon",
+          "type": "Ranged Weapon",
+          "range": "30cm",
+          "firepower": "AT4+ AP4+ Slow Firing"
+        },
+        {
+          "kind": "choice",
+          "name": "",
+          "choices": [
+            {
+              "weaponName": "Heavy Bolter",
+              "type": "Ranged Weapon",
+              "range": "30cm",
+              "firepower": "AP5+",
+              "unitStatModifiers": {
+                "ff": -1
+              },
+              "additionalCost": 0
+            },
+            {
+              "weaponName": "Lascannon",
+              "type": "Ranged Weapon",
+              "range": "45cm",
+              "firepower": "AT5+",
+              "additionalCost": 4
+            }
+          ]
+        }
+      ],
+      "type": "AV",
+      "speed": "25cm",
+      "armour": "4+",
+      "cc": "6+",
+      "ff": "4+",
+      "traits": [
+        "Reinforced Armour"
+      ]
+    },
+    {
+      "name": "Leman Russ Exterminator",
+      "cost": 56,
+      "weaponSlots": [
+        {
+          "kind": "fixed",
+          "weaponName": "Twin-linked Auto Cannon",
+          "type": "Ranged Weapon",
+          "range": "45cm",
+          "firepower": "AT5+ AP4+"
+        },
+        {
+          "kind": "choice",
+          "name": "",
+          "choices": [
+            {
+              "weaponName": "Heavy Bolter",
+              "type": "Ranged Weapon",
+              "range": "30cm",
+              "firepower": "AP5+",
+              "unitStatModifiers": {
+                "ff": -1
+              },
+              "additionalCost": 0
+            },
+            {
+              "weaponName": "Lascannon",
+              "type": "Ranged Weapon",
+              "range": "45cm",
+              "firepower": "AT5+",
+              "additionalCost": 4
+            }
+          ]
+        }
+      ],
+      "type": "AV",
+      "speed": "25cm",
+      "armour": "4+",
+      "cc": "6+",
+      "ff": "4+",
+      "traits": [
+        "Reinforced Armour"
+      ]
+    },
+    {
+      "name": "Malcador Battle Tank",
+      "cost": 78,
+      "weaponSlots": [
+        {
+          "kind": "choice",
+          "name": "Turret",
+          "choices": [
+            {
+              "weaponName": "Battle Cannon",
+              "type": "Ranged Weapon",
+              "range": "75cm",
+              "firepower": "AT4+ AP4+ Fixed Forward",
+              "additionalCost": 13
+            },
+            {
+              "weaponName": "Vanquisher Cannon",
+              "type": "Ranged Weapon",
+              "range": "75cm",
+              "firepower": "AT3+ AP6+ Fixed Forward",
+              "additionalCost": 10
+            },
+            {
+              "weaponName": "Twin-linked Lascannon",
+              "type": "Ranged Weapon",
+              "range": "45cm",
+              "firepower": "AT4+ Fixed Forward",
+              "additionalCost": 5
+            }
+          ]
+        },
+        {
+          "kind": "choice",
+          "name": "Hull Mount",
+          "choices": [
+            {
+              "weaponName": "Demolisher Cannon",
+              "type": "Ranged Weapon",
+              "range": "30cm",
+              "firepower": "AT4+ AP3+ Ignore Cover Fixed Forward",
+              "additionalCost": 15
+            },
+            {
+              "weaponName": "Lascannon",
+              "type": "Ranged Weapon",
+              "range": "45cm",
+              "firepower": "AT5+ Fixed Forward",
+              "additionalCost": 4
+            }
+          ]
+        },
+        {
+          "kind": "choice",
+          "name": "Sponsons",
+          "choices": [
+            {
+              "weaponName": "Lascannon",
+              "type": "Ranged Weapon",
+              "range": "45cm",
+              "firepower": "AT5+ Fixed Forward",
+              "count": 2,
+              "additionalCost": 9
+            },
+            {
+              "weaponName": "Auto Cannon",
+              "type": "Ranged Weapon",
+              "range": "45cm",
+              "firepower": "AT6+ AP5+ Fixed Forward",
+              "count": 2,
+              "additionalCost": 10
+            }
+          ]
+        }
+      ],
+      "type": "AV",
+      "speed": "15cm",
+      "armour": "4+",
+      "cc": "6+",
+      "ff": "5+",
+      "traits": [
+        "Reinforced Armour",
+        "Thick Rear Armour"
+      ]
+    },
+    {
+      "name": "Dracosan with las cannon",
+      "cost": 31,
+      "uncertainty": 10,
+      "quality": "Review",
+      "weaponSlots": [
+        {
+          "kind": "fixed",
+          "weaponName": "Twin-linked Lascannon",
+          "type": "Ranged Weapon",
+          "range": "45cm",
+          "firepower": "AT4+"
+        }
+      ],
+      "type": "AV",
+      "speed": "20cm",
+      "armour": "4+",
+      "cc": "6+",
+      "ff": "5+",
+      "traits": [
+        "Reinforced Armour"
+      ],
+      "transportation": {
+        "capacity": 5,
+        "capabilities": []
+      }
+    },
+    {
+      "name": "Dracosan with demolisher",
+      "cost": 50,
+      "uncertainty": 9,
+      "quality": "Safe",
+      "weaponSlots": [
+        {
+          "kind": "fixed",
+          "weaponName": "Demolisher Cannon",
+          "type": "Ranged Weapon",
+          "range": "30cm",
+          "firepower": "AT4+ AP3+ Ignore Cover"
+        }
+      ],
+      "type": "AV",
+      "speed": "20cm",
+      "armour": "4+",
+      "cc": "6+",
+      "ff": "4+",
+      "traits": [
+        "Reinforced Armour"
+      ],
+      "transportation": {
+        "capacity": 2,
+        "capabilities": []
+      }
+    },
+    {
+      "name": "Medusa",
+      "cost": 60,
+      "uncertainty": 9,
+      "quality": "Safe",
+      "weaponSlots": [
+        {
+          "kind": "fixed",
+          "weaponName": "Medusa Siege Cannon",
+          "type": "Ranged Weapon",
+          "range": "30cm",
+          "firepower": "MW4+ Ignore Cover"
+        },
+        {
+          "kind": "fixed",
+          "weaponName": "Heavy Bolter",
+          "type": "Ranged Weapon",
+          "range": "30cm",
+          "firepower": "AP5+"
+        }
+      ],
+      "type": "AV",
+      "speed": "20cm",
+      "armour": "5+",
+      "cc": "6+",
+      "ff": "5+",
+      "traits": []
+    },
+    {
+      "name": "Basilisk",
+      "cost": 71,
+      "uncertainty": 9,
+      "quality": "Safe",
+      "weaponSlots": [
+        {
+          "kind": "fixed",
+          "weaponName": "Earthshaker Cannon",
+          "type": "Ranged Weapon",
+          "range": "120cm",
+          "firepower": "AT4+ AP4+"
+        },
+        {
+          "kind": "fixed",
+          "weaponName": "Heavy Bolter",
+          "type": "Ranged Weapon",
+          "range": "30cm",
+          "firepower": "AP5+"
+        }
+      ],
+      "type": "AV",
+      "speed": "20cm",
+      "armour": "5+",
+      "cc": "6+",
+      "ff": "5+",
+      "traits": []
+    },
+    {
+      "name": "Basilisk (Barrage)",
+      "cost": 82,
+      "uncertainty": 9,
+      "quality": "Safe",
+      "weaponSlots": [
+        {
+          "kind": "fixed",
+          "weaponName": "Earthshaker Cannon",
+          "type": "Ranged Weapon",
+          "range": "120cm",
+          "firepower": "1BP Ignore Cover"
+        },
+        {
+          "kind": "fixed",
+          "weaponName": "Heavy Bolter",
+          "type": "Ranged Weapon",
+          "range": "30cm",
+          "firepower": "AP5+"
+        }
+      ],
+      "type": "AV",
+      "speed": "20cm",
+      "armour": "5+",
+      "cc": "6+",
+      "ff": "5+",
+      "traits": []
+    },
+    {
+      "name": "Arvus Lighter",
+      "cost": 18,
+      "uncertainty": 18,
+      "quality": "Experimental",
+      "weaponSlots": [
+        {
+          "kind": "fixed",
+          "weaponName": "Multi-Laser",
+          "type": "Small Arms",
+          "range": "(15cm)",
+          "firepower": ""
+        }
+      ],
+      "type": "AV",
+      "speed": "30cm",
+      "armour": "5+",
+      "cc": "-",
+      "ff": "6+",
+      "traits": [
+        "Skimmer",
+        "PLANET_FALL"
+      ],
+      "transportation": {
+        "capacity": 2,
+        "capabilities": []
+      }
+    },
+    {
+      "name": "Malcador Infernus",
+      "cost": 72,
+      "uncertainty": 11,
+      "quality": "Safe",
+      "weaponSlots": [
+        {
+          "kind": "fixed",
+          "weaponName": "Infernus Cannon",
+          "type": "Ranged Weapon",
+          "range": "30cm",
+          "firepower": "AP3+"
+        },
+        {
+          "kind": "fixed",
+          "weaponName": "Auto Cannon",
+          "type": "Ranged Weapon",
+          "range": "45cm",
+          "firepower": "AT6+ AP5+"
+        },
+        {
+          "kind": "fixed",
+          "weaponName": "Auto Cannon",
+          "type": "Ranged Weapon",
+          "range": "45cm",
+          "firepower": "AT6+ AP5+"
+        }
+      ],
+      "type": "AV",
+      "speed": "20cm",
+      "armour": "4+",
+      "cc": "6+",
+      "ff": "3+",
+      "traits": [
+        "Reinforced Armour",
+        "Thick Rear Armour"
+      ]
+    },
+    {
+      "name": "Malcador Valdor",
+      "cost": 105,
+      "uncertainty": 15,
+      "quality": "Safe",
+      "weaponSlots": [
+        {
+          "kind": "fixed",
+          "weaponName": "Neutron Beam Laser",
+          "type": "Ranged Weapon",
+          "range": "45cm",
+          "firepower": "MW3+ Disrupt"
+        },
+        {
+          "kind": "fixed",
+          "weaponName": "Auto Cannon",
+          "type": "Ranged Weapon",
+          "range": "45cm",
+          "firepower": "AT6+ AP5+"
+        }
+      ],
+      "type": "AV",
+      "speed": "20cm",
+      "armour": "4+",
+      "cc": "6+",
+      "ff": "5+",
+      "traits": [
+        "Reinforced Armour",
+        "Thick Rear Armour"
+      ]
+    },
+    {
+      "name": "Avenger Strike Fighter",
+      "cost": 85,
+      "uncertainty": 14,
+      "quality": "Safe",
+      "weaponSlots": [
+        {
+          "kind": "fixed",
+          "weaponName": "Avenger Cannon",
+          "type": "Ranged Weapon",
+          "range": "30cm",
+          "firepower": "AT2+ AP4+"
+        },
+        {
+          "kind": "fixed",
+          "weaponName": "Avenger Cannon",
+          "type": "Ranged Weapon",
+          "range": "30cm",
+          "firepower": "AT2+ AP4+"
+        },
+        {
+          "kind": "fixed",
+          "weaponName": "Lascannon",
+          "type": "Ranged Weapon",
+          "range": "45cm",
+          "firepower": "AT5+"
+        },
+        {
+          "kind": "fixed",
+          "weaponName": "Lascannon",
+          "type": "Ranged Weapon",
+          "range": "45cm",
+          "firepower": "AT5+"
+        },
+        {
+          "kind": "fixed",
+          "weaponName": "Heavy Stubber",
+          "type": "Ranged Weapon",
+          "range": "30cm",
+          "firepower": "AA6+ Rear"
+        }
+      ],
+      "type": "AC",
+      "speed": "Fighter",
+      "armour": "5+",
+      "cc": "-",
+      "ff": "-",
+      "traits": []
+    },
+    {
+      "name": "Thunderbolt",
+      "cost": 76,
+      "uncertainty": 9,
+      "quality": "Safe",
+      "weaponSlots": [
+        {
+          "kind": "fixed",
+          "weaponName": "Multi-laser",
+          "type": "Ranged Weapon",
+          "range": "30cm",
+          "firepower": "AT6+ AP5+ AA5+ FxF"
+        },
+        {
+          "kind": "fixed",
+          "weaponName": "Rockets",
+          "type": "Ranged Weapon",
+          "range": "30cm",
+          "firepower": "AT4+ FxF"
+        },
+        {
+          "kind": "fixed",
+          "weaponName": "Storm Bolters",
+          "type": "Ranged Weapon",
+          "range": "15cm",
+          "firepower": "AP4+ AA5+ FxF"
+        }
+      ],
+      "type": "AC",
+      "speed": "Fighter",
+      "armour": "6+",
+      "cc": "-",
+      "ff": "-",
+      "traits": []
+    },
+    {
+      "name": "Lightning Fighter",
+      "cost": 106,
+      "uncertainty": 22,
+      "quality": "Review",
+      "weaponSlots": [
+        {
+          "kind": "fixed",
+          "weaponName": "Kraken Heavy Missiles",
+          "type": "Ranged Weapon",
+          "range": "30cm",
+          "firepower": "AT4+ Single Shot FxF"
+        },
+        {
+          "kind": "fixed",
+          "weaponName": "Lascannon",
+          "type": "Ranged Weapon",
+          "range": "45cm",
+          "firepower": "AT5+ AA5+"
+        },
+        {
+          "kind": "fixed",
+          "weaponName": "Lascannon",
+          "type": "Ranged Weapon",
+          "range": "45cm",
+          "firepower": "AT5+ AA5+"
+        },
+        {
+          "kind": "fixed",
+          "weaponName": "Auto Cannon",
+          "type": "Ranged Weapon",
+          "range": "45cm",
+          "firepower": "AT6+ AP5+ AA5+"
+        },
+        {
+          "kind": "fixed",
+          "weaponName": "Auto Cannon",
+          "type": "Ranged Weapon",
+          "range": "45cm",
+          "firepower": "AT6+ AP5+ AA5+"
+        }
+      ],
+      "type": "AC",
+      "speed": "Fighter",
+      "armour": "6+",
+      "cc": "-",
+      "ff": "-",
+      "traits": []
+    },
+    {
+      "name": "Marauder Bomber",
+      "cost": 119,
+      "uncertainty": 11,
+      "quality": "Safe",
+      "weaponSlots": [
+        {
+          "kind": "fixed",
+          "weaponName": "Twin-linked Lascannon",
+          "type": "Ranged Weapon",
+          "range": "45cm",
+          "firepower": "AT4+ AA4+"
+        },
+        {
+          "kind": "fixed",
+          "weaponName": "Bomb Rack",
+          "type": "Ranged Weapon",
+          "range": "15cm",
+          "firepower": "3BP"
+        },
+        {
+          "kind": "fixed",
+          "weaponName": "Twin-linked Heavy Bolter",
+          "type": "Ranged Weapon",
+          "range": "30cm",
+          "firepower": "AP4+ AA5+"
+        }
+      ],
+      "type": "AC",
+      "speed": "Bomber",
+      "armour": "4+",
+      "cc": "-",
+      "ff": "-",
+      "traits": []
+    },
+    {
+      "name": "Shadowsword",
+      "cost": 222,
+      "uncertainty": 13,
+      "quality": "Safe",
+      "weaponSlots": [
+        {
+          "kind": "fixed",
+          "weaponName": "Volcano Cannon",
+          "type": "Ranged Weapon",
+          "range": "90cm",
+          "firepower": "MW2+ Titan Killer (D3)"
+        },
+        {
+          "kind": "fixed",
+          "weaponName": "Twin-linked Heavy Bolter",
+          "type": "Ranged Weapon",
+          "range": "30cm",
+          "firepower": "AP4+"
+        },
+        {
+          "kind": "fixed",
+          "weaponName": "Heavy Bolter",
+          "type": "Ranged Weapon",
+          "range": "30cm",
+          "firepower": "AP5+"
+        },
+        {
+          "kind": "fixed",
+          "weaponName": "Heavy Bolter",
+          "type": "Ranged Weapon",
+          "range": "30cm",
+          "firepower": "AP5+"
+        },
+        {
+          "kind": "fixed",
+          "weaponName": "Lascannon",
+          "type": "Ranged Weapon",
+          "range": "45cm",
+          "firepower": "AT5+"
+        },
+        {
+          "kind": "fixed",
+          "weaponName": "Lascannon",
+          "type": "Ranged Weapon",
+          "range": "45cm",
+          "firepower": "AT5+"
+        }
+      ],
+      "type": "WE",
+      "speed": "15cm",
+      "armour": "4+",
+      "cc": "6+",
+      "ff": "6+",
+      "traits": [
+        "Reinforced Armour"
+      ],
+      "damageCapacity": 3
+    },
+    {
+      "name": "Stromblade",
+      "cost": 189,
+      "uncertainty": 15,
+      "quality": "Safe",
+      "weaponSlots": [
+        {
+          "kind": "fixed",
+          "weaponName": "Plasma Blastgun",
+          "type": "Ranged Weapon",
+          "range": "45cm",
+          "firepower": "MW2+ Slow Firing"
+        },
+        {
+          "kind": "fixed",
+          "weaponName": "Twin-linked Heavy Bolter",
+          "type": "Ranged Weapon",
+          "range": "30cm",
+          "firepower": "AP4+"
+        },
+        {
+          "kind": "fixed",
+          "weaponName": "Heavy Bolter",
+          "type": "Ranged Weapon",
+          "range": "30cm",
+          "firepower": "AP5+"
+        },
+        {
+          "kind": "fixed",
+          "weaponName": "Heavy Bolter",
+          "type": "Ranged Weapon",
+          "range": "30cm",
+          "firepower": "AP5+"
+        },
+        {
+          "kind": "fixed",
+          "weaponName": "Lascannon",
+          "type": "Ranged Weapon",
+          "range": "45cm",
+          "firepower": "AT5+"
+        },
+        {
+          "kind": "fixed",
+          "weaponName": "Lascannon",
+          "type": "Ranged Weapon",
+          "range": "45cm",
+          "firepower": "AT5+"
+        }
+      ],
+      "type": "WE",
+      "speed": "15cm",
+      "armour": "4+",
+      "cc": "6+",
+      "ff": "6+",
+      "traits": [
+        "Reinforced Armour"
+      ],
+      "damageCapacity": 3
+    },
+    {
+      "name": "Stormsword",
+      "cost": 175,
+      "uncertainty": 15,
+      "quality": "Safe",
+      "weaponSlots": [
+        {
+          "kind": "fixed",
+          "weaponName": "Stormsword Siege Cannon",
+          "type": "Ranged Weapon",
+          "range": "30cm",
+          "firepower": "3BP Disrupt Ignore Cover"
+        },
+        {
+          "kind": "fixed",
+          "weaponName": "Twin-linked Heavy Bolter",
+          "type": "Ranged Weapon",
+          "range": "30cm",
+          "firepower": "AP4+"
+        },
+        {
+          "kind": "fixed",
+          "weaponName": "Heavy Bolter",
+          "type": "Ranged Weapon",
+          "range": "30cm",
+          "firepower": "AP5+"
+        },
+        {
+          "kind": "fixed",
+          "weaponName": "Heavy Bolter",
+          "type": "Ranged Weapon",
+          "range": "30cm",
+          "firepower": "AP5+"
+        },
+        {
+          "kind": "fixed",
+          "weaponName": "Lascannon",
+          "type": "Ranged Weapon",
+          "range": "45cm",
+          "firepower": "AT5+"
+        },
+        {
+          "kind": "fixed",
+          "weaponName": "Lascannon",
+          "type": "Ranged Weapon",
+          "range": "45cm",
+          "firepower": "AT5+"
+        }
+      ],
+      "type": "WE",
+      "speed": "15cm",
+      "armour": "4+",
+      "cc": "6+",
+      "ff": "6+",
+      "traits": [
+        "Reinforced Armour"
+      ],
+      "damageCapacity": 3
+    },
+    {
+      "name": "Baneblade",
+      "cost": 183,
+      "uncertainty": 12,
+      "quality": "Safe",
+      "weaponSlots": [
+        {
+          "kind": "fixed",
+          "weaponName": "Baneblade Cannon",
+          "type": "Ranged Weapon",
+          "range": "75cm",
+          "firepower": "AT3+ AP3+"
+        },
+        {
+          "kind": "fixed",
+          "weaponName": "Twin-linked Heavy Bolter",
+          "type": "Ranged Weapon",
+          "range": "30cm",
+          "firepower": "AP4+"
+        },
+        {
+          "kind": "fixed",
+          "weaponName": "Twin-linked Heavy Bolter",
+          "type": "Ranged Weapon",
+          "range": "30cm",
+          "firepower": "AP4+"
+        },
+        {
+          "kind": "fixed",
+          "weaponName": "Twin-linked Heavy Bolter",
+          "type": "Ranged Weapon",
+          "range": "30cm",
+          "firepower": "AP4+"
+        },
+        {
+          "kind": "fixed",
+          "weaponName": "Auto Cannon",
+          "type": "Ranged Weapon",
+          "range": "45cm",
+          "firepower": "AT6+ AP5+"
+        },
+        {
+          "kind": "fixed",
+          "weaponName": "Lascannon",
+          "type": "Ranged Weapon",
+          "range": "45cm",
+          "firepower": "AT5+"
+        },
+        {
+          "kind": "fixed",
+          "weaponName": "Lascannon",
+          "type": "Ranged Weapon",
+          "range": "45cm",
+          "firepower": "AT5+"
+        },
+        {
+          "kind": "fixed",
+          "weaponName": "Demolisher Cannon",
+          "type": "Ranged Weapon",
+          "range": "30cm",
+          "firepower": "AT4+ AP3+ Ignore Cover"
+        }
+      ],
+      "type": "WE",
+      "speed": "15cm",
+      "armour": "4+",
+      "cc": "6+",
+      "ff": "4+",
+      "traits": [
+        "Reinforced Armour"
+      ],
+      "damageCapacity": 3
+    },
+    {
+      "name": "Stormhammer",
+      "cost": 172,
+      "uncertainty": 14,
+      "quality": "Safe",
+      "weaponSlots": [
+        {
+          "kind": "fixed",
+          "weaponName": "Stormhammer Cannon",
+          "type": "Ranged Weapon",
+          "range": "60cm",
+          "firepower": "AT3+ AP3+"
+        },
+        {
+          "kind": "fixed",
+          "weaponName": "Heavy Bolter",
+          "type": "Ranged Weapon",
+          "range": "30cm",
+          "firepower": "AP5+"
+        },
+        {
+          "kind": "fixed",
+          "weaponName": "Heavy Bolter",
+          "type": "Ranged Weapon",
+          "range": "30cm",
+          "firepower": "AP5+"
+        },
+        {
+          "kind": "fixed",
+          "weaponName": "Heavy Bolter",
+          "type": "Ranged Weapon",
+          "range": "30cm",
+          "firepower": "AP5+"
+        },
+        {
+          "kind": "fixed",
+          "weaponName": "Heavy Bolter",
+          "type": "Ranged Weapon",
+          "range": "30cm",
+          "firepower": "AP5+"
+        },
+        {
+          "kind": "fixed",
+          "weaponName": "Heavy Bolter",
+          "type": "Ranged Weapon",
+          "range": "30cm",
+          "firepower": "AP5+"
+        },
+        {
+          "kind": "fixed",
+          "weaponName": "Heavy Bolter",
+          "type": "Ranged Weapon",
+          "range": "30cm",
+          "firepower": "AP5+"
+        },
+        {
+          "kind": "fixed",
+          "weaponName": "Lascannon",
+          "type": "Ranged Weapon",
+          "range": "45cm",
+          "firepower": "AT5+"
+        },
+        {
+          "kind": "fixed",
+          "weaponName": "Twin-linked Battle Cannon",
+          "type": "Ranged Weapon",
+          "range": "75cm",
+          "firepower": "AT4+ AP3+"
+        }
+      ],
+      "type": "WE",
+      "speed": "15cm",
+      "armour": "4+",
+      "cc": "6+",
+      "ff": "4+",
+      "traits": [
+        "Reinforced Armour"
+      ],
+      "damageCapacity": 3
+    }
+  ],
+  "detachments": [],
+  "upgrades": []
+}

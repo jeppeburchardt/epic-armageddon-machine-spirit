@@ -9,7 +9,7 @@ from models.units import (
     Multiplier,
 )
 
-squats = Army("Epic UK Squats")
+squats = Army("", "Epic UK Squats")
 
 squats.add_unit(
     Unit(

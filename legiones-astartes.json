@@ -1,0 +1,1777 @@
+{
+  "name": "Legiones Astartes",
+  "slug": "legiones-astartes",
+  "strategyRating": 1,
+  "specialRules": [],
+  "restrictions": [],
+  "units": [
+    {
+      "name": "Tactical Squad",
+      "cost": 42,
+      "uncertainty": 9,
+      "quality": "Safe",
+      "weaponSlots": [
+        {
+          "kind": "fixed",
+          "weaponName": "Bolters",
+          "type": "Small Arms",
+          "range": "(15cm)",
+          "firepower": ""
+        }
+      ],
+      "type": "INF",
+      "speed": "15cm",
+      "armour": "4+",
+      "cc": "4+",
+      "ff": "4+",
+      "traits": [
+        "Know no fear"
+      ],
+      "transportation": {
+        "cost": 1,
+        "type": "Marine"
+      }
+    },
+    {
+      "name": "Assault Squad",
+      "cost": 44,
+      "uncertainty": 8,
+      "quality": "Safe",
+      "weaponSlots": [
+        {
+          "kind": "fixed",
+          "weaponName": "Bolt Pistols and Chainswords",
+          "type": "Assault Weapons",
+          "range": "(bc)",
+          "firepower": ""
+        }
+      ],
+      "type": "INF",
+      "speed": "30cm",
+      "armour": "4+",
+      "cc": "3+",
+      "ff": "5+",
+      "traits": [
+        "Know no fear",
+        "Jump Packs"
+      ],
+      "transportation": {
+        "cost": 1,
+        "type": "Jumppack"
+      }
+    },
+    {
+      "name": "Heavy Support Squad",
+      "cost": 54,
+      "uncertainty": 8,
+      "quality": "Safe",
+      "weaponSlots": [
+        {
+          "kind": "fixed",
+          "weaponName": "Bolters",
+          "type": "Small Arms",
+          "range": "(15cm)",
+          "firepower": ""
+        },
+        {
+          "kind": "fixed",
+          "weaponName": "Missile Launchers",
+          "type": "Ranged Weapon",
+          "range": "45cm",
+          "firepower": "AT5+ AP4+ AA6+"
+        }
+      ],
+      "type": "INF",
+      "speed": "15cm",
+      "armour": "4+",
+      "cc": "5+",
+      "ff": "3+",
+      "traits": [
+        "Know no fear"
+      ],
+      "transportation": {
+        "cost": 1,
+        "type": "Marine"
+      }
+    },
+    {
+      "name": "Tactical Support Squad",
+      "cost": 51,
+      "uncertainty": 10,
+      "quality": "Review",
+      "weaponSlots": [
+        {
+          "kind": "fixed",
+          "weaponName": "Plasma Guns",
+          "type": "Small Arms",
+          "range": "(15cm)",
+          "firepower": "Ignore Cover Extra Attack +1"
+        },
+        {
+          "kind": "fixed",
+          "weaponName": "Plasma Guns",
+          "type": "Ranged Weapon",
+          "range": "20cm",
+          "firepower": "AT5+ AP5+ Ignore Cover"
+        }
+      ],
+      "type": "INF",
+      "speed": "15cm",
+      "armour": "4+",
+      "cc": "4+",
+      "ff": "4+",
+      "traits": [
+        "Know no fear"
+      ],
+      "transportation": {
+        "cost": 1,
+        "type": "Marine"
+      }
+    },
+    {
+      "name": "Terminator Squad",
+      "cost": 70,
+      "uncertainty": 11,
+      "quality": "Safe",
+      "weaponSlots": [
+        {
+          "kind": "fixed",
+          "weaponName": "Power Fists",
+          "type": "Assault Weapons",
+          "range": "(bc)",
+          "firepower": "Extra Attack +1 Macro-Weapon"
+        },
+        {
+          "kind": "fixed",
+          "weaponName": "Storm Bolters",
+          "type": "Small Arms",
+          "range": "(15cm)",
+          "firepower": ""
+        }
+      ],
+      "type": "INF",
+      "speed": "15cm",
+      "armour": "4+",
+      "cc": "3+",
+      "ff": "3+",
+      "traits": [
+        "Know no fear",
+        "Reinforced Armour"
+      ],
+      "transportation": {
+        "cost": 2,
+        "type": "Terminator"
+      }
+    },
+    {
+      "name": "Saturnine Terminator Squad (Plasma Bombards)",
+      "cost": 69,
+      "uncertainty": 12,
+      "quality": "Safe",
+      "weaponSlots": [
+        {
+          "kind": "fixed",
+          "weaponName": "Disruption Fists",
+          "type": "Assault Weapons",
+          "range": "(bc)",
+          "firepower": "Extra Attack +1 Macro-Weapon"
+        },
+        {
+          "kind": "fixed",
+          "weaponName": "Plasma Bombards",
+          "type": "Ranged Weapon",
+          "range": "20cm",
+          "firepower": "AT4+"
+        }
+      ],
+      "type": "INF",
+      "speed": "15cm",
+      "armour": "3+",
+      "cc": "3+",
+      "ff": "3+",
+      "traits": [
+        "Know no fear",
+        "Reinforced Armour",
+        "Teleport"
+      ]
+    },
+    {
+      "name": "Saturnine Terminator Squad (Twin Heavy Disintegrators)",
+      "cost": 70,
+      "uncertainty": 11,
+      "quality": "Safe",
+      "weaponSlots": [
+        {
+          "kind": "fixed",
+          "weaponName": "Disruption Fists",
+          "type": "Assault Weapons",
+          "range": "(bc)",
+          "firepower": "Extra Attack +1 Macro-Weapon"
+        },
+        {
+          "kind": "fixed",
+          "weaponName": "Twin Heavy Disintegrators",
+          "type": "Ranged Weapon",
+          "range": "20cm",
+          "firepower": "AP4+"
+        }
+      ],
+      "type": "INF",
+      "speed": "15cm",
+      "armour": "3+",
+      "cc": "3+",
+      "ff": "3+",
+      "traits": [
+        "Know no fear",
+        "Reinforced Armour",
+        "Teleport"
+      ]
+    },
+    {
+      "name": "Rapier",
+      "cost": 33,
+      "weaponSlots": [
+        {
+          "kind": "choice",
+          "name": "",
+          "choices": [
+            {
+              "weaponName": "Laser Destroyer Array",
+              "type": "Ranged Weapon",
+              "range": "45cm",
+              "firepower": "AT4+ AP6+",
+              "additionalCost": 0
+            },
+            {
+              "weaponName": "Quad Launcher",
+              "type": "Ranged Weapon",
+              "range": "45cm",
+              "firepower": "AT6+ AP4+ Indirect",
+              "additionalCost": 6
+            }
+          ]
+        }
+      ],
+      "type": "INF",
+      "speed": "10cm",
+      "armour": "4+",
+      "cc": "6+",
+      "ff": "5+",
+      "traits": []
+    },
+    {
+      "name": "Outrider squad",
+      "cost": 45,
+      "uncertainty": 8,
+      "quality": "Safe",
+      "weaponSlots": [
+        {
+          "kind": "fixed",
+          "weaponName": "Bolters",
+          "type": "Small Arms",
+          "range": "(15cm)",
+          "firepower": ""
+        }
+      ],
+      "type": "INF",
+      "speed": "35cm",
+      "armour": "4+",
+      "cc": "3+",
+      "ff": "5+",
+      "traits": [
+        "Know no fear",
+        "Mounted",
+        "Scout"
+      ]
+    },
+    {
+      "name": "Scimitar Jetbike",
+      "cost": 45,
+      "uncertainty": 9,
+      "quality": "Safe",
+      "weaponSlots": [
+        {
+          "kind": "fixed",
+          "weaponName": "Heavy Bolter",
+          "type": "Ranged Weapon",
+          "range": "30cm",
+          "firepower": "AP5+"
+        }
+      ],
+      "type": "INF",
+      "speed": "35cm",
+      "armour": "4+",
+      "cc": "4+",
+      "ff": "4+",
+      "traits": [
+        "Know no fear",
+        "Mounted",
+        "Skimmer",
+        "Scout"
+      ]
+    },
+    {
+      "name": "Tarantula",
+      "cost": 24,
+      "weaponSlots": [
+        {
+          "kind": "choice",
+          "name": "",
+          "choices": [
+            {
+              "weaponName": "Twin-linked Lascannon",
+              "type": "Ranged Weapon",
+              "range": "45cm",
+              "firepower": "AT4+",
+              "additionalCost": 0
+            },
+            {
+              "weaponName": "Hyperios Missiles",
+              "type": "Ranged Weapon",
+              "range": "30cm",
+              "firepower": "AA4+",
+              "additionalCost": 1
+            }
+          ]
+        }
+      ],
+      "type": "LV",
+      "speed": "0cm",
+      "armour": "6+",
+      "cc": "6+",
+      "ff": "6+",
+      "traits": [
+        "Scout"
+      ]
+    },
+    {
+      "name": "Land Speeder with Plasma Cannon and Heavy Bolter",
+      "cost": 32,
+      "uncertainty": 9,
+      "quality": "Safe",
+      "weaponSlots": [
+        {
+          "kind": "fixed",
+          "weaponName": "Plasma Cannon",
+          "type": "Ranged Weapon",
+          "range": "30cm",
+          "firepower": "AT5+ AP5+"
+        },
+        {
+          "kind": "fixed",
+          "weaponName": "Heavy Bolter",
+          "type": "Ranged Weapon",
+          "range": "30cm",
+          "firepower": "AP5+"
+        }
+      ],
+      "type": "LV",
+      "speed": "35cm",
+      "armour": "5+",
+      "cc": "6+",
+      "ff": "5+",
+      "traits": [
+        "Know no fear",
+        "Skimmer",
+        "Scout"
+      ]
+    },
+    {
+      "name": "Land Speeder with Flamer and Multi-melta",
+      "cost": 38,
+      "uncertainty": 9,
+      "quality": "Safe",
+      "weaponSlots": [
+        {
+          "kind": "fixed",
+          "weaponName": "Multi-melta",
+          "type": "Ranged Weapon",
+          "range": "15cm",
+          "firepower": "MW5+"
+        },
+        {
+          "kind": "fixed",
+          "weaponName": "Multi-melta",
+          "type": "Small Arms",
+          "range": "(15cm)",
+          "firepower": "Macro-Weapon"
+        }
+      ],
+      "type": "LV",
+      "speed": "35cm",
+      "armour": "5+",
+      "cc": "6+",
+      "ff": "5+",
+      "traits": [
+        "Know no fear",
+        "Skimmer",
+        "Scout"
+      ]
+    },
+    {
+      "name": "Javelin Attack Speeder",
+      "cost": 41,
+      "weaponSlots": [
+        {
+          "kind": "choice",
+          "name": "",
+          "choices": [
+            {
+              "weaponName": "Cyclone Missile Launcher",
+              "type": "Ranged Weapon",
+              "range": "45cm",
+              "firepower": "AT5+ AP3+",
+              "additionalCost": 5
+            },
+            {
+              "weaponName": "Twin-linked Lascannon",
+              "type": "Ranged Weapon",
+              "range": "45cm",
+              "firepower": "AT4+",
+              "additionalCost": 0
+            }
+          ]
+        },
+        {
+          "kind": "fixed",
+          "weaponName": "Heavy Bolter",
+          "type": "Ranged Weapon",
+          "range": "30cm",
+          "firepower": "AP5+"
+        }
+      ],
+      "type": "LV",
+      "speed": "35cm",
+      "armour": "4+",
+      "cc": "6+",
+      "ff": "5+",
+      "traits": [
+        "Know no fear",
+        "Skimmer",
+        "Scout"
+      ]
+    },
+    {
+      "name": "Saturnine Dreadnought a",
+      "cost": 63,
+      "uncertainty": 13,
+      "quality": "Review",
+      "weaponSlots": [
+        {
+          "kind": "fixed",
+          "weaponName": "Heavy Plasma Bombards",
+          "type": "Ranged Weapon",
+          "range": "30cm",
+          "firepower": "AT3+"
+        },
+        {
+          "kind": "fixed",
+          "weaponName": "Inversion Beamer",
+          "type": "Ranged Weapon",
+          "range": "15cm",
+          "firepower": "AT2+ Macro-Weapon"
+        }
+      ],
+      "type": "AV",
+      "speed": "15cm",
+      "armour": "4+",
+      "cc": "4+",
+      "ff": "4+",
+      "traits": [
+        "Know no fear",
+        "Walker",
+        "Reinforced Armour"
+      ]
+    },
+    {
+      "name": "Saturnine Dreadnought b",
+      "cost": 69,
+      "uncertainty": 19,
+      "quality": "Review",
+      "weaponSlots": [
+        {
+          "kind": "fixed",
+          "weaponName": "Disintegrator Cannons",
+          "type": "Ranged Weapon",
+          "range": "30cm",
+          "firepower": "AP3+"
+        },
+        {
+          "kind": "fixed",
+          "weaponName": "Graviton Pulverisers",
+          "type": "Ranged Weapon",
+          "range": "15cm",
+          "firepower": "AP2+"
+        },
+        {
+          "kind": "fixed",
+          "weaponName": "Graviton Pulverisers",
+          "type": "Ranged Weapon",
+          "range": "15cm",
+          "firepower": "AP2+"
+        }
+      ],
+      "type": "AV",
+      "speed": "15cm",
+      "armour": "4+",
+      "cc": "4+",
+      "ff": "4+",
+      "traits": [
+        "Know no fear",
+        "Walker",
+        "Reinforced Armour"
+      ]
+    },
+    {
+      "name": "Sabre Strike Tank",
+      "cost": 40,
+      "weaponSlots": [
+        {
+          "kind": "choice",
+          "name": "",
+          "choices": [
+            {
+              "weaponName": "Anvilus Autocannon",
+              "type": "Ranged Weapon",
+              "range": "20cm",
+              "firepower": "AT5+ AP4+ Fixed Forward",
+              "additionalCost": 0
+            },
+            {
+              "weaponName": "Neutron Blaster",
+              "type": "Ranged Weapon",
+              "range": "20cm",
+              "firepower": "AT5+ AP5+ Fixed Forward Disrupt",
+              "additionalCost": 6
+            }
+          ]
+        },
+        {
+          "kind": "fixed",
+          "weaponName": "Sabre Missiles",
+          "type": "Ranged Weapon",
+          "range": "30cm",
+          "firepower": "AT4+ Fixed Forward"
+        }
+      ],
+      "type": "AV",
+      "speed": "35cm",
+      "armour": "5+",
+      "cc": "6+",
+      "ff": "5+",
+      "traits": [
+        "Know no fear"
+      ]
+    },
+    {
+      "name": "Sicaran Battle Tank",
+      "cost": 70,
+      "weaponSlots": [
+        {
+          "kind": "choice",
+          "name": "Turret",
+          "choices": [
+            {
+              "weaponName": "Accelerator Cannon",
+              "type": "Ranged Weapon",
+              "range": "45cm",
+              "firepower": "AT5+ AP4+",
+              "count": 2,
+              "additionalCost": 20
+            },
+            {
+              "weaponName": "Omega Plasma Array",
+              "type": "Ranged Weapon",
+              "range": "45cm",
+              "firepower": "AT3+",
+              "count": 2,
+              "additionalCost": 17
+            },
+            {
+              "weaponName": "Punisher Cannon",
+              "type": "Ranged Weapon",
+              "range": "30cm",
+              "firepower": "AT5+ AP5+",
+              "count": 4,
+              "additionalCost": 7
+            },
+            {
+              "weaponName": "Arcus Missile Launcher",
+              "type": "Ranged Weapon",
+              "range": "45cm",
+              "firepower": "AT5+ AP6+ Indirect",
+              "count": 2,
+              "additionalCost": 28
+            }
+          ]
+        },
+        {
+          "kind": "choice",
+          "name": "Sponsons",
+          "choices": [
+            {
+              "weaponName": "Lascannon",
+              "type": "Ranged Weapon",
+              "range": "45cm",
+              "firepower": "AT5+ Fixed Forward",
+              "count": 2,
+              "additionalCost": 25
+            },
+            {
+              "weaponName": "Heavy Bolter",
+              "type": "Ranged Weapon",
+              "range": "30cm",
+              "firepower": "AP5+ Fixed Forward",
+              "count": 2,
+              "additionalCost": 11
+            }
+          ]
+        },
+        {
+          "kind": "fixed",
+          "weaponName": "Heavy Bolter",
+          "type": "Ranged Weapon",
+          "range": "30cm",
+          "firepower": "AP5+ Fixed Forward"
+        }
+      ],
+      "type": "AV",
+      "speed": "35cm",
+      "armour": "5+",
+      "cc": "6+",
+      "ff": "4+",
+      "traits": [
+        "Know no fear",
+        "Reinforced Armour"
+      ]
+    },
+    {
+      "name": "Predator",
+      "cost": 48,
+      "weaponSlots": [
+        {
+          "kind": "choice",
+          "name": "Turret",
+          "choices": [
+            {
+              "weaponName": "Predator Auto Cannon",
+              "type": "Ranged Weapon",
+              "range": "45cm",
+              "firepower": "AT5+ AP5+",
+              "additionalCost": 8
+            },
+            {
+              "weaponName": "Twin-linked Lascannon",
+              "type": "Ranged Weapon",
+              "range": "45cm",
+              "firepower": "AT4+",
+              "additionalCost": 7
+            }
+          ]
+        },
+        {
+          "kind": "choice",
+          "name": "Sponsons",
+          "choices": [
+            {
+              "weaponName": "Heavy Bolter",
+              "type": "Ranged Weapon",
+              "range": "30cm",
+              "firepower": "AP5+ Fixed Forward",
+              "unitStatModifiers": {
+                "ff": -2
+              },
+              "count": 2,
+              "additionalCost": 0
+            },
+            {
+              "weaponName": "Lascannon",
+              "type": "Ranged Weapon",
+              "range": "45cm",
+              "firepower": "AT5+ Fixed Forward",
+              "count": 2,
+              "additionalCost": 15
+            }
+          ]
+        }
+      ],
+      "type": "AV",
+      "speed": "30cm",
+      "armour": "4+",
+      "cc": "6+",
+      "ff": "5+",
+      "traits": [
+        "Know no fear"
+      ]
+    },
+    {
+      "name": "Land Raider",
+      "cost": 73,
+      "uncertainty": 9,
+      "quality": "Safe",
+      "weaponSlots": [
+        {
+          "kind": "fixed",
+          "weaponName": "Twin-linked Lascannon",
+          "type": "Ranged Weapon",
+          "range": "45cm",
+          "firepower": "AT4+ Fixed Forward",
+          "count": 2
+        }
+      ],
+      "type": "AV",
+      "speed": "25cm",
+      "armour": "4+",
+      "cc": "6+",
+      "ff": "4+",
+      "traits": [
+        "Know no fear",
+        "Reinforced Armour",
+        "Thick Rear Armour"
+      ],
+      "transportation": {
+        "capacity": 2,
+        "capabilities": [
+          "Marine",
+          "Terminator"
+        ]
+      }
+    },
+    {
+      "name": "Rhino",
+      "cost": 15,
+      "uncertainty": 9,
+      "quality": "Safe",
+      "weaponSlots": [
+        {
+          "kind": "fixed",
+          "weaponName": "Bolters",
+          "type": "Small Arms",
+          "range": "(15cm)",
+          "firepower": ""
+        }
+      ],
+      "type": "AV",
+      "speed": "25cm",
+      "armour": "5+",
+      "cc": "6+",
+      "ff": "6+",
+      "traits": [],
+      "transportation": {
+        "capacity": 2,
+        "capabilities": [
+          "Marine"
+        ]
+      }
+    },
+    {
+      "name": "Contemptor Dreadnought",
+      "cost": 53,
+      "weaponSlots": [
+        {
+          "kind": "fixed",
+          "weaponName": "Power Fist",
+          "type": "Assault Weapons",
+          "range": "(bc)",
+          "firepower": "Macro-Weapon Extra Attack +1"
+        },
+        {
+          "kind": "choice",
+          "name": "",
+          "choices": [
+            {
+              "weaponName": "Twin-linked Lascannon",
+              "type": "Ranged Weapon",
+              "range": "45cm",
+              "firepower": "AT4+",
+              "additionalCost": 4
+            },
+            {
+              "weaponName": "Assault Cannon",
+              "type": "Ranged Weapon",
+              "range": "30cm",
+              "firepower": "AT5+ AP4+",
+              "additionalCost": 0
+            }
+          ]
+        }
+      ],
+      "type": "AV",
+      "speed": "15cm",
+      "armour": "3+",
+      "cc": "4+",
+      "ff": "4+",
+      "traits": [
+        "Know no fear",
+        "Walker"
+      ],
+      "transportation": {
+        "cost": 2,
+        "type": "Dreadnought"
+      }
+    },
+    {
+      "name": "Deredeo Dreadnought",
+      "cost": 97,
+      "weaponSlots": [
+        {
+          "kind": "fixed",
+          "weaponName": "Twin-linked Heavy Bolter",
+          "type": "Ranged Weapon",
+          "range": "30cm",
+          "firepower": "AP4+"
+        },
+        {
+          "kind": "fixed",
+          "weaponName": "Aiolos Missile Launcher",
+          "type": "Ranged Weapon",
+          "range": "45cm",
+          "firepower": "AT5+ AP5+ AA5+"
+        },
+        {
+          "kind": "choice",
+          "name": "",
+          "choices": [
+            {
+              "weaponName": "Anvilus Autocannon Battery",
+              "type": "Ranged Weapon",
+              "range": "45cm",
+              "firepower": "AT4+ AP5+",
+              "count": 2,
+              "additionalCost": 0
+            },
+            {
+              "weaponName": "Hellfire Plasma Cannonade",
+              "type": "Ranged Weapon",
+              "range": "45cm",
+              "firepower": "AT4+ AP4+ Slow Firing",
+              "count": 2,
+              "additionalCost": 5
+            }
+          ]
+        }
+      ],
+      "type": "AV",
+      "speed": "15cm",
+      "armour": "3+",
+      "cc": "5+",
+      "ff": "3+",
+      "traits": [
+        "Know no fear",
+        "Walker",
+        "Invulnerable Save"
+      ],
+      "transportation": {
+        "cost": 2,
+        "type": "Dreadnought"
+      }
+    },
+    {
+      "name": "Leviathan Siege Dreadnought",
+      "cost": 61,
+      "weaponSlots": [
+        {
+          "kind": "fixed",
+          "weaponName": "Siege Claw",
+          "type": "Assault Weapons",
+          "range": "(bc)",
+          "firepower": "Extra Attack +1 Macro-Weapon"
+        },
+        {
+          "kind": "choice",
+          "name": "",
+          "choices": [
+            {
+              "weaponName": "Leviathan Storm Cannon",
+              "type": "Ranged Weapon",
+              "range": "20cm",
+              "firepower": "AT4+ AP4+",
+              "additionalCost": 0
+            },
+            {
+              "weaponName": "Cyclonic Melta Lance",
+              "type": "Ranged Weapon",
+              "range": "20cm",
+              "firepower": "AT3+ MW5+",
+              "additionalCost": 10
+            }
+          ]
+        }
+      ],
+      "type": "AV",
+      "speed": "15cm",
+      "armour": "4+",
+      "cc": "4+",
+      "ff": "4+",
+      "traits": [
+        "Know no fear",
+        "Walker",
+        "Reinforced Armour"
+      ],
+      "transportation": {
+        "cost": 2,
+        "type": "Dreadnought"
+      }
+    },
+    {
+      "name": "Vindicator",
+      "cost": 56,
+      "uncertainty": 9,
+      "quality": "Safe",
+      "weaponSlots": [
+        {
+          "kind": "fixed",
+          "weaponName": "Demolisher Cannon",
+          "type": "Ranged Weapon",
+          "range": "30cm",
+          "firepower": "AT4+ AP3+ Ignore Cover"
+        }
+      ],
+      "type": "AV",
+      "speed": "25cm",
+      "armour": "4+",
+      "cc": "6+",
+      "ff": "4+",
+      "traits": [
+        "Know no fear",
+        "Walker"
+      ]
+    },
+    {
+      "name": "Legion Whirlwind",
+      "cost": 67,
+      "weaponSlots": [
+        {
+          "kind": "choice",
+          "name": "",
+          "choices": [
+            {
+              "weaponName": "Scorpius Multi Launcher",
+              "type": "Ranged Weapon",
+              "range": "45cm",
+              "firepower": "AT5+ AP6+ Indirect",
+              "count": 2,
+              "additionalCost": 0
+            },
+            {
+              "weaponName": "Vengeance & Castellan Missiles",
+              "type": "Ranged Weapon",
+              "range": "45cm",
+              "firepower": "1BP Ignore Cover Indirect",
+              "additionalCost": 0
+            }
+          ]
+        }
+      ],
+      "type": "AV",
+      "speed": "30cm",
+      "armour": "5+",
+      "cc": "6+",
+      "ff": "5+",
+      "traits": [
+        "Know no fear"
+      ]
+    },
+    {
+      "name": "Fire Raptor Gunship",
+      "cost": 110,
+      "weaponSlots": [
+        {
+          "kind": "fixed",
+          "weaponName": "Avenger Bolt Cannon",
+          "type": "Ranged Weapon",
+          "range": "30cm",
+          "firepower": "AT5+ AP3+",
+          "count": 2
+        },
+        {
+          "kind": "fixed",
+          "weaponName": "Tempest rockets",
+          "type": "Ranged Weapon",
+          "range": "15cm",
+          "firepower": "AP4+ AA6+",
+          "count": 2
+        },
+        {
+          "kind": "choice",
+          "name": "",
+          "choices": [
+            {
+              "weaponName": "Twin-linked Lascannon",
+              "type": "Ranged Weapon",
+              "range": "45cm",
+              "firepower": "AT4+",
+              "count": 2,
+              "additionalCost": 8
+            },
+            {
+              "weaponName": "Twin-linked Heavy Bolter",
+              "type": "Ranged Weapon",
+              "range": "30cm",
+              "firepower": "AP4+",
+              "count": 2,
+              "additionalCost": 0
+            },
+            {
+              "weaponName": "Twin-linked Auto Cannon",
+              "type": "Ranged Weapon",
+              "range": "45cm",
+              "firepower": "AT5+ AP4+",
+              "count": 2,
+              "additionalCost": 12
+            }
+          ]
+        }
+      ],
+      "type": "AC",
+      "speed": "Fighter bomber",
+      "armour": "5+",
+      "cc": "-",
+      "ff": "-",
+      "traits": [
+        "Know no fear",
+        "Reinforced Armour"
+      ]
+    },
+    {
+      "name": "Xiphon Interceptor",
+      "cost": 97,
+      "uncertainty": 20,
+      "quality": "Review",
+      "weaponSlots": [
+        {
+          "kind": "fixed",
+          "weaponName": "Rotary Missile Launcher",
+          "type": "Ranged Weapon",
+          "range": "30cm",
+          "firepower": "AT4+ AA5+",
+          "count": 2
+        },
+        {
+          "kind": "fixed",
+          "weaponName": "Lascannon",
+          "type": "Ranged Weapon",
+          "range": "45cm",
+          "firepower": "AT5+"
+        }
+      ],
+      "type": "AC",
+      "speed": "Fighter",
+      "armour": "5+",
+      "cc": "-",
+      "ff": "-",
+      "traits": [
+        "Know no fear"
+      ]
+    },
+    {
+      "name": "Spartan Assault Tank",
+      "cost": 149,
+      "uncertainty": 20,
+      "quality": "Safe",
+      "weaponSlots": [
+        {
+          "kind": "fixed",
+          "weaponName": "Quad Lascannon",
+          "type": "Ranged Weapon",
+          "range": "45cm",
+          "firepower": "AT3+ Fixed Forward",
+          "count": 2
+        },
+        {
+          "kind": "fixed",
+          "weaponName": "Twin-linked Heavy Bolter",
+          "type": "Ranged Weapon",
+          "range": "30cm",
+          "firepower": "AP4+ Fixed Forward"
+        }
+      ],
+      "type": "WE",
+      "speed": "25cm",
+      "armour": "4+",
+      "cc": "6+",
+      "ff": "5+",
+      "traits": [
+        "Know no fear",
+        "Reinforced Armour",
+        "Thick Rear Armour"
+      ],
+      "damageCapacity": 2,
+      "transportation": {
+        "capacity": 4,
+        "capabilities": [
+          "Marine",
+          "Terminator"
+        ]
+      }
+    },
+    {
+      "name": "Mastodon Armored Transport",
+      "cost": 236,
+      "weaponSlots": [
+        {
+          "kind": "fixed",
+          "weaponName": "Small Arms",
+          "type": "Small Arms",
+          "range": "(15cm)",
+          "firepower": "Extra Attack +1 Macro-Weapon"
+        },
+        {
+          "kind": "choice",
+          "name": "Sponson Weapons",
+          "choices": [
+            {
+              "weaponName": "Lascannon",
+              "type": "Ranged Weapon",
+              "range": "45cm",
+              "firepower": "AT5+",
+              "count": 2,
+              "additionalCost": 12
+            },
+            {
+              "weaponName": "Heavy Bolter",
+              "type": "Ranged Weapon",
+              "range": "30cm",
+              "firepower": "AP5+",
+              "count": 2,
+              "additionalCost": 0
+            }
+          ]
+        },
+        {
+          "kind": "fixed",
+          "weaponName": "Sponson Mounted heavy flamers",
+          "type": "Ranged Weapon",
+          "range": "15cm",
+          "firepower": "AP4+ Ignore Cover",
+          "count": 2
+        },
+        {
+          "kind": "fixed",
+          "weaponName": "Skyreaper battery",
+          "type": "Ranged Weapon",
+          "range": "30cm",
+          "firepower": "AT4+ AP4+ AA5+",
+          "count": 2
+        }
+      ],
+      "type": "WE",
+      "speed": "20cm",
+      "armour": "4+",
+      "cc": "5+",
+      "ff": "4+",
+      "traits": [
+        "Know no fear",
+        "Reinforced Armour"
+      ],
+      "damageCapacity": 4,
+      "voidShields": 2,
+      "transportation": {
+        "capacity": 8,
+        "capabilities": [
+          "Marine",
+          "Jumppack",
+          "Terminator",
+          "Dreadnought"
+        ]
+      }
+    },
+    {
+      "name": "Typhon Siege Tank",
+      "cost": 174,
+      "uncertainty": 20,
+      "quality": "Safe",
+      "weaponSlots": [
+        {
+          "kind": "fixed",
+          "weaponName": "Typhon Siege Cannon",
+          "type": "Ranged Weapon",
+          "range": "45cm",
+          "firepower": "3BP Indirect Ignore Cover"
+        },
+        {
+          "kind": "fixed",
+          "weaponName": "Heavy Bolter",
+          "type": "Ranged Weapon",
+          "range": "30cm",
+          "firepower": "AP5+",
+          "count": 2
+        }
+      ],
+      "type": "WE",
+      "speed": "25cm",
+      "armour": "4+",
+      "cc": "6+",
+      "ff": "5+",
+      "traits": [
+        "Know no fear",
+        "Reinforced Armour"
+      ],
+      "damageCapacity": 2
+    },
+    {
+      "name": "Cerberus Heavy Tank Destroyer",
+      "cost": 194,
+      "uncertainty": 18,
+      "quality": "Safe",
+      "weaponSlots": [
+        {
+          "kind": "fixed",
+          "weaponName": "Neutron Laser Array",
+          "type": "Ranged Weapon",
+          "range": "60cm",
+          "firepower": "AT3+ MW5+ Disrupt",
+          "count": 2
+        },
+        {
+          "kind": "fixed",
+          "weaponName": "Heavy Bolter",
+          "type": "Ranged Weapon",
+          "range": "30cm",
+          "firepower": "AP5+",
+          "count": 2
+        }
+      ],
+      "type": "WE",
+      "speed": "25cm",
+      "armour": "4+",
+      "cc": "6+",
+      "ff": "5+",
+      "traits": [
+        "Know no fear",
+        "Reinforced Armour"
+      ],
+      "damageCapacity": 2
+    },
+    {
+      "name": "Kratos Battle Tank",
+      "cost": 163,
+      "weaponSlots": [
+        {
+          "kind": "fixed",
+          "weaponName": "Kratos Cannon",
+          "type": "Ranged Weapon",
+          "range": "45cm",
+          "firepower": "AT3+ AP3+"
+        },
+        {
+          "kind": "fixed",
+          "weaponName": "Co-axial Auto Cannon",
+          "type": "Ranged Weapon",
+          "range": "45cm",
+          "firepower": "AT6+ AP5+"
+        },
+        {
+          "kind": "choice",
+          "name": "Sponsons",
+          "choices": [
+            {
+              "weaponName": "Heavy Bolter",
+              "type": "Ranged Weapon",
+              "range": "30cm",
+              "firepower": "AP5+ Fixed Forward",
+              "unitStatModifiers": {
+                "ff": -1
+              },
+              "count": 2,
+              "additionalCost": 8
+            },
+            {
+              "weaponName": "Lascannon",
+              "type": "Ranged Weapon",
+              "range": "45cm",
+              "firepower": "AT5+ Fixed Forward",
+              "count": 2,
+              "additionalCost": 19
+            },
+            {
+              "weaponName": "Auto Cannon",
+              "type": "Ranged Weapon",
+              "range": "45cm",
+              "firepower": "AT6+ AP5+ Fixed Forward",
+              "count": 2,
+              "additionalCost": 20
+            }
+          ]
+        },
+        {
+          "kind": "choice",
+          "name": "Hull Weapons",
+          "choices": [
+            {
+              "weaponName": "Heavy Bolter",
+              "type": "Ranged Weapon",
+              "range": "30cm",
+              "firepower": "AP5+ Fixed Forward",
+              "unitStatModifiers": {
+                "ff": -1
+              },
+              "count": 2,
+              "additionalCost": 8
+            },
+            {
+              "weaponName": "Lascannon",
+              "type": "Ranged Weapon",
+              "range": "45cm",
+              "firepower": "AT5+ Fixed Forward",
+              "count": 2,
+              "additionalCost": 19
+            },
+            {
+              "weaponName": "Auto Cannon",
+              "type": "Ranged Weapon",
+              "range": "45cm",
+              "firepower": "AT6+ AP5+ Fixed Forward",
+              "count": 2,
+              "additionalCost": 20
+            }
+          ]
+        }
+      ],
+      "type": "WE",
+      "speed": "25cm",
+      "armour": "4+",
+      "cc": "6+",
+      "ff": "5+",
+      "traits": [
+        "Know no fear",
+        "Reinforced Armour",
+        "Thick Rear Armour"
+      ],
+      "damageCapacity": 2
+    },
+    {
+      "name": "Fellblade Super Heavy Tank",
+      "cost": 260,
+      "uncertainty": 26,
+      "quality": "Safe",
+      "weaponSlots": [
+        {
+          "kind": "fixed",
+          "weaponName": "Fellblade Cannon",
+          "type": "Ranged Weapon",
+          "range": "75cm",
+          "firepower": "AT2+ AP2+ Macro-Weapon Traits.TITAN_KILLER_1"
+        },
+        {
+          "kind": "fixed",
+          "weaponName": "Quad Lascannon",
+          "type": "Ranged Weapon",
+          "range": "45cm",
+          "firepower": "AT3+ Fixed Forward",
+          "count": 2
+        },
+        {
+          "kind": "fixed",
+          "weaponName": "Twin-linked Heavy Bolter",
+          "type": "Ranged Weapon",
+          "range": "30cm",
+          "firepower": "AP4+ Fixed Forward"
+        },
+        {
+          "kind": "fixed",
+          "weaponName": "Demolisher Cannon",
+          "type": "Ranged Weapon",
+          "range": "30cm",
+          "firepower": "AT4+ AP3+ Ignore Cover Fixed Forward"
+        }
+      ],
+      "type": "WE",
+      "speed": "20cm",
+      "armour": "4+",
+      "cc": "5+",
+      "ff": "5+",
+      "traits": [
+        "Know no fear",
+        "Reinforced Armour",
+        "Thick Rear Armour"
+      ],
+      "damageCapacity": 4
+    },
+    {
+      "name": "Glaive Super Heavy Tank",
+      "cost": 316,
+      "uncertainty": 39,
+      "quality": "Safe",
+      "weaponSlots": [
+        {
+          "kind": "fixed",
+          "weaponName": "Volkite Carronade",
+          "type": "Ranged Weapon",
+          "range": "75cm",
+          "firepower": "AT5+ AP3+ Disrupt Ignore Cover",
+          "count": 4
+        },
+        {
+          "kind": "fixed",
+          "weaponName": "Quad Lascannon",
+          "type": "Ranged Weapon",
+          "range": "45cm",
+          "firepower": "AT3+ Fixed Forward",
+          "count": 2
+        },
+        {
+          "kind": "fixed",
+          "weaponName": "Twin-linked Heavy Bolter",
+          "type": "Ranged Weapon",
+          "range": "30cm",
+          "firepower": "AP4+ Fixed Forward"
+        }
+      ],
+      "type": "WE",
+      "speed": "20cm",
+      "armour": "4+",
+      "cc": "5+",
+      "ff": "5+",
+      "traits": [
+        "Know no fear",
+        "Reinforced Armour",
+        "Thick Rear Armour"
+      ],
+      "damageCapacity": 4
+    },
+    {
+      "name": "Falchion Super Heavy Tank Destroyer",
+      "cost": 248,
+      "uncertainty": 27,
+      "quality": "Safe",
+      "weaponSlots": [
+        {
+          "kind": "fixed",
+          "weaponName": "Twin Linked Volcano Cannon",
+          "type": "Ranged Weapon",
+          "range": "90cm",
+          "firepower": "AT2+ AP2+ Macro-Weapon Titan Killer (D3) Fixed Forward"
+        },
+        {
+          "kind": "fixed",
+          "weaponName": "Quad Lascannon",
+          "type": "Ranged Weapon",
+          "range": "45cm",
+          "firepower": "AT3+ Fixed Forward",
+          "count": 2
+        }
+      ],
+      "type": "WE",
+      "speed": "20cm",
+      "armour": "4+",
+      "cc": "5+",
+      "ff": "5+",
+      "traits": [
+        "Know no fear",
+        "Reinforced Armour",
+        "Thick Rear Armour"
+      ],
+      "damageCapacity": 4
+    },
+    {
+      "name": "Ascalon Super Heavy Tank",
+      "cost": 219,
+      "uncertainty": 27,
+      "quality": "Safe",
+      "weaponSlots": [
+        {
+          "kind": "fixed",
+          "weaponName": "Inferno gun",
+          "type": "Ranged Weapon",
+          "range": "30cm",
+          "firepower": "AT6+ AP2+ Fixed Forward",
+          "count": 4
+        },
+        {
+          "kind": "fixed",
+          "weaponName": "Quad Lascannon",
+          "type": "Ranged Weapon",
+          "range": "45cm",
+          "firepower": "AT3+ Fixed Forward",
+          "count": 2
+        }
+      ],
+      "type": "WE",
+      "speed": "20cm",
+      "armour": "4+",
+      "cc": "5+",
+      "ff": "5+",
+      "traits": [
+        "Know no fear",
+        "Reinforced Armour",
+        "Thick Rear Armour"
+      ],
+      "damageCapacity": 4
+    },
+    {
+      "name": "Thunderhawk Gunship",
+      "cost": 224,
+      "uncertainty": 19,
+      "quality": "Safe",
+      "weaponSlots": [
+        {
+          "kind": "fixed",
+          "weaponName": "Laser Destroyer",
+          "type": "Ranged Weapon",
+          "range": "45cm",
+          "firepower": "AT3+ AP6+ Fixed Forward",
+          "count": 2
+        },
+        {
+          "kind": "fixed",
+          "weaponName": "Twin-linked Lascannon",
+          "type": "Ranged Weapon",
+          "range": "45cm",
+          "firepower": "AT4+ AA5+ Fixed Forward"
+        },
+        {
+          "kind": "fixed",
+          "weaponName": "Twin-linked Heavy Bolter",
+          "type": "Ranged Weapon",
+          "range": "30cm",
+          "firepower": "AP4+ Fixed Forward",
+          "count": 2
+        },
+        {
+          "kind": "fixed",
+          "weaponName": "Twin-linked Heavy Bolter",
+          "type": "Ranged Weapon",
+          "range": "30cm",
+          "firepower": "AP4+ Traits.LEFT"
+        },
+        {
+          "kind": "fixed",
+          "weaponName": "Twin-linked Heavy Bolter",
+          "type": "Ranged Weapon",
+          "range": "30cm",
+          "firepower": "AP4+ Traits.RIGHT"
+        }
+      ],
+      "type": "AC/WE",
+      "speed": "Bomber",
+      "armour": "4+",
+      "cc": "6+",
+      "ff": "4+",
+      "traits": [
+        "Know no fear",
+        "PLANET_FALL",
+        "Reinforced Armour"
+      ],
+      "damageCapacity": 2,
+      "transportation": {
+        "capacity": 8,
+        "capabilities": [
+          "Marine",
+          "Jumppack",
+          "Terminator",
+          "Dreadnought"
+        ]
+      }
+    },
+    {
+      "name": "Storm Eagle Attack Ship",
+      "cost": 198,
+      "uncertainty": 19,
+      "quality": "Safe",
+      "weaponSlots": [
+        {
+          "kind": "fixed",
+          "weaponName": "--",
+          "type": "Ranged Weapon",
+          "range": "45cm",
+          "firepower": "AT4+",
+          "count": 2
+        },
+        {
+          "kind": "fixed",
+          "weaponName": "--",
+          "type": "Ranged Weapon",
+          "range": "45cm",
+          "firepower": "1BP"
+        },
+        {
+          "kind": "fixed",
+          "weaponName": "--",
+          "type": "Ranged Weapon",
+          "range": "30cm",
+          "firepower": "AP4+ AA5+"
+        }
+      ],
+      "type": "AC/WE",
+      "speed": "Fighter bomber",
+      "armour": "5+",
+      "cc": "6+",
+      "ff": "5+",
+      "traits": [
+        "Know no fear",
+        "Reinforced Armour",
+        "PLANET_FALL"
+      ],
+      "transportation": {
+        "capacity": 4,
+        "capabilities": [
+          "Marine",
+          "Jumppack",
+          "Terminator"
+        ]
+      }
+    }
+  ],
+  "detachments": [
+    {
+      "name": "Tactical Detachment",
+      "group": "Line",
+      "units": [
+        {
+          "unitName": "Tactical Squad",
+          "count": 8,
+          "min": 8,
+          "max": 8
+        }
+      ],
+      "restrictions": [],
+      "availableUpgrades": [
+        "Transport",
+        "Support Tank",
+        "Support Dreadnought"
+      ]
+    },
+    {
+      "name": "Assault Marines",
+      "group": "Line",
+      "units": [
+        {
+          "unitName": "Assault Squad",
+          "count": 8,
+          "min": 8,
+          "max": 8
+        }
+      ],
+      "restrictions": [],
+      "availableUpgrades": [
+        "Transport"
+      ]
+    },
+    {
+      "name": "Terminators",
+      "group": "Line",
+      "units": [
+        {
+          "unitName": "Terminator Squad",
+          "count": 4,
+          "min": 4,
+          "max": 8
+        }
+      ],
+      "restrictions": [],
+      "availableUpgrades": [
+        "Transport",
+        "Support Dreadnought"
+      ]
+    },
+    {
+      "name": "Predators",
+      "group": "Support",
+      "units": [
+        {
+          "unitName": "Predator",
+          "count": 3,
+          "min": 3,
+          "max": 6
+        }
+      ],
+      "restrictions": [],
+      "availableUpgrades": []
+    },
+    {
+      "name": "Sicarans",
+      "group": "Support",
+      "units": [
+        {
+          "unitName": "Sicaran Battle Tank",
+          "count": 2,
+          "min": 2,
+          "max": 4
+        }
+      ],
+      "restrictions": [],
+      "availableUpgrades": []
+    },
+    {
+      "name": "Kratos",
+      "group": "Support",
+      "units": [
+        {
+          "unitName": "Kratos Battle Tank",
+          "count": 2,
+          "min": 2,
+          "max": 4
+        }
+      ],
+      "restrictions": [],
+      "availableUpgrades": []
+    },
+    {
+      "name": "Whirlwinds",
+      "group": "Support",
+      "units": [
+        {
+          "unitName": "Legion Whirlwind",
+          "count": 4,
+          "min": 4,
+          "max": 4
+        }
+      ],
+      "restrictions": [],
+      "availableUpgrades": []
+    }
+  ],
+  "upgrades": [
+    {
+      "name": "Transport",
+      "type": "add",
+      "transportWarning": true,
+      "adds": [
+        {
+          "unitName": "Rhino"
+        },
+        {
+          "unitName": "Land Raider"
+        },
+        {
+          "unitName": "Spartan Assault Tank"
+        },
+        {
+          "unitName": "Mastodon Armored Transport"
+        }
+      ]
+    },
+    {
+      "name": "Support Tank",
+      "type": "add",
+      "transportWarning": false,
+      "maxTotal": 2,
+      "adds": [
+        {
+          "unitName": "Predator"
+        },
+        {
+          "unitName": "Sicaran Battle Tank"
+        }
+      ]
+    },
+    {
+      "name": "Support Dreadnought",
+      "type": "add",
+      "transportWarning": false,
+      "maxTotal": 4,
+      "adds": [
+        {
+          "unitName": "Contemptor Dreadnought"
+        },
+        {
+          "unitName": "Leviathan Siege Dreadnought"
+        },
+        {
+          "unitName": "Deredeo Dreadnought"
+        }
+      ]
+    }
+  ]
+}
