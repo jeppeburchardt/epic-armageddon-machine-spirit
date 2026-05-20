@@ -35,12 +35,12 @@ class RangedWeapon:
 
 All game stats that read as "roll X or more on a D6" use **lower = better**:
 
-| Stat | Meaning | Best value |
-|------|---------|------------|
-| `initiative` | Order activation (lower acts first) | `1` |
-| `armour` | Hit threshold (lower = harder to damage) | `2` |
-| `cc` | Close combat hit roll | `2` |
-| `ff` | Firefight hit roll | `2` |
+| Stat         | Meaning                                  | Best value |
+| ------------ | ---------------------------------------- | ---------- |
+| `initiative` | Order activation (lower acts first)      | `1`        |
+| `armour`     | Hit threshold (lower = harder to damage) | `2`        |
+| `cc`         | Close combat hit roll                    | `2`        |
+| `ff`         | Firefight hit roll                       | `2`        |
 
 `speed` is in centimetres and higher is better.  
 `strategy_rating` is higher = better.  
@@ -94,13 +94,13 @@ All other fields default to `0` / empty — only set fields that differ from neu
 
 ### Weapon classes at a glance
 
-| Class | Use for |
-|-------|---------|
-| `RangedWeapon` | Any weapon with a range stat |
-| `AssaultWeapon` | Base contact / melee weapons |
-| `SmallArms` | Generic short-range small arms (no meaningful firepower stats) |
-| `Multiplier(n, weapon)` | Multiple identical ranged weapons on one unit |
-| `MultipleChoiceWeapon([...])` | Mutually exclusive weapon options in a slot |
+| Class                         | Use for                                                        |
+| ----------------------------- | -------------------------------------------------------------- |
+| `RangedWeapon`                | Any weapon with a range stat                                   |
+| `AssaultWeapon`               | Base contact / melee weapons                                   |
+| `SmallArms`                   | Generic short-range small arms (no meaningful firepower stats) |
+| `Multiplier(n, weapon)`       | Multiple identical ranged weapons on one unit                  |
+| `MultipleChoiceWeapon([...])` | Mutually exclusive weapon options in a slot                    |
 
 ### `RangedWeapon` parameters
 
@@ -119,12 +119,12 @@ RangedWeapon(
 
 ### Weapon factory subclasses
 
-Extract reusable weapons as subclasses of `RangedWeapon` and place them in `src/data/input/ea_hh_weapons.py`:
+Extract reusable weapons as subclasses of `RangedWeapon` and place them in `src/ea_unit_pricing/data/input/ea_hh_weapons.py`:
 
 ```python
 class PlasmaCannon(RangedWeapon):
-    def __init__(self, traits: list[Traits] = []) -> None:
-        super().__init__(45, at=4, ap=4, name="Plasma Cannon", traits=traits)
+    def __init__(self, traits: list[Traits] | None = None) -> None:
+        super().__init__(45, at=4, ap=4, name="Plasma Cannon", traits=traits or [])
 ```
 
 Only define inline `RangedWeapon(...)` for weapons that are unique to a single unit.
@@ -159,19 +159,19 @@ traits=[Traits.KNOW_NO_FEAR, Traits.JUMP_PACKS]
 
 ### Adding a new trait
 
-1. Add an entry to `Traits(Enum)` in `src/models/units.py` with the next sequential integer value.
+1. Add an entry to `Traits(Enum)` in `src/ea_unit_pricing/domain/enums.py` with the next sequential integer value.
 2. Add a human-readable mapping in `trait_to_string()` in the same file.
-3. Determine which GPR segment it belongs to (see table below) and add a case to the relevant `src/gpr/mapping/segments/*.py` file.
+3. Determine which GPR segment it belongs to (see table below) and add a case to the relevant `src/ea_unit_pricing/gpr/mapping/segments/*.py` file.
 
-| Trait category | Segment file |
-|----------------|-------------|
-| Weapon special rules (Indirect, Lance, MW…) | `trait_groups.py` |
-| Mobility (Jump Packs, Scout, Skimmer, Tunneler…) | `trait_groups.py` |
-| Survivability (Reinforced Armour, Invulnerable Save…) | `trait_groups.py` |
-| Leadership (Know No Fear, Fearless, Inspiring…) | `trait_groups.py` |
-| Walker | `trait_groups.py` |
-| Titan Killer multiplier | `extra_damage.py` |
-| Assault extra attacks | `extra_damage.py` / `assault.py` |
+| Trait category                                        | Segment file                     |
+| ----------------------------------------------------- | -------------------------------- |
+| Weapon special rules (Indirect, Lance, MW…)           | `trait_groups.py`                |
+| Mobility (Jump Packs, Scout, Skimmer, Tunneler…)      | `trait_groups.py`                |
+| Survivability (Reinforced Armour, Invulnerable Save…) | `trait_groups.py`                |
+| Leadership (Know No Fear, Fearless, Inspiring…)       | `trait_groups.py`                |
+| Walker                                                | `trait_groups.py`                |
+| Titan Killer multiplier                               | `extra_damage.py`                |
+| Assault extra attacks                                 | `extra_damage.py` / `assault.py` |
 
 ---
 
@@ -184,19 +184,51 @@ solar_auxilia = Army("Solar Auxilia")
 solar_auxilia.add_unit(Unit(...))
 ```
 
+## Development Setup
+
+Install the package in editable mode (requires Python 3.9+):
+
+```bash
+pip install -e ".[dev]"
+```
+
+Run the prediction pipeline:
+
+```bash
+eaup predict --all-armies --output-dir output
+```
+
+Run tests:
+
+```bash
+pytest tests/
+```
+
 ---
 
 ## File Organisation
 
-| File location | Contents |
-|--------------|---------|
-| `src/data/input/ea_hh_legion.py` | Legiones Astartes unit profiles (input for prediction) |
-| `src/data/input/ea_hh_solar_aux.py` | Solar Auxilia unit profiles (input for prediction) |
-| `src/data/input/ea_hh_weapons.py` | Shared weapon factory classes for LI armies |
-| `src/data/training/ea_40k_*.py` | Epic Armageddon 40K training data (known costs) |
-| `src/models/units.py` | All model classes: `Unit`, `Army`, weapon types, `Traits`, enums |
-| `src/models/result.py` | `Result`, `MultipleChoiceResult`, `Quality` |
-| `src/gpr/mapping/segments/` | One file per feature-vector segment |
+| File location                                       | Contents                                                                                         |
+| --------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
+| `src/ea_unit_pricing/domain/enums.py`               | `UnitType`, `AircraftSpeed`, `Traits`, `Quality`, string converters                              |
+| `src/ea_unit_pricing/domain/weapons.py`             | `RangedWeapon`, `AssaultWeapon`, `SmallArms`, `Multiplier`, `MultipleChoiceWeapon` (dataclasses) |
+| `src/ea_unit_pricing/domain/unit.py`                | `Unit` dataclass, `expand_choices()`                                                             |
+| `src/ea_unit_pricing/domain/army.py`                | `Army`, `Detachment`, upgrade classes                                                            |
+| `src/ea_unit_pricing/domain/result.py`              | `Result`, `MultipleChoiceResult`, `TrainingSetValidationResult`                                  |
+| `src/ea_unit_pricing/data/input/ea_hh_legion.py`    | Legiones Astartes unit profiles (prediction input)                                               |
+| `src/ea_unit_pricing/data/input/ea_hh_solar_aux.py` | Solar Auxilia unit profiles (prediction input)                                                   |
+| `src/ea_unit_pricing/data/input/ea_hh_weapons.py`   | Shared weapon factory classes for LI armies                                                      |
+| `src/ea_unit_pricing/data/training/ea_40k_*.py`     | Epic Armageddon 40K training data (known costs)                                                  |
+| `src/ea_unit_pricing/gpr/mapping/segments/`         | One file per feature-vector segment (layout frozen)                                              |
+| `src/ea_unit_pricing/pipeline/prediction.py`        | `run_pipeline()`, `predict_army()`, `predict_with_choices()`                                     |
+| `src/ea_unit_pricing/serialization/`                | Output formatters (markdown, JSON)                                                               |
+| `src/ea_unit_pricing/cli.py`                        | `eaup` CLI entry point                                                                           |
+| `tests/golden/`                                     | Committed reference outputs (regression oracle)                                                  |
+
+### ⚠ Frozen vector layout
+
+**Never change the order of segments in `universal_unit.py`.**  
+The GPR model's feature vector has 30 elements in a fixed order (stats → unit_type → range_bands → fire_power → extra_damage → trait_groups → assault). Changing segment order or dimensions requires retraining and regenerating golden outputs.
 
 ### Naming conventions
 

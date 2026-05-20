@@ -2,11 +2,11 @@ from __future__ import annotations
 
 import unittest
 
-from models.result import MultipleChoiceResult, Result
-from models.units import MultipleChoiceWeapon, RangedWeapon, Unit, UnitType
-from out.army_json import _weapons_for_choice_result
-from out.army_list_json import result_to_army_json
-from out.rounding import round_points
+from ea_unit_pricing.domain.result import MultipleChoiceResult, Result
+from ea_unit_pricing.domain import MultipleChoiceWeapon, RangedWeapon, Unit, UnitType
+from ea_unit_pricing.serialization.army_json import _weapons_for_choice_result
+from ea_unit_pricing.serialization.army_list_json import _result_to_dict
+from ea_unit_pricing.serialization.rounding import round_points
 
 
 def make_unit(name: str, weapons: list | None = None) -> Unit:
@@ -54,7 +54,7 @@ class RoundingPolicyTests(unittest.TestCase):
         self.assertEqual(choices[0]["cost_delta"], 0)
         self.assertEqual(choices[1]["cost_delta"], 0)
 
-        army_json = result_to_army_json(results)
+        army_json = _result_to_dict(results)
         self.assertEqual(army_json["cost"], 100)
         self.assertEqual(army_json["weaponSlots"][1]["choices"][0]["additionalCost"], 0)
         self.assertEqual(army_json["weaponSlots"][1]["choices"][1]["additionalCost"], 0)
