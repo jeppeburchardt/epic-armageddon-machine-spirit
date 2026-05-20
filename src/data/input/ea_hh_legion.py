@@ -1124,3 +1124,43 @@ whirlwind_detachment = Detachment(
     ],
 )
 legiones_astartes.add_detachment(whirlwind_detachment)
+
+## Landspeeders
+land_speeder_detachment = Detachment(
+    name="Landspeeders",
+    group="Support",
+    units=[DetachmentUnit(land_speeder_with_flamer_and_multi_melta_unit, count=4)],
+)
+land_speeder_plasma_upgrade = UpgradeReplace(
+    name="Plasma Cannon and Heavy Bolter",
+    fromUnit=land_speeder_with_flamer_and_multi_melta_unit,
+    toUnit=land_speeder_with_plasma_cannon_and_heavy_bolter_unit,
+    max=4,
+)
+legiones_astartes.add_upgrade(land_speeder_plasma_upgrade)
+land_speeder_detachment.add_upgrade(land_speeder_plasma_upgrade)
+legiones_astartes.add_detachment(land_speeder_detachment)
+
+## Scimitars
+scimitar_jetbike_detachment = Detachment(
+    name="Scimitars",
+    group="Support",
+    units=[DetachmentUnit(scimitar_jetbike_unit, count=6)],
+)
+legiones_astartes.add_detachment(scimitar_jetbike_detachment)
+
+## Outriders
+outrider_detachment = Detachment(
+    name="Outriders",
+    group="Support",
+    units=[DetachmentUnit(outrider_squad_unit, count=4)],
+)
+legiones_astartes.add_detachment(outrider_detachment)
+
+## Javelin
+javelin_attack_speeder_detachmnet = Detachment(
+    name="Javelins",
+    group="Support",
+    units=[DetachmentUnit(javelin_attack_speeder_unit, count=4)],
+)
+legiones_astartes.add_detachment(javelin_attack_speeder_detachmnet)

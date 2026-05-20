@@ -234,6 +234,12 @@ def build_army_json_files(army_results: list[tuple[Army, list[Result]]]):
                         upgrade.adds,
                     )
                 )
+            if upgrade.type == "replace":
+                up["replaces"] = {
+                    "toUnitName": upgrade.fromUnit.name,
+                    "fromUnitName": upgrade.toUnit.name,
+                    "max": upgrade.max,
+                }
             output["upgrades"].append(up)
         for result in results:
             output["units"].append(result_to_army_json(result))

@@ -534,14 +534,14 @@
               "weaponName": "Anvilus Autocannon",
               "type": "Ranged Weapon",
               "range": "20cm",
-              "firepower": "AT5+ AP4+ Fixed Forward",
+              "firepower": "AT5+ AP4+ FxF",
               "additionalCost": 0
             },
             {
               "weaponName": "Neutron Blaster",
               "type": "Ranged Weapon",
               "range": "20cm",
-              "firepower": "AT5+ AP5+ Fixed Forward Disrupt",
+              "firepower": "AT5+ AP5+ FxF Disrupt",
               "additionalCost": 6
             }
           ]
@@ -551,7 +551,7 @@
           "weaponName": "Sabre Missiles",
           "type": "Ranged Weapon",
           "range": "30cm",
-          "firepower": "AT4+ Fixed Forward"
+          "firepower": "AT4+ FxF"
         }
       ],
       "type": "AV",
@@ -613,7 +613,7 @@
               "weaponName": "Lascannon",
               "type": "Ranged Weapon",
               "range": "45cm",
-              "firepower": "AT5+ Fixed Forward",
+              "firepower": "AT5+ FxF",
               "count": 2,
               "additionalCost": 25
             },
@@ -621,7 +621,7 @@
               "weaponName": "Heavy Bolter",
               "type": "Ranged Weapon",
               "range": "30cm",
-              "firepower": "AP5+ Fixed Forward",
+              "firepower": "AP5+ FxF",
               "count": 2,
               "additionalCost": 11
             }
@@ -632,7 +632,7 @@
           "weaponName": "Heavy Bolter",
           "type": "Ranged Weapon",
           "range": "30cm",
-          "firepower": "AP5+ Fixed Forward"
+          "firepower": "AP5+ FxF"
         }
       ],
       "type": "AV",
@@ -677,7 +677,7 @@
               "weaponName": "Heavy Bolter",
               "type": "Ranged Weapon",
               "range": "30cm",
-              "firepower": "AP5+ Fixed Forward",
+              "firepower": "AP5+ FxF",
               "unitStatModifiers": {
                 "ff": -2
               },
@@ -688,7 +688,7 @@
               "weaponName": "Lascannon",
               "type": "Ranged Weapon",
               "range": "45cm",
-              "firepower": "AT5+ Fixed Forward",
+              "firepower": "AT5+ FxF",
               "count": 2,
               "additionalCost": 15
             }
@@ -715,7 +715,7 @@
           "weaponName": "Twin-linked Lascannon",
           "type": "Ranged Weapon",
           "range": "45cm",
-          "firepower": "AT4+ Fixed Forward",
+          "firepower": "AT4+ FxF",
           "count": 2
         }
       ],
@@ -1075,7 +1075,7 @@
           "weaponName": "Quad Lascannon",
           "type": "Ranged Weapon",
           "range": "45cm",
-          "firepower": "AT3+ Fixed Forward",
+          "firepower": "AT3+ FxF",
           "count": 2
         },
         {
@@ -1083,7 +1083,7 @@
           "weaponName": "Twin-linked Heavy Bolter",
           "type": "Ranged Weapon",
           "range": "30cm",
-          "firepower": "AP4+ Fixed Forward"
+          "firepower": "AP4+ FxF"
         }
       ],
       "type": "WE",
@@ -1269,7 +1269,7 @@
               "weaponName": "Heavy Bolter",
               "type": "Ranged Weapon",
               "range": "30cm",
-              "firepower": "AP5+ Fixed Forward",
+              "firepower": "AP5+ FxF",
               "unitStatModifiers": {
                 "ff": -1
               },
@@ -1280,7 +1280,7 @@
               "weaponName": "Lascannon",
               "type": "Ranged Weapon",
               "range": "45cm",
-              "firepower": "AT5+ Fixed Forward",
+              "firepower": "AT5+ FxF",
               "count": 2,
               "additionalCost": 19
             },
@@ -1288,7 +1288,7 @@
               "weaponName": "Auto Cannon",
               "type": "Ranged Weapon",
               "range": "45cm",
-              "firepower": "AT6+ AP5+ Fixed Forward",
+              "firepower": "AT6+ AP5+ FxF",
               "count": 2,
               "additionalCost": 20
             }
@@ -1302,7 +1302,7 @@
               "weaponName": "Heavy Bolter",
               "type": "Ranged Weapon",
               "range": "30cm",
-              "firepower": "AP5+ Fixed Forward",
+              "firepower": "AP5+ FxF",
               "unitStatModifiers": {
                 "ff": -1
               },
@@ -1313,7 +1313,7 @@
               "weaponName": "Lascannon",
               "type": "Ranged Weapon",
               "range": "45cm",
-              "firepower": "AT5+ Fixed Forward",
+              "firepower": "AT5+ FxF",
               "count": 2,
               "additionalCost": 19
             },
@@ -1321,7 +1321,7 @@
               "weaponName": "Auto Cannon",
               "type": "Ranged Weapon",
               "range": "45cm",
-              "firepower": "AT6+ AP5+ Fixed Forward",
+              "firepower": "AT6+ AP5+ FxF",
               "count": 2,
               "additionalCost": 20
             }
@@ -1358,7 +1358,7 @@
           "weaponName": "Quad Lascannon",
           "type": "Ranged Weapon",
           "range": "45cm",
-          "firepower": "AT3+ Fixed Forward",
+          "firepower": "AT3+ FxF",
           "count": 2
         },
         {
@@ -1366,14 +1366,14 @@
           "weaponName": "Twin-linked Heavy Bolter",
           "type": "Ranged Weapon",
           "range": "30cm",
-          "firepower": "AP4+ Fixed Forward"
+          "firepower": "AP4+ FxF"
         },
         {
           "kind": "fixed",
           "weaponName": "Demolisher Cannon",
           "type": "Ranged Weapon",
           "range": "30cm",
-          "firepower": "AT4+ AP3+ Ignore Cover Fixed Forward"
+          "firepower": "AT4+ AP3+ Ignore Cover FxF"
         }
       ],
       "type": "WE",
@@ -1407,7 +1407,7 @@
           "weaponName": "Quad Lascannon",
           "type": "Ranged Weapon",
           "range": "45cm",
-          "firepower": "AT3+ Fixed Forward",
+          "firepower": "AT3+ FxF",
           "count": 2
         },
         {
@@ -1415,7 +1415,7 @@
           "weaponName": "Twin-linked Heavy Bolter",
           "type": "Ranged Weapon",
           "range": "30cm",
-          "firepower": "AP4+ Fixed Forward"
+          "firepower": "AP4+ FxF"
         }
       ],
       "type": "WE",
@@ -1441,14 +1441,14 @@
           "weaponName": "Twin Linked Volcano Cannon",
           "type": "Ranged Weapon",
           "range": "90cm",
-          "firepower": "AT2+ AP2+ Macro-Weapon Titan Killer (D3) Fixed Forward"
+          "firepower": "AT2+ AP2+ Macro-Weapon Titan Killer (D3) FxF"
         },
         {
           "kind": "fixed",
           "weaponName": "Quad Lascannon",
           "type": "Ranged Weapon",
           "range": "45cm",
-          "firepower": "AT3+ Fixed Forward",
+          "firepower": "AT3+ FxF",
           "count": 2
         }
       ],
@@ -1475,7 +1475,7 @@
           "weaponName": "Inferno gun",
           "type": "Ranged Weapon",
           "range": "30cm",
-          "firepower": "AT6+ AP2+ Fixed Forward",
+          "firepower": "AT6+ AP2+ FxF",
           "count": 4
         },
         {
@@ -1483,7 +1483,7 @@
           "weaponName": "Quad Lascannon",
           "type": "Ranged Weapon",
           "range": "45cm",
-          "firepower": "AT3+ Fixed Forward",
+          "firepower": "AT3+ FxF",
           "count": 2
         }
       ],
@@ -1510,7 +1510,7 @@
           "weaponName": "Laser Destroyer",
           "type": "Ranged Weapon",
           "range": "45cm",
-          "firepower": "AT3+ AP6+ Fixed Forward",
+          "firepower": "AT3+ AP6+ FxF",
           "count": 2
         },
         {
@@ -1518,14 +1518,14 @@
           "weaponName": "Twin-linked Lascannon",
           "type": "Ranged Weapon",
           "range": "45cm",
-          "firepower": "AT4+ AA5+ Fixed Forward"
+          "firepower": "AT4+ AA5+ FxF"
         },
         {
           "kind": "fixed",
           "weaponName": "Twin-linked Heavy Bolter",
           "type": "Ranged Weapon",
           "range": "30cm",
-          "firepower": "AP4+ Fixed Forward",
+          "firepower": "AP4+ FxF",
           "count": 2
         },
         {
@@ -1720,6 +1720,64 @@
       ],
       "restrictions": [],
       "availableUpgrades": []
+    },
+    {
+      "name": "Landspeeders",
+      "group": "Support",
+      "units": [
+        {
+          "unitName": "Land Speeder with Flamer and Multi-melta",
+          "count": 4,
+          "min": 4,
+          "max": 4
+        }
+      ],
+      "restrictions": [],
+      "availableUpgrades": [
+        "Plasma Cannon and Heavy Bolter"
+      ]
+    },
+    {
+      "name": "Scimitars",
+      "group": "Support",
+      "units": [
+        {
+          "unitName": "Scimitar Jetbike",
+          "count": 6,
+          "min": 6,
+          "max": 6
+        }
+      ],
+      "restrictions": [],
+      "availableUpgrades": []
+    },
+    {
+      "name": "Outriders",
+      "group": "Support",
+      "units": [
+        {
+          "unitName": "Outrider squad",
+          "count": 4,
+          "min": 4,
+          "max": 4
+        }
+      ],
+      "restrictions": [],
+      "availableUpgrades": []
+    },
+    {
+      "name": "Javelins",
+      "group": "Support",
+      "units": [
+        {
+          "unitName": "Javelin Attack Speeder",
+          "count": 4,
+          "min": 4,
+          "max": 4
+        }
+      ],
+      "restrictions": [],
+      "availableUpgrades": []
     }
   ],
   "upgrades": [
@@ -1772,6 +1830,16 @@
           "unitName": "Deredeo Dreadnought"
         }
       ]
+    },
+    {
+      "name": "Plasma Cannon and Heavy Bolter",
+      "type": "replace",
+      "transportWarning": false,
+      "replace": {
+        "toUnitName": "Land Speeder with Flamer and Multi-melta",
+        "fromUnitName": "Land Speeder with Plasma Cannon and Heavy Bolter",
+        "max": 4
+      }
     }
   ]
 }

@@ -252,8 +252,8 @@ class UpgradeReplace(Upgrade):
     max: int
 
     def __init__(self, name: str, fromUnit: str, toUnit: str, max: int):
-        super().__init__(name, type="replaces")
-        self.fromUnitName = fromUnit
+        super().__init__(name, type="replace")
+        self.fromUnit = fromUnit
         self.toUnit = toUnit
         self.max = max
 
@@ -358,7 +358,7 @@ def trait_to_string(trait):
         Traits.INDIRECT: "Indirect",
         Traits.SINGLE_SHOT: "Single Shot",
         Traits.IGNORE_COVER: "Ignore Cover",
-        Traits.FIXED_FORWARD: "Fixed Forward",
+        Traits.FIXED_FORWARD: "FxF",
         Traits.REINFORCED_ARMOUR: "Reinforced Armour",
         Traits.TELEPORT: "Teleport",
         Traits.THICK_REAR_ARMOUR: "Thick Rear Armour",

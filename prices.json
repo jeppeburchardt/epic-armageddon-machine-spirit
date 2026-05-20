@@ -684,7 +684,7 @@
                 "ap": "4+"
               },
               "traits": [
-                "Fixed Forward"
+                "FxF"
               ],
               "cost_delta": 13
             },
@@ -697,7 +697,7 @@
                 "ap": "6+"
               },
               "traits": [
-                "Fixed Forward"
+                "FxF"
               ],
               "cost_delta": 10
             },
@@ -709,7 +709,7 @@
                 "at": "4+"
               },
               "traits": [
-                "Fixed Forward"
+                "FxF"
               ],
               "cost_delta": 5
             }
@@ -728,7 +728,7 @@
               },
               "traits": [
                 "Ignore Cover",
-                "Fixed Forward"
+                "FxF"
               ],
               "cost_delta": 15
             },
@@ -740,7 +740,7 @@
                 "at": "5+"
               },
               "traits": [
-                "Fixed Forward"
+                "FxF"
               ],
               "cost_delta": 4
             }
@@ -757,7 +757,7 @@
                 "at": "5+"
               },
               "traits": [
-                "Fixed Forward"
+                "FxF"
               ],
               "count": 2,
               "cost_delta": 9
@@ -771,7 +771,7 @@
                 "ap": "5+"
               },
               "traits": [
-                "Fixed Forward"
+                "FxF"
               ],
               "count": 2,
               "cost_delta": 10
@@ -2307,7 +2307,7 @@
                 "ap": "4+"
               },
               "traits": [
-                "Fixed Forward"
+                "FxF"
               ],
               "cost_delta": 0
             },
@@ -2320,7 +2320,7 @@
                 "ap": "5+"
               },
               "traits": [
-                "Fixed Forward",
+                "FxF",
                 "Disrupt"
               ],
               "cost_delta": 6
@@ -2335,7 +2335,7 @@
             "at": "4+"
           },
           "traits": [
-            "Fixed Forward"
+            "FxF"
           ]
         }
       ]
@@ -2421,7 +2421,7 @@
                 "at": "5+"
               },
               "traits": [
-                "Fixed Forward"
+                "FxF"
               ],
               "count": 2,
               "cost_delta": 25
@@ -2434,7 +2434,7 @@
                 "ap": "5+"
               },
               "traits": [
-                "Fixed Forward"
+                "FxF"
               ],
               "count": 2,
               "cost_delta": 11
@@ -2449,7 +2449,7 @@
             "ap": "5+"
           },
           "traits": [
-            "Fixed Forward"
+            "FxF"
           ]
         }
       ]
@@ -2506,7 +2506,7 @@
                 "ap": "5+"
               },
               "traits": [
-                "Fixed Forward"
+                "FxF"
               ],
               "unit_stat_modifiers": {
                 "ff": -2
@@ -2522,7 +2522,7 @@
                 "at": "5+"
               },
               "traits": [
-                "Fixed Forward"
+                "FxF"
               ],
               "count": 2,
               "cost_delta": 15
@@ -2557,7 +2557,7 @@
             "at": "4+"
           },
           "traits": [
-            "Fixed Forward"
+            "FxF"
           ],
           "count": 2
         }
@@ -2985,7 +2985,7 @@
             "at": "3+"
           },
           "traits": [
-            "Fixed Forward"
+            "FxF"
           ],
           "count": 2
         },
@@ -2997,7 +2997,7 @@
             "ap": "4+"
           },
           "traits": [
-            "Fixed Forward"
+            "FxF"
           ]
         }
       ]
@@ -3215,7 +3215,7 @@
                 "ap": "5+"
               },
               "traits": [
-                "Fixed Forward"
+                "FxF"
               ],
               "unit_stat_modifiers": {
                 "ff": -1
@@ -3231,7 +3231,7 @@
                 "at": "5+"
               },
               "traits": [
-                "Fixed Forward"
+                "FxF"
               ],
               "count": 2,
               "cost_delta": 19
@@ -3245,7 +3245,7 @@
                 "ap": "5+"
               },
               "traits": [
-                "Fixed Forward"
+                "FxF"
               ],
               "count": 2,
               "cost_delta": 20
@@ -3263,7 +3263,7 @@
                 "ap": "5+"
               },
               "traits": [
-                "Fixed Forward"
+                "FxF"
               ],
               "unit_stat_modifiers": {
                 "ff": -1
@@ -3279,7 +3279,7 @@
                 "at": "5+"
               },
               "traits": [
-                "Fixed Forward"
+                "FxF"
               ],
               "count": 2,
               "cost_delta": 19
@@ -3293,7 +3293,7 @@
                 "ap": "5+"
               },
               "traits": [
-                "Fixed Forward"
+                "FxF"
               ],
               "count": 2,
               "cost_delta": 20
@@ -3341,7 +3341,7 @@
             "at": "3+"
           },
           "traits": [
-            "Fixed Forward"
+            "FxF"
           ],
           "count": 2
         },
@@ -3353,7 +3353,7 @@
             "ap": "4+"
           },
           "traits": [
-            "Fixed Forward"
+            "FxF"
           ]
         },
         {
@@ -3366,7 +3366,7 @@
           },
           "traits": [
             "Ignore Cover",
-            "Fixed Forward"
+            "FxF"
           ]
         }
       ]
@@ -3411,7 +3411,7 @@
             "at": "3+"
           },
           "traits": [
-            "Fixed Forward"
+            "FxF"
           ],
           "count": 2
         },
@@ -3423,7 +3423,7 @@
             "ap": "4+"
           },
           "traits": [
-            "Fixed Forward"
+            "FxF"
           ]
         }
       ]
@@ -3457,7 +3457,7 @@
           "traits": [
             "Macro-Weapon",
             "Titan Killer (D3)",
-            "Fixed Forward"
+            "FxF"
           ]
         },
         {
@@ -3468,7 +3468,7 @@
             "at": "3+"
           },
           "traits": [
-            "Fixed Forward"
+            "FxF"
           ],
           "count": 2
         }
@@ -3501,7 +3501,7 @@
             "ap": "2+"
           },
           "traits": [
-            "Fixed Forward"
+            "FxF"
           ],
           "count": 4
         },
@@ -3513,7 +3513,7 @@
             "at": "3+"
           },
           "traits": [
-            "Fixed Forward"
+            "FxF"
           ],
           "count": 2
         }
@@ -3547,7 +3547,7 @@
             "ap": "6+"
           },
           "traits": [
-            "Fixed Forward"
+            "FxF"
           ],
           "count": 2
         },
@@ -3560,7 +3560,7 @@
             "aa": "5+"
           },
           "traits": [
-            "Fixed Forward"
+            "FxF"
           ]
         },
         {
@@ -3571,7 +3571,7 @@
             "ap": "4+"
           },
           "traits": [
-            "Fixed Forward"
+            "FxF"
           ],
           "count": 2
         },

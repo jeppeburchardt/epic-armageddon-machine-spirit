@@ -553,21 +553,21 @@
               "weaponName": "Battle Cannon",
               "type": "Ranged Weapon",
               "range": "75cm",
-              "firepower": "AT4+ AP4+ Fixed Forward",
+              "firepower": "AT4+ AP4+ FxF",
               "additionalCost": 13
             },
             {
               "weaponName": "Vanquisher Cannon",
               "type": "Ranged Weapon",
               "range": "75cm",
-              "firepower": "AT3+ AP6+ Fixed Forward",
+              "firepower": "AT3+ AP6+ FxF",
               "additionalCost": 10
             },
             {
               "weaponName": "Twin-linked Lascannon",
               "type": "Ranged Weapon",
               "range": "45cm",
-              "firepower": "AT4+ Fixed Forward",
+              "firepower": "AT4+ FxF",
               "additionalCost": 5
             }
           ]
@@ -580,14 +580,14 @@
               "weaponName": "Demolisher Cannon",
               "type": "Ranged Weapon",
               "range": "30cm",
-              "firepower": "AT4+ AP3+ Ignore Cover Fixed Forward",
+              "firepower": "AT4+ AP3+ Ignore Cover FxF",
               "additionalCost": 15
             },
             {
               "weaponName": "Lascannon",
               "type": "Ranged Weapon",
               "range": "45cm",
-              "firepower": "AT5+ Fixed Forward",
+              "firepower": "AT5+ FxF",
               "additionalCost": 4
             }
           ]
@@ -600,7 +600,7 @@
               "weaponName": "Lascannon",
               "type": "Ranged Weapon",
               "range": "45cm",
-              "firepower": "AT5+ Fixed Forward",
+              "firepower": "AT5+ FxF",
               "count": 2,
               "additionalCost": 9
             },
@@ -608,7 +608,7 @@
               "weaponName": "Auto Cannon",
               "type": "Ranged Weapon",
               "range": "45cm",
-              "firepower": "AT6+ AP5+ Fixed Forward",
+              "firepower": "AT6+ AP5+ FxF",
               "count": 2,
               "additionalCost": 10
             }
