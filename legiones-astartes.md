@@ -4,45 +4,45 @@
 
 | Name                                                   | Predicted Cost   | Uncertainty   | Quality   | Spread   |
 |--------------------------------------------------------|------------------|---------------|-----------|----------|
-| Tactical Squad                                         | 42               | ±9.0          | Safe      |          |
-| Assault Squad                                          | 44               | ±8.0          | Safe      |          |
-| Heavy Support Squad                                    | 54               | ±8.0          | Safe      |          |
-| Tactical Support Squad                                 | 51               | ±10.0         | Review    |          |
+| Tactical Squad                                         | 40               | ±9.0          | Safe      |          |
+| Assault Squad                                          | 45               | ±8.0          | Safe      |          |
+| Heavy Support Squad                                    | 55               | ±8.0          | Safe      |          |
+| Tactical Support Squad                                 | 50               | ±10.0         | Review    |          |
 | Terminator Squad                                       | 70               | ±11.0         | Safe      |          |
-| Saturnine Terminator Squad (Plasma Bombards)           | 69               | ±12.0         | Safe      |          |
+| Saturnine Terminator Squad (Plasma Bombards)           | 70               | ±12.0         | Safe      |          |
 | Saturnine Terminator Squad (Twin Heavy Disintegrators) | 70               | ±11.0         | Safe      |          |
-| Rapier                                                 | 33 - 39          | ±9.0          | Safe      | 15% ⚠    |
+| Rapier                                                 | 35 - 40          | ±9.0          | Safe      | 15% ⚠    |
 | Outrider squad                                         | 45               | ±8.0          | Safe      |          |
 | Scimitar Jetbike                                       | 45               | ±9.0          | Safe      |          |
-| Tarantula                                              | 24 - 25          | ±9.0          | Safe      | 2%       |
-| Land Speeder with Plasma Cannon and Heavy Bolter       | 32               | ±9.0          | Safe      |          |
-| Land Speeder with Flamer and Multi-melta               | 38               | ±9.0          | Safe      |          |
-| Javelin Attack Speeder                                 | 41 - 47          | ±8.0          | Safe      | 11%      |
-| Saturnine Dreadnought a                                | 63               | ±13.0         | Review    |          |
-| Saturnine Dreadnought b                                | 69               | ±19.0         | Review    |          |
-| Sabre Strike Tank                                      | 40 - 46          | ±10.0         | Safe      | 14%      |
-| Sicaran Battle Tank                                    | 70 - 105         | ±12.0         | Safe      | 34% ⚠    |
-| Predator                                               | 48 - 64          | ±8.0          | Safe      | 25% ⚠    |
-| Land Raider                                            | 73               | ±9.0          | Safe      |          |
+| Tarantula                                              | 25 - 25          | ±9.0          | Safe      | 2%       |
+| Land Speeder with Plasma Cannon and Heavy Bolter       | 30               | ±9.0          | Safe      |          |
+| Land Speeder with Flamer and Multi-melta               | 40               | ±9.0          | Safe      |          |
+| Javelin Attack Speeder                                 | 40 - 45          | ±8.0          | Safe      | 11%      |
+| Saturnine Dreadnought a                                | 65               | ±13.0         | Review    |          |
+| Saturnine Dreadnought b                                | 70               | ±19.0         | Review    |          |
+| Sabre Strike Tank                                      | 40 - 45          | ±10.0         | Safe      | 14%      |
+| Sicaran Battle Tank                                    | 70 - 100         | ±12.0         | Safe      | 34% ⚠    |
+| Predator                                               | 50 - 65          | ±8.0          | Safe      | 25% ⚠    |
+| Land Raider                                            | 75               | ±9.0          | Safe      |          |
 | Rhino                                                  | 15               | ±9.0          | Safe      |          |
-| Contemptor Dreadnought                                 | 53 - 57          | ±10.0         | Safe      | 7%       |
-| Deredeo Dreadnought                                    | 97 - 101         | ±14.0         | Safe      | 5%       |
-| Leviathan Siege Dreadnought                            | 61 - 72          | ±12.0         | Safe      | 14%      |
-| Vindicator                                             | 56               | ±9.0          | Safe      |          |
-| Legion Whirlwind                                       | 67 - 67          | ±9.0          | Safe      | 0%       |
-| Fire Raptor Gunship                                    | 110 - 122        | ±30.0         | Review    | 10%      |
-| Xiphon Interceptor                                     | 97               | ±20.0         | Review    |          |
-| Spartan Assault Tank                                   | 149              | ±20.0         | Safe      |          |
-| Mastodon Armored Transport                             | 236 - 248        | ±33.0         | Safe      | 5%       |
-| Typhon Siege Tank                                      | 174              | ±20.0         | Safe      |          |
-| Cerberus Heavy Tank Destroyer                          | 194              | ±18.0         | Safe      |          |
-| Kratos Battle Tank                                     | 163 - 187        | ±21.0         | Safe      | 13%      |
-| Fellblade Super Heavy Tank                             | 260              | ±26.0         | Safe      |          |
-| Glaive Super Heavy Tank                                | 316              | ±39.0         | Safe      |          |
-| Falchion Super Heavy Tank Destroyer                    | 248              | ±27.0         | Safe      |          |
-| Ascalon Super Heavy Tank                               | 219              | ±27.0         | Safe      |          |
-| Thunderhawk Gunship                                    | 224              | ±19.0         | Safe      |          |
-| Storm Eagle Attack Ship                                | 198              | ±19.0         | Safe      |          |
+| Contemptor Dreadnought                                 | 55 - 55          | ±10.0         | Safe      | 7%       |
+| Deredeo Dreadnought                                    | 95 - 100         | ±14.0         | Safe      | 5%       |
+| Leviathan Siege Dreadnought                            | 60 - 70          | ±12.0         | Safe      | 14%      |
+| Vindicator                                             | 55               | ±9.0          | Safe      |          |
+| Legion Whirlwind                                       | 65 - 65          | ±9.0          | Safe      | 0%       |
+| Fire Raptor Gunship                                    | 110 - 120        | ±30.0         | Review    | 10%      |
+| Xiphon Interceptor                                     | 95               | ±20.0         | Review    |          |
+| Spartan Assault Tank                                   | 150              | ±20.0         | Safe      |          |
+| Mastodon Armored Transport                             | 225 - 250        | ±33.0         | Safe      | 5%       |
+| Typhon Siege Tank                                      | 170              | ±20.0         | Safe      |          |
+| Cerberus Heavy Tank Destroyer                          | 190              | ±18.0         | Safe      |          |
+| Kratos Battle Tank                                     | 160 - 190        | ±21.0         | Safe      | 13%      |
+| Fellblade Super Heavy Tank                             | 250              | ±26.0         | Safe      |          |
+| Glaive Super Heavy Tank                                | 325              | ±39.0         | Safe      |          |
+| Falchion Super Heavy Tank Destroyer                    | 250              | ±27.0         | Safe      |          |
+| Ascalon Super Heavy Tank                               | 225              | ±27.0         | Safe      |          |
+| Thunderhawk Gunship                                    | 225              | ±19.0         | Safe      |          |
+| Storm Eagle Attack Ship                                | 200              | ±19.0         | Safe      |          |
 
 Average Score: 81.49
 Average Uncertainty: 15.25

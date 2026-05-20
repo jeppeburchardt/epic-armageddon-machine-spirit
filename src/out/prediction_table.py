@@ -1,6 +1,7 @@
 from models.result import Result, MultipleChoiceResult, quality_to_str
 from tabulate import tabulate
 from models.units import Army
+from out.rounding import rounded_choice_costs, rounded_cost
 
 
 def _spread_str(result: Result) -> str:
@@ -28,10 +29,10 @@ def get_markdown_prediction_table(results: list[Result], army: Army) -> str:
     def _row(r):
         cost, uncertainty, quality = _resolved(r)
         if isinstance(r, MultipleChoiceResult):
-            max_cost = round(max(x.predicted_cost for x in r.all_results), 0)
-            cost_str = f"{round(cost, 0):.0f} - {max_cost:.0f}"
+            rounded_min_cost, rounded_max_cost = rounded_choice_costs(r)
+            cost_str = f"{rounded_min_cost} - {rounded_max_cost}"
         else:
-            cost_str = f"{round(cost, 0):.0f}"
+            cost_str = f"{rounded_cost(r)}"
         return (
             r.unit.name,
             cost_str,

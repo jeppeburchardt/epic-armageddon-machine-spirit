@@ -12,6 +12,7 @@ from models.units import (
     unit_type_to_string,
 )
 from models.result import Result, MultipleChoiceResult, quality_to_str
+from out.rounding import rounded_cost, rounded_delta
 
 
 def _firepower_str(weapon: RangedWeapon) -> str:
@@ -147,7 +148,7 @@ def weapon_slots_army(result: MultipleChoiceResult) -> list:
                     avg_cost = sum(
                         all_results[j].predicted_cost for j in matching
                     ) / len(matching)
-                    delta = int(round(avg_cost - min_cost))
+                    delta = rounded_delta(min_cost, avg_cost)
                 else:
                     delta = 0
                 opt_dict = weapon_to_dict_army(option)
@@ -164,7 +165,7 @@ def result_to_army_json(result: Result):
         min_result = min(result.all_results, key=lambda r: r.predicted_cost)
         entry = {
             "name": result.unit.name,
-            "cost": int(round(min_result.predicted_cost)),
+            "cost": rounded_cost(result),
             # "uncertainty": int(round(min_result.uncertainty)),
             # "quality": quality_to_str(min_result.quality),
             "weaponSlots": weapon_slots_army(result),
@@ -173,7 +174,7 @@ def result_to_army_json(result: Result):
     else:
         entry = {
             "name": result.unit.name,
-            "cost": int(round(result.predicted_cost)),
+            "cost": rounded_cost(result),
             "uncertainty": int(round(result.uncertainty)),
             "quality": quality_to_str(result.quality),
             "weaponSlots": [

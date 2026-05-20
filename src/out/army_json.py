@@ -14,6 +14,7 @@ from models.units import (
 from models.result import Result, MultipleChoiceResult, quality_to_str
 
 from out.army_file import kebab
+from out.rounding import rounded_cost, rounded_delta
 
 
 def _firepower_dict(weapon: RangedWeapon) -> dict:
@@ -115,7 +116,7 @@ def _weapons_for_choice_result(result: MultipleChoiceResult) -> list:
                     avg_cost = sum(
                         all_results[j].predicted_cost for j in matching
                     ) / len(matching)
-                    delta = int(round(avg_cost - min_cost))
+                    delta = rounded_delta(min_cost, avg_cost)
                 else:
                     delta = 0
                 opt_dict = weapon_to_dict(option)
@@ -134,7 +135,7 @@ def build_prices_json_file(army_results: list[tuple[Army, list[Result]]]):
             if isinstance(result, MultipleChoiceResult):
                 min_result = min(result.all_results, key=lambda r: r.predicted_cost)
                 entry = {
-                    "cost": int(round(min_result.predicted_cost)),
+                    "cost": rounded_cost(result),
                     "uncertainty": int(round(min_result.uncertainty)),
                     "quality": quality_to_str(min_result.quality),
                     "unit_profile": unit_profile_dict(result.original_unit),
@@ -142,7 +143,7 @@ def build_prices_json_file(army_results: list[tuple[Army, list[Result]]]):
                 }
             else:
                 entry = {
-                    "cost": int(round(result.predicted_cost)),
+                    "cost": rounded_cost(result),
                     "uncertainty": int(round(result.uncertainty)),
                     "quality": quality_to_str(result.quality),
                     "unit_profile": unit_profile_dict(result.unit),

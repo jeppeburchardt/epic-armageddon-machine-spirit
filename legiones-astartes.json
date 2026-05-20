@@ -7,7 +7,7 @@
   "units": [
     {
       "name": "Tactical Squad",
-      "cost": 42,
+      "cost": 40,
       "uncertainty": 9,
       "quality": "Safe",
       "weaponSlots": [
@@ -34,7 +34,7 @@
     },
     {
       "name": "Assault Squad",
-      "cost": 44,
+      "cost": 45,
       "uncertainty": 8,
       "quality": "Safe",
       "weaponSlots": [
@@ -62,7 +62,7 @@
     },
     {
       "name": "Heavy Support Squad",
-      "cost": 54,
+      "cost": 55,
       "uncertainty": 8,
       "quality": "Safe",
       "weaponSlots": [
@@ -96,7 +96,7 @@
     },
     {
       "name": "Tactical Support Squad",
-      "cost": 51,
+      "cost": 50,
       "uncertainty": 10,
       "quality": "Review",
       "weaponSlots": [
@@ -165,7 +165,7 @@
     },
     {
       "name": "Saturnine Terminator Squad (Plasma Bombards)",
-      "cost": 69,
+      "cost": 70,
       "uncertainty": 12,
       "quality": "Safe",
       "weaponSlots": [
@@ -229,7 +229,7 @@
     },
     {
       "name": "Rapier",
-      "cost": 33,
+      "cost": 35,
       "weaponSlots": [
         {
           "kind": "choice",
@@ -247,7 +247,7 @@
               "type": "Ranged Weapon",
               "range": "45cm",
               "firepower": "AT6+ AP4+ Indirect",
-              "additionalCost": 6
+              "additionalCost": 5
             }
           ]
         }
@@ -312,7 +312,7 @@
     },
     {
       "name": "Tarantula",
-      "cost": 24,
+      "cost": 25,
       "weaponSlots": [
         {
           "kind": "choice",
@@ -330,7 +330,7 @@
               "type": "Ranged Weapon",
               "range": "30cm",
               "firepower": "AA4+",
-              "additionalCost": 1
+              "additionalCost": 0
             }
           ]
         }
@@ -346,7 +346,7 @@
     },
     {
       "name": "Land Speeder with Plasma Cannon and Heavy Bolter",
-      "cost": 32,
+      "cost": 30,
       "uncertainty": 9,
       "quality": "Safe",
       "weaponSlots": [
@@ -378,7 +378,7 @@
     },
     {
       "name": "Land Speeder with Flamer and Multi-melta",
-      "cost": 38,
+      "cost": 40,
       "uncertainty": 9,
       "quality": "Safe",
       "weaponSlots": [
@@ -410,7 +410,7 @@
     },
     {
       "name": "Javelin Attack Speeder",
-      "cost": 41,
+      "cost": 40,
       "weaponSlots": [
         {
           "kind": "choice",
@@ -453,7 +453,7 @@
     },
     {
       "name": "Saturnine Dreadnought a",
-      "cost": 63,
+      "cost": 65,
       "uncertainty": 13,
       "quality": "Review",
       "weaponSlots": [
@@ -485,7 +485,7 @@
     },
     {
       "name": "Saturnine Dreadnought b",
-      "cost": 69,
+      "cost": 70,
       "uncertainty": 19,
       "quality": "Review",
       "weaponSlots": [
@@ -542,7 +542,7 @@
               "type": "Ranged Weapon",
               "range": "20cm",
               "firepower": "AT5+ AP5+ FxF Disrupt",
-              "additionalCost": 6
+              "additionalCost": 5
             }
           ]
         },
@@ -585,7 +585,7 @@
               "range": "45cm",
               "firepower": "AT3+",
               "count": 2,
-              "additionalCost": 17
+              "additionalCost": 15
             },
             {
               "weaponName": "Punisher Cannon",
@@ -593,7 +593,7 @@
               "range": "30cm",
               "firepower": "AT5+ AP5+",
               "count": 4,
-              "additionalCost": 7
+              "additionalCost": 5
             },
             {
               "weaponName": "Arcus Missile Launcher",
@@ -601,7 +601,7 @@
               "range": "45cm",
               "firepower": "AT5+ AP6+ Indirect",
               "count": 2,
-              "additionalCost": 28
+              "additionalCost": 30
             }
           ]
         },
@@ -623,7 +623,7 @@
               "range": "30cm",
               "firepower": "AP5+ FxF",
               "count": 2,
-              "additionalCost": 11
+              "additionalCost": 10
             }
           ]
         },
@@ -647,7 +647,7 @@
     },
     {
       "name": "Predator",
-      "cost": 48,
+      "cost": 50,
       "weaponSlots": [
         {
           "kind": "choice",
@@ -658,14 +658,14 @@
               "type": "Ranged Weapon",
               "range": "45cm",
               "firepower": "AT5+ AP5+",
-              "additionalCost": 8
+              "additionalCost": 5
             },
             {
               "weaponName": "Twin-linked Lascannon",
               "type": "Ranged Weapon",
               "range": "45cm",
               "firepower": "AT4+",
-              "additionalCost": 7
+              "additionalCost": 5
             }
           ]
         },
@@ -706,7 +706,7 @@
     },
     {
       "name": "Land Raider",
-      "cost": 73,
+      "cost": 75,
       "uncertainty": 9,
       "quality": "Safe",
       "weaponSlots": [
@@ -766,7 +766,7 @@
     },
     {
       "name": "Contemptor Dreadnought",
-      "cost": 53,
+      "cost": 55,
       "weaponSlots": [
         {
           "kind": "fixed",
@@ -784,7 +784,7 @@
               "type": "Ranged Weapon",
               "range": "45cm",
               "firepower": "AT4+",
-              "additionalCost": 4
+              "additionalCost": 0
             },
             {
               "weaponName": "Assault Cannon",
@@ -812,7 +812,7 @@
     },
     {
       "name": "Deredeo Dreadnought",
-      "cost": 97,
+      "cost": 95,
       "weaponSlots": [
         {
           "kind": "fixed",
@@ -868,7 +868,7 @@
     },
     {
       "name": "Leviathan Siege Dreadnought",
-      "cost": 61,
+      "cost": 60,
       "weaponSlots": [
         {
           "kind": "fixed",
@@ -915,7 +915,7 @@
     },
     {
       "name": "Vindicator",
-      "cost": 56,
+      "cost": 55,
       "uncertainty": 9,
       "quality": "Safe",
       "weaponSlots": [
@@ -939,7 +939,7 @@
     },
     {
       "name": "Legion Whirlwind",
-      "cost": 67,
+      "cost": 65,
       "weaponSlots": [
         {
           "kind": "choice",
@@ -1002,7 +1002,7 @@
               "range": "45cm",
               "firepower": "AT4+",
               "count": 2,
-              "additionalCost": 8
+              "additionalCost": 10
             },
             {
               "weaponName": "Twin-linked Heavy Bolter",
@@ -1018,7 +1018,7 @@
               "range": "45cm",
               "firepower": "AT5+ AP4+",
               "count": 2,
-              "additionalCost": 12
+              "additionalCost": 10
             }
           ]
         }
@@ -1035,7 +1035,7 @@
     },
     {
       "name": "Xiphon Interceptor",
-      "cost": 97,
+      "cost": 95,
       "uncertainty": 20,
       "quality": "Review",
       "weaponSlots": [
@@ -1066,7 +1066,7 @@
     },
     {
       "name": "Spartan Assault Tank",
-      "cost": 149,
+      "cost": 150,
       "uncertainty": 20,
       "quality": "Safe",
       "weaponSlots": [
@@ -1107,7 +1107,7 @@
     },
     {
       "name": "Mastodon Armored Transport",
-      "cost": 236,
+      "cost": 225,
       "weaponSlots": [
         {
           "kind": "fixed",
@@ -1126,7 +1126,7 @@
               "range": "45cm",
               "firepower": "AT5+",
               "count": 2,
-              "additionalCost": 12
+              "additionalCost": 25
             },
             {
               "weaponName": "Heavy Bolter",
@@ -1178,7 +1178,7 @@
     },
     {
       "name": "Typhon Siege Tank",
-      "cost": 174,
+      "cost": 170,
       "uncertainty": 20,
       "quality": "Safe",
       "weaponSlots": [
@@ -1211,7 +1211,7 @@
     },
     {
       "name": "Cerberus Heavy Tank Destroyer",
-      "cost": 194,
+      "cost": 190,
       "uncertainty": 18,
       "quality": "Safe",
       "weaponSlots": [
@@ -1245,7 +1245,7 @@
     },
     {
       "name": "Kratos Battle Tank",
-      "cost": 163,
+      "cost": 160,
       "weaponSlots": [
         {
           "kind": "fixed",
@@ -1274,7 +1274,7 @@
                 "ff": -1
               },
               "count": 2,
-              "additionalCost": 8
+              "additionalCost": 10
             },
             {
               "weaponName": "Lascannon",
@@ -1282,7 +1282,7 @@
               "range": "45cm",
               "firepower": "AT5+ FxF",
               "count": 2,
-              "additionalCost": 19
+              "additionalCost": 20
             },
             {
               "weaponName": "Auto Cannon",
@@ -1307,7 +1307,7 @@
                 "ff": -1
               },
               "count": 2,
-              "additionalCost": 8
+              "additionalCost": 10
             },
             {
               "weaponName": "Lascannon",
@@ -1315,7 +1315,7 @@
               "range": "45cm",
               "firepower": "AT5+ FxF",
               "count": 2,
-              "additionalCost": 19
+              "additionalCost": 20
             },
             {
               "weaponName": "Auto Cannon",
@@ -1342,7 +1342,7 @@
     },
     {
       "name": "Fellblade Super Heavy Tank",
-      "cost": 260,
+      "cost": 250,
       "uncertainty": 26,
       "quality": "Safe",
       "weaponSlots": [
@@ -1390,7 +1390,7 @@
     },
     {
       "name": "Glaive Super Heavy Tank",
-      "cost": 316,
+      "cost": 325,
       "uncertainty": 39,
       "quality": "Safe",
       "weaponSlots": [
@@ -1432,7 +1432,7 @@
     },
     {
       "name": "Falchion Super Heavy Tank Destroyer",
-      "cost": 248,
+      "cost": 250,
       "uncertainty": 27,
       "quality": "Safe",
       "weaponSlots": [
@@ -1466,7 +1466,7 @@
     },
     {
       "name": "Ascalon Super Heavy Tank",
-      "cost": 219,
+      "cost": 225,
       "uncertainty": 27,
       "quality": "Safe",
       "weaponSlots": [
@@ -1501,7 +1501,7 @@
     },
     {
       "name": "Thunderhawk Gunship",
-      "cost": 224,
+      "cost": 225,
       "uncertainty": 19,
       "quality": "Safe",
       "weaponSlots": [
@@ -1566,7 +1566,7 @@
     },
     {
       "name": "Storm Eagle Attack Ship",
-      "cost": 198,
+      "cost": 200,
       "uncertainty": 19,
       "quality": "Safe",
       "weaponSlots": [
@@ -1835,7 +1835,7 @@
       "name": "Plasma Cannon and Heavy Bolter",
       "type": "replace",
       "transportWarning": false,
-      "replace": {
+      "replaces": {
         "toUnitName": "Land Speeder with Flamer and Multi-melta",
         "fromUnitName": "Land Speeder with Plasma Cannon and Heavy Bolter",
         "max": 4
