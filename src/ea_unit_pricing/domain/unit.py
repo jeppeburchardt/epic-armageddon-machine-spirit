@@ -63,6 +63,7 @@ class Unit:
     damage_capacity: int = 1
     void_shields: int = 0
     aircraft_speed: AircraftSpeed = AircraftSpeed.NONE
+    fixed_cost: bool = False
 
     # ------------------------------------------------------------------
     # Display helpers

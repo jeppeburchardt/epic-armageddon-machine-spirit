@@ -6,7 +6,7 @@ import json
 from itertools import product as cartesian_product
 from pathlib import Path
 
-from ea_unit_pricing.domain.army import Army, UpgradeAdd, UpgradeReplace
+from ea_unit_pricing.domain.army import Army, UpgradeAdd, UpgradeReplace, UpgradeCharacter
 from ea_unit_pricing.domain.enums import quality_to_str, trait_to_string, unit_type_to_string
 from ea_unit_pricing.domain.result import MultipleChoiceResult, Result
 from ea_unit_pricing.domain.weapons import (
@@ -205,7 +205,9 @@ def build_army_json_files(
                     "fromUnitName": upgrade.toUnit.name if upgrade.toUnit else "",
                     "max": upgrade.max,
                 }
-            output["upgrades"].append(up)  # type: ignore[attr-defined]
+            if isinstance(upgrade, UpgradeCharacter):
+                up["characterNames"] = upgrade.character_names
+            output["upgrades"].append(up)  # type: ignore[union-attr]
         for result in results:
             output["units"].append(_result_to_dict(result))  # type: ignore[attr-defined]
 

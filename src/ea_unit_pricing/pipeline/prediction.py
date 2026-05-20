@@ -24,7 +24,11 @@ def predict_with_choices(trainer: GPRTrainer, unit: Unit) -> Result | MultipleCh
 
     Returns a plain ``Result`` when the unit has no choice weapons, or a
     ``MultipleChoiceResult`` wrapping predictions for every combination.
+    Units with ``fixed_cost=True`` bypass the model and use ``single_unit_cost``
+    directly.
     """
+    if unit.fixed_cost:
+        return Result(unit, predicted_cost=unit.single_unit_cost, uncertainty=0)
     configs = unit.get_all_configurations()
     if len(configs) == 1:
         return trainer.predict(configs[0])

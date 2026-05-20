@@ -28,6 +28,29 @@ from .ea_hh_weapons import (
 
 legiones_astartes = Army("legiones-astartes", "Legiones Astartes")
 
+praetor = Unit(
+    name="Praetor",
+    type=UnitType.CHARACTER,
+    traits=[Traits.SUPREME_COMMANDER, Traits.INVULNERABLE_SAVE],
+    weapons=[AssaultWeapon(traits=[Traits.EXTRA_ATTACK_1, Traits.MW])],
+    single_unit_cost=100,
+    fixed_cost=True,
+    strategy_rating=5,
+    initiative=1,
+)
+legiones_astartes.add_unit(praetor)
+
+centurion = Unit(
+    name="Centurion",
+    type=UnitType.CHARACTER,
+    traits=[Traits.COMMANDER, Traits.INVULNERABLE_SAVE, Traits.LEADER],
+    weapons=[AssaultWeapon(traits=[Traits.EXTRA_ATTACK_1, Traits.MW])],
+    single_unit_cost=50,
+    fixed_cost=True,
+    strategy_rating=5,
+    initiative=1,
+)
+legiones_astartes.add_unit(centurion)
 
 tactical_squad_unit = Unit(
     "Tactical Squad",
@@ -91,9 +114,7 @@ tactical_support_squad_unit = Unit(
     cc=4,
     ff=4,
     weapons=[
-        SmallArms(
-            name="Plasma Guns", traits=[Traits.IGNORE_COVER, Traits.EXTRA_ATTACK_1]
-        ),
+        SmallArms(name="Plasma Guns", traits=[Traits.IGNORE_COVER, Traits.EXTRA_ATTACK_1]),
         RangedWeapon(20, name="Plasma Guns", ap=5, at=5, traits=[Traits.IGNORE_COVER]),
     ],
     traits=[Traits.KNOW_NO_FEAR],
@@ -289,13 +310,9 @@ sicaran_battle_tank_unit = Unit(
     weapons=[
         MultipleChoiceWeapon(
             [
-                Multiplier(
-                    2, RangedWeapon(name="Accelerator Cannon", range=45, at=5, ap=4)
-                ),
+                Multiplier(2, RangedWeapon(name="Accelerator Cannon", range=45, at=5, ap=4)),
                 Multiplier(2, RangedWeapon(name="Omega Plasma Array", range=45, at=3)),
-                Multiplier(
-                    4, RangedWeapon(name="Punisher Cannon", range=30, at=5, ap=5)
-                ),
+                Multiplier(4, RangedWeapon(name="Punisher Cannon", range=30, at=5, ap=5)),
                 Multiplier(
                     2,
                     RangedWeapon(
@@ -344,9 +361,7 @@ predator_unit = Unit(
             [
                 Multiplier(
                     2,
-                    HeavyBolter(
-                        traits=[Traits.FIXED_FORWARD], stat_modifiers={"ff": -2}
-                    ),
+                    HeavyBolter(traits=[Traits.FIXED_FORWARD], stat_modifiers={"ff": -2}),
                 ),
                 Multiplier(2, LasCannon(traits=[Traits.FIXED_FORWARD])),
             ],
@@ -748,9 +763,7 @@ cerberus_heavy_tank_destroyer_unit = Unit(
     [
         Multiplier(
             2,
-            RangedWeapon(
-                60, name="Neutron Laser Array", at=3, mw=5, traits=[Traits.DISRUPT]
-            ),
+            RangedWeapon(60, name="Neutron Laser Array", at=3, mw=5, traits=[Traits.DISRUPT]),
         ),
         Multiplier(2, HeavyBolter()),
     ],
@@ -775,9 +788,7 @@ kratos_battle_tank_unit = Unit(
             [
                 Multiplier(
                     2,
-                    HeavyBolter(
-                        traits=[Traits.FIXED_FORWARD], stat_modifiers={"ff": -1}
-                    ),
+                    HeavyBolter(traits=[Traits.FIXED_FORWARD], stat_modifiers={"ff": -1}),
                 ),
                 Multiplier(2, LasCannon(traits=[Traits.FIXED_FORWARD])),
                 Multiplier(2, AutoCannon(traits=[Traits.FIXED_FORWARD])),
@@ -788,9 +799,7 @@ kratos_battle_tank_unit = Unit(
             [
                 Multiplier(
                     2,
-                    HeavyBolter(
-                        traits=[Traits.FIXED_FORWARD], stat_modifiers={"ff": -1}
-                    ),
+                    HeavyBolter(traits=[Traits.FIXED_FORWARD], stat_modifiers={"ff": -1}),
                 ),
                 Multiplier(2, LasCannon(traits=[Traits.FIXED_FORWARD])),
                 Multiplier(2, AutoCannon(traits=[Traits.FIXED_FORWARD])),
@@ -1022,6 +1031,12 @@ scimitar_jetbike_unit = Unit(
 )
 legiones_astartes.add_unit(scimitar_jetbike_unit)
 
+## Character upgrade
+character_upgrade = UpgradeCharacter(
+    name="Character", transport_warning=False, character_names=[praetor.name, centurion.name]
+)
+legiones_astartes.add_upgrade(character_upgrade)
+
 ## Transport upgrade
 transportation_upgrade = UpgradeAdd(
     "Transport",
@@ -1067,6 +1082,7 @@ tactical_squad_detachment = Detachment(
 tactical_squad_detachment.add_upgrade(transportation_upgrade)
 tactical_squad_detachment.add_upgrade(support_tank_upgrade)
 tactical_squad_detachment.add_upgrade(dreadnought_upgrade)
+tactical_squad_detachment.add_upgrade(character_upgrade)
 legiones_astartes.add_detachment(tactical_squad_detachment)
 
 ## Assualt detachment
@@ -1076,6 +1092,7 @@ assault_detachment = Detachment(
     units=[DetachmentUnit(unit=assault_squad_unit, count=8)],
 )
 assault_detachment.add_upgrade(transportation_upgrade)
+assault_detachment.add_upgrade(character_upgrade)
 legiones_astartes.add_detachment(assault_detachment)
 
 ## Terminator detachment
@@ -1085,6 +1102,7 @@ terminator_detachment = Detachment(
     units=[DetachmentUnit(unit=terminator_squad_unit, min=4, max=8, count=4)],
 )
 terminator_detachment.add_upgrade(transportation_upgrade)
+terminator_detachment.add_upgrade(character_upgrade)
 terminator_detachment.add_upgrade(dreadnought_upgrade)
 legiones_astartes.add_detachment(terminator_detachment)
 
