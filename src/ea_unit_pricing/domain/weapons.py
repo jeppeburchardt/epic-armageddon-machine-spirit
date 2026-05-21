@@ -12,8 +12,8 @@ from ea_unit_pricing.domain.enums import Traits
 
 __all__ = [
     "AssaultWeapon",
-    "Multiplier",
     "MultipleChoiceWeapon",
+    "Multiplier",
     "RangedWeapon",
     "SmallArms",
 ]

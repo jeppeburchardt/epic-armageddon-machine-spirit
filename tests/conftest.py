@@ -7,7 +7,6 @@ from pathlib import Path
 import pytest
 
 from ea_unit_pricing.domain import (
-    AircraftSpeed,
     RangedWeapon,
     Traits,
     Unit,
@@ -59,7 +58,6 @@ def sample_vehicle_unit() -> Unit:
 @pytest.fixture(scope="session")
 def trained_trainer(sample_infantry_unit: Unit, sample_vehicle_unit: Unit) -> GPRTrainer:
     """Return a GPRTrainer fitted on a tiny synthetic training set."""
-    from ea_unit_pricing.domain import AssaultWeapon
 
     units = [
         sample_infantry_unit,

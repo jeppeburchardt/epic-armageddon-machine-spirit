@@ -1,4 +1,4 @@
-from ea_unit_pricing.domain import Unit, RangedWeapon, AssaultWeapon, Traits, UnitType, SmallArms
+from ea_unit_pricing.domain import AssaultWeapon, RangedWeapon, SmallArms, Traits, Unit, UnitType
 
 tactical_marines = Unit(
     "Tactical Marines",

@@ -1,29 +1,29 @@
 from ea_unit_pricing.domain import (
-    RangedWeapon,
-    Multiplier,
-    SmallArms,
-    Traits,
-    UnitType,
-    Unit,
-    AssaultWeapon,
-    Army,
     AircraftSpeed,
-    MultipleChoiceWeapon,
+    Army,
+    AssaultWeapon,
     Detachment,
     DetachmentUnit,
+    MultipleChoiceWeapon,
+    Multiplier,
+    RangedWeapon,
+    SmallArms,
+    Traits,
+    Unit,
+    UnitType,
     UpgradeAdd,
     UpgradeReplace,
-    UpgradeCharacter,
 )
+
 from .ea_hh_weapons import (
+    AutoCannon,
+    DemolisherCannon,
     HeavyBolter,
     LasCannon,
-    TwinLinkedLasCannon,
     QuadLasCannon,
-    TwinHeavyBolter,
-    DemolisherCannon,
-    AutoCannon,
     TwinAutoCannon,
+    TwinHeavyBolter,
+    TwinLinkedLasCannon,
 )
 
 legiones_astartes = Army("legiones-astartes", "Legiones Astartes")

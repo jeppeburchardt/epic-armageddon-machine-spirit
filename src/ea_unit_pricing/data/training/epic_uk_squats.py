@@ -1,12 +1,12 @@
 from ea_unit_pricing.domain import (
+    Army,
+    AssaultWeapon,
+    Multiplier,
     RangedWeapon,
     SmallArms,
     Traits,
-    UnitType,
     Unit,
-    AssaultWeapon,
-    Army,
-    Multiplier,
+    UnitType,
 )
 
 squats = Army("", "Epic UK Squats")

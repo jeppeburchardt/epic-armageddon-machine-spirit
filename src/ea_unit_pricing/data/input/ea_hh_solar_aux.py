@@ -1,25 +1,26 @@
 from ea_unit_pricing.domain import (
+    AircraftSpeed,
+    Army,
+    AssaultWeapon,
+    MultipleChoiceWeapon,
+    Multiplier,
     RangedWeapon,
     SmallArms,
     Traits,
-    UnitType,
     Unit,
-    AssaultWeapon,
-    Army,
-    AircraftSpeed,
-    MultipleChoiceWeapon,
-    Multiplier,
+    UnitType,
 )
+
 from .ea_hh_weapons import (
-    HeavyBolter,
-    TwinHeavyBolter,
-    LasCannon,
-    TwinLinkedLasCannon,
-    VanquisherBattleCannon,
+    AutoCannon,
     BattleCannon,
     DemolisherCannon,
-    AutoCannon,
+    HeavyBolter,
+    LasCannon,
     TwinAutoCannon,
+    TwinHeavyBolter,
+    TwinLinkedLasCannon,
+    VanquisherBattleCannon,
 )
 
 solar_auxilia = Army("solar-auxilia", name="Solar Auxilia")

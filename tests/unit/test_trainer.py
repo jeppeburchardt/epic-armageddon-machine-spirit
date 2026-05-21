@@ -43,7 +43,6 @@ def test_trainer_requires_training_before_predict() -> None:
 
 
 def test_trainer_random_state_reproducibility(sample_infantry_unit: Unit) -> None:
-    from ea_unit_pricing.domain.weapons import RangedWeapon
     from ea_unit_pricing.gpr.mapping.universal_unit import universal_unit
 
     units = [

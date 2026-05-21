@@ -1,4 +1,4 @@
-from ea_unit_pricing.domain import Unit, RangedWeapon, AssaultWeapon, Traits, UnitType, SmallArms
+from ea_unit_pricing.domain import RangedWeapon, Unit, UnitType
 
 marauder = Unit(
     "Marauder Bomber",

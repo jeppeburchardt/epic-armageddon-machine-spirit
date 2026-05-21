@@ -4,9 +4,9 @@ from __future__ import annotations
 
 import pytest
 
-from ea_unit_pricing.domain import RangedWeapon, Traits, Unit, UnitType
-from ea_unit_pricing.domain.weapons import MultipleChoiceWeapon
+from ea_unit_pricing.domain import RangedWeapon, Unit, UnitType
 from ea_unit_pricing.domain.unit import expand_choices
+from ea_unit_pricing.domain.weapons import MultipleChoiceWeapon
 
 
 @pytest.fixture()
