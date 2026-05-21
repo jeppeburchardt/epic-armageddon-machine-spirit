@@ -39,9 +39,9 @@ def _firepower_str(weapon: RangedWeapon) -> str:
 
 def _weapon_to_dict(weapon: object) -> dict[str, object]:
     if isinstance(weapon, Multiplier):
-        d = _weapon_to_dict(weapon.weapon)
-        d["count"] = weapon.times
-        return d
+        result = _weapon_to_dict(weapon.weapon)
+        result["count"] = weapon.times
+        return result
     if isinstance(weapon, RangedWeapon):
         d: dict[str, object] = {
             "weaponName": weapon.name,
@@ -180,7 +180,7 @@ def build_army_json_files(
                 {"unitName": u.unit.name, "count": u.count, "min": u.min, "max": u.max}
                 for u in detachment.units
             ]
-            output["detachments"].append(  # type: ignore[union-attr]
+            output["detachments"].append(  # type: ignore[attr-defined]
                 {
                     "name": detachment.name,
                     "group": detachment.group,
@@ -205,9 +205,9 @@ def build_army_json_files(
                     "fromUnitName": upgrade.toUnit.name if upgrade.toUnit else "",
                     "max": upgrade.max,
                 }
-            output["upgrades"].append(up)  # type: ignore[union-attr]
+            output["upgrades"].append(up)  # type: ignore[attr-defined]
         for result in results:
-            output["units"].append(_result_to_dict(result))  # type: ignore[union-attr]
+            output["units"].append(_result_to_dict(result))  # type: ignore[attr-defined]
 
         path = output_dir / f"{army.slug}.json"
         with path.open("w", encoding="utf-8") as f:

@@ -6,7 +6,7 @@ from pathlib import Path
 from re import sub
 
 from ea_unit_pricing.domain.army import Army
-from ea_unit_pricing.domain.result import Result
+from ea_unit_pricing.domain.result import MultipleChoiceResult, Result
 from ea_unit_pricing.serialization.markdown_table import get_markdown_prediction_table
 from ea_unit_pricing.serialization.unit_stats_table import get_markdown_unit_table
 
@@ -30,7 +30,7 @@ def kebab(s: str) -> str:
 
 def build_army_markdown_file(
     army: Army,
-    result: list[Result],
+    result: list[Result | MultipleChoiceResult],
     output_dir: Path = Path("."),
 ) -> Path:
     """Write a markdown army file and return the path written."""
