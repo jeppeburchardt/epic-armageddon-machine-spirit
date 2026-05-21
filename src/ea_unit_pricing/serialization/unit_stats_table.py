@@ -21,32 +21,34 @@ def _format_stat_modifiers(modifiers: dict[str, int]) -> str:
 def _format_unit_with_weapons(unit: Unit) -> list[list[str | int]]:
     table: list[list[str | int]] = []
     if not unit.weapons:
-        table.append([*unit.to_list(), ""])  # type: ignore[arg-type]
+        table.append([*unit.to_list(), ""])
         return table
 
     first_row = True
     for weapon in unit.weapons:
         if isinstance(weapon, MultipleChoiceWeapon):
             for i, option in enumerate(weapon.options):
-                weapon_row = option.to_list()
+                weapon_row: list[str | int] = list(option.to_list())
                 if i > 0:
                     weapon_row = [f"(or) {weapon_row[0]}", *weapon_row[1:]]
                 modifier_str = _format_stat_modifiers(getattr(option, "stat_modifiers", {}))
                 if first_row:
                     notes = ", ".join(filter(None, [unit.traits_to_str(), modifier_str]))
-                    table.append(unit.to_list() + weapon_row + [notes])  # type: ignore[operator]
+                    table.append(unit.to_list() + weapon_row + [notes])
                     first_row = False
                 else:
-                    table.append([""] * len(unit.to_list()) + weapon_row + [modifier_str])  # type: ignore[operator]
+                    empty: list[str | int] = [""] * len(unit.to_list())
+                    table.append(empty + weapon_row + [modifier_str])
         else:
-            weapon_row = weapon.to_list()
+            weapon_row = list(weapon.to_list())
             modifier_str = _format_stat_modifiers(getattr(weapon, "stat_modifiers", {}))
             if first_row:
                 notes = ", ".join(filter(None, [unit.traits_to_str(), modifier_str]))
-                table.append(unit.to_list() + weapon_row + [notes])  # type: ignore[operator]
+                table.append(unit.to_list() + weapon_row + [notes])
                 first_row = False
             else:
-                table.append([""] * len(unit.to_list()) + weapon_row + [modifier_str])  # type: ignore[operator]
+                empty = [""] * len(unit.to_list())
+                table.append(empty + weapon_row + [modifier_str])
     return table
 
 

@@ -80,7 +80,7 @@ class AssaultWeapon:
     traits: list[Traits] = field(default_factory=list)
     name: str = "--"
 
-    def to_list(self) -> list[str]:
+    def to_list(self) -> list[str | int]:
         return [self.name, "(base contact)", ", ".join(map(trait_to_string, self.traits))]
 
 
@@ -91,7 +91,7 @@ class SmallArms:
     traits: list[Traits] = field(default_factory=list)
     name: str = "Small Arms"
 
-    def to_list(self) -> list[str]:
+    def to_list(self) -> list[str | int]:
         return [self.name, "(Small Arms)", ", ".join(map(trait_to_string, self.traits))]
 
 
@@ -127,5 +127,5 @@ class MultipleChoiceWeapon:
         MultipleChoiceWeapon([HeavyBolter(), LasCannon()])
     """
 
-    options: list[RangedWeapon | AssaultWeapon | SmallArms]
+    options: list[RangedWeapon | AssaultWeapon | SmallArms | Multiplier]
     name: str = ""

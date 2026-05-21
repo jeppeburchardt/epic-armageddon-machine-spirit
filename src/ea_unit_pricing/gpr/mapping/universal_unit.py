@@ -8,6 +8,8 @@ retraining and regenerating the golden outputs.
 
 from __future__ import annotations
 
+from typing import Any
+
 import numpy as np
 
 from ea_unit_pricing.domain.unit import Unit
@@ -30,7 +32,7 @@ def dice_test_to_score(dice_test: int) -> float:
     return (6 - dice_test) / 6
 
 
-def universal_unit(unit: Unit) -> np.ndarray:
+def universal_unit(unit: Unit) -> np.ndarray[Any, np.dtype[Any]]:
     """Return the feature vector for *unit* used by the GPR model.
 
     Segment order (frozen):

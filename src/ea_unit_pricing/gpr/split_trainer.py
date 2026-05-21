@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 import logging
-from typing import Callable
+from typing import Any, Callable
 
 from ea_unit_pricing.domain.enums import UnitType
 from ea_unit_pricing.domain.result import Result
@@ -31,11 +31,11 @@ class GPRSplitTrainer:
 
     def __init__(
         self,
-        mapper: object = None,
+        mapper: Callable[[Unit], Any] | None = None,
         splitter: Callable[[Unit], object] = _split_by_type,
         random_state: int = 42,
     ) -> None:
-        self.mapper = mapper
+        self.mapper: Callable[[Unit], Any] | None = mapper
         self.splitter = splitter
         self.random_state = random_state
         self.trainers: dict[object, GPRTrainer] = {}

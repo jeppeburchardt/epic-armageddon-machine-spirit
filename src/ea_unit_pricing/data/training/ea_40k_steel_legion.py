@@ -104,8 +104,7 @@ baneblade = Unit(
         RangedWeapon(30, 0, 4),
     ],
     [Traits.REINFORCED_ARMOUR],
-    0,
-    3,
+    damage_capacity=3,
 )
 
 shadowsword = Unit(
@@ -124,8 +123,7 @@ shadowsword = Unit(
         RangedWeapon(30, ap=5),
     ],
     [Traits.REINFORCED_ARMOUR],
-    0,
-    3,
+    damage_capacity=3,
 )
 
 sentinel = Unit(

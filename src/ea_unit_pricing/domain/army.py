@@ -49,14 +49,14 @@ class Detachment:
     name: str
     group: str
     units: list[DetachmentUnit]
-    available_upgrades: list[DetachmentUnit] = field(default_factory=list)
+    available_upgrades: list[Upgrade] = field(default_factory=list)
 
-    def add_upgrade(self, upgrade: DetachmentUnit) -> None:
+    def add_upgrade(self, upgrade: Upgrade) -> None:
         self.available_upgrades.append(upgrade)
 
     # Legacy attribute name used in serialization code.
     @property
-    def availableUpgrades(self) -> list[DetachmentUnit]:
+    def availableUpgrades(self) -> list[Upgrade]:
         return self.available_upgrades
 
 

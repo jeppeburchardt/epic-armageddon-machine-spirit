@@ -40,9 +40,9 @@ def _firepower_dict(weapon: RangedWeapon) -> dict[str, object]:
 def weapon_to_dict(weapon: object) -> dict[str, object]:
     """Serialise any weapon type to a JSON-compatible dict."""
     if isinstance(weapon, Multiplier):
-        d = weapon_to_dict(weapon.weapon)
-        d["count"] = weapon.times
-        return d
+        result = weapon_to_dict(weapon.weapon)
+        result["count"] = weapon.times
+        return result
     if isinstance(weapon, RangedWeapon):
         d: dict[str, object] = {
             "name": weapon.name,
