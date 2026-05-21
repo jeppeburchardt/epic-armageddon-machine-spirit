@@ -274,8 +274,8 @@ thunderhawk_gunship = Unit(
         RangedWeapon(30, 4, 0, 5),
     ],
     [Traits.KNOW_NO_FEAR, Traits.REINFORCED_ARMOUR, Traits.PLANET_FALL],
-    8,
-    2,
+    transport_capacity=8,
+    damage_capacity=2,
 )
 
 imp_fists_fellblade = Unit(

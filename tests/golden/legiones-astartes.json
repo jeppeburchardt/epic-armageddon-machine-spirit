@@ -131,7 +131,7 @@
     {
       "name": "Terminator Squad",
       "cost": 70,
-      "uncertainty": 11,
+      "uncertainty": 12,
       "quality": "Safe",
       "weaponSlots": [
         {
@@ -198,7 +198,7 @@
     {
       "name": "Saturnine Terminator Squad (Twin Heavy Disintegrators)",
       "cost": 70,
-      "uncertainty": 11,
+      "uncertainty": 12,
       "quality": "Safe",
       "weaponSlots": [
         {
@@ -347,7 +347,7 @@
     {
       "name": "Land Speeder with Plasma Cannon and Heavy Bolter",
       "cost": 30,
-      "uncertainty": 9,
+      "uncertainty": 8,
       "quality": "Safe",
       "weaponSlots": [
         {
@@ -454,7 +454,7 @@
     {
       "name": "Saturnine Dreadnought a",
       "cost": 65,
-      "uncertainty": 13,
+      "uncertainty": 14,
       "quality": "Review",
       "weaponSlots": [
         {
@@ -485,9 +485,9 @@
     },
     {
       "name": "Saturnine Dreadnought b",
-      "cost": 70,
-      "uncertainty": 19,
-      "quality": "Review",
+      "cost": 65,
+      "uncertainty": 21,
+      "quality": "Experimental",
       "weaponSlots": [
         {
           "kind": "fixed",
@@ -524,7 +524,7 @@
     },
     {
       "name": "Sabre Strike Tank",
-      "cost": 40,
+      "cost": 35,
       "weaponSlots": [
         {
           "kind": "choice",
@@ -542,7 +542,7 @@
               "type": "Ranged Weapon",
               "range": "20cm",
               "firepower": "AT5+ AP5+ FxF Disrupt",
-              "additionalCost": 5
+              "additionalCost": 10
             }
           ]
         },
@@ -565,7 +565,7 @@
     },
     {
       "name": "Sicaran Battle Tank",
-      "cost": 70,
+      "cost": 65,
       "weaponSlots": [
         {
           "kind": "choice",
@@ -577,7 +577,7 @@
               "range": "45cm",
               "firepower": "AT5+ AP4+",
               "count": 2,
-              "additionalCost": 20
+              "additionalCost": 25
             },
             {
               "weaponName": "Omega Plasma Array",
@@ -585,7 +585,7 @@
               "range": "45cm",
               "firepower": "AT3+",
               "count": 2,
-              "additionalCost": 15
+              "additionalCost": 20
             },
             {
               "weaponName": "Punisher Cannon",
@@ -601,7 +601,7 @@
               "range": "45cm",
               "firepower": "AT5+ AP6+ Indirect",
               "count": 2,
-              "additionalCost": 30
+              "additionalCost": 35
             }
           ]
         },
@@ -615,7 +615,7 @@
               "range": "45cm",
               "firepower": "AT5+ FxF",
               "count": 2,
-              "additionalCost": 25
+              "additionalCost": 30
             },
             {
               "weaponName": "Heavy Bolter",
@@ -623,7 +623,7 @@
               "range": "30cm",
               "firepower": "AP5+ FxF",
               "count": 2,
-              "additionalCost": 10
+              "additionalCost": 15
             }
           ]
         },
@@ -647,7 +647,7 @@
     },
     {
       "name": "Predator",
-      "cost": 50,
+      "cost": 45,
       "weaponSlots": [
         {
           "kind": "choice",
@@ -658,14 +658,14 @@
               "type": "Ranged Weapon",
               "range": "45cm",
               "firepower": "AT5+ AP5+",
-              "additionalCost": 5
+              "additionalCost": 10
             },
             {
               "weaponName": "Twin-linked Lascannon",
               "type": "Ranged Weapon",
               "range": "45cm",
               "firepower": "AT4+",
-              "additionalCost": 5
+              "additionalCost": 10
             }
           ]
         },
@@ -690,7 +690,7 @@
               "range": "45cm",
               "firepower": "AT5+ FxF",
               "count": 2,
-              "additionalCost": 15
+              "additionalCost": 20
             }
           ]
         }
@@ -766,7 +766,7 @@
     },
     {
       "name": "Contemptor Dreadnought",
-      "cost": 55,
+      "cost": 50,
       "weaponSlots": [
         {
           "kind": "fixed",
@@ -784,7 +784,7 @@
               "type": "Ranged Weapon",
               "range": "45cm",
               "firepower": "AT4+",
-              "additionalCost": 0
+              "additionalCost": 10
             },
             {
               "weaponName": "Assault Cannon",
@@ -812,7 +812,7 @@
     },
     {
       "name": "Deredeo Dreadnought",
-      "cost": 95,
+      "cost": 100,
       "weaponSlots": [
         {
           "kind": "fixed",
@@ -846,7 +846,7 @@
               "range": "45cm",
               "firepower": "AT4+ AP4+ Slow Firing",
               "count": 2,
-              "additionalCost": 5
+              "additionalCost": 0
             }
           ]
         }
@@ -939,7 +939,7 @@
     },
     {
       "name": "Legion Whirlwind",
-      "cost": 65,
+      "cost": 70,
       "weaponSlots": [
         {
           "kind": "choice",
@@ -974,7 +974,7 @@
     },
     {
       "name": "Fire Raptor Gunship",
-      "cost": 110,
+      "cost": 95,
       "weaponSlots": [
         {
           "kind": "fixed",
@@ -1002,7 +1002,7 @@
               "range": "45cm",
               "firepower": "AT4+",
               "count": 2,
-              "additionalCost": 10
+              "additionalCost": 15
             },
             {
               "weaponName": "Twin-linked Heavy Bolter",
@@ -1018,7 +1018,7 @@
               "range": "45cm",
               "firepower": "AT5+ AP4+",
               "count": 2,
-              "additionalCost": 10
+              "additionalCost": 15
             }
           ]
         }
@@ -1035,8 +1035,8 @@
     },
     {
       "name": "Xiphon Interceptor",
-      "cost": 95,
-      "uncertainty": 20,
+      "cost": 85,
+      "uncertainty": 22,
       "quality": "Review",
       "weaponSlots": [
         {
@@ -1066,8 +1066,8 @@
     },
     {
       "name": "Spartan Assault Tank",
-      "cost": 150,
-      "uncertainty": 20,
+      "cost": 140,
+      "uncertainty": 24,
       "quality": "Safe",
       "weaponSlots": [
         {
@@ -1178,8 +1178,8 @@
     },
     {
       "name": "Typhon Siege Tank",
-      "cost": 170,
-      "uncertainty": 20,
+      "cost": 160,
+      "uncertainty": 24,
       "quality": "Safe",
       "weaponSlots": [
         {
@@ -1211,8 +1211,8 @@
     },
     {
       "name": "Cerberus Heavy Tank Destroyer",
-      "cost": 190,
-      "uncertainty": 18,
+      "cost": 180,
+      "uncertainty": 23,
       "quality": "Safe",
       "weaponSlots": [
         {
@@ -1245,7 +1245,7 @@
     },
     {
       "name": "Kratos Battle Tank",
-      "cost": 160,
+      "cost": 150,
       "weaponSlots": [
         {
           "kind": "fixed",
@@ -1282,7 +1282,7 @@
               "range": "45cm",
               "firepower": "AT5+ FxF",
               "count": 2,
-              "additionalCost": 20
+              "additionalCost": 30
             },
             {
               "weaponName": "Auto Cannon",
@@ -1315,7 +1315,7 @@
               "range": "45cm",
               "firepower": "AT5+ FxF",
               "count": 2,
-              "additionalCost": 20
+              "additionalCost": 30
             },
             {
               "weaponName": "Auto Cannon",
@@ -1343,7 +1343,7 @@
     {
       "name": "Fellblade Super Heavy Tank",
       "cost": 250,
-      "uncertainty": 26,
+      "uncertainty": 28,
       "quality": "Safe",
       "weaponSlots": [
         {
@@ -1390,8 +1390,8 @@
     },
     {
       "name": "Glaive Super Heavy Tank",
-      "cost": 325,
-      "uncertainty": 39,
+      "cost": 300,
+      "uncertainty": 44,
       "quality": "Safe",
       "weaponSlots": [
         {
@@ -1432,8 +1432,8 @@
     },
     {
       "name": "Falchion Super Heavy Tank Destroyer",
-      "cost": 250,
-      "uncertainty": 27,
+      "cost": 225,
+      "uncertainty": 29,
       "quality": "Safe",
       "weaponSlots": [
         {
@@ -1466,8 +1466,8 @@
     },
     {
       "name": "Ascalon Super Heavy Tank",
-      "cost": 225,
-      "uncertainty": 27,
+      "cost": 190,
+      "uncertainty": 28,
       "quality": "Safe",
       "weaponSlots": [
         {
@@ -1501,8 +1501,8 @@
     },
     {
       "name": "Thunderhawk Gunship",
-      "cost": 225,
-      "uncertainty": 19,
+      "cost": 200,
+      "uncertainty": 21,
       "quality": "Safe",
       "weaponSlots": [
         {
@@ -1566,8 +1566,8 @@
     },
     {
       "name": "Storm Eagle Attack Ship",
-      "cost": 200,
-      "uncertainty": 19,
+      "cost": 190,
+      "uncertainty": 23,
       "quality": "Safe",
       "weaponSlots": [
         {

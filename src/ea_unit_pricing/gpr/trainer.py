@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import logging
 import warnings
+from typing import Any, Callable
 
 import numpy as np
 from sklearn.gaussian_process import GaussianProcessRegressor
@@ -33,19 +34,22 @@ class GPRTrainer:
             reproducible results.  Defaults to ``42``.
     """
 
-    def __init__(self, mapper: object = None, random_state: int = 42) -> None:
+    def __init__(
+        self, mapper: Callable[[Unit], Any] | None = None, random_state: int = 42
+    ) -> None:
         self.scaler: MinMaxScaler = MinMaxScaler()
         self.gpr: GaussianProcessRegressor | None = None
-        self.X: np.ndarray | None = None
-        self.y: np.ndarray | None = None
+        self.X: np.ndarray[Any, np.dtype[Any]] | None = None
+        self.y: np.ndarray[Any, np.dtype[Any]] | None = None
         self.units: list[Unit] | None = None
         self.mapper = mapper
         self.random_state = random_state
 
     def train(self, units: list[Unit]) -> None:
         """Fit the GPR model on *units* with known costs."""
+        assert self.mapper is not None, "A mapper must be provided before training."
         self.units = units
-        unit_vectors = np.array([self.mapper(unit) for unit in units])  # type: ignore[misc]
+        unit_vectors = np.array([self.mapper(unit) for unit in units])
         self.X = self.scaler.fit_transform(unit_vectors)
         self.y = np.array([_unit_to_cost(unit) for unit in units])
 
@@ -82,9 +86,10 @@ class GPRTrainer:
 
     def predict(self, unit: Unit) -> Result:
         """Predict cost and uncertainty for a single unit."""
+        assert self.mapper is not None, "A mapper must be provided before prediction."
         if self.gpr is None or self.scaler is None:
             raise RuntimeError("Model must be trained before prediction.")
-        new_vector = np.array(self.mapper(unit))  # type: ignore[misc]
+        new_vector = np.array(self.mapper(unit))
         scaled = self.scaler.transform([new_vector])
         mean_cost, std_dev = self.gpr.predict(scaled, return_std=True)
         return Result(unit, predicted_cost=float(mean_cost[0]), uncertainty=float(std_dev[0]))

@@ -1,7 +1,7 @@
 {
   "solar-auxilia": {
     "Infantry Section": {
-      "cost": 20,
+      "cost": 15,
       "uncertainty": 8,
       "quality": "Safe",
       "unit_profile": {
@@ -48,8 +48,8 @@
       ]
     },
     "Veletaris Storm Section": {
-      "cost": 30,
-      "uncertainty": 10,
+      "cost": 25,
+      "uncertainty": 11,
       "quality": "Review",
       "unit_profile": {
         "type": "INF",
@@ -96,7 +96,7 @@
       ]
     },
     "Tactical Command Unit": {
-      "cost": 25,
+      "cost": 20,
       "uncertainty": 8,
       "quality": "Safe",
       "unit_profile": {
@@ -129,7 +129,7 @@
       ]
     },
     "Legate Command Unit": {
-      "cost": 30,
+      "cost": 25,
       "uncertainty": 8,
       "quality": "Safe",
       "unit_profile": {
@@ -192,7 +192,7 @@
       ]
     },
     "Rapier Laser Destroyer": {
-      "cost": 25,
+      "cost": 20,
       "uncertainty": 8,
       "quality": "Safe",
       "unit_profile": {
@@ -217,7 +217,7 @@
       ]
     },
     "Rapier Quad Launcher": {
-      "cost": 30,
+      "cost": 25,
       "uncertainty": 8,
       "quality": "Safe",
       "unit_profile": {
@@ -245,7 +245,7 @@
     },
     "Aethon Heavy Sentinel": {
       "cost": 40,
-      "uncertainty": 10,
+      "uncertainty": 11,
       "quality": "Review",
       "unit_profile": {
         "type": "LV",
@@ -427,7 +427,7 @@
                 "at": "5+"
               },
               "traits": [],
-              "cost_delta": 0
+              "cost_delta": 5
             }
           ]
         }
@@ -488,7 +488,7 @@
       ]
     },
     "Leman Russ Demolisher": {
-      "cost": 60,
+      "cost": 55,
       "uncertainty": 9,
       "quality": "Safe",
       "unit_profile": {
@@ -538,7 +538,7 @@
                 "at": "5+"
               },
               "traits": [],
-              "cost_delta": 0
+              "cost_delta": 5
             }
           ]
         }
@@ -742,7 +742,7 @@
               "traits": [
                 "FxF"
               ],
-              "cost_delta": 0
+              "cost_delta": 5
             }
           ]
         },
@@ -781,8 +781,8 @@
       ]
     },
     "Dracosan with las cannon": {
-      "cost": 30,
-      "uncertainty": 10,
+      "cost": 35,
+      "uncertainty": 11,
       "quality": "Review",
       "unit_profile": {
         "type": "AV",
@@ -839,7 +839,7 @@
     },
     "Medusa": {
       "cost": 60,
-      "uncertainty": 9,
+      "uncertainty": 10,
       "quality": "Safe",
       "unit_profile": {
         "type": "AV",
@@ -907,7 +907,7 @@
       ]
     },
     "Basilisk (Barrage)": {
-      "cost": 80,
+      "cost": 85,
       "uncertainty": 9,
       "quality": "Safe",
       "unit_profile": {
@@ -943,7 +943,7 @@
     },
     "Arvus Lighter": {
       "cost": 20,
-      "uncertainty": 18,
+      "uncertainty": 20,
       "quality": "Experimental",
       "unit_profile": {
         "type": "AV",
@@ -968,7 +968,7 @@
     },
     "Malcador Infernus": {
       "cost": 70,
-      "uncertainty": 11,
+      "uncertainty": 12,
       "quality": "Safe",
       "unit_profile": {
         "type": "AV",
@@ -1015,7 +1015,7 @@
     },
     "Malcador Valdor": {
       "cost": 100,
-      "uncertainty": 15,
+      "uncertainty": 16,
       "quality": "Safe",
       "unit_profile": {
         "type": "AV",
@@ -1053,8 +1053,8 @@
       ]
     },
     "Avenger Strike Fighter": {
-      "cost": 85,
-      "uncertainty": 14,
+      "cost": 80,
+      "uncertainty": 15,
       "quality": "Safe",
       "unit_profile": {
         "type": "AC",
@@ -1169,7 +1169,7 @@
     },
     "Lightning Fighter": {
       "cost": 110,
-      "uncertainty": 22,
+      "uncertainty": 24,
       "quality": "Review",
       "unit_profile": {
         "type": "AC",
@@ -1238,7 +1238,7 @@
     },
     "Marauder Bomber": {
       "cost": 120,
-      "uncertainty": 11,
+      "uncertainty": 12,
       "quality": "Safe",
       "unit_profile": {
         "type": "AC",
@@ -1281,8 +1281,8 @@
       ]
     },
     "Shadowsword": {
-      "cost": 225,
-      "uncertainty": 13,
+      "cost": 190,
+      "uncertainty": 12,
       "quality": "Safe",
       "unit_profile": {
         "type": "WE",
@@ -1355,8 +1355,8 @@
       ]
     },
     "Stromblade": {
-      "cost": 190,
-      "uncertainty": 15,
+      "cost": 170,
+      "uncertainty": 16,
       "quality": "Safe",
       "unit_profile": {
         "type": "WE",
@@ -1429,7 +1429,7 @@
       ]
     },
     "Stormsword": {
-      "cost": 180,
+      "cost": 160,
       "uncertainty": 15,
       "quality": "Safe",
       "unit_profile": {
@@ -1504,8 +1504,8 @@
       ]
     },
     "Baneblade": {
-      "cost": 180,
-      "uncertainty": 12,
+      "cost": 160,
+      "uncertainty": 10,
       "quality": "Safe",
       "unit_profile": {
         "type": "WE",
@@ -1599,8 +1599,8 @@
       ]
     },
     "Stormhammer": {
-      "cost": 170,
-      "uncertainty": 14,
+      "cost": 140,
+      "uncertainty": 12,
       "quality": "Safe",
       "unit_profile": {
         "type": "WE",
@@ -1822,7 +1822,7 @@
     },
     "Terminator Squad": {
       "cost": 70,
-      "uncertainty": 11,
+      "uncertainty": 12,
       "quality": "Safe",
       "unit_profile": {
         "type": "INF",
@@ -1892,7 +1892,7 @@
     },
     "Saturnine Terminator Squad (Twin Heavy Disintegrators)": {
       "cost": 70,
-      "uncertainty": 11,
+      "uncertainty": 12,
       "quality": "Safe",
       "unit_profile": {
         "type": "INF",
@@ -2069,7 +2069,7 @@
     },
     "Land Speeder with Plasma Cannon and Heavy Bolter": {
       "cost": 30,
-      "uncertainty": 9,
+      "uncertainty": 8,
       "quality": "Safe",
       "unit_profile": {
         "type": "LV",
@@ -2197,7 +2197,7 @@
     },
     "Saturnine Dreadnought a": {
       "cost": 65,
-      "uncertainty": 13,
+      "uncertainty": 14,
       "quality": "Review",
       "unit_profile": {
         "type": "AV",
@@ -2235,9 +2235,9 @@
       ]
     },
     "Saturnine Dreadnought b": {
-      "cost": 70,
-      "uncertainty": 19,
-      "quality": "Review",
+      "cost": 65,
+      "uncertainty": 21,
+      "quality": "Experimental",
       "unit_profile": {
         "type": "AV",
         "speed": "15cm",
@@ -2281,9 +2281,9 @@
       ]
     },
     "Sabre Strike Tank": {
-      "cost": 40,
+      "cost": 35,
       "uncertainty": 10,
-      "quality": "Safe",
+      "quality": "Review",
       "unit_profile": {
         "type": "AV",
         "speed": "35cm",
@@ -2323,7 +2323,7 @@
                 "FxF",
                 "Disrupt"
               ],
-              "cost_delta": 5
+              "cost_delta": 10
             }
           ]
         },
@@ -2341,7 +2341,7 @@
       ]
     },
     "Sicaran Battle Tank": {
-      "cost": 70,
+      "cost": 65,
       "uncertainty": 12,
       "quality": "Safe",
       "unit_profile": {
@@ -2369,7 +2369,7 @@
               },
               "traits": [],
               "count": 2,
-              "cost_delta": 20
+              "cost_delta": 25
             },
             {
               "name": "Omega Plasma Array",
@@ -2380,7 +2380,7 @@
               },
               "traits": [],
               "count": 2,
-              "cost_delta": 15
+              "cost_delta": 20
             },
             {
               "name": "Punisher Cannon",
@@ -2406,7 +2406,7 @@
                 "Indirect"
               ],
               "count": 2,
-              "cost_delta": 30
+              "cost_delta": 35
             }
           ]
         },
@@ -2424,7 +2424,7 @@
                 "FxF"
               ],
               "count": 2,
-              "cost_delta": 25
+              "cost_delta": 30
             },
             {
               "name": "Heavy Bolter",
@@ -2437,7 +2437,7 @@
                 "FxF"
               ],
               "count": 2,
-              "cost_delta": 10
+              "cost_delta": 15
             }
           ]
         },
@@ -2455,7 +2455,7 @@
       ]
     },
     "Predator": {
-      "cost": 50,
+      "cost": 45,
       "uncertainty": 8,
       "quality": "Safe",
       "unit_profile": {
@@ -2481,7 +2481,7 @@
                 "ap": "5+"
               },
               "traits": [],
-              "cost_delta": 5
+              "cost_delta": 10
             },
             {
               "name": "Twin-linked Lascannon",
@@ -2491,7 +2491,7 @@
                 "at": "4+"
               },
               "traits": [],
-              "cost_delta": 5
+              "cost_delta": 10
             }
           ]
         },
@@ -2525,7 +2525,7 @@
                 "FxF"
               ],
               "count": 2,
-              "cost_delta": 15
+              "cost_delta": 20
             }
           ]
         }
@@ -2586,8 +2586,8 @@
       ]
     },
     "Contemptor Dreadnought": {
-      "cost": 55,
-      "uncertainty": 10,
+      "cost": 50,
+      "uncertainty": 9,
       "quality": "Safe",
       "unit_profile": {
         "type": "AV",
@@ -2621,7 +2621,7 @@
                 "at": "4+"
               },
               "traits": [],
-              "cost_delta": 0
+              "cost_delta": 10
             },
             {
               "name": "Assault Cannon",
@@ -2639,8 +2639,8 @@
       ]
     },
     "Deredeo Dreadnought": {
-      "cost": 95,
-      "uncertainty": 14,
+      "cost": 100,
+      "uncertainty": 15,
       "quality": "Safe",
       "unit_profile": {
         "type": "AV",
@@ -2702,7 +2702,7 @@
                 "Slow Firing"
               ],
               "count": 2,
-              "cost_delta": 5
+              "cost_delta": 0
             }
           ]
         }
@@ -2710,8 +2710,8 @@
     },
     "Leviathan Siege Dreadnought": {
       "cost": 60,
-      "uncertainty": 12,
-      "quality": "Safe",
+      "uncertainty": 13,
+      "quality": "Review",
       "unit_profile": {
         "type": "AV",
         "speed": "15cm",
@@ -2794,8 +2794,8 @@
       ]
     },
     "Legion Whirlwind": {
-      "cost": 65,
-      "uncertainty": 9,
+      "cost": 70,
+      "uncertainty": 10,
       "quality": "Safe",
       "unit_profile": {
         "type": "AV",
@@ -2843,9 +2843,9 @@
       ]
     },
     "Fire Raptor Gunship": {
-      "cost": 110,
-      "uncertainty": 30,
-      "quality": "Review",
+      "cost": 95,
+      "uncertainty": 33,
+      "quality": "Experimental",
       "unit_profile": {
         "type": "AC",
         "speed": "Fighter bomber",
@@ -2892,7 +2892,7 @@
               },
               "traits": [],
               "count": 2,
-              "cost_delta": 10
+              "cost_delta": 15
             },
             {
               "name": "Twin-linked Heavy Bolter",
@@ -2915,15 +2915,15 @@
               },
               "traits": [],
               "count": 2,
-              "cost_delta": 10
+              "cost_delta": 15
             }
           ]
         }
       ]
     },
     "Xiphon Interceptor": {
-      "cost": 95,
-      "uncertainty": 20,
+      "cost": 85,
+      "uncertainty": 22,
       "quality": "Review",
       "unit_profile": {
         "type": "AC",
@@ -2959,8 +2959,8 @@
       ]
     },
     "Spartan Assault Tank": {
-      "cost": 150,
-      "uncertainty": 20,
+      "cost": 140,
+      "uncertainty": 24,
       "quality": "Safe",
       "unit_profile": {
         "type": "WE",
@@ -3004,7 +3004,7 @@
     },
     "Mastodon Armored Transport": {
       "cost": 225,
-      "uncertainty": 33,
+      "uncertainty": 36,
       "quality": "Safe",
       "unit_profile": {
         "type": "WE",
@@ -3084,8 +3084,8 @@
       ]
     },
     "Typhon Siege Tank": {
-      "cost": 170,
-      "uncertainty": 20,
+      "cost": 160,
+      "uncertainty": 24,
       "quality": "Safe",
       "unit_profile": {
         "type": "WE",
@@ -3125,8 +3125,8 @@
       ]
     },
     "Cerberus Heavy Tank Destroyer": {
-      "cost": 190,
-      "uncertainty": 18,
+      "cost": 180,
+      "uncertainty": 23,
       "quality": "Safe",
       "unit_profile": {
         "type": "WE",
@@ -3167,8 +3167,8 @@
       ]
     },
     "Kratos Battle Tank": {
-      "cost": 160,
-      "uncertainty": 21,
+      "cost": 150,
+      "uncertainty": 25,
       "quality": "Safe",
       "unit_profile": {
         "type": "WE",
@@ -3234,7 +3234,7 @@
                 "FxF"
               ],
               "count": 2,
-              "cost_delta": 20
+              "cost_delta": 30
             },
             {
               "name": "Auto Cannon",
@@ -3282,7 +3282,7 @@
                 "FxF"
               ],
               "count": 2,
-              "cost_delta": 20
+              "cost_delta": 30
             },
             {
               "name": "Auto Cannon",
@@ -3304,7 +3304,7 @@
     },
     "Fellblade Super Heavy Tank": {
       "cost": 250,
-      "uncertainty": 26,
+      "uncertainty": 28,
       "quality": "Safe",
       "unit_profile": {
         "type": "WE",
@@ -3372,8 +3372,8 @@
       ]
     },
     "Glaive Super Heavy Tank": {
-      "cost": 325,
-      "uncertainty": 39,
+      "cost": 300,
+      "uncertainty": 44,
       "quality": "Safe",
       "unit_profile": {
         "type": "WE",
@@ -3429,8 +3429,8 @@
       ]
     },
     "Falchion Super Heavy Tank Destroyer": {
-      "cost": 250,
-      "uncertainty": 27,
+      "cost": 225,
+      "uncertainty": 29,
       "quality": "Safe",
       "unit_profile": {
         "type": "WE",
@@ -3475,8 +3475,8 @@
       ]
     },
     "Ascalon Super Heavy Tank": {
-      "cost": 225,
-      "uncertainty": 27,
+      "cost": 190,
+      "uncertainty": 28,
       "quality": "Safe",
       "unit_profile": {
         "type": "WE",
@@ -3520,8 +3520,8 @@
       ]
     },
     "Thunderhawk Gunship": {
-      "cost": 225,
-      "uncertainty": 19,
+      "cost": 200,
+      "uncertainty": 21,
       "quality": "Safe",
       "unit_profile": {
         "type": "AC/WE",
@@ -3600,8 +3600,8 @@
       ]
     },
     "Storm Eagle Attack Ship": {
-      "cost": 200,
-      "uncertainty": 19,
+      "cost": 190,
+      "uncertainty": 23,
       "quality": "Safe",
       "unit_profile": {
         "type": "AC/WE",

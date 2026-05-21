@@ -105,7 +105,7 @@ class Unit:
         result: list[RangedWeapon | AssaultWeapon | SmallArms] = []
         for w in self.weapons:
             if isinstance(w, Multiplier):
-                result.extend([w.weapon] * w.times)  # type: ignore[arg-type]
+                result.extend([w.weapon] * w.times)
             elif isinstance(w, MultipleChoiceWeapon):
                 pass  # resolved via get_all_configurations() / expand_choices()
             else:

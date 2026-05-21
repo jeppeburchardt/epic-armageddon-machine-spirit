@@ -7,7 +7,7 @@
   "units": [
     {
       "name": "Infantry Section",
-      "cost": 20,
+      "cost": 15,
       "uncertainty": 8,
       "quality": "Safe",
       "weaponSlots": [
@@ -49,8 +49,8 @@
     },
     {
       "name": "Veletaris Storm Section",
-      "cost": 30,
-      "uncertainty": 10,
+      "cost": 25,
+      "uncertainty": 11,
       "quality": "Review",
       "weaponSlots": [
         {
@@ -91,7 +91,7 @@
     },
     {
       "name": "Tactical Command Unit",
-      "cost": 25,
+      "cost": 20,
       "uncertainty": 8,
       "quality": "Safe",
       "weaponSlots": [
@@ -121,7 +121,7 @@
     },
     {
       "name": "Legate Command Unit",
-      "cost": 30,
+      "cost": 25,
       "uncertainty": 8,
       "quality": "Safe",
       "weaponSlots": [
@@ -172,7 +172,7 @@
     },
     {
       "name": "Rapier Laser Destroyer",
-      "cost": 25,
+      "cost": 20,
       "uncertainty": 8,
       "quality": "Safe",
       "weaponSlots": [
@@ -193,7 +193,7 @@
     },
     {
       "name": "Rapier Quad Launcher",
-      "cost": 30,
+      "cost": 25,
       "uncertainty": 8,
       "quality": "Safe",
       "weaponSlots": [
@@ -215,7 +215,7 @@
     {
       "name": "Aethon Heavy Sentinel",
       "cost": 40,
-      "uncertainty": 10,
+      "uncertainty": 11,
       "quality": "Review",
       "weaponSlots": [
         {
@@ -351,7 +351,7 @@
               "type": "Ranged Weapon",
               "range": "45cm",
               "firepower": "AT5+",
-              "additionalCost": 0
+              "additionalCost": 5
             }
           ]
         }
@@ -411,7 +411,7 @@
     },
     {
       "name": "Leman Russ Demolisher",
-      "cost": 60,
+      "cost": 55,
       "weaponSlots": [
         {
           "kind": "fixed",
@@ -439,7 +439,7 @@
               "type": "Ranged Weapon",
               "range": "45cm",
               "firepower": "AT5+",
-              "additionalCost": 0
+              "additionalCost": 5
             }
           ]
         }
@@ -588,7 +588,7 @@
               "type": "Ranged Weapon",
               "range": "45cm",
               "firepower": "AT5+ FxF",
-              "additionalCost": 0
+              "additionalCost": 5
             }
           ]
         },
@@ -627,8 +627,8 @@
     },
     {
       "name": "Dracosan with las cannon",
-      "cost": 30,
-      "uncertainty": 10,
+      "cost": 35,
+      "uncertainty": 11,
       "quality": "Review",
       "weaponSlots": [
         {
@@ -682,7 +682,7 @@
     {
       "name": "Medusa",
       "cost": 60,
-      "uncertainty": 9,
+      "uncertainty": 10,
       "quality": "Safe",
       "weaponSlots": [
         {
@@ -737,7 +737,7 @@
     },
     {
       "name": "Basilisk (Barrage)",
-      "cost": 80,
+      "cost": 85,
       "uncertainty": 9,
       "quality": "Safe",
       "weaponSlots": [
@@ -766,7 +766,7 @@
     {
       "name": "Arvus Lighter",
       "cost": 20,
-      "uncertainty": 18,
+      "uncertainty": 20,
       "quality": "Experimental",
       "weaponSlots": [
         {
@@ -794,7 +794,7 @@
     {
       "name": "Malcador Infernus",
       "cost": 70,
-      "uncertainty": 11,
+      "uncertainty": 12,
       "quality": "Safe",
       "weaponSlots": [
         {
@@ -832,7 +832,7 @@
     {
       "name": "Malcador Valdor",
       "cost": 100,
-      "uncertainty": 15,
+      "uncertainty": 16,
       "quality": "Safe",
       "weaponSlots": [
         {
@@ -862,8 +862,8 @@
     },
     {
       "name": "Avenger Strike Fighter",
-      "cost": 85,
-      "uncertainty": 14,
+      "cost": 80,
+      "uncertainty": 15,
       "quality": "Safe",
       "weaponSlots": [
         {
@@ -947,7 +947,7 @@
     {
       "name": "Lightning Fighter",
       "cost": 110,
-      "uncertainty": 22,
+      "uncertainty": 24,
       "quality": "Review",
       "weaponSlots": [
         {
@@ -996,7 +996,7 @@
     {
       "name": "Marauder Bomber",
       "cost": 120,
-      "uncertainty": 11,
+      "uncertainty": 12,
       "quality": "Safe",
       "weaponSlots": [
         {
@@ -1030,8 +1030,8 @@
     },
     {
       "name": "Shadowsword",
-      "cost": 225,
-      "uncertainty": 13,
+      "cost": 190,
+      "uncertainty": 12,
       "quality": "Safe",
       "weaponSlots": [
         {
@@ -1089,8 +1089,8 @@
     },
     {
       "name": "Stromblade",
-      "cost": 190,
-      "uncertainty": 15,
+      "cost": 170,
+      "uncertainty": 16,
       "quality": "Safe",
       "weaponSlots": [
         {
@@ -1148,7 +1148,7 @@
     },
     {
       "name": "Stormsword",
-      "cost": 180,
+      "cost": 160,
       "uncertainty": 15,
       "quality": "Safe",
       "weaponSlots": [
@@ -1207,8 +1207,8 @@
     },
     {
       "name": "Baneblade",
-      "cost": 180,
-      "uncertainty": 12,
+      "cost": 160,
+      "uncertainty": 10,
       "quality": "Safe",
       "weaponSlots": [
         {
@@ -1280,8 +1280,8 @@
     },
     {
       "name": "Stormhammer",
-      "cost": 170,
-      "uncertainty": 14,
+      "cost": 140,
+      "uncertainty": 12,
       "quality": "Safe",
       "weaponSlots": [
         {
