@@ -14,6 +14,9 @@ from pathlib import Path
 
 import pytest
 
+from ea_unit_pricing.data import load_input_armies, load_training_units
+from ea_unit_pricing.pipeline.prediction import run_pipeline
+
 
 @pytest.mark.slow
 def test_prediction_pipeline_matches_golden(
@@ -21,9 +24,6 @@ def test_prediction_pipeline_matches_golden(
     tmp_output_dir: Path,
 ) -> None:
     """Full pipeline output must be byte-identical to committed golden files."""
-    from ea_unit_pricing.data import load_input_armies, load_training_units
-    from ea_unit_pricing.pipeline.prediction import run_pipeline
-
     training_units = load_training_units()
     armies = load_input_armies()
     run_pipeline(armies, training_units, output_dir=tmp_output_dir, random_state=42)

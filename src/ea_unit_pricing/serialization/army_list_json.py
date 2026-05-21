@@ -150,7 +150,7 @@ def _result_to_dict(result: Result | MultipleChoiceResult) -> dict[str, object]:
     return {
         "name": result.unit.name,
         "cost": rounded_cost(result),
-        "uncertainty": int(round(result.uncertainty)),
+        "uncertainty": round(result.uncertainty),
         "quality": quality_to_str(result.quality),
         "weaponSlots": [{"kind": "fixed", **_weapon_to_dict(w)} for w in result.unit.weapons],
         **_unit_profile_dict(result.unit),

@@ -21,7 +21,7 @@ def _format_stat_modifiers(modifiers: dict[str, int]) -> str:
 def _format_unit_with_weapons(unit: Unit) -> list[list[str | int]]:
     table: list[list[str | int]] = []
     if not unit.weapons:
-        table.append(unit.to_list() + [""])  # type: ignore[arg-type]
+        table.append([*unit.to_list(), ""])  # type: ignore[arg-type]
         return table
 
     first_row = True
@@ -30,7 +30,7 @@ def _format_unit_with_weapons(unit: Unit) -> list[list[str | int]]:
             for i, option in enumerate(weapon.options):
                 weapon_row = option.to_list()
                 if i > 0:
-                    weapon_row = [f"(or) {weapon_row[0]}"] + weapon_row[1:]
+                    weapon_row = [f"(or) {weapon_row[0]}", *weapon_row[1:]]
                 modifier_str = _format_stat_modifiers(getattr(option, "stat_modifiers", {}))
                 if first_row:
                     notes = ", ".join(filter(None, [unit.traits_to_str(), modifier_str]))

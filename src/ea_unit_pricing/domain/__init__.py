@@ -35,35 +35,35 @@ from ea_unit_pricing.domain.weapons import (
 )
 
 __all__ = [
+    # enums
+    "AircraftSpeed",
     # army
     "Army",
+    # weapons
+    "AssaultWeapon",
     "Detachment",
     "DetachmentUnit",
+    # result
+    "MultipleChoiceResult",
+    "MultipleChoiceWeapon",
+    "Multiplier",
+    "Quality",
+    "RangedWeapon",
+    "Result",
+    "SmallArms",
     "SpecialRule",
+    "TrainingSetValidationResult",
+    "Traits",
+    # unit
+    "Unit",
+    "UnitType",
     "Upgrade",
     "UpgradeAdd",
     "UpgradeCharacter",
     "UpgradeReplace",
-    # enums
-    "AircraftSpeed",
-    "Quality",
-    "Traits",
-    "UnitType",
     "aircraft_speed_to_string",
+    "expand_choices",
     "quality_to_str",
     "trait_to_string",
     "unit_type_to_string",
-    # result
-    "MultipleChoiceResult",
-    "Result",
-    "TrainingSetValidationResult",
-    # unit
-    "Unit",
-    "expand_choices",
-    # weapons
-    "AssaultWeapon",
-    "MultipleChoiceWeapon",
-    "Multiplier",
-    "RangedWeapon",
-    "SmallArms",
 ]
