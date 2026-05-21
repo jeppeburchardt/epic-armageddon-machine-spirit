@@ -23,9 +23,7 @@ class HeavyBolter(RangedWeapon):
 
 class TwinHeavyBolter(RangedWeapon):
     def __init__(self, aa: int = 0, traits: list[Traits] | None = None) -> None:
-        super().__init__(
-            30, ap=4, aa=aa, name="Twin-linked Heavy Bolter", traits=traits or []
-        )
+        super().__init__(30, ap=4, aa=aa, name="Twin-linked Heavy Bolter", traits=traits or [])
 
 
 class LasCannon(RangedWeapon):
@@ -71,6 +69,4 @@ class AutoCannon(RangedWeapon):
 
 class TwinAutoCannon(RangedWeapon):
     def __init__(self, aa: int = 0, traits: list[Traits] | None = None) -> None:
-        super().__init__(
-            45, ap=4, at=5, aa=aa, name="Twin-linked Auto Cannon", traits=traits or []
-        )
+        super().__init__(45, ap=4, at=5, aa=aa, name="Twin-linked Auto Cannon", traits=traits or [])

@@ -91,9 +91,7 @@ tactical_support_squad_unit = Unit(
     cc=4,
     ff=4,
     weapons=[
-        SmallArms(
-            name="Plasma Guns", traits=[Traits.IGNORE_COVER, Traits.EXTRA_ATTACK_1]
-        ),
+        SmallArms(name="Plasma Guns", traits=[Traits.IGNORE_COVER, Traits.EXTRA_ATTACK_1]),
         RangedWeapon(20, name="Plasma Guns", ap=5, at=5, traits=[Traits.IGNORE_COVER]),
     ],
     traits=[Traits.KNOW_NO_FEAR],
@@ -289,13 +287,9 @@ sicaran_battle_tank_unit = Unit(
     weapons=[
         MultipleChoiceWeapon(
             [
-                Multiplier(
-                    2, RangedWeapon(name="Accelerator Cannon", range=45, at=5, ap=4)
-                ),
+                Multiplier(2, RangedWeapon(name="Accelerator Cannon", range=45, at=5, ap=4)),
                 Multiplier(2, RangedWeapon(name="Omega Plasma Array", range=45, at=3)),
-                Multiplier(
-                    4, RangedWeapon(name="Punisher Cannon", range=30, at=5, ap=5)
-                ),
+                Multiplier(4, RangedWeapon(name="Punisher Cannon", range=30, at=5, ap=5)),
                 Multiplier(
                     2,
                     RangedWeapon(
@@ -344,9 +338,7 @@ predator_unit = Unit(
             [
                 Multiplier(
                     2,
-                    HeavyBolter(
-                        traits=[Traits.FIXED_FORWARD], stat_modifiers={"ff": -2}
-                    ),
+                    HeavyBolter(traits=[Traits.FIXED_FORWARD], stat_modifiers={"ff": -2}),
                 ),
                 Multiplier(2, LasCannon(traits=[Traits.FIXED_FORWARD])),
             ],
@@ -748,9 +740,7 @@ cerberus_heavy_tank_destroyer_unit = Unit(
     [
         Multiplier(
             2,
-            RangedWeapon(
-                60, name="Neutron Laser Array", at=3, mw=5, traits=[Traits.DISRUPT]
-            ),
+            RangedWeapon(60, name="Neutron Laser Array", at=3, mw=5, traits=[Traits.DISRUPT]),
         ),
         Multiplier(2, HeavyBolter()),
     ],
@@ -775,9 +765,7 @@ kratos_battle_tank_unit = Unit(
             [
                 Multiplier(
                     2,
-                    HeavyBolter(
-                        traits=[Traits.FIXED_FORWARD], stat_modifiers={"ff": -1}
-                    ),
+                    HeavyBolter(traits=[Traits.FIXED_FORWARD], stat_modifiers={"ff": -1}),
                 ),
                 Multiplier(2, LasCannon(traits=[Traits.FIXED_FORWARD])),
                 Multiplier(2, AutoCannon(traits=[Traits.FIXED_FORWARD])),
@@ -788,9 +776,7 @@ kratos_battle_tank_unit = Unit(
             [
                 Multiplier(
                     2,
-                    HeavyBolter(
-                        traits=[Traits.FIXED_FORWARD], stat_modifiers={"ff": -1}
-                    ),
+                    HeavyBolter(traits=[Traits.FIXED_FORWARD], stat_modifiers={"ff": -1}),
                 ),
                 Multiplier(2, LasCannon(traits=[Traits.FIXED_FORWARD])),
                 Multiplier(2, AutoCannon(traits=[Traits.FIXED_FORWARD])),
