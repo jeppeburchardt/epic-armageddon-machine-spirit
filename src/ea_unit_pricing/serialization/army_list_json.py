@@ -224,7 +224,7 @@ def build_army_json_files(
                 }
             if isinstance(upgrade, UpgradeCharacter):
                 up["characterNames"] = upgrade.character_names
-            output["upgrades"].append(up)  # type: ignore[attr-defined]
+            output["upgrades"].append(up)  # type: ignore[union-attr]
         for result in results:
             output["units"].append(_result_to_dict(result))  # type: ignore[attr-defined]
 
