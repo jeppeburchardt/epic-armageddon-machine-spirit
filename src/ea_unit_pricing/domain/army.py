@@ -56,7 +56,7 @@ class Detachment:
 
     # Legacy attribute name used in serialization code.
     @property
-    def availableUpgrades(self) -> list[Upgrade]:  # noqa: N802
+    def availableUpgrades(self) -> list[Upgrade]:
         return self.available_upgrades
 
 
@@ -70,7 +70,7 @@ class Upgrade:
 
     # Legacy attribute name compatibility.
     @property
-    def transportWarning(self) -> bool:  # noqa: N802
+    def transportWarning(self) -> bool:
         return self.transport_warning
 
 
@@ -88,8 +88,8 @@ class UpgradeAdd(Upgrade):
         max_total: int = 0,
         transport_warning: bool = False,
         # Legacy camelCase kwargs
-        maxTotal: int = 0,  # noqa: N803
-        transportWarning: bool = False,  # noqa: N803
+        maxTotal: int = 0,
+        transportWarning: bool = False,
     ) -> None:
         super().__init__(name, type="add", transport_warning=transport_warning or transportWarning)
         self.adds = adds if adds is not None else []
@@ -97,7 +97,7 @@ class UpgradeAdd(Upgrade):
 
     # Legacy attribute name.
     @property
-    def maxTotal(self) -> int:  # noqa: N802
+    def maxTotal(self) -> int:
         return self.max_total
 
 
@@ -109,7 +109,7 @@ class UpgradeReplace(Upgrade):
     to_unit: Unit | None = None
     max: int = 0
 
-    def __init__(self, name: str, from_unit: Unit, to_unit: Unit, max: int) -> None:  # noqa: A002
+    def __init__(self, name: str, from_unit: Unit, to_unit: Unit, max: int) -> None:
         super().__init__(name, type="replace")
         self.from_unit = from_unit
         self.to_unit = to_unit
@@ -117,11 +117,11 @@ class UpgradeReplace(Upgrade):
 
     # Legacy attribute names used in serialization.
     @property
-    def fromUnit(self) -> Unit | None:  # noqa: N802
+    def fromUnit(self) -> Unit | None:
         return self.from_unit
 
     @property
-    def toUnit(self) -> Unit | None:  # noqa: N802
+    def toUnit(self) -> Unit | None:
         return self.to_unit
 
 
@@ -146,8 +146,8 @@ class Army:
         strategy_rating: int = 1,
         special_rules: list[SpecialRule] | None = None,
         # Legacy camelCase kwarg accepted for backward compatibility.
-        strategyRating: int | None = None,  # noqa: N803
-        specialRules: list[SpecialRule] | None = None,  # noqa: N803
+        strategyRating: int | None = None,
+        specialRules: list[SpecialRule] | None = None,
     ) -> None:
         self.slug = slug
         self.name = name

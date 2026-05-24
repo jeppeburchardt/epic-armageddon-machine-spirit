@@ -24,7 +24,7 @@ class Result:
         unit: The unit that was predicted.
         predicted_cost: Mean cost predicted by the GPR model.
         uncertainty: One standard deviation returned by the model.
-        score: Confidence score in the range 0–100 (higher = better).
+        score: Confidence score in the range 0-100 (higher = better).
         quality: Categorical quality bucket derived from *score*.
     """
 

@@ -5,8 +5,8 @@ from __future__ import annotations
 import pytest
 
 from ea_unit_pricing.domain import UnitType
-from ea_unit_pricing.domain.unit import Unit
 from ea_unit_pricing.domain.result import MultipleChoiceResult, Result
+from ea_unit_pricing.domain.unit import Unit
 from ea_unit_pricing.serialization.rounding import (
     round_points,
     rounded_choice_costs,

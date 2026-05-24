@@ -6,6 +6,7 @@ import pytest
 
 from ea_unit_pricing.domain import Unit, UnitType
 from ea_unit_pricing.domain.result import Result
+from ea_unit_pricing.gpr.mapping.universal_unit import universal_unit
 from ea_unit_pricing.gpr.trainer import GPRTrainer
 
 
@@ -34,8 +35,6 @@ def test_trainer_predict_uncertainty_positive(
 
 
 def test_trainer_requires_training_before_predict() -> None:
-    from ea_unit_pricing.gpr.mapping.universal_unit import universal_unit
-
     trainer = GPRTrainer(mapper=universal_unit)
     unit = Unit("X", 5, 1, UnitType.INFANTRY)
     with pytest.raises(RuntimeError, match="trained"):
@@ -43,9 +42,6 @@ def test_trainer_requires_training_before_predict() -> None:
 
 
 def test_trainer_random_state_reproducibility(sample_infantry_unit: Unit) -> None:
-    from ea_unit_pricing.domain.weapons import RangedWeapon
-    from ea_unit_pricing.gpr.mapping.universal_unit import universal_unit
-
     units = [
         Unit("A", 5, 1, UnitType.INFANTRY, speed=15, armour=4, cc=4, ff=4, single_unit_cost=50),
         Unit(

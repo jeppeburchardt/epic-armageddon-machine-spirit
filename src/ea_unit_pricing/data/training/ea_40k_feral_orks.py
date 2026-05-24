@@ -1,8 +1,6 @@
-from ea_unit_pricing.domain import Unit, RangedWeapon, AssaultWeapon, Traits, UnitType, SmallArms
+from ea_unit_pricing.domain import AssaultWeapon, RangedWeapon, Traits, Unit, UnitType
 
-boys = Unit(
-    "Ork Boyz", 3, 3, UnitType.INFANTRY, 15, 5, 4, 6, 25, [RangedWeapon(30, ap=6, at=6)]
-)
+boys = Unit("Ork Boyz", 3, 3, UnitType.INFANTRY, 15, 5, 4, 6, 25, [RangedWeapon(30, ap=6, at=6)])
 
 nobz = Unit(
     "Ork Nobz",

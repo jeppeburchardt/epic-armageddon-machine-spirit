@@ -1,12 +1,11 @@
 from ea_unit_pricing.domain import (
-    Unit,
-    RangedWeapon,
-    AssaultWeapon,
-    Traits,
-    UnitType,
-    SmallArms,
     AircraftSpeed,
+    AssaultWeapon,
     Multiplier,
+    RangedWeapon,
+    Traits,
+    Unit,
+    UnitType,
 )
 
 battle_wagon = Unit(

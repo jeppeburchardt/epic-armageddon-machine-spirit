@@ -25,7 +25,7 @@ __all__ = ["dice_test_to_score", "universal_unit"]
 
 
 def dice_test_to_score(dice_test: int) -> float:
-    """Convert a D6 roll-or-more target to a normalised score (0–1).
+    """Convert a D6 roll-or-more target to a normalised score (0-1).
 
     Lower dice targets (better stats) produce higher scores.
     """

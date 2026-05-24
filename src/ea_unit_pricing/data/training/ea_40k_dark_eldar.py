@@ -1,4 +1,4 @@
-from ea_unit_pricing.domain import Unit, RangedWeapon, Traits, UnitType, AircraftSpeed, Multiplier
+from ea_unit_pricing.domain import AircraftSpeed, Multiplier, RangedWeapon, Traits, Unit, UnitType
 
 raven = Unit(
     "Raven Fighter",

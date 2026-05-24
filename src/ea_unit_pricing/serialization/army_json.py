@@ -142,7 +142,7 @@ def build_prices_json_file(
                 min_result = min(result.all_results, key=lambda r: r.predicted_cost)
                 entry: dict[str, object] = {
                     "cost": rounded_cost(result),
-                    "uncertainty": int(round(min_result.uncertainty)),
+                    "uncertainty": round(min_result.uncertainty),
                     "quality": quality_to_str(min_result.quality),
                     "unit_profile": _unit_profile_dict(result.original_unit),
                     "weapons": _weapons_for_choice_result(result),
@@ -150,7 +150,7 @@ def build_prices_json_file(
             else:
                 entry = {
                     "cost": rounded_cost(result),
-                    "uncertainty": int(round(result.uncertainty)),
+                    "uncertainty": round(result.uncertainty),
                     "quality": quality_to_str(result.quality),
                     "unit_profile": _unit_profile_dict(result.unit),
                     "weapons": [weapon_to_dict(w) for w in result.unit.weapons],

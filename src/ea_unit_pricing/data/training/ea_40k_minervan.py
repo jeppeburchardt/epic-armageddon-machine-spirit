@@ -1,9 +1,9 @@
 from ea_unit_pricing.domain import (
+    Army,
     RangedWeapon,
     Traits,
-    UnitType,
     Unit,
-    Army,
+    UnitType,
 )
 
 minervan = Army("", "Minervan Tank Legion Forces")

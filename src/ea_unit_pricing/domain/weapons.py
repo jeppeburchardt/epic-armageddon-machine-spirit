@@ -8,12 +8,12 @@ from __future__ import annotations
 
 from dataclasses import dataclass, field
 
-from ea_unit_pricing.domain.enums import Traits
+from ea_unit_pricing.domain.enums import Traits, trait_to_string
 
 __all__ = [
     "AssaultWeapon",
-    "Multiplier",
     "MultipleChoiceWeapon",
+    "Multiplier",
     "RangedWeapon",
     "SmallArms",
 ]
@@ -64,8 +64,6 @@ class RangedWeapon:
             parts.append(f"AA{self.aa}+")
         if self.bp > 0:
             parts.append(f"{self.bp}BP")
-        from ea_unit_pricing.domain.enums import trait_to_string
-
         firepower = " ".join(parts)
         traits_str = ", ".join(map(trait_to_string, self.traits))
         if firepower and traits_str:
@@ -83,8 +81,6 @@ class AssaultWeapon:
     name: str = "--"
 
     def to_list(self) -> list[str | int]:
-        from ea_unit_pricing.domain.enums import trait_to_string
-
         return [self.name, "(base contact)", ", ".join(map(trait_to_string, self.traits))]
 
 
@@ -96,8 +92,6 @@ class SmallArms:
     name: str = "Small Arms"
 
     def to_list(self) -> list[str | int]:
-        from ea_unit_pricing.domain.enums import trait_to_string
-
         return [self.name, "(Small Arms)", ", ".join(map(trait_to_string, self.traits))]
 
 

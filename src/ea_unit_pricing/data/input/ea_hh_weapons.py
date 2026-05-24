@@ -1,4 +1,7 @@
-from ea_unit_pricing.domain import RangedWeapon, Traits
+from __future__ import annotations
+
+from ea_unit_pricing.domain import Traits
+from ea_unit_pricing.domain.weapons import RangedWeapon
 
 
 class HeavyBolter(RangedWeapon):
@@ -20,9 +23,7 @@ class HeavyBolter(RangedWeapon):
 
 class TwinHeavyBolter(RangedWeapon):
     def __init__(self, aa: int = 0, traits: list[Traits] | None = None) -> None:
-        super().__init__(
-            30, ap=4, aa=aa, name="Twin-linked Heavy Bolter", traits=traits or []
-        )
+        super().__init__(30, ap=4, aa=aa, name="Twin-linked Heavy Bolter", traits=traits or [])
 
 
 class LasCannon(RangedWeapon):
@@ -56,7 +57,7 @@ class DemolisherCannon(RangedWeapon):
             30,
             ap=3,
             at=4,
-            traits=[Traits.IGNORE_COVER] + (traits or []),
+            traits=[Traits.IGNORE_COVER, *(traits or [])],
             name="Demolisher Cannon",
         )
 
@@ -68,6 +69,4 @@ class AutoCannon(RangedWeapon):
 
 class TwinAutoCannon(RangedWeapon):
     def __init__(self, aa: int = 0, traits: list[Traits] | None = None) -> None:
-        super().__init__(
-            45, ap=4, at=5, aa=aa, name="Twin-linked Auto Cannon", traits=traits or []
-        )
+        super().__init__(45, ap=4, at=5, aa=aa, name="Twin-linked Auto Cannon", traits=traits or [])

@@ -11,7 +11,6 @@ import numpy as np
 import pytest
 
 from ea_unit_pricing.domain import RangedWeapon, Traits, Unit, UnitType
-from ea_unit_pricing.domain.weapons import AssaultWeapon
 from ea_unit_pricing.gpr.mapping.universal_unit import universal_unit
 
 

@@ -2,13 +2,17 @@
 
 from __future__ import annotations
 
-import sys
 from pathlib import Path
-from typing import Annotated, List, Optional
+from typing import Annotated
 
 import typer
 
+from ea_unit_pricing.data import load_input_armies, load_training_units
+from ea_unit_pricing.gpr.mapping.universal_unit import universal_unit
+from ea_unit_pricing.gpr.trainer import GPRTrainer
 from ea_unit_pricing.logging_setup import configure_logging
+from ea_unit_pricing.pipeline.prediction import run_pipeline
+from ea_unit_pricing.serialization.unit_stats_table import get_markdown_unit_table
 
 app = typer.Typer(
     name="eaup",
@@ -22,7 +26,7 @@ _ARMY_CHOICES = ["legiones-astartes", "solar-auxilia"]
 @app.command()
 def predict(
     armies: Annotated[
-        Optional[List[str]],
+        list[str] | None,
         typer.Argument(help=f"Army slugs to predict: {', '.join(_ARMY_CHOICES)}"),
     ] = None,
     all_armies: Annotated[bool, typer.Option("--all", help="Predict all armies.")] = False,
@@ -34,9 +38,6 @@ def predict(
 ) -> None:
     """Predict point costs and write markdown + JSON output files."""
     configure_logging("DEBUG" if verbose else "INFO")
-
-    from ea_unit_pricing.data import load_input_armies, load_training_units
-    from ea_unit_pricing.pipeline.prediction import run_pipeline
 
     training_units = load_training_units()
 
@@ -65,10 +66,6 @@ def validate(
     """Run leave-one-out cross-validation on the training set."""
     configure_logging("DEBUG" if verbose else "INFO")
 
-    from ea_unit_pricing.data import load_training_units
-    from ea_unit_pricing.gpr.mapping.universal_unit import universal_unit
-    from ea_unit_pricing.gpr.trainer import GPRTrainer
-
     training_units = load_training_units()
     trainer = GPRTrainer(mapper=universal_unit)
     trainer.train(training_units)
@@ -84,9 +81,6 @@ def stats(
 ) -> None:
     """Write a unit stats markdown table for *army*."""
     configure_logging()
-
-    from ea_unit_pricing.data import load_input_armies
-    from ea_unit_pricing.serialization.unit_stats_table import get_markdown_unit_table
 
     all_armies = {a.slug: a for a in load_input_armies()}
     if army not in all_armies:

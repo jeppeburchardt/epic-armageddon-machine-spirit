@@ -34,9 +34,7 @@ class GPRTrainer:
             reproducible results.  Defaults to ``42``.
     """
 
-    def __init__(
-        self, mapper: Callable[[Unit], Any] | None = None, random_state: int = 42
-    ) -> None:
+    def __init__(self, mapper: Callable[[Unit], Any] | None = None, random_state: int = 42) -> None:
         self.scaler: MinMaxScaler = MinMaxScaler()
         self.gpr: GaussianProcessRegressor | None = None
         self.X: np.ndarray[Any, np.dtype[Any]] | None = None

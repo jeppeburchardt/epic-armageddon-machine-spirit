@@ -1,12 +1,12 @@
 from ea_unit_pricing.domain import (
+    Army,
+    AssaultWeapon,
+    Multiplier,
     RangedWeapon,
     SmallArms,
     Traits,
-    UnitType,
     Unit,
-    AssaultWeapon,
-    Army,
-    Multiplier,
+    UnitType,
 )
 
 squats = Army("", "Epic UK Squats")
@@ -190,9 +190,7 @@ squats.add_unit(
         weapons=[
             RangedWeapon(90, bp=3, traits=[Traits.MW, Traits.FIXED_FORWARD]),
             Multiplier(4, RangedWeapon(75, ap=4, at=4, traits=[Traits.FIXED_FORWARD])),
-            RangedWeapon(
-                30, ap=3, at=4, traits=[Traits.IGNORE_COVER, Traits.FIXED_FORWARD]
-            ),
+            RangedWeapon(30, ap=3, at=4, traits=[Traits.IGNORE_COVER, Traits.FIXED_FORWARD]),
             Multiplier(
                 4,
                 RangedWeapon(
@@ -225,21 +223,15 @@ squats.add_unit(
         cc=5,
         ff=4,
         weapons=[
-            RangedWeapon(
-                90, mw=2, traits=[Traits.TITAN_KILLER_D6, Traits.FIXED_FORWARD]
-            ),
+            RangedWeapon(90, mw=2, traits=[Traits.TITAN_KILLER_D6, Traits.FIXED_FORWARD]),
             RangedWeapon(75, ap=4, at=4),
             Multiplier(
                 2,
-                RangedWeapon(
-                    30, ap=3, at=4, traits=[Traits.IGNORE_COVER, Traits.FIXED_FORWARD]
-                ),
+                RangedWeapon(30, ap=3, at=4, traits=[Traits.IGNORE_COVER, Traits.FIXED_FORWARD]),
             ),
             Multiplier(
                 6,
-                RangedWeapon(
-                    90, at=2, traits=[Traits.SINGLE_SHOT, Traits.FIXED_FORWARD]
-                ),
+                RangedWeapon(90, at=2, traits=[Traits.SINGLE_SHOT, Traits.FIXED_FORWARD]),
             ),
             SmallArms(traits=[Traits.EXTRA_ATTACK_1]),
         ],

@@ -5,8 +5,8 @@ from __future__ import annotations
 from ea_unit_pricing.domain import Traits
 from ea_unit_pricing.domain.weapons import (
     AssaultWeapon,
-    Multiplier,
     MultipleChoiceWeapon,
+    Multiplier,
     RangedWeapon,
     SmallArms,
 )

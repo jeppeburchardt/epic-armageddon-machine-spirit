@@ -8,7 +8,7 @@ from pathlib import Path
 from ea_unit_pricing.domain.army import Army
 from ea_unit_pricing.domain.result import MultipleChoiceResult, Result
 from ea_unit_pricing.domain.unit import Unit
-from ea_unit_pricing.domain.weapons import MultipleChoiceWeapon
+from ea_unit_pricing.gpr.mapping.universal_unit import universal_unit
 from ea_unit_pricing.gpr.trainer import GPRTrainer
 from ea_unit_pricing.serialization.army_json import build_prices_json_file
 from ea_unit_pricing.serialization.army_list_json import build_army_json_files
@@ -71,8 +71,6 @@ def run_pipeline(
     Returns:
         List of ``(army, predictions)`` tuples.
     """
-    from ea_unit_pricing.gpr.mapping.universal_unit import universal_unit
-
     trainer = GPRTrainer(mapper=universal_unit, random_state=random_state)
     logger.info("Training on %d units…", len(training_units))
     trainer.train(training_units)

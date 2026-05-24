@@ -2,8 +2,8 @@ from __future__ import annotations
 
 import unittest
 
-from ea_unit_pricing.domain.result import MultipleChoiceResult, Result
 from ea_unit_pricing.domain import MultipleChoiceWeapon, RangedWeapon, Unit, UnitType
+from ea_unit_pricing.domain.result import MultipleChoiceResult, Result
 from ea_unit_pricing.serialization.army_json import _weapons_for_choice_result
 from ea_unit_pricing.serialization.army_list_json import _result_to_dict
 from ea_unit_pricing.serialization.rounding import round_points

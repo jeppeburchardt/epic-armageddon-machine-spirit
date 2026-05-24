@@ -1,25 +1,26 @@
 from ea_unit_pricing.domain import (
+    AircraftSpeed,
+    Army,
+    AssaultWeapon,
+    MultipleChoiceWeapon,
+    Multiplier,
     RangedWeapon,
     SmallArms,
     Traits,
-    UnitType,
     Unit,
-    AssaultWeapon,
-    Army,
-    AircraftSpeed,
-    MultipleChoiceWeapon,
-    Multiplier,
+    UnitType,
 )
+
 from .ea_hh_weapons import (
-    HeavyBolter,
-    TwinHeavyBolter,
-    LasCannon,
-    TwinLinkedLasCannon,
-    VanquisherBattleCannon,
+    AutoCannon,
     BattleCannon,
     DemolisherCannon,
-    AutoCannon,
+    HeavyBolter,
+    LasCannon,
     TwinAutoCannon,
+    TwinHeavyBolter,
+    TwinLinkedLasCannon,
+    VanquisherBattleCannon,
 )
 
 solar_auxilia = Army("solar-auxilia", name="Solar Auxilia")
@@ -76,9 +77,7 @@ solar_auxilia.add_unit(
         armour=3,
         cc=3,
         ff=5,
-        weapons=[
-            AssaultWeapon(traits=[Traits.EXTRA_ATTACK_1, Traits.MW], name="Charonite Claws")
-        ],
+        weapons=[AssaultWeapon(traits=[Traits.EXTRA_ATTACK_1, Traits.MW], name="Charonite Claws")],
     )
 )
 
@@ -126,9 +125,7 @@ solar_auxilia.add_unit(
         cc=6,
         ff=6,
         weapons=[
-            RangedWeapon(
-                30, name="Mole Mortar", bp=1, traits=[Traits.DISRUPT, Traits.INDIRECT]
-            )
+            RangedWeapon(30, name="Mole Mortar", bp=1, traits=[Traits.DISRUPT, Traits.INDIRECT])
         ],
     )
 )
@@ -291,9 +288,7 @@ solar_auxilia.add_unit(
         cc=6,
         ff=4,
         weapons=[
-            RangedWeapon(
-                30, name="Plasma Cannon", ap=4, at=4, traits=[Traits.SLOW_FIRING]
-            ),
+            RangedWeapon(30, name="Plasma Cannon", ap=4, at=4, traits=[Traits.SLOW_FIRING]),
             MultipleChoiceWeapon([HeavyBolter(stat_modifiers={"ff": -1}), LasCannon()]),
         ],
         traits=[Traits.REINFORCED_ARMOUR],
@@ -402,9 +397,7 @@ solar_auxilia.add_unit(
         cc=6,
         ff=5,
         weapons=[
-            RangedWeapon(
-                30, name="Medusa Siege Cannon", mw=4, traits=[Traits.IGNORE_COVER]
-            ),
+            RangedWeapon(30, name="Medusa Siege Cannon", mw=4, traits=[Traits.IGNORE_COVER]),
             HeavyBolter(),
         ],
     )
@@ -437,9 +430,7 @@ solar_auxilia.add_unit(
         cc=6,
         ff=5,
         weapons=[
-            RangedWeapon(
-                120, name="Earthshaker Cannon", bp=1, traits=[Traits.IGNORE_COVER]
-            ),
+            RangedWeapon(120, name="Earthshaker Cannon", bp=1, traits=[Traits.IGNORE_COVER]),
             HeavyBolter(),
         ],
     )
@@ -509,9 +500,7 @@ solar_auxilia.add_unit(
         cc=6,
         ff=6,
         weapons=[
-            RangedWeapon(
-                90, name="Volcano Cannon", mw=2, traits=[Traits.TITAN_KILLER_D3]
-            ),
+            RangedWeapon(90, name="Volcano Cannon", mw=2, traits=[Traits.TITAN_KILLER_D3]),
             TwinHeavyBolter(),
             HeavyBolter(),
             HeavyBolter(),

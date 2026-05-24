@@ -1,11 +1,11 @@
 from ea_unit_pricing.domain import (
-    Unit,
-    RangedWeapon,
-    AssaultWeapon,
-    Traits,
-    UnitType,
-    SmallArms,
     AircraftSpeed,
+    AssaultWeapon,
+    RangedWeapon,
+    SmallArms,
+    Traits,
+    Unit,
+    UnitType,
 )
 
 dark_reapoers = Unit(

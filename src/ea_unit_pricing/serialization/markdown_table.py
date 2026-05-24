@@ -35,7 +35,7 @@ def get_markdown_prediction_table(
     """Return a GitHub-flavoured markdown table of predicted costs."""
 
     def _row(r: Result | MultipleChoiceResult) -> tuple[str, str, str, str, str]:
-        cost, uncertainty, quality = _resolved(r)
+        _cost, uncertainty, quality = _resolved(r)
         if isinstance(r, MultipleChoiceResult):
             rounded_min_cost, rounded_max_cost = rounded_choice_costs(r)
             cost_str = f"{rounded_min_cost} - {rounded_max_cost}"
