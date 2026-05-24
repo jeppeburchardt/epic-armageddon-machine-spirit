@@ -29,7 +29,7 @@ def _assert_json_equal_with_float_tolerance(
 
     if isinstance(expected, list) and isinstance(actual, list):
         assert len(expected) == len(actual), f"List length mismatch at {path}"
-        for i, (exp_item, act_item) in enumerate(zip(expected, actual, strict=False)):
+        for i, (exp_item, act_item) in enumerate(zip(expected, actual)):
             _assert_json_equal_with_float_tolerance(exp_item, act_item, f"{path}[{i}]")
         return
 
