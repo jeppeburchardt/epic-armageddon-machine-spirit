@@ -76,3 +76,14 @@ def test_trainer_random_state_reproducibility(sample_infantry_unit: Unit) -> Non
     r1 = t1.predict(sample_infantry_unit)
     r2 = t2.predict(sample_infantry_unit)
     assert abs(r1.predicted_cost - r2.predicted_cost) < 1e-6
+
+
+def test_trainer_predict_includes_training_context(
+    trained_trainer: GPRTrainer, sample_infantry_unit: Unit
+) -> None:
+    result = trained_trainer.predict(sample_infantry_unit)
+
+    assert len(result.nearest_neighbours) == 4
+    assert result.training_set_size == 4
+    assert len(result.training_price_values) == 4
+    assert result.model_kernel

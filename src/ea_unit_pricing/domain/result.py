@@ -28,10 +28,23 @@ class Result:
         quality: Categorical quality bucket derived from *score*.
     """
 
-    def __init__(self, unit: Unit, predicted_cost: float = 0, uncertainty: float = 0) -> None:
+    def __init__(
+        self,
+        unit: Unit,
+        predicted_cost: float = 0,
+        uncertainty: float = 0,
+        nearest_neighbours: list[tuple[str, float, float]] | None = None,
+        training_price_values: list[float] | None = None,
+        model_kernel: str = "",
+        training_set_size: int = 0,
+    ) -> None:
         self.unit = unit
         self.predicted_cost = predicted_cost
         self.uncertainty = uncertainty
+        self.nearest_neighbours = nearest_neighbours or []
+        self.training_price_values = training_price_values or []
+        self.model_kernel = model_kernel
+        self.training_set_size = training_set_size
         self.score = round((1 - (uncertainty / predicted_cost)) * 100) if predicted_cost else 0
 
         if self.score > 80 or self.uncertainty < 10:
