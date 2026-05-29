@@ -85,9 +85,29 @@ class GPRTrainer:
     def predict(self, unit: Unit) -> Result:
         """Predict cost and uncertainty for a single unit."""
         assert self.mapper is not None, "A mapper must be provided before prediction."
-        if self.gpr is None or self.scaler is None:
+        if (
+            self.gpr is None
+            or self.scaler is None
+            or self.X is None
+            or self.y is None
+            or self.units is None
+        ):
             raise RuntimeError("Model must be trained before prediction.")
         new_vector = np.array(self.mapper(unit))
         scaled = self.scaler.transform([new_vector])
         mean_cost, std_dev = self.gpr.predict(scaled, return_std=True)
-        return Result(unit, predicted_cost=float(mean_cost[0]), uncertainty=float(std_dev[0]))
+        distances = np.linalg.norm(self.X - scaled[0], axis=1)
+        nearest_indexes = np.argsort(distances)[:5]
+        nearest_neighbours = [
+            (self.units[int(i)].name, float(self.y[int(i)]), float(distances[int(i)]))
+            for i in nearest_indexes
+        ]
+        return Result(
+            unit,
+            predicted_cost=float(mean_cost[0]),
+            uncertainty=float(std_dev[0]),
+            nearest_neighbours=nearest_neighbours,
+            training_price_values=[float(v) for v in self.y.tolist()],
+            model_kernel=str(self.gpr.kernel_),
+            training_set_size=len(self.units),
+        )

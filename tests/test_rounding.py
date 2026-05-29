@@ -59,6 +59,53 @@ class RoundingPolicyTests(unittest.TestCase):
         self.assertEqual(army_json["weaponSlots"][1]["choices"][0]["additionalCost"], 0)
         self.assertEqual(army_json["weaponSlots"][1]["choices"][1]["additionalCost"], 0)
 
+    def test_result_to_dict_includes_gpr_training_info(self) -> None:
+        result = Result(
+            make_unit("Scout"),
+            predicted_cost=101,
+            uncertainty=9,
+            nearest_neighbours=[("Tac", 100.0, 0.2), ("Assault", 105.0, 0.4)],
+            training_price_values=[100.0, 105.0, 110.0],
+            model_kernel="RBF(...)",
+            training_set_size=3,
+        )
+
+        payload = _result_to_dict(result)
+        gpr_info = payload["gprTrainingInfo"]
+        self.assertEqual(gpr_info["predictedMean"], 101)
+        self.assertEqual(gpr_info["trainingSetSize"], 3)
+        self.assertEqual(len(gpr_info["topNearestNeighbours"]), 2)
+        self.assertEqual(gpr_info["contributingPriceValues"], [100.0, 105.0, 110.0])
+
+    def test_choice_result_to_dict_includes_gpr_training_info(self) -> None:
+        option_a = RangedWeapon(30, name="Option A")
+        option_b = RangedWeapon(45, name="Option B")
+        unit = make_unit(
+            "Chooser",
+            weapons=[MultipleChoiceWeapon([option_a, option_b], name="Turret")],
+        )
+        results = MultipleChoiceResult(
+            unit,
+            [
+                Result(
+                    make_unit("Chooser [A]"),
+                    predicted_cost=108,
+                    uncertainty=4,
+                    nearest_neighbours=[("Tac", 100.0, 0.3)],
+                    training_price_values=[100.0, 110.0],
+                    model_kernel="RBF(...)",
+                    training_set_size=2,
+                ),
+                Result(make_unit("Chooser [B]"), predicted_cost=102, uncertainty=4),
+            ],
+        )
+
+        payload = _result_to_dict(results)
+        gpr_info = payload["gprTrainingInfo"]
+        self.assertEqual(gpr_info["predictedMean"], 108)
+        self.assertEqual(gpr_info["trainingSetSize"], 2)
+        self.assertEqual(gpr_info["topNearestNeighbours"][0]["name"], "Tac")
+
 
 if __name__ == "__main__":
     unittest.main()

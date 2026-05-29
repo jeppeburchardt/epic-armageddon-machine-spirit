@@ -6,7 +6,7 @@ import json
 from itertools import product as cartesian_product
 from pathlib import Path
 
-from ea_unit_pricing.domain.army import Army, UpgradeAdd, UpgradeReplace, UpgradeCharacter
+from ea_unit_pricing.domain.army import Army, UpgradeAdd, UpgradeCharacter, UpgradeReplace
 from ea_unit_pricing.domain.enums import quality_to_str, trait_to_string, unit_type_to_string
 from ea_unit_pricing.domain.result import MultipleChoiceResult, Result
 from ea_unit_pricing.domain.weapons import (
@@ -140,11 +140,27 @@ def _weapon_slots(result: MultipleChoiceResult) -> list[dict[str, object]]:
 
 
 def _result_to_dict(result: Result | MultipleChoiceResult) -> dict[str, object]:
+    def _gpr_training_info(r: Result) -> dict[str, object]:
+        return {
+            "predictedMean": r.predicted_cost,
+            "uncertainty": r.uncertainty,
+            "score": r.score,
+            "quality": quality_to_str(r.quality),
+            "topNearestNeighbours": [
+                {"name": name, "price": price, "distance": distance}
+                for name, price, distance in r.nearest_neighbours
+            ],
+            "contributingPriceValues": r.training_price_values,
+            "trainingSetSize": r.training_set_size,
+            "modelKernel": r.model_kernel,
+        }
+
     if isinstance(result, MultipleChoiceResult):
         return {
             "name": result.unit.name,
             "cost": rounded_cost(result),
             "weaponSlots": _weapon_slots(result),
+            "gprTrainingInfo": _gpr_training_info(result.best_result),
             **_unit_profile_dict(result.original_unit),
         }
     return {
@@ -153,6 +169,7 @@ def _result_to_dict(result: Result | MultipleChoiceResult) -> dict[str, object]:
         "uncertainty": round(result.uncertainty),
         "quality": quality_to_str(result.quality),
         "weaponSlots": [{"kind": "fixed", **_weapon_to_dict(w)} for w in result.unit.weapons],
+        "gprTrainingInfo": _gpr_training_info(result),
         **_unit_profile_dict(result.unit),
     }
 
@@ -207,7 +224,7 @@ def build_army_json_files(
                 }
             if isinstance(upgrade, UpgradeCharacter):
                 up["characterNames"] = upgrade.character_names
-            output["upgrades"].append(up)  # type: ignore[union-attr]
+            output["upgrades"].append(up)  # type: ignore[attr-defined]
         for result in results:
             output["units"].append(_result_to_dict(result))  # type: ignore[attr-defined]
 
