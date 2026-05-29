@@ -14,6 +14,7 @@ from ea_unit_pricing.domain import (
     UpgradeAdd,
     UpgradeCharacter,
     UpgradeReplace,
+    UpgradeCharacter,
 )
 
 from .ea_hh_weapons import (
@@ -52,7 +53,7 @@ centurion = Unit(
 )
 
 tactical_squad_unit = Unit(
-    "Tactical Squad",
+    "Tactical Legionnaires Squad",
     5,
     1,
     UnitType.INFANTRY,
@@ -1074,7 +1075,7 @@ legiones_astartes.add_upgrade(dreadnought_upgrade)
 
 ## Tactical detachment
 tactical_squad_detachment = Detachment(
-    name="Tactical Detachment",
+    name="Tactical Legionnaires Detachment",
     group="Line",
     units=[DetachmentUnit(unit=tactical_squad_unit, count=8)],
 )
@@ -1086,7 +1087,7 @@ legiones_astartes.add_detachment(tactical_squad_detachment)
 
 ## Assualt detachment
 assault_detachment = Detachment(
-    name="Assault Marines",
+    name="Assault Marine Detachment",
     group="Line",
     units=[DetachmentUnit(unit=assault_squad_unit, count=8)],
 )
@@ -1096,7 +1097,7 @@ legiones_astartes.add_detachment(assault_detachment)
 
 ## Terminator detachment
 terminator_detachment = Detachment(
-    name="Terminators",
+    name="Terminator Detachment",
     group="Line",
     units=[DetachmentUnit(unit=terminator_squad_unit, min=4, max=8, count=4)],
 )
@@ -1107,7 +1108,7 @@ legiones_astartes.add_detachment(terminator_detachment)
 
 ## Predator detachment
 predator_detachment = Detachment(
-    name="Predators",
+    name="Predators Detachment",
     group="Support",
     units=[DetachmentUnit(unit=predator_unit, count=3, max=6)],
 )
@@ -1115,7 +1116,7 @@ legiones_astartes.add_detachment(predator_detachment)
 
 ## Sicaran detachment
 sicaran_detachment = Detachment(
-    name="Sicarans",
+    name="Sicarans Detachment",
     group="Support",
     units=[
         DetachmentUnit(sicaran_battle_tank_unit, count=2, max=4),
@@ -1126,7 +1127,7 @@ legiones_astartes.add_detachment(sicaran_detachment)
 
 ## Kratos detachment
 kratos_detachment = Detachment(
-    name="Kratos",
+    name="Kratos Detachment",
     group="Support",
     units=[DetachmentUnit(kratos_battle_tank_unit, count=2, max=4)],
 )
@@ -1134,7 +1135,7 @@ legiones_astartes.add_detachment(kratos_detachment)
 
 ## Whirlwind
 whirlwind_detachment = Detachment(
-    name="Whirlwinds",
+    name="Whirlwind Support Battery",
     group="Support",
     units=[
         DetachmentUnit(legion_whirlwind_unit, count=4),
@@ -1144,7 +1145,7 @@ legiones_astartes.add_detachment(whirlwind_detachment)
 
 ## Landspeeders
 land_speeder_detachment = Detachment(
-    name="Landspeeders",
+    name="Landspeeder Detachment",
     group="Support",
     units=[DetachmentUnit(land_speeder_with_flamer_and_multi_melta_unit, count=4)],
 )
@@ -1160,7 +1161,7 @@ legiones_astartes.add_detachment(land_speeder_detachment)
 
 ## Scimitars
 scimitar_jetbike_detachment = Detachment(
-    name="Scimitars",
+    name="Scimitar Detachment",
     group="Support",
     units=[DetachmentUnit(scimitar_jetbike_unit, count=6)],
 )
@@ -1168,7 +1169,7 @@ legiones_astartes.add_detachment(scimitar_jetbike_detachment)
 
 ## Outriders
 outrider_detachment = Detachment(
-    name="Outriders",
+    name="Outrider Detachment",
     group="Support",
     units=[DetachmentUnit(outrider_squad_unit, count=4)],
 )
@@ -1176,8 +1177,36 @@ legiones_astartes.add_detachment(outrider_detachment)
 
 ## Javelin
 javelin_attack_speeder_detachmnet = Detachment(
-    name="Javelins",
+    name="Javelin Detachment",
     group="Support",
     units=[DetachmentUnit(javelin_attack_speeder_unit, count=4)],
 )
 legiones_astartes.add_detachment(javelin_attack_speeder_detachmnet)
+
+xiphon_interceptor_detachment = Detachment(
+    name="Xiphon Interceptor Wing",
+    group="Special",
+    units=[DetachmentUnit(xiphon_interceptor_unit, count=3)],
+)
+legiones_astartes.add_detachment(xiphon_interceptor_detachment)
+
+fire_raptor_gunship_detachment = Detachment(
+    name="Fire Raptor Wing",
+    group="Special",
+    units=[DetachmentUnit(fire_raptor_gunship_unit, count=2)],
+)
+legiones_astartes.add_detachment(fire_raptor_gunship_detachment)
+
+storm_eagle_detachment = Detachment(
+    name="Storm Eagle Wing",
+    group="Special",
+    units=[DetachmentUnit(storm_eagle_attack_ship_unit, count=2)],
+)
+legiones_astartes.add_detachment(storm_eagle_detachment)
+
+thunderhawk_gunship_detachment = Detachment(
+    name="Thunderhawk Gunship Wing",
+    group="Special",
+    units=[DetachmentUnit(thunderhawk_gunship_unit, count=1, max=1, min=1)],
+)
+legiones_astartes.add_detachment(thunderhawk_gunship_detachment)
