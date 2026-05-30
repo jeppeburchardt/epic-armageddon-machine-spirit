@@ -1219,3 +1219,45 @@ thunderhawk_gunship_detachment = Detachment(
     units=[DetachmentUnit(thunderhawk_gunship_unit, count=1, max=1, min=1)],
 )
 legiones_astartes.add_detachment(thunderhawk_gunship_detachment)
+
+typhon_detachment = Detachment(
+    name="Typhon Siege Tank Detachment",
+    group="Special",
+    units=[DetachmentUnit(typhon_siege_tank_unit, count=2, min=2, max=4)],
+)
+legiones_astartes.add_detachment(typhon_detachment)
+
+cerberus_detachment = Detachment(
+    name="Cerberus Heavy Tank Destroyer Detachment",
+    group="Special",
+    units=[DetachmentUnit(cerberus_heavy_tank_destroyer_unit, count=2, min=2, max=4)],
+)
+legiones_astartes.add_detachment(cerberus_detachment)
+
+fellblade_detachment = Detachment(
+    name="Fellblade Detachment",
+    group="Special",
+    units=[DetachmentUnit(fellblade_super_heavy_tank_unit, count=1, min=1, max=2)],
+)
+legiones_astartes.add_detachment(fellblade_detachment)
+
+glaive_detachment = Detachment(
+    name="Glaive Detachment",
+    group="Special",
+    units=[DetachmentUnit(glaive_super_heavy_tank_unit, count=1, min=1, max=2)],
+)
+legiones_astartes.add_detachment(glaive_detachment)
+
+falchion_detachment = Detachment(
+    name="Falchion Detachment",
+    group="Special",
+    units=[DetachmentUnit(falchion_super_heavy_tank_destroyer_unit, count=1, min=1, max=2)],
+)
+legiones_astartes.add_detachment(falchion_detachment)
+
+ascalon_detachment = Detachment(
+    name="Ascalon Detachment",
+    group="Special",
+    units=[DetachmentUnit(ascalon_super_heavy_tank_unit, count=1, min=1, max=2)],
+)
+legiones_astartes.add_detachment(ascalon_detachment)
