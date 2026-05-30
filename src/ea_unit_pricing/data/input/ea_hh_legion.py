@@ -1103,6 +1103,14 @@ heavy_support_replace_upgrade = UpgradeReplace(
 legiones_astartes.add_upgrade(heavy_support_replace_upgrade)
 tactical_squad_detachment.add_upgrade(heavy_support_replace_upgrade)
 
+rapier_upgrade = UpgradeAdd(
+    "Rapier",
+    adds=[DetachmentUnit(rapier_unit)],
+    max_total=4,
+)
+legiones_astartes.add_upgrade(rapier_upgrade)
+tactical_squad_detachment.add_upgrade(rapier_upgrade)
+
 legiones_astartes.add_detachment(tactical_squad_detachment)
 
 ## Assualt detachment
