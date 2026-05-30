@@ -1153,6 +1153,14 @@ sicaran_detachment = Detachment(
 
 legiones_astartes.add_detachment(sicaran_detachment)
 
+## Sabre Strike Tank detachment
+sabre_strike_tank_detachment = Detachment(
+    name="Sabre Strike Tank Detachment",
+    group="Support",
+    units=[DetachmentUnit(sabre_strike_tank_unit, count=4, min=4, max=8)],
+)
+legiones_astartes.add_detachment(sabre_strike_tank_detachment)
+
 ## Kratos detachment
 kratos_detachment = Detachment(
     name="Kratos Detachment",
