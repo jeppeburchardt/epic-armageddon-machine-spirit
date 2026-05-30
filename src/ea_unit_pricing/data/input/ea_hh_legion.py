@@ -1084,6 +1084,25 @@ tactical_squad_detachment.add_upgrade(transportation_upgrade)
 tactical_squad_detachment.add_upgrade(support_tank_upgrade)
 tactical_squad_detachment.add_upgrade(dreadnought_upgrade)
 tactical_squad_detachment.add_upgrade(character_upgrade)
+
+tactical_support_replace_upgrade = UpgradeReplace(
+    name="Tactical Support Squad",
+    from_unit=tactical_squad_unit,
+    to_unit=tactical_support_squad_unit,
+    max=4,
+)
+legiones_astartes.add_upgrade(tactical_support_replace_upgrade)
+tactical_squad_detachment.add_upgrade(tactical_support_replace_upgrade)
+
+heavy_support_replace_upgrade = UpgradeReplace(
+    name="Heavy Support Squad",
+    from_unit=tactical_squad_unit,
+    to_unit=heavy_support_squad_unit,
+    max=4,
+)
+legiones_astartes.add_upgrade(heavy_support_replace_upgrade)
+tactical_squad_detachment.add_upgrade(heavy_support_replace_upgrade)
+
 legiones_astartes.add_detachment(tactical_squad_detachment)
 
 ## Assualt detachment
