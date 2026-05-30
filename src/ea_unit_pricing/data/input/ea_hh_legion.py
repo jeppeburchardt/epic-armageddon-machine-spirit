@@ -1161,6 +1161,14 @@ sabre_strike_tank_detachment = Detachment(
 )
 legiones_astartes.add_detachment(sabre_strike_tank_detachment)
 
+## Tarantula detachment
+tarantula_detachment = Detachment(
+    name="Tarantula Battery",
+    group="Support",
+    units=[DetachmentUnit(tarantula_unit, count=4, min=4, max=4)],
+)
+legiones_astartes.add_detachment(tarantula_detachment)
+
 ## Kratos detachment
 kratos_detachment = Detachment(
     name="Kratos Detachment",
