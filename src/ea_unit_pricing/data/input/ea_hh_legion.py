@@ -1057,6 +1057,7 @@ support_tank_upgrade = UpgradeAdd(
     adds=[
         DetachmentUnit(predator_unit),
         DetachmentUnit(sicaran_battle_tank_unit),
+        DetachmentUnit(vindicator_unit),
     ],
 )
 legiones_astartes.add_upgrade(support_tank_upgrade)
@@ -1142,6 +1143,14 @@ whirlwind_detachment = Detachment(
     ],
 )
 legiones_astartes.add_detachment(whirlwind_detachment)
+
+## Vindicator
+vindicator_detachment = Detachment(
+    name="Vindicator Support Battery",
+    group="Support",
+    units=[DetachmentUnit(vindicator_unit, count=4, min=4, max=4)],
+)
+legiones_astartes.add_detachment(vindicator_detachment)
 
 ## Landspeeders
 land_speeder_detachment = Detachment(
