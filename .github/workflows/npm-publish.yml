@@ -1,0 +1,62 @@
+name: Publish npm Package
+
+on:
+  workflow_dispatch:
+    inputs:
+      bump:
+        description: Version bump type
+        required: true
+        type: choice
+        options:
+          - patch
+          - minor
+          - major
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install Python dependencies
+        run: pip install -e "."
+
+      - name: Generate army list JSONs
+        run: |
+          mkdir -p packages/epic-armageddon-lists-data/data
+          eaup predict --all --output-dir packages/epic-armageddon-lists-data/data
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          registry-url: "https://registry.npmjs.org"
+
+      - name: Bump version
+        id: version
+        working-directory: packages/epic-armageddon-lists-data
+        run: |
+          npm version ${{ github.event.inputs.bump }} --no-git-tag-version
+          echo "version=$(node -p "require('./package.json').version")" >> $GITHUB_OUTPUT
+
+      - name: Publish to npm
+        working-directory: packages/epic-armageddon-lists-data
+        run: npm publish --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Commit and tag release
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add packages/epic-armageddon-lists-data/package.json packages/epic-armageddon-lists-data/data/
+          git commit -m "chore: release epic-armageddon-lists-data@${{ steps.version.outputs.version }}"
+          git tag "npm/v${{ steps.version.outputs.version }}"
+          git push --follow-tags

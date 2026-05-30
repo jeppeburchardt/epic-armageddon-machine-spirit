@@ -1,0 +1,13 @@
+{
+  "name": "epic-armageddon-lists-data",
+  "version": "0.1.0",
+  "description": "Army list data for Epic Armageddon — Legiones Astartes & Solar Auxilia",
+  "license": "MIT",
+  "exports": {
+    "./legiones-astartes": "./data/legiones-astartes.json",
+    "./solar-auxilia": "./data/solar-auxilia.json"
+  },
+  "files": [
+    "data"
+  ]
+}

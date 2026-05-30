@@ -14,7 +14,6 @@ from ea_unit_pricing.domain import (
     UpgradeAdd,
     UpgradeCharacter,
     UpgradeReplace,
-    UpgradeCharacter,
 )
 
 from .ea_hh_weapons import (

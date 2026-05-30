@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 from pathlib import Path
-from typing import Annotated, Optional
+from typing import Annotated
 
 import typer
 
@@ -26,7 +26,7 @@ _ARMY_CHOICES = ["legiones-astartes", "solar-auxilia"]
 @app.command()
 def predict(
     armies: Annotated[
-        Optional[list[str]],
+        list[str] | None,
         typer.Argument(help=f"Army slugs to predict: {', '.join(_ARMY_CHOICES)}"),
     ] = None,
     all_armies: Annotated[bool, typer.Option("--all", help="Predict all armies.")] = False,

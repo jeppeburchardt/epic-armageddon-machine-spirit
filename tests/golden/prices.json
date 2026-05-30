@@ -1701,7 +1701,7 @@
     }
   },
   "legiones-astartes": {
-    "Tactical Squad": {
+    "Tactical Legionnaires Squad": {
       "cost": 40,
       "uncertainty": 9,
       "quality": "Safe",
