@@ -6,7 +6,7 @@
   "restrictions": [],
   "units": [
     {
-      "name": "Tactical Squad",
+      "name": "Tactical Legionnaires Squad",
       "cost": 40,
       "uncertainty": 9,
       "quality": "Safe",
@@ -20,8 +20,8 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 41.499654785816055,
-        "uncertainty": 8.50999796324839,
+        "predictedMean": 41.49965499460741,
+        "uncertainty": 8.50999756177944,
         "score": 79,
         "quality": "Safe",
         "topNearestNeighbours": [
@@ -176,8 +176,8 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 43.647611905456614,
-        "uncertainty": 8.110529996547237,
+        "predictedMean": 43.64761161851304,
+        "uncertainty": 8.110529519346153,
         "score": 81,
         "quality": "Safe",
         "topNearestNeighbours": [
@@ -340,8 +340,8 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 53.24614086492301,
-        "uncertainty": 8.361774709008793,
+        "predictedMean": 53.246141196538844,
+        "uncertainty": 8.361774278945289,
         "score": 84,
         "quality": "Safe",
         "topNearestNeighbours": [
@@ -503,8 +503,8 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 51.217447846371165,
-        "uncertainty": 10.193575540776784,
+        "predictedMean": 51.21744728396479,
+        "uncertainty": 10.193575382819112,
         "score": 80,
         "quality": "Review",
         "topNearestNeighbours": [
@@ -666,8 +666,8 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 71.03234088892651,
-        "uncertainty": 11.97414773120002,
+        "predictedMean": 71.03234125028621,
+        "uncertainty": 11.974148072823898,
         "score": 83,
         "quality": "Safe",
         "topNearestNeighbours": [
@@ -830,8 +830,8 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 70.50517176289057,
-        "uncertainty": 11.982913084667535,
+        "predictedMean": 70.5051714217166,
+        "uncertainty": 11.982913285051369,
         "score": 83,
         "quality": "Safe",
         "topNearestNeighbours": [
@@ -991,8 +991,8 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 70.78195629487092,
-        "uncertainty": 11.906975826680895,
+        "predictedMean": 70.7819558164493,
+        "uncertainty": 11.906976012380488,
         "score": 83,
         "quality": "Safe",
         "topNearestNeighbours": [
@@ -1156,8 +1156,8 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 39.03989489215181,
-        "uncertainty": 9.180774652920478,
+        "predictedMean": 39.039893827926264,
+        "uncertainty": 9.180774467928009,
         "score": 76,
         "quality": "Safe",
         "topNearestNeighbours": [
@@ -1306,8 +1306,8 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 44.81465422293449,
-        "uncertainty": 8.185580161064138,
+        "predictedMean": 44.81465395190294,
+        "uncertainty": 8.185579701889685,
         "score": 82,
         "quality": "Safe",
         "topNearestNeighbours": [
@@ -1460,8 +1460,8 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 44.73797661619045,
-        "uncertainty": 9.071789012374692,
+        "predictedMean": 44.73797726874533,
+        "uncertainty": 9.071788754825782,
         "score": 80,
         "quality": "Safe",
         "topNearestNeighbours": [
@@ -1626,8 +1626,8 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 24.81766934202122,
-        "uncertainty": 14.401516781150717,
+        "predictedMean": 24.81766916276981,
+        "uncertainty": 14.401517666253467,
         "score": 42,
         "quality": "Review",
         "topNearestNeighbours": [
@@ -1785,8 +1785,8 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 30.504873449923437,
-        "uncertainty": 8.443501454416174,
+        "predictedMean": 30.50487331684848,
+        "uncertainty": 8.443501099490176,
         "score": 72,
         "quality": "Safe",
         "topNearestNeighbours": [
@@ -1803,7 +1803,7 @@
           {
             "name": "Land Speeder",
             "price": 40.0,
-            "distance": 0.3163375482683718
+            "distance": 0.31633754826837174
           },
           {
             "name": "Razorback (heavy bolter)",
@@ -1946,8 +1946,8 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 37.86982152791081,
-        "uncertainty": 9.022555301520727,
+        "predictedMean": 37.869820636848324,
+        "uncertainty": 9.022554945765004,
         "score": 76,
         "quality": "Safe",
         "topNearestNeighbours": [
@@ -1959,12 +1959,12 @@
           {
             "name": "Land Speeder Tornado",
             "price": 40.0,
-            "distance": 0.3163375482683718
+            "distance": 0.31633754826837174
           },
           {
             "name": "Land Speeder Typhoon",
             "price": 40.0,
-            "distance": 0.4323707257024283
+            "distance": 0.4323707257024282
           },
           {
             "name": "Razorback (heavy bolter)",
@@ -2118,8 +2118,8 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 45.77814730443391,
-        "uncertainty": 8.229000334306809,
+        "predictedMean": 45.77814723394364,
+        "uncertainty": 8.228999829653668,
         "score": 82,
         "quality": "Safe",
         "topNearestNeighbours": [
@@ -2131,12 +2131,12 @@
           {
             "name": "Land Speeder Tornado",
             "price": 40.0,
-            "distance": 0.23584952830141512
+            "distance": 0.2358495283014151
           },
           {
             "name": "Land Speeder",
             "price": 40.0,
-            "distance": 0.3989569734528608
+            "distance": 0.39895697345286074
           },
           {
             "name": "Razorback (lascannons)",
@@ -2279,8 +2279,8 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 63.72275783477104,
-        "uncertainty": 13.59092896566071,
+        "predictedMean": 63.722757362123026,
+        "uncertainty": 13.590929410978703,
         "score": 79,
         "quality": "Review",
         "topNearestNeighbours": [
@@ -2447,25 +2447,25 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 64.7624994549957,
-        "uncertainty": 20.64791880885149,
+        "predictedMean": 64.76249810868445,
+        "uncertainty": 20.647920194237862,
         "score": 68,
         "quality": "Experimental",
         "topNearestNeighbours": [
           {
             "name": "Vindicator",
             "price": 56.25,
-            "distance": 0.7861650943380504
+            "distance": 0.7861650943380502
           },
           {
             "name": "Dreadnought (missile + lascannons)",
             "price": 50.0,
-            "distance": 0.8276892197222605
+            "distance": 0.8276892197222604
           },
           {
             "name": "Predator Destructor",
             "price": 62.5,
-            "distance": 1.2871426149075755
+            "distance": 1.2871426149075753
           },
           {
             "name": "Razorback (heavy bolter)",
@@ -2619,8 +2619,8 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 45.204008048838745,
-        "uncertainty": 10.268647097577134,
+        "predictedMean": 45.204007495576946,
+        "uncertainty": 10.268647092663382,
         "score": 77,
         "quality": "Review",
         "topNearestNeighbours": [
@@ -2829,8 +2829,8 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 112.27181065512275,
-        "uncertainty": 13.148389166371835,
+        "predictedMean": 112.27181334994991,
+        "uncertainty": 13.148389436038721,
         "score": 88,
         "quality": "Safe",
         "topNearestNeighbours": [
@@ -3018,15 +3018,15 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 64.55147046352924,
-        "uncertainty": 8.399738210392183,
+        "predictedMean": 64.5514703693232,
+        "uncertainty": 8.399737749844313,
         "score": 87,
         "quality": "Safe",
         "topNearestNeighbours": [
           {
             "name": "Predator Annihilator",
             "price": 62.5,
-            "distance": 0.07083333333333333
+            "distance": 0.07083333333333332
           },
           {
             "name": "Razorback (lascannons)",
@@ -3171,15 +3171,15 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 73.78414071679657,
-        "uncertainty": 9.34363350657416,
+        "predictedMean": 73.7841410397314,
+        "uncertainty": 9.343633037587203,
         "score": 87,
         "quality": "Safe",
         "topNearestNeighbours": [
           {
             "name": "Land Raider",
             "price": 81.25,
-            "distance": 0.12747548783981963
+            "distance": 0.1274754878398196
           },
           {
             "name": "Predator Annihilator",
@@ -3332,8 +3332,8 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 15.509432894955445,
-        "uncertainty": 9.050733243833982,
+        "predictedMean": 15.50943150788742,
+        "uncertainty": 9.050733058378915,
         "score": 42,
         "quality": "Safe",
         "topNearestNeighbours": [
@@ -3506,8 +3506,8 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 57.59755947985597,
-        "uncertainty": 10.122987528048107,
+        "predictedMean": 57.59755916898681,
+        "uncertainty": 10.12298719704385,
         "score": 82,
         "quality": "Safe",
         "topNearestNeighbours": [
@@ -3690,15 +3690,15 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 101.85338182098883,
-        "uncertainty": 15.70841842238378,
+        "predictedMean": 101.8533821716497,
+        "uncertainty": 15.708419231349351,
         "score": 85,
         "quality": "Safe",
         "topNearestNeighbours": [
           {
             "name": "Dreadnought (missile + lascannons)",
             "price": 50.0,
-            "distance": 0.7106823794385537
+            "distance": 0.7106823794385536
           },
           {
             "name": "Vindicator",
@@ -3866,8 +3866,8 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 72.33534473769839,
-        "uncertainty": 13.063013641764364,
+        "predictedMean": 72.3353434544787,
+        "uncertainty": 13.063014065681237,
         "score": 82,
         "quality": "Safe",
         "topNearestNeighbours": [
@@ -4024,8 +4024,8 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 55.74912673242362,
-        "uncertainty": 8.757740253552232,
+        "predictedMean": 55.74912725631479,
+        "uncertainty": 8.757739725549206,
         "score": 84,
         "quality": "Safe",
         "topNearestNeighbours": [
@@ -4189,8 +4189,8 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 71.70179687014476,
-        "uncertainty": 10.694261900227488,
+        "predictedMean": 71.70179801462665,
+        "uncertainty": 10.694261807240068,
         "score": 85,
         "quality": "Safe",
         "topNearestNeighbours": [
@@ -4378,8 +4378,8 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 109.34025191862129,
-        "uncertainty": 32.53840174277502,
+        "predictedMean": 109.3402493309579,
+        "uncertainty": 32.53840467290169,
         "score": 70,
         "quality": "Experimental",
         "topNearestNeighbours": [
@@ -4391,7 +4391,7 @@
           {
             "name": "Nightwing Interceptor",
             "price": 100.0,
-            "distance": 1.4759177935553638
+            "distance": 1.4759177935553636
           },
           {
             "name": "Thunderbolt Fighter",
@@ -4539,8 +4539,8 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 87.07880442469778,
-        "uncertainty": 22.22378210920304,
+        "predictedMean": 87.07880359909943,
+        "uncertainty": 22.223784526755914,
         "score": 74,
         "quality": "Review",
         "topNearestNeighbours": [
@@ -4699,8 +4699,8 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 139.26307083686282,
-        "uncertainty": 23.80522015565556,
+        "predictedMean": 139.26307380728292,
+        "uncertainty": 23.805222260535643,
         "score": 83,
         "quality": "Safe",
         "topNearestNeighbours": [
@@ -4897,8 +4897,8 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 254.72807106781158,
-        "uncertainty": 35.59611826409496,
+        "predictedMean": 254.72806878748275,
+        "uncertainty": 35.5961212328827,
         "score": 86,
         "quality": "Safe",
         "topNearestNeighbours": [
@@ -5069,8 +5069,8 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 162.11887010120245,
-        "uncertainty": 24.056791362515657,
+        "predictedMean": 162.11887572149197,
+        "uncertainty": 24.056793554711508,
         "score": 85,
         "quality": "Safe",
         "topNearestNeighbours": [
@@ -5232,8 +5232,8 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 183.19878798021733,
-        "uncertainty": 22.628828174078382,
+        "predictedMean": 183.19879197611436,
+        "uncertainty": 22.62882992496375,
         "score": 88,
         "quality": "Safe",
         "topNearestNeighbours": [
@@ -5457,8 +5457,8 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 182.48486961819333,
-        "uncertainty": 28.24731201462561,
+        "predictedMean": 182.48487323489917,
+        "uncertainty": 28.247314485614357,
         "score": 85,
         "quality": "Safe",
         "topNearestNeighbours": [
@@ -5634,8 +5634,8 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 239.79150607168663,
-        "uncertainty": 27.501514704982,
+        "predictedMean": 239.79151060112218,
+        "uncertainty": 27.501517230106362,
         "score": 89,
         "quality": "Safe",
         "topNearestNeighbours": [
@@ -5805,8 +5805,8 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 307.1821585878399,
-        "uncertainty": 43.57024998721381,
+        "predictedMean": 307.1821630020094,
+        "uncertainty": 43.570253735281035,
         "score": 86,
         "quality": "Safe",
         "topNearestNeighbours": [
@@ -5968,8 +5968,8 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 229.0689749456859,
-        "uncertainty": 29.004868957989355,
+        "predictedMean": 229.06898037653838,
+        "uncertainty": 29.00487164587032,
         "score": 87,
         "quality": "Safe",
         "topNearestNeighbours": [
@@ -6132,8 +6132,8 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 190.26572062601485,
-        "uncertainty": 28.219887560820247,
+        "predictedMean": 190.26572160500638,
+        "uncertainty": 28.21989008834796,
         "score": 85,
         "quality": "Safe",
         "topNearestNeighbours": [
@@ -6317,8 +6317,8 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 210.92509749442752,
-        "uncertainty": 21.22729208488756,
+        "predictedMean": 210.92509521238185,
+        "uncertainty": 21.227293754438048,
         "score": 90,
         "quality": "Safe",
         "topNearestNeighbours": [
@@ -6496,8 +6496,8 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 189.21496023218845,
-        "uncertainty": 22.83329114325302,
+        "predictedMean": 189.2149603911153,
+        "uncertainty": 22.833293094197334,
         "score": 88,
         "quality": "Safe",
         "topNearestNeighbours": [
@@ -6646,11 +6646,11 @@
   ],
   "detachments": [
     {
-      "name": "Tactical Detachment",
+      "name": "Tactical Legionnaires Detachment",
       "group": "Line",
       "units": [
         {
-          "unitName": "Tactical Squad",
+          "unitName": "Tactical Legionnaires Squad",
           "count": 8,
           "min": 8,
           "max": 8
@@ -6661,11 +6661,14 @@
         "Transport",
         "Support Tank",
         "Support Dreadnought",
-        "Character"
+        "Character",
+        "Tactical Support Squad",
+        "Heavy Support Squad",
+        "Rapier"
       ]
     },
     {
-      "name": "Assault Marines",
+      "name": "Assault Marine Detachment",
       "group": "Line",
       "units": [
         {
@@ -6682,7 +6685,7 @@
       ]
     },
     {
-      "name": "Terminators",
+      "name": "Terminator Detachment",
       "group": "Line",
       "units": [
         {
@@ -6700,7 +6703,7 @@
       ]
     },
     {
-      "name": "Predators",
+      "name": "Predators Detachment",
       "group": "Support",
       "units": [
         {
@@ -6714,7 +6717,7 @@
       "availableUpgrades": []
     },
     {
-      "name": "Sicarans",
+      "name": "Sicarans Detachment",
       "group": "Support",
       "units": [
         {
@@ -6728,7 +6731,35 @@
       "availableUpgrades": []
     },
     {
-      "name": "Kratos",
+      "name": "Sabre Strike Tank Detachment",
+      "group": "Support",
+      "units": [
+        {
+          "unitName": "Sabre Strike Tank",
+          "count": 4,
+          "min": 4,
+          "max": 8
+        }
+      ],
+      "restrictions": [],
+      "availableUpgrades": []
+    },
+    {
+      "name": "Tarantula Battery",
+      "group": "Support",
+      "units": [
+        {
+          "unitName": "Tarantula",
+          "count": 4,
+          "min": 4,
+          "max": 4
+        }
+      ],
+      "restrictions": [],
+      "availableUpgrades": []
+    },
+    {
+      "name": "Kratos Detachment",
       "group": "Support",
       "units": [
         {
@@ -6742,7 +6773,7 @@
       "availableUpgrades": []
     },
     {
-      "name": "Whirlwinds",
+      "name": "Whirlwind Support Battery",
       "group": "Support",
       "units": [
         {
@@ -6756,7 +6787,21 @@
       "availableUpgrades": []
     },
     {
-      "name": "Landspeeders",
+      "name": "Vindicator Support Battery",
+      "group": "Support",
+      "units": [
+        {
+          "unitName": "Vindicator",
+          "count": 4,
+          "min": 4,
+          "max": 4
+        }
+      ],
+      "restrictions": [],
+      "availableUpgrades": []
+    },
+    {
+      "name": "Landspeeder Detachment",
       "group": "Support",
       "units": [
         {
@@ -6772,7 +6817,7 @@
       ]
     },
     {
-      "name": "Scimitars",
+      "name": "Scimitar Detachment",
       "group": "Support",
       "units": [
         {
@@ -6786,7 +6831,7 @@
       "availableUpgrades": []
     },
     {
-      "name": "Outriders",
+      "name": "Outrider Detachment",
       "group": "Support",
       "units": [
         {
@@ -6800,7 +6845,7 @@
       "availableUpgrades": []
     },
     {
-      "name": "Javelins",
+      "name": "Javelin Detachment",
       "group": "Support",
       "units": [
         {
@@ -6808,6 +6853,146 @@
           "count": 4,
           "min": 4,
           "max": 4
+        }
+      ],
+      "restrictions": [],
+      "availableUpgrades": []
+    },
+    {
+      "name": "Xiphon Interceptor Wing",
+      "group": "Special",
+      "units": [
+        {
+          "unitName": "Xiphon Interceptor",
+          "count": 3,
+          "min": 3,
+          "max": 3
+        }
+      ],
+      "restrictions": [],
+      "availableUpgrades": []
+    },
+    {
+      "name": "Fire Raptor Wing",
+      "group": "Special",
+      "units": [
+        {
+          "unitName": "Fire Raptor Gunship",
+          "count": 2,
+          "min": 2,
+          "max": 2
+        }
+      ],
+      "restrictions": [],
+      "availableUpgrades": []
+    },
+    {
+      "name": "Storm Eagle Wing",
+      "group": "Special",
+      "units": [
+        {
+          "unitName": "Storm Eagle Attack Ship",
+          "count": 2,
+          "min": 2,
+          "max": 2
+        }
+      ],
+      "restrictions": [],
+      "availableUpgrades": []
+    },
+    {
+      "name": "Thunderhawk Gunship Wing",
+      "group": "Special",
+      "units": [
+        {
+          "unitName": "Thunderhawk Gunship",
+          "count": 1,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "restrictions": [],
+      "availableUpgrades": []
+    },
+    {
+      "name": "Typhon Siege Tank Detachment",
+      "group": "Special",
+      "units": [
+        {
+          "unitName": "Typhon Siege Tank",
+          "count": 2,
+          "min": 2,
+          "max": 4
+        }
+      ],
+      "restrictions": [],
+      "availableUpgrades": []
+    },
+    {
+      "name": "Cerberus Heavy Tank Destroyer Detachment",
+      "group": "Special",
+      "units": [
+        {
+          "unitName": "Cerberus Heavy Tank Destroyer",
+          "count": 2,
+          "min": 2,
+          "max": 4
+        }
+      ],
+      "restrictions": [],
+      "availableUpgrades": []
+    },
+    {
+      "name": "Fellblade Detachment",
+      "group": "Special",
+      "units": [
+        {
+          "unitName": "Fellblade Super Heavy Tank",
+          "count": 1,
+          "min": 1,
+          "max": 2
+        }
+      ],
+      "restrictions": [],
+      "availableUpgrades": []
+    },
+    {
+      "name": "Glaive Detachment",
+      "group": "Special",
+      "units": [
+        {
+          "unitName": "Glaive Super Heavy Tank",
+          "count": 1,
+          "min": 1,
+          "max": 2
+        }
+      ],
+      "restrictions": [],
+      "availableUpgrades": []
+    },
+    {
+      "name": "Falchion Detachment",
+      "group": "Special",
+      "units": [
+        {
+          "unitName": "Falchion Super Heavy Tank Destroyer",
+          "count": 1,
+          "min": 1,
+          "max": 2
+        }
+      ],
+      "restrictions": [],
+      "availableUpgrades": []
+    },
+    {
+      "name": "Ascalon Detachment",
+      "group": "Special",
+      "units": [
+        {
+          "unitName": "Ascalon Super Heavy Tank",
+          "count": 1,
+          "min": 1,
+          "max": 2
         }
       ],
       "restrictions": [],
@@ -6854,6 +7039,9 @@
         },
         {
           "unitName": "Sicaran Battle Tank"
+        },
+        {
+          "unitName": "Vindicator"
         }
       ]
     },
@@ -6871,6 +7059,37 @@
         },
         {
           "unitName": "Deredeo Dreadnought"
+        }
+      ]
+    },
+    {
+      "name": "Tactical Support Squad",
+      "type": "replace",
+      "transportWarning": false,
+      "replaces": {
+        "toUnitName": "Tactical Legionnaires Squad",
+        "fromUnitName": "Tactical Support Squad",
+        "max": 4
+      }
+    },
+    {
+      "name": "Heavy Support Squad",
+      "type": "replace",
+      "transportWarning": false,
+      "replaces": {
+        "toUnitName": "Tactical Legionnaires Squad",
+        "fromUnitName": "Heavy Support Squad",
+        "max": 4
+      }
+    },
+    {
+      "name": "Rapier",
+      "type": "add",
+      "transportWarning": false,
+      "maxTotal": 4,
+      "adds": [
+        {
+          "unitName": "Rapier"
         }
       ]
     },

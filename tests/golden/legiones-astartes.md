@@ -4,7 +4,7 @@
 
 | Name                                                   | Predicted Cost   | Uncertainty   | Quality      | Spread   |
 |--------------------------------------------------------|------------------|---------------|--------------|----------|
-| Tactical Squad                                         | 40               | ±9.0          | Safe         |          |
+| Tactical Legionnaires Squad                            | 40               | ±9.0          | Safe         |          |
 | Assault Squad                                          | 45               | ±8.0          | Safe         |          |
 | Heavy Support Squad                                    | 55               | ±8.0          | Safe         |          |
 | Tactical Support Squad                                 | 50               | ±10.0         | Review       |          |
@@ -53,7 +53,7 @@ Average Uncertainty: 16.46
 
 | Name                                                   | Type   | Speed          |   Armour |   CC |   FF | Weapons                             | Range          | Firepower                                       | Notes                                                   |
 |--------------------------------------------------------|--------|----------------|----------|------|------|-------------------------------------|----------------|-------------------------------------------------|---------------------------------------------------------|
-| Tactical Squad                                         | INF    | 15cm           |        4 |    4 |    4 | Bolters                             | (Small Arms)   |                                                 | Know no fear                                            |
+| Tactical Legionnaires Squad                            | INF    | 15cm           |        4 |    4 |    4 | Bolters                             | (Small Arms)   |                                                 | Know no fear                                            |
 | Assault Squad                                          | INF    | 30cm           |        4 |    3 |    5 | Bolt Pistols and Chainswords        | (base contact) |                                                 | Know no fear, Jump Packs                                |
 | Heavy Support Squad                                    | INF    | 15cm           |        4 |    5 |    3 | Bolters                             | (Small Arms)   |                                                 | Know no fear                                            |
 |                                                        |        |                |          |      |      | Missile Launchers                   | 45             | AT5+ AP4+ AA6+                                  |                                                         |
