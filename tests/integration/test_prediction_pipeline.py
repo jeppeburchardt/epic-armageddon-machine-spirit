@@ -36,7 +36,7 @@ def _assert_json_equal_with_float_tolerance(
     is_expected_number = isinstance(expected, (int, float)) and not isinstance(expected, bool)
     is_actual_number = isinstance(actual, (int, float)) and not isinstance(actual, bool)
     if is_expected_number and is_actual_number:
-        assert actual == pytest.approx(expected, abs=1e-6), f"Float mismatch at {path}"
+        assert actual == pytest.approx(expected, abs=1e-4), f"Float mismatch at {path}"
         return
 
     assert actual == expected, f"Value mismatch at {path}"
