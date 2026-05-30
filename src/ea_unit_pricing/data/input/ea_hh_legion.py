@@ -1084,6 +1084,33 @@ tactical_squad_detachment.add_upgrade(transportation_upgrade)
 tactical_squad_detachment.add_upgrade(support_tank_upgrade)
 tactical_squad_detachment.add_upgrade(dreadnought_upgrade)
 tactical_squad_detachment.add_upgrade(character_upgrade)
+
+tactical_support_replace_upgrade = UpgradeReplace(
+    name="Tactical Support Squad",
+    from_unit=tactical_squad_unit,
+    to_unit=tactical_support_squad_unit,
+    max=4,
+)
+legiones_astartes.add_upgrade(tactical_support_replace_upgrade)
+tactical_squad_detachment.add_upgrade(tactical_support_replace_upgrade)
+
+heavy_support_replace_upgrade = UpgradeReplace(
+    name="Heavy Support Squad",
+    from_unit=tactical_squad_unit,
+    to_unit=heavy_support_squad_unit,
+    max=4,
+)
+legiones_astartes.add_upgrade(heavy_support_replace_upgrade)
+tactical_squad_detachment.add_upgrade(heavy_support_replace_upgrade)
+
+rapier_upgrade = UpgradeAdd(
+    "Rapier",
+    adds=[DetachmentUnit(rapier_unit)],
+    max_total=4,
+)
+legiones_astartes.add_upgrade(rapier_upgrade)
+tactical_squad_detachment.add_upgrade(rapier_upgrade)
+
 legiones_astartes.add_detachment(tactical_squad_detachment)
 
 ## Assualt detachment
@@ -1125,6 +1152,22 @@ sicaran_detachment = Detachment(
 )
 
 legiones_astartes.add_detachment(sicaran_detachment)
+
+## Sabre Strike Tank detachment
+sabre_strike_tank_detachment = Detachment(
+    name="Sabre Strike Tank Detachment",
+    group="Support",
+    units=[DetachmentUnit(sabre_strike_tank_unit, count=4, min=4, max=8)],
+)
+legiones_astartes.add_detachment(sabre_strike_tank_detachment)
+
+## Tarantula detachment
+tarantula_detachment = Detachment(
+    name="Tarantula Battery",
+    group="Support",
+    units=[DetachmentUnit(tarantula_unit, count=4, min=4, max=4)],
+)
+legiones_astartes.add_detachment(tarantula_detachment)
 
 ## Kratos detachment
 kratos_detachment = Detachment(
