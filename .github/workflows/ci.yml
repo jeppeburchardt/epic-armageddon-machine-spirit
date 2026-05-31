@@ -11,7 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: astral-sh/setup-uv@v2
-      - run: uv python install 3.11
+      - run: uv python install 3.12
       - run: pip install -e ".[lint]"
       - run: ruff check src tests
       - run: ruff format --check src tests
@@ -20,22 +20,21 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
       - run: pip install -e ".[lint]"
       - run: mypy --strict src/ea_unit_pricing
 
   test:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        python-version: ["3.11", "3.12"]
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
-          python-version: ${{ matrix.python-version }}
+          python-version: "3.12"
       - run: pip install -e ".[test]"
       - run: pytest --cov=ea_unit_pricing --cov-report=xml
       - uses: codecov/codecov-action@v4
-        if: matrix.python-version == '3.11'
         with:
           files: coverage.xml
