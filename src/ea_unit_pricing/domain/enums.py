@@ -131,7 +131,7 @@ def trait_to_string(trait: Traits) -> str:
         Traits.MOUNTED: "Mounted",
         Traits.FIRST_STRIKE: "First Strike",
         Traits.WALKER: "Walker",
-        Traits.PLANET_FALL: "PLANET_FALL",
+        Traits.PLANET_FALL: "Planetfall",
         Traits.TITAN_KILLER_D3: "Titan Killer (D3)",
         Traits.DISRUPT: "Disrupt",
         Traits.FEARLESS: "Fearless",
@@ -142,8 +142,11 @@ def trait_to_string(trait: Traits) -> str:
         Traits.COMMANDER: "Commander",
         Traits.INVULNERABLE_SAVE: "Invulnerable Save",
         Traits.SLOW_FIRING: "Slow Firing",
-        Traits.REAR: "Rear",
+        Traits.REAR: "Rear Arc",
         Traits.FxF: "FxF",
+        Traits.LEFT: "Left Arc",
+        Traits.RIGHT: "Right Arc",
+        Traits.TITAN_KILLER_1: "Titan Killer (1)",
     }
     return mapping.get(trait, str(trait))
 
