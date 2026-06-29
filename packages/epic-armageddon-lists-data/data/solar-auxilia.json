@@ -3880,7 +3880,7 @@
       "ff": "6+",
       "traits": [
         "Skimmer",
-        "PLANET_FALL"
+        "Planetfall"
       ],
       "transportation": {
         "capacity": 2,
@@ -4253,7 +4253,7 @@
           "weaponName": "Heavy Stubber",
           "type": "Ranged Weapon",
           "range": "30cm",
-          "firepower": "AA6+ Rear"
+          "firepower": "AA6+ Rear Arc"
         }
       ],
       "gprTrainingInfo": {

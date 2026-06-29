@@ -953,7 +953,7 @@
         "ff": 6,
         "traits": [
           "Skimmer",
-          "PLANET_FALL"
+          "Planetfall"
         ],
         "transport_capacity": 2
       },
@@ -1111,7 +1111,7 @@
             "aa": "6+"
           },
           "traits": [
-            "Rear"
+            "Rear Arc"
           ]
         }
       ]
@@ -1728,6 +1728,34 @@
         }
       ]
     },
+    "Centurion": {
+      "cost": 50,
+      "uncertainty": 0,
+      "quality": "Safe",
+      "unit_profile": {
+        "type": "CH",
+        "speed": "0cm",
+        "armour": 0,
+        "cc": 0,
+        "ff": 0,
+        "traits": [
+          "Commander",
+          "Invulnerable Save",
+          "Leader"
+        ]
+      },
+      "weapons": [
+        {
+          "name": "--",
+          "type": "Assault Weapons",
+          "range": "(bc)",
+          "traits": [
+            "Extra Attack +1",
+            "Macro-Weapon"
+          ]
+        }
+      ]
+    },
     "Tactical Legionnaires Squad": {
       "cost": 40,
       "uncertainty": 9,
@@ -1739,7 +1767,7 @@
         "cc": 4,
         "ff": 4,
         "traits": [
-          "Know no fear"
+          "They Shall Know No Fear"
         ]
       },
       "weapons": [
@@ -1762,7 +1790,7 @@
         "cc": 3,
         "ff": 5,
         "traits": [
-          "Know no fear",
+          "They Shall Know No Fear",
           "Jump Packs"
         ]
       },
@@ -1786,7 +1814,7 @@
         "cc": 5,
         "ff": 3,
         "traits": [
-          "Know no fear"
+          "They Shall Know No Fear"
         ]
       },
       "weapons": [
@@ -1820,7 +1848,7 @@
         "cc": 4,
         "ff": 4,
         "traits": [
-          "Know no fear"
+          "They Shall Know No Fear"
         ]
       },
       "weapons": [
@@ -1858,7 +1886,7 @@
         "cc": 3,
         "ff": 3,
         "traits": [
-          "Know no fear",
+          "They Shall Know No Fear",
           "Reinforced Armour"
         ]
       },
@@ -1891,7 +1919,7 @@
         "cc": 3,
         "ff": 3,
         "traits": [
-          "Know no fear",
+          "They Shall Know No Fear",
           "Reinforced Armour",
           "Teleport"
         ]
@@ -1928,7 +1956,7 @@
         "cc": 3,
         "ff": 3,
         "traits": [
-          "Know no fear",
+          "They Shall Know No Fear",
           "Reinforced Armour",
           "Teleport"
         ]
@@ -2009,7 +2037,7 @@
         "cc": 3,
         "ff": 5,
         "traits": [
-          "Know no fear",
+          "They Shall Know No Fear",
           "Mounted",
           "Scout"
         ]
@@ -2034,7 +2062,7 @@
         "cc": 4,
         "ff": 4,
         "traits": [
-          "Know no fear",
+          "They Shall Know No Fear",
           "Mounted",
           "Skimmer",
           "Scout"
@@ -2105,7 +2133,7 @@
         "cc": 6,
         "ff": 5,
         "traits": [
-          "Know no fear",
+          "They Shall Know No Fear",
           "Skimmer",
           "Scout"
         ]
@@ -2143,7 +2171,7 @@
         "cc": 6,
         "ff": 5,
         "traits": [
-          "Know no fear",
+          "They Shall Know No Fear",
           "Skimmer",
           "Scout"
         ]
@@ -2179,7 +2207,7 @@
         "cc": 6,
         "ff": 5,
         "traits": [
-          "Know no fear",
+          "They Shall Know No Fear",
           "Skimmer",
           "Scout"
         ]
@@ -2233,7 +2261,7 @@
         "cc": 4,
         "ff": 4,
         "traits": [
-          "Know no fear",
+          "They Shall Know No Fear",
           "Walker",
           "Reinforced Armour"
         ]
@@ -2272,7 +2300,7 @@
         "cc": 4,
         "ff": 4,
         "traits": [
-          "Know no fear",
+          "They Shall Know No Fear",
           "Walker",
           "Reinforced Armour"
         ]
@@ -2318,7 +2346,7 @@
         "cc": 6,
         "ff": 5,
         "traits": [
-          "Know no fear"
+          "They Shall Know No Fear"
         ]
       },
       "weapons": [
@@ -2378,7 +2406,7 @@
         "cc": 6,
         "ff": 4,
         "traits": [
-          "Know no fear",
+          "They Shall Know No Fear",
           "Reinforced Armour"
         ]
       },
@@ -2492,7 +2520,7 @@
         "cc": 6,
         "ff": 5,
         "traits": [
-          "Know no fear"
+          "They Shall Know No Fear"
         ]
       },
       "weapons": [
@@ -2569,7 +2597,7 @@
         "cc": 6,
         "ff": 4,
         "traits": [
-          "Know no fear",
+          "They Shall Know No Fear",
           "Reinforced Armour",
           "Thick Rear Armour"
         ],
@@ -2623,7 +2651,7 @@
         "cc": 4,
         "ff": 4,
         "traits": [
-          "Know no fear",
+          "They Shall Know No Fear",
           "Walker"
         ]
       },
@@ -2676,7 +2704,7 @@
         "cc": 5,
         "ff": 3,
         "traits": [
-          "Know no fear",
+          "They Shall Know No Fear",
           "Walker",
           "Invulnerable Save"
         ]
@@ -2746,7 +2774,7 @@
         "cc": 4,
         "ff": 4,
         "traits": [
-          "Know no fear",
+          "They Shall Know No Fear",
           "Walker",
           "Reinforced Armour"
         ]
@@ -2801,7 +2829,7 @@
         "cc": 6,
         "ff": 4,
         "traits": [
-          "Know no fear",
+          "They Shall Know No Fear",
           "Walker"
         ]
       },
@@ -2831,7 +2859,7 @@
         "cc": 6,
         "ff": 5,
         "traits": [
-          "Know no fear"
+          "They Shall Know No Fear"
         ]
       },
       "weapons": [
@@ -2880,7 +2908,7 @@
         "cc": 0,
         "ff": 0,
         "traits": [
-          "Know no fear",
+          "They Shall Know No Fear",
           "Reinforced Armour"
         ]
       },
@@ -2959,7 +2987,7 @@
         "cc": 0,
         "ff": 0,
         "traits": [
-          "Know no fear"
+          "They Shall Know No Fear"
         ]
       },
       "weapons": [
@@ -2996,7 +3024,7 @@
         "cc": 6,
         "ff": 5,
         "traits": [
-          "Know no fear",
+          "They Shall Know No Fear",
           "Reinforced Armour",
           "Thick Rear Armour"
         ],
@@ -3040,7 +3068,7 @@
         "cc": 5,
         "ff": 4,
         "traits": [
-          "Know no fear",
+          "They Shall Know No Fear",
           "Reinforced Armour"
         ],
         "damage_capacity": 4,
@@ -3121,7 +3149,7 @@
         "cc": 6,
         "ff": 5,
         "traits": [
-          "Know no fear",
+          "They Shall Know No Fear",
           "Reinforced Armour"
         ],
         "damage_capacity": 2
@@ -3162,7 +3190,7 @@
         "cc": 6,
         "ff": 5,
         "traits": [
-          "Know no fear",
+          "They Shall Know No Fear",
           "Reinforced Armour"
         ],
         "damage_capacity": 2
@@ -3204,7 +3232,7 @@
         "cc": 6,
         "ff": 5,
         "traits": [
-          "Know no fear",
+          "They Shall Know No Fear",
           "Reinforced Armour",
           "Thick Rear Armour"
         ],
@@ -3340,7 +3368,7 @@
         "cc": 5,
         "ff": 5,
         "traits": [
-          "Know no fear",
+          "They Shall Know No Fear",
           "Reinforced Armour",
           "Thick Rear Armour"
         ],
@@ -3357,7 +3385,7 @@
           },
           "traits": [
             "Macro-Weapon",
-            "Traits.TITAN_KILLER_1"
+            "Titan Killer (1)"
           ]
         },
         {
@@ -3409,7 +3437,7 @@
         "cc": 5,
         "ff": 5,
         "traits": [
-          "Know no fear",
+          "They Shall Know No Fear",
           "Reinforced Armour",
           "Thick Rear Armour"
         ],
@@ -3466,7 +3494,7 @@
         "cc": 5,
         "ff": 5,
         "traits": [
-          "Know no fear",
+          "They Shall Know No Fear",
           "Reinforced Armour",
           "Thick Rear Armour"
         ],
@@ -3512,7 +3540,7 @@
         "cc": 5,
         "ff": 5,
         "traits": [
-          "Know no fear",
+          "They Shall Know No Fear",
           "Reinforced Armour",
           "Thick Rear Armour"
         ],
@@ -3557,8 +3585,8 @@
         "cc": 6,
         "ff": 4,
         "traits": [
-          "Know no fear",
-          "PLANET_FALL",
+          "They Shall Know No Fear",
+          "Planetfall",
           "Reinforced Armour"
         ],
         "damage_capacity": 2,
@@ -3610,7 +3638,7 @@
             "ap": "4+"
           },
           "traits": [
-            "Traits.LEFT"
+            "Left Arc"
           ]
         },
         {
@@ -3621,7 +3649,7 @@
             "ap": "4+"
           },
           "traits": [
-            "Traits.RIGHT"
+            "Right Arc"
           ]
         }
       ]
@@ -3637,9 +3665,9 @@
         "cc": 6,
         "ff": 5,
         "traits": [
-          "Know no fear",
+          "They Shall Know No Fear",
           "Reinforced Armour",
-          "PLANET_FALL"
+          "Planetfall"
         ],
         "transport_capacity": 4
       },

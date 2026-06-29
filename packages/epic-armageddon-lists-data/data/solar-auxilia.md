@@ -97,7 +97,7 @@ Average Uncertainty: 11.19
 |                          |        |         |          |      |      | Heavy Bolter               | 30             | AP5+                          |                                      |
 | Basilisk (Barrage)       | AV     | 20cm    |        5 |    6 |    5 | Earthshaker Cannon         | 120            | 1BP, Ignore Cover             |                                      |
 |                          |        |         |          |      |      | Heavy Bolter               | 30             | AP5+                          |                                      |
-| Arvus Lighter            | AV     | 30cm    |        5 |    0 |    6 | Multi-Laser                | (Small Arms)   |                               | Skimmer, PLANET_FALL                 |
+| Arvus Lighter            | AV     | 30cm    |        5 |    0 |    6 | Multi-Laser                | (Small Arms)   |                               | Skimmer, Planetfall                  |
 | Malcador Infernus        | AV     | 20cm    |        4 |    6 |    3 | Infernus Cannon            | 30             | AP3+                          | Reinforced Armour, Thick Rear Armour |
 |                          |        |         |          |      |      | Auto Cannon                | 45             | AT6+ AP5+                     |                                      |
 |                          |        |         |          |      |      | Auto Cannon                | 45             | AT6+ AP5+                     |                                      |
@@ -142,7 +142,7 @@ Average Uncertainty: 11.19
 |                          |        |         |          |      |      | Avenger Cannon             | 30             | AT2+ AP4+                     |                                      |
 |                          |        |         |          |      |      | Lascannon                  | 45             | AT5+                          |                                      |
 |                          |        |         |          |      |      | Lascannon                  | 45             | AT5+                          |                                      |
-|                          |        |         |          |      |      | Heavy Stubber              | 30             | AA6+, Rear                    |                                      |
+|                          |        |         |          |      |      | Heavy Stubber              | 30             | AA6+, Rear Arc                |                                      |
 | Thunderbolt              | AC     | Fighter |        6 |    0 |    0 | Multi-laser                | 30             | AT6+ AP5+ AA5+, FxF           |                                      |
 |                          |        |         |          |      |      | Rockets                    | 30             | AT4+, FxF                     |                                      |
 |                          |        |         |          |      |      | Storm Bolters              | 15             | AP4+ AA5+, FxF                |                                      |
