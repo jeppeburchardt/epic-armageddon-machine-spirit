@@ -6,7 +6,15 @@ import json
 from itertools import product as cartesian_product
 from pathlib import Path
 
-from ea_unit_pricing.domain.army import Army, UpgradeAdd, UpgradeCharacter, UpgradeReplace
+from ea_unit_pricing.domain.army import (
+    Army,
+    MaxGroupPercentage,
+    MinGroupPercentage,
+    Restriction,
+    UpgradeAdd,
+    UpgradeCharacter,
+    UpgradeReplace,
+)
 from ea_unit_pricing.domain.enums import quality_to_str, trait_to_string, unit_type_to_string
 from ea_unit_pricing.domain.result import MultipleChoiceResult, Result
 from ea_unit_pricing.domain.weapons import (
@@ -72,6 +80,15 @@ def _weapon_to_dict(weapon: object) -> dict[str, object]:
             "options": [_weapon_to_dict(o) for o in weapon.options],
         }
     return {"name": str(weapon)}
+
+
+def _restriction_to_dict(restriction: Restriction) -> dict[str, object]:
+    d: dict[str, object] = {"type": restriction.type, "group": restriction.group}
+    if isinstance(restriction, MaxGroupPercentage):
+        d["maxPercentage"] = restriction.maxPercentage
+    if isinstance(restriction, MinGroupPercentage):
+        d["minPercentage"] = restriction.minPercentage
+    return d
 
 
 def _dice_stat(v: int) -> str:
@@ -187,7 +204,7 @@ def build_army_json_files(
             "slug": army.slug,
             "strategyRating": army.strategyRating,
             "specialRules": [],
-            "restrictions": [],
+            "restrictions": [_restriction_to_dict(r) for r in army.restrictions],
             "units": [],
             "detachments": [],
             "upgrades": [],

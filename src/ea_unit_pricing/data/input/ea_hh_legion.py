@@ -4,6 +4,8 @@ from ea_unit_pricing.domain import (
     AssaultWeapon,
     Detachment,
     DetachmentUnit,
+    MaxGroupPercentage,
+    MinGroupPercentage,
     MultipleChoiceWeapon,
     Multiplier,
     RangedWeapon,
@@ -1305,3 +1307,6 @@ ascalon_detachment = Detachment(
     units=[DetachmentUnit(ascalon_super_heavy_tank_unit, count=1, min=1, max=2)],
 )
 legiones_astartes.add_detachment(ascalon_detachment)
+
+legiones_astartes.add_restriction(MaxGroupPercentage("Special", 30))
+legiones_astartes.add_restriction(MinGroupPercentage("Line", 50))

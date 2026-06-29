@@ -10,6 +10,9 @@ __all__ = [
     "Army",
     "Detachment",
     "DetachmentUnit",
+    "MaxGroupPercentage",
+    "MinGroupPercentage",
+    "Restriction",
     "SpecialRule",
     "Upgrade",
     "UpgradeAdd",
@@ -133,6 +136,46 @@ class UpgradeCharacter(Upgrade):
     character_names: list[str] = field(default_factory=list)
 
 
+@dataclass
+class Restriction:
+    """Base class for army-list composition restrictions."""
+
+    group: str
+    type: str
+
+
+@dataclass
+class MaxGroupPercentage(Restriction):
+    """Caps a detachment group at a percentage of the total army list."""
+
+    max_percentage: int = 0
+
+    def __init__(self, group: str, max_percentage: int) -> None:
+        super().__init__(group, type="max_group_percentage")
+        self.max_percentage = max_percentage
+
+    # Legacy attribute name used in serialization code.
+    @property
+    def maxPercentage(self) -> int:
+        return self.max_percentage
+
+
+@dataclass
+class MinGroupPercentage(Restriction):
+    """Requires a detachment group to be at least a percentage of the total army list."""
+
+    min_percentage: int = 0
+
+    def __init__(self, group: str, min_percentage: int) -> None:
+        super().__init__(group, type="min_group_percentage")
+        self.min_percentage = min_percentage
+
+    # Legacy attribute name used in serialization code.
+    @property
+    def minPercentage(self) -> int:
+        return self.min_percentage
+
+
 class Army:
     """An army list containing units, detachment definitions, and upgrades.
 
@@ -145,6 +188,7 @@ class Army:
         name: str = "",
         strategy_rating: int = 1,
         special_rules: list[SpecialRule] | None = None,
+        restrictions: list[Restriction] | None = None,
         # Legacy camelCase kwarg accepted for backward compatibility.
         strategyRating: int | None = None,
         specialRules: list[SpecialRule] | None = None,
@@ -155,6 +199,7 @@ class Army:
         self.specialRules: list[SpecialRule] = (
             specialRules if specialRules is not None else (special_rules or [])
         )
+        self.restrictions: list[Restriction] = restrictions if restrictions is not None else []
         self.units: list[Unit] = []
         self.detachments: list[Detachment] = []
         self.upgrades: list[Upgrade] = []
@@ -167,6 +212,9 @@ class Army:
 
     def add_upgrade(self, upgrade: Upgrade) -> None:
         self.upgrades.append(upgrade)
+
+    def add_restriction(self, restriction: Restriction) -> None:
+        self.restrictions.append(restriction)
 
     def get_sorted_units(self) -> list[Unit]:
         """Return units sorted by UnitType value for consistent output ordering."""

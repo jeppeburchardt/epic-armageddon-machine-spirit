@@ -3,7 +3,18 @@
   "slug": "legiones-astartes",
   "strategyRating": 1,
   "specialRules": [],
-  "restrictions": [],
+  "restrictions": [
+    {
+      "type": "max_group_percentage",
+      "group": "Special",
+      "maxPercentage": 30
+    },
+    {
+      "type": "min_group_percentage",
+      "group": "Line",
+      "minPercentage": 50
+    }
+  ],
   "units": [
     {
       "name": "Tactical Legionnaires Squad",
