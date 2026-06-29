@@ -51,7 +51,7 @@ centurion = Unit(
     strategy_rating=5,
     initiative=1,
 )
-legiones_astartes.add_unit(praetor)
+legiones_astartes.add_unit(centurion)
 
 tactical_squad_unit = Unit(
     "Tactical Legionnaires Squad",
