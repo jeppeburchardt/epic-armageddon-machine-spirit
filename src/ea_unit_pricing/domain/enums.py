@@ -124,7 +124,7 @@ def trait_to_string(trait: Traits) -> str:
         Traits.TELEPORT: "Teleport",
         Traits.THICK_REAR_ARMOUR: "Thick Rear Armour",
         Traits.MW: "Macro-Weapon",
-        Traits.KNOW_NO_FEAR: "Know no fear",
+        Traits.KNOW_NO_FEAR: "They Shall Know No Fear",
         Traits.JUMP_PACKS: "Jump Packs",
         Traits.SCOUT: "Scout",
         Traits.INFILTRATOR: "Infiltrator",
