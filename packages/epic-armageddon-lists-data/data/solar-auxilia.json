@@ -20,8 +20,8 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 17.251539554825975,
-        "uncertainty": 7.6388032494233435,
+        "predictedMean": 17.2515394457398,
+        "uncertainty": 7.638803298290766,
         "score": 56,
         "quality": "Safe",
         "topNearestNeighbours": [
@@ -170,8 +170,8 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 26.283189123839826,
-        "uncertainty": 8.461544519560263,
+        "predictedMean": 26.283189316138532,
+        "uncertainty": 8.461544521993234,
         "score": 68,
         "quality": "Safe",
         "topNearestNeighbours": [
@@ -320,8 +320,8 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 27.298654678213502,
-        "uncertainty": 10.770150224864956,
+        "predictedMean": 27.298655307211497,
+        "uncertainty": 10.770150007582957,
         "score": 61,
         "quality": "Review",
         "topNearestNeighbours": [
@@ -470,8 +470,8 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 31.893366054201095,
-        "uncertainty": 9.822631063077683,
+        "predictedMean": 31.893366390552416,
+        "uncertainty": 9.8226310495291,
         "score": 69,
         "quality": "Safe",
         "topNearestNeighbours": [
@@ -627,8 +627,8 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 20.60166565814984,
-        "uncertainty": 8.249976744737074,
+        "predictedMean": 20.60166594790529,
+        "uncertainty": 8.249976739494954,
         "score": 60,
         "quality": "Safe",
         "topNearestNeighbours": [
@@ -786,8 +786,8 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 26.760005009062347,
-        "uncertainty": 8.064425179876295,
+        "predictedMean": 26.760005030942494,
+        "uncertainty": 8.064425194020137,
         "score": 70,
         "quality": "Safe",
         "topNearestNeighbours": [
@@ -938,8 +938,8 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 35.39203001804047,
-        "uncertainty": 8.600055295090817,
+        "predictedMean": 35.392030759700695,
+        "uncertainty": 8.600055338396652,
         "score": 76,
         "quality": "Safe",
         "topNearestNeighbours": [
@@ -1088,8 +1088,8 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 22.24714585184197,
-        "uncertainty": 8.190958807611509,
+        "predictedMean": 22.24714632763979,
+        "uncertainty": 8.190958810002497,
         "score": 63,
         "quality": "Safe",
         "topNearestNeighbours": [
@@ -1238,8 +1238,8 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 27.36895241831123,
-        "uncertainty": 8.243298394555838,
+        "predictedMean": 27.36895335452558,
+        "uncertainty": 8.24329842437671,
         "score": 70,
         "quality": "Safe",
         "topNearestNeighbours": [
@@ -1395,8 +1395,8 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 40.93165795159254,
-        "uncertainty": 10.605978635766542,
+        "predictedMean": 40.93165822163703,
+        "uncertainty": 10.60597843135433,
         "score": 74,
         "quality": "Review",
         "topNearestNeighbours": [
@@ -1559,8 +1559,8 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 24.81766916276981,
-        "uncertainty": 14.401517666253467,
+        "predictedMean": 24.817669239945282,
+        "uncertainty": 14.401516951714154,
         "score": 42,
         "quality": "Review",
         "topNearestNeighbours": [
@@ -1732,8 +1732,8 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 64.43193133296899,
-        "uncertainty": 8.917334546901143,
+        "predictedMean": 64.43193074802815,
+        "uncertainty": 8.917334477850302,
         "score": 86,
         "quality": "Safe",
         "topNearestNeighbours": [
@@ -1905,8 +1905,8 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 62.668875698218066,
-        "uncertainty": 9.740257313277741,
+        "predictedMean": 62.66887504722561,
+        "uncertainty": 9.740257185559102,
         "score": 84,
         "quality": "Safe",
         "topNearestNeighbours": [
@@ -2078,8 +2078,8 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 54.19876165610737,
-        "uncertainty": 9.381556806458772,
+        "predictedMean": 54.198761505581956,
+        "uncertainty": 9.381556668547468,
         "score": 83,
         "quality": "Safe",
         "topNearestNeighbours": [
@@ -2251,8 +2251,8 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 60.75233630864281,
-        "uncertainty": 8.79375433895338,
+        "predictedMean": 60.752336110319256,
+        "uncertainty": 8.793754249196985,
         "score": 86,
         "quality": "Safe",
         "topNearestNeighbours": [
@@ -2424,8 +2424,8 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 53.30023304336366,
-        "uncertainty": 8.355326340237406,
+        "predictedMean": 53.30023276515169,
+        "uncertainty": 8.355326329183173,
         "score": 84,
         "quality": "Safe",
         "topNearestNeighbours": [
@@ -2597,8 +2597,8 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 59.63497355883788,
-        "uncertainty": 8.885297443294585,
+        "predictedMean": 59.634973237389524,
+        "uncertainty": 8.885297362301984,
         "score": 85,
         "quality": "Safe",
         "topNearestNeighbours": [
@@ -2809,8 +2809,8 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 93.54110958897732,
-        "uncertainty": 11.977083901122834,
+        "predictedMean": 93.5411091260762,
+        "uncertainty": 11.977083479167943,
         "score": 87,
         "quality": "Safe",
         "topNearestNeighbours": [
@@ -2962,8 +2962,8 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 33.03727176782311,
-        "uncertainty": 10.749989988337738,
+        "predictedMean": 33.0372731448787,
+        "uncertainty": 10.74998974351136,
         "score": 67,
         "quality": "Review",
         "topNearestNeighbours": [
@@ -3118,8 +3118,8 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 49.725490513356775,
-        "uncertainty": 8.859231241394424,
+        "predictedMean": 49.72549067141675,
+        "uncertainty": 8.859231185788468,
         "score": 82,
         "quality": "Safe",
         "topNearestNeighbours": [
@@ -3281,8 +3281,8 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 58.08437563337196,
-        "uncertainty": 9.630878740843563,
+        "predictedMean": 58.08437649544567,
+        "uncertainty": 9.630878603943604,
         "score": 83,
         "quality": "Safe",
         "topNearestNeighbours": [
@@ -3438,8 +3438,8 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 70.1345156107768,
-        "uncertainty": 9.476052220643565,
+        "predictedMean": 70.13451573317069,
+        "uncertainty": 9.476052198347197,
         "score": 86,
         "quality": "Safe",
         "topNearestNeighbours": [
@@ -3595,8 +3595,8 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 82.8602448754163,
-        "uncertainty": 9.309233627926817,
+        "predictedMean": 82.86024481060736,
+        "uncertainty": 9.309233617149287,
         "score": 89,
         "quality": "Safe",
         "topNearestNeighbours": [
@@ -3745,8 +3745,8 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 19.187203007752785,
-        "uncertainty": 20.45771938188107,
+        "predictedMean": 19.187204918000376,
+        "uncertainty": 20.45771808920661,
         "score": -7,
         "quality": "Experimental",
         "topNearestNeighbours": [
@@ -3916,8 +3916,8 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 71.00988149404607,
-        "uncertainty": 11.958758343475552,
+        "predictedMean": 71.00988108466821,
+        "uncertainty": 11.958758018523186,
         "score": 83,
         "quality": "Safe",
         "topNearestNeighbours": [
@@ -4076,8 +4076,8 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 103.7280118783658,
-        "uncertainty": 16.362876493930642,
+        "predictedMean": 103.72801322754887,
+        "uncertainty": 16.362875775761122,
         "score": 84,
         "quality": "Safe",
         "topNearestNeighbours": [
@@ -4257,8 +4257,8 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 80.6494892730536,
-        "uncertainty": 15.211494692817611,
+        "predictedMean": 80.6494908566915,
+        "uncertainty": 15.211494047837569,
         "score": 81,
         "quality": "Safe",
         "topNearestNeighbours": [
@@ -4421,8 +4421,8 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 75.22760643858393,
-        "uncertainty": 8.57708240967149,
+        "predictedMean": 75.22760640593494,
+        "uncertainty": 8.577082407301315,
         "score": 89,
         "quality": "Safe",
         "topNearestNeighbours": [
@@ -4599,8 +4599,8 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 110.35877971739467,
-        "uncertainty": 23.95742493271338,
+        "predictedMean": 110.35878111950342,
+        "uncertainty": 23.957423412310018,
         "score": 78,
         "quality": "Review",
         "topNearestNeighbours": [
@@ -4763,8 +4763,8 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 117.7160557906169,
-        "uncertainty": 11.767968090841984,
+        "predictedMean": 117.7160559026947,
+        "uncertainty": 11.76796785244913,
         "score": 90,
         "quality": "Safe",
         "topNearestNeighbours": [
@@ -4948,8 +4948,8 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 194.64682364502193,
-        "uncertainty": 12.337491475016002,
+        "predictedMean": 194.64682471158613,
+        "uncertainty": 12.337491056909455,
         "score": 94,
         "quality": "Safe",
         "topNearestNeighbours": [
@@ -5136,8 +5136,8 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 170.08913928251494,
-        "uncertainty": 16.42940801480552,
+        "predictedMean": 170.0891412516353,
+        "uncertainty": 16.429407230866016,
         "score": 90,
         "quality": "Safe",
         "topNearestNeighbours": [
@@ -5324,8 +5324,8 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 156.35590107771418,
-        "uncertainty": 15.14074225507899,
+        "predictedMean": 156.35590036424747,
+        "uncertainty": 15.140741459768842,
         "score": 90,
         "quality": "Safe",
         "topNearestNeighbours": [
@@ -5526,8 +5526,8 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 157.74674370138536,
-        "uncertainty": 10.042080490947042,
+        "predictedMean": 157.74674383366596,
+        "uncertainty": 10.042080387926518,
         "score": 94,
         "quality": "Safe",
         "topNearestNeighbours": [
@@ -5735,8 +5735,8 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 144.54856273114945,
-        "uncertainty": 12.451724363352692,
+        "predictedMean": 144.54856196642865,
+        "uncertainty": 12.451723904869809,
         "score": 91,
         "quality": "Safe",
         "topNearestNeighbours": [
