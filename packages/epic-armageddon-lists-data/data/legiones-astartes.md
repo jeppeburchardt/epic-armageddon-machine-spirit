@@ -4,6 +4,8 @@
 
 | Name                                                   | Predicted Cost   | Uncertainty   | Quality      | Spread   |
 |--------------------------------------------------------|------------------|---------------|--------------|----------|
+| Praetor                                                | 100              | ±0            | Safe         |          |
+| Praetor                                                | 100              | ±0            | Safe         |          |
 | Tactical Legionnaires Squad                            | 40               | ±9.0          | Safe         |          |
 | Assault Squad                                          | 45               | ±8.0          | Safe         |          |
 | Heavy Support Squad                                    | 55               | ±8.0          | Safe         |          |
@@ -44,8 +46,8 @@
 | Thunderhawk Gunship                                    | 200              | ±21.0         | Safe         |          |
 | Storm Eagle Attack Ship                                | 190              | ±23.0         | Safe         |          |
 
-Average Score: 80.13
-Average Uncertainty: 16.46
+Average Score: 81.10
+Average Uncertainty: 15.65
 
 
 
@@ -53,6 +55,8 @@ Average Uncertainty: 16.46
 
 | Name                                                   | Type   | Speed          |   Armour |   CC |   FF | Weapons                             | Range          | Firepower                                       | Notes                                                   |
 |--------------------------------------------------------|--------|----------------|----------|------|------|-------------------------------------|----------------|-------------------------------------------------|---------------------------------------------------------|
+| Praetor                                                | CH     | 0cm            |        0 |    0 |    0 | --                                  | (base contact) | Extra Attack +1, Macro-Weapon                   | Supreme Commander, Invulnerable Save                    |
+| Praetor                                                | CH     | 0cm            |        0 |    0 |    0 | --                                  | (base contact) | Extra Attack +1, Macro-Weapon                   | Supreme Commander, Invulnerable Save                    |
 | Tactical Legionnaires Squad                            | INF    | 15cm           |        4 |    4 |    4 | Bolters                             | (Small Arms)   |                                                 | Know no fear                                            |
 | Assault Squad                                          | INF    | 30cm           |        4 |    3 |    5 | Bolt Pistols and Chainswords        | (base contact) |                                                 | Know no fear, Jump Packs                                |
 | Heavy Support Squad                                    | INF    | 15cm           |        4 |    5 |    3 | Bolters                             | (Small Arms)   |                                                 | Know no fear                                            |

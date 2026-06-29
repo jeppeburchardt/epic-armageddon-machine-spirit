@@ -6,6 +6,74 @@
   "restrictions": [],
   "units": [
     {
+      "name": "Praetor",
+      "cost": 100,
+      "uncertainty": 0,
+      "quality": "Safe",
+      "weaponSlots": [
+        {
+          "kind": "fixed",
+          "weaponName": "--",
+          "type": "Assault Weapons",
+          "range": "(bc)",
+          "firepower": "Extra Attack +1 Macro-Weapon"
+        }
+      ],
+      "gprTrainingInfo": {
+        "predictedMean": 100,
+        "uncertainty": 0,
+        "score": 100,
+        "quality": "Safe",
+        "topNearestNeighbours": [],
+        "contributingPriceValues": [],
+        "trainingSetSize": 0,
+        "modelKernel": ""
+      },
+      "type": "CH",
+      "speed": "0cm",
+      "armour": "-",
+      "cc": "-",
+      "ff": "-",
+      "traits": [
+        "Supreme Commander",
+        "Invulnerable Save"
+      ]
+    },
+    {
+      "name": "Praetor",
+      "cost": 100,
+      "uncertainty": 0,
+      "quality": "Safe",
+      "weaponSlots": [
+        {
+          "kind": "fixed",
+          "weaponName": "--",
+          "type": "Assault Weapons",
+          "range": "(bc)",
+          "firepower": "Extra Attack +1 Macro-Weapon"
+        }
+      ],
+      "gprTrainingInfo": {
+        "predictedMean": 100,
+        "uncertainty": 0,
+        "score": 100,
+        "quality": "Safe",
+        "topNearestNeighbours": [],
+        "contributingPriceValues": [],
+        "trainingSetSize": 0,
+        "modelKernel": ""
+      },
+      "type": "CH",
+      "speed": "0cm",
+      "armour": "-",
+      "cc": "-",
+      "ff": "-",
+      "traits": [
+        "Supreme Commander",
+        "Invulnerable Save"
+      ]
+    },
+    {
       "name": "Tactical Legionnaires Squad",
       "cost": 40,
       "uncertainty": 9,
@@ -7067,8 +7135,8 @@
       "type": "replace",
       "transportWarning": false,
       "replaces": {
-        "toUnitName": "Tactical Legionnaires Squad",
-        "fromUnitName": "Tactical Support Squad",
+        "fromUnitName": "Tactical Legionnaires Squad",
+        "toUnitName": "Tactical Support Squad",
         "max": 4
       }
     },
@@ -7077,8 +7145,8 @@
       "type": "replace",
       "transportWarning": false,
       "replaces": {
-        "toUnitName": "Tactical Legionnaires Squad",
-        "fromUnitName": "Heavy Support Squad",
+        "fromUnitName": "Tactical Legionnaires Squad",
+        "toUnitName": "Heavy Support Squad",
         "max": 4
       }
     },
@@ -7098,8 +7166,8 @@
       "type": "replace",
       "transportWarning": false,
       "replaces": {
-        "toUnitName": "Land Speeder with Flamer and Multi-melta",
-        "fromUnitName": "Land Speeder with Plasma Cannon and Heavy Bolter",
+        "fromUnitName": "Land Speeder with Flamer and Multi-melta",
+        "toUnitName": "Land Speeder with Plasma Cannon and Heavy Bolter",
         "max": 4
       }
     }

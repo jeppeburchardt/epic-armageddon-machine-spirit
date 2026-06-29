@@ -1701,6 +1701,33 @@
     }
   },
   "legiones-astartes": {
+    "Praetor": {
+      "cost": 100,
+      "uncertainty": 0,
+      "quality": "Safe",
+      "unit_profile": {
+        "type": "CH",
+        "speed": "0cm",
+        "armour": 0,
+        "cc": 0,
+        "ff": 0,
+        "traits": [
+          "Supreme Commander",
+          "Invulnerable Save"
+        ]
+      },
+      "weapons": [
+        {
+          "name": "--",
+          "type": "Assault Weapons",
+          "range": "(bc)",
+          "traits": [
+            "Extra Attack +1",
+            "Macro-Weapon"
+          ]
+        }
+      ]
+    },
     "Tactical Legionnaires Squad": {
       "cost": 40,
       "uncertainty": 9,
