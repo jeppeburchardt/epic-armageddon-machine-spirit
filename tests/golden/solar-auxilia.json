@@ -20,8 +20,8 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 17.251539554825975,
-        "uncertainty": 7.6388032494233435,
+        "predictedMean": 17.25153932928484,
+        "uncertainty": 7.6388036242500235,
         "score": 56,
         "quality": "Safe",
         "topNearestNeighbours": [
@@ -170,8 +170,8 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 26.283189123839826,
-        "uncertainty": 8.461544519560263,
+        "predictedMean": 26.283189591289876,
+        "uncertainty": 8.461544826932975,
         "score": 68,
         "quality": "Safe",
         "topNearestNeighbours": [
@@ -320,8 +320,8 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 27.298654678213502,
-        "uncertainty": 10.770150224864956,
+        "predictedMean": 27.298655893816502,
+        "uncertainty": 10.770150208454073,
         "score": 61,
         "quality": "Review",
         "topNearestNeighbours": [
@@ -470,8 +470,8 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 31.893366054201095,
-        "uncertainty": 9.822631063077683,
+        "predictedMean": 31.8933667040927,
+        "uncertainty": 9.82263140031707,
         "score": 69,
         "quality": "Safe",
         "topNearestNeighbours": [
@@ -627,8 +627,8 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 20.60166565814984,
-        "uncertainty": 8.249976744737074,
+        "predictedMean": 20.601666227982776,
+        "uncertainty": 8.249977035993572,
         "score": 60,
         "quality": "Safe",
         "topNearestNeighbours": [
@@ -786,8 +786,8 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 26.760005009062347,
-        "uncertainty": 8.064425179876295,
+        "predictedMean": 26.76000505826397,
+        "uncertainty": 8.064425502262521,
         "score": 70,
         "quality": "Safe",
         "topNearestNeighbours": [
@@ -938,8 +938,8 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 35.39203001804047,
-        "uncertainty": 8.600055295090817,
+        "predictedMean": 35.39203143831204,
+        "uncertainty": 8.600055693987144,
         "score": 76,
         "quality": "Safe",
         "topNearestNeighbours": [
@@ -1088,8 +1088,8 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 22.24714585184197,
-        "uncertainty": 8.190958807611509,
+        "predictedMean": 22.247146761342222,
+        "uncertainty": 8.190959113220616,
         "score": 63,
         "quality": "Safe",
         "topNearestNeighbours": [
@@ -1238,8 +1238,8 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 27.36895241831123,
-        "uncertainty": 8.243298394555838,
+        "predictedMean": 27.368954237669946,
+        "uncertainty": 8.243298753192326,
         "score": 70,
         "quality": "Safe",
         "topNearestNeighbours": [
@@ -1395,15 +1395,15 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 40.93165795159254,
-        "uncertainty": 10.605978635766542,
+        "predictedMean": 40.93165837892104,
+        "uncertainty": 10.605978632280797,
         "score": 74,
         "quality": "Review",
         "topNearestNeighbours": [
           {
             "name": "Sentinel Walker",
             "price": 25.0,
-            "distance": 0.40809942279901457
+            "distance": 0.4080994227990146
           },
           {
             "name": "Deth Kopta",
@@ -1559,8 +1559,8 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 24.81766916276981,
-        "uncertainty": 14.401517666253467,
+        "predictedMean": 24.81766934202122,
+        "uncertainty": 14.401516781150717,
         "score": 42,
         "quality": "Review",
         "topNearestNeighbours": [
@@ -1732,8 +1732,8 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 64.43193133296899,
-        "uncertainty": 8.917334546901143,
+        "predictedMean": 64.43193021711333,
+        "uncertainty": 8.91733473409328,
         "score": 86,
         "quality": "Safe",
         "topNearestNeighbours": [
@@ -1905,8 +1905,8 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 62.668875698218066,
-        "uncertainty": 9.740257313277741,
+        "predictedMean": 62.6688744828782,
+        "uncertainty": 9.740257411829434,
         "score": 84,
         "quality": "Safe",
         "topNearestNeighbours": [
@@ -1918,7 +1918,7 @@
           {
             "name": "Leman Russ Battle Tank",
             "price": 65.0,
-            "distance": 0.48769582961331764
+            "distance": 0.4876958296133177
           },
           {
             "name": "Rhino",
@@ -2078,8 +2078,8 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 54.19876165610737,
-        "uncertainty": 9.381556806458772,
+        "predictedMean": 54.198761399422395,
+        "uncertainty": 9.381556888755402,
         "score": 83,
         "quality": "Safe",
         "topNearestNeighbours": [
@@ -2251,8 +2251,8 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 60.75233630864281,
-        "uncertainty": 8.79375433895338,
+        "predictedMean": 60.752335974677365,
+        "uncertainty": 8.793754491343766,
         "score": 86,
         "quality": "Safe",
         "topNearestNeighbours": [
@@ -2424,8 +2424,8 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 53.30023304336366,
-        "uncertainty": 8.355326340237406,
+        "predictedMean": 53.30023248668658,
+        "uncertainty": 8.355326625566716,
         "score": 84,
         "quality": "Safe",
         "topNearestNeighbours": [
@@ -2597,8 +2597,8 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 59.63497355883788,
-        "uncertainty": 8.885297443294585,
+        "predictedMean": 59.634972940524975,
+        "uncertainty": 8.885297614950145,
         "score": 85,
         "quality": "Safe",
         "topNearestNeighbours": [
@@ -2809,8 +2809,8 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 93.54110958897732,
-        "uncertainty": 11.977083901122834,
+        "predictedMean": 93.54110878013388,
+        "uncertainty": 11.977083532517648,
         "score": 87,
         "quality": "Safe",
         "topNearestNeighbours": [
@@ -2962,8 +2962,8 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 33.03727176782311,
-        "uncertainty": 10.749989988337738,
+        "predictedMean": 33.03727443998808,
+        "uncertainty": 10.749989911964562,
         "score": 67,
         "quality": "Review",
         "topNearestNeighbours": [
@@ -2975,7 +2975,7 @@
           {
             "name": "Leman Russ Demolisher",
             "price": 68.0,
-            "distance": 0.641301302907698
+            "distance": 0.6413013029076982
           },
           {
             "name": "Leman Russ Battle Tank",
@@ -3118,8 +3118,8 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 49.725490513356775,
-        "uncertainty": 8.859231241394424,
+        "predictedMean": 49.72549085864979,
+        "uncertainty": 8.85923145964522,
         "score": 82,
         "quality": "Safe",
         "topNearestNeighbours": [
@@ -3281,8 +3281,8 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 58.08437563337196,
-        "uncertainty": 9.630878740843563,
+        "predictedMean": 58.08437721423067,
+        "uncertainty": 9.630878823871376,
         "score": 83,
         "quality": "Safe",
         "topNearestNeighbours": [
@@ -3438,8 +3438,8 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 70.1345156107768,
-        "uncertainty": 9.476052220643565,
+        "predictedMean": 70.13451579223974,
+        "uncertainty": 9.476052525280018,
         "score": 86,
         "quality": "Safe",
         "topNearestNeighbours": [
@@ -3595,8 +3595,8 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 82.8602448754163,
-        "uncertainty": 9.309233627926817,
+        "predictedMean": 82.86024469312999,
+        "uncertainty": 9.309233949047998,
         "score": 89,
         "quality": "Safe",
         "topNearestNeighbours": [
@@ -3745,8 +3745,8 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 19.187203007752785,
-        "uncertainty": 20.45771938188107,
+        "predictedMean": 19.187206745033443,
+        "uncertainty": 20.457717645272954,
         "score": -7,
         "quality": "Experimental",
         "topNearestNeighbours": [
@@ -3880,7 +3880,7 @@
       "ff": "6+",
       "traits": [
         "Skimmer",
-        "PLANET_FALL"
+        "Planetfall"
       ],
       "transportation": {
         "capacity": 2,
@@ -3916,8 +3916,8 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 71.00988149404607,
-        "uncertainty": 11.958758343475552,
+        "predictedMean": 71.0098806930814,
+        "uncertainty": 11.958758151024888,
         "score": 83,
         "quality": "Safe",
         "topNearestNeighbours": [
@@ -4076,8 +4076,8 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 103.7280118783658,
-        "uncertainty": 16.362876493930642,
+        "predictedMean": 103.72801438744061,
+        "uncertainty": 16.362875693077726,
         "score": 84,
         "quality": "Safe",
         "topNearestNeighbours": [
@@ -4253,24 +4253,24 @@
           "weaponName": "Heavy Stubber",
           "type": "Ranged Weapon",
           "range": "30cm",
-          "firepower": "AA6+ Rear"
+          "firepower": "AA6+ Rear Arc"
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 80.6494892730536,
-        "uncertainty": 15.211494692817611,
+        "predictedMean": 80.64949213789485,
+        "uncertainty": 15.211493964348543,
         "score": 81,
         "quality": "Safe",
         "topNearestNeighbours": [
           {
             "name": "Thunderbolt Fighter",
             "price": 75.0,
-            "distance": 0.6813105222861143
+            "distance": 0.6813105222861142
           },
           {
             "name": "Phoenix Bomber",
             "price": 109.0,
-            "distance": 0.7736999967895435
+            "distance": 0.7736999967895434
           },
           {
             "name": "Fighta Bommer",
@@ -4421,8 +4421,8 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 75.22760643858393,
-        "uncertainty": 8.57708240967149,
+        "predictedMean": 75.22760638573504,
+        "uncertainty": 8.577082719344013,
         "score": 89,
         "quality": "Safe",
         "topNearestNeighbours": [
@@ -4599,8 +4599,8 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 110.35877971739467,
-        "uncertainty": 23.95742493271338,
+        "predictedMean": 110.35878229695273,
+        "uncertainty": 23.957422802876653,
         "score": 78,
         "quality": "Review",
         "topNearestNeighbours": [
@@ -4763,8 +4763,8 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 117.7160557906169,
-        "uncertainty": 11.767968090841984,
+        "predictedMean": 117.71605567918138,
+        "uncertainty": 11.767968010696793,
         "score": 90,
         "quality": "Safe",
         "topNearestNeighbours": [
@@ -4948,8 +4948,8 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 194.64682364502193,
-        "uncertainty": 12.337491475016002,
+        "predictedMean": 194.6468256802172,
+        "uncertainty": 12.337491120435807,
         "score": 94,
         "quality": "Safe",
         "topNearestNeighbours": [
@@ -5136,8 +5136,8 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 170.08913928251494,
-        "uncertainty": 16.42940801480552,
+        "predictedMean": 170.08914311838475,
+        "uncertainty": 16.429407068112408,
         "score": 90,
         "quality": "Safe",
         "topNearestNeighbours": [
@@ -5324,8 +5324,8 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 156.35590107771418,
-        "uncertainty": 15.14074225507899,
+        "predictedMean": 156.35589995091885,
+        "uncertainty": 15.140741278484404,
         "score": 90,
         "quality": "Safe",
         "topNearestNeighbours": [
@@ -5352,7 +5352,7 @@
           {
             "name": "Steam Gargant",
             "price": 200.0,
-            "distance": 1.51869795389195
+            "distance": 1.5186979538919503
           }
         ],
         "contributingPriceValues": [
@@ -5526,15 +5526,15 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 157.74674370138536,
-        "uncertainty": 10.042080490947042,
+        "predictedMean": 157.7467441372678,
+        "uncertainty": 10.042080657129384,
         "score": 94,
         "quality": "Safe",
         "topNearestNeighbours": [
           {
             "name": "Baneblade Super Heavy Tank",
             "price": 166.66666666666666,
-            "distance": 0.3464129457920789
+            "distance": 0.34641294579207876
           },
           {
             "name": "Gun Fortress",
@@ -5735,15 +5735,15 @@
         }
       ],
       "gprTrainingInfo": {
-        "predictedMean": 144.54856273114945,
-        "uncertainty": 12.451724363352692,
+        "predictedMean": 144.5485614841227,
+        "uncertainty": 12.451723932208845,
         "score": 91,
         "quality": "Safe",
         "topNearestNeighbours": [
           {
             "name": "Baneblade Super Heavy Tank",
             "price": 166.66666666666666,
-            "distance": 0.5749396103553448
+            "distance": 0.5749396103553447
           },
           {
             "name": "Gun Fortress",

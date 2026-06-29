@@ -4,6 +4,8 @@
 
 | Name                                                   | Predicted Cost   | Uncertainty   | Quality      | Spread   |
 |--------------------------------------------------------|------------------|---------------|--------------|----------|
+| Praetor                                                | 100              | ±0            | Safe         |          |
+| Centurion                                              | 50               | ±0            | Safe         |          |
 | Tactical Legionnaires Squad                            | 40               | ±9.0          | Safe         |          |
 | Assault Squad                                          | 45               | ±8.0          | Safe         |          |
 | Heavy Support Squad                                    | 55               | ±8.0          | Safe         |          |
@@ -44,8 +46,8 @@
 | Thunderhawk Gunship                                    | 200              | ±21.0         | Safe         |          |
 | Storm Eagle Attack Ship                                | 190              | ±23.0         | Safe         |          |
 
-Average Score: 80.13
-Average Uncertainty: 16.46
+Average Score: 81.10
+Average Uncertainty: 15.65
 
 
 
@@ -53,6 +55,8 @@ Average Uncertainty: 16.46
 
 | Name                                                   | Type   | Speed          |   Armour |   CC |   FF | Weapons                             | Range          | Firepower                                       | Notes                                                   |
 |--------------------------------------------------------|--------|----------------|----------|------|------|-------------------------------------|----------------|-------------------------------------------------|---------------------------------------------------------|
+| Praetor                                                | CH     | 0cm            |        0 |    0 |    0 | --                                  | (base contact) | Extra Attack +1, Macro-Weapon                   | Supreme Commander, Invulnerable Save                    |
+| Centurion                                              | CH     | 0cm            |        0 |    0 |    0 | --                                  | (base contact) | Extra Attack +1, Macro-Weapon                   | Commander, Invulnerable Save, Leader                    |
 | Tactical Legionnaires Squad                            | INF    | 15cm           |        4 |    4 |    4 | Bolters                             | (Small Arms)   |                                                 | Know no fear                                            |
 | Assault Squad                                          | INF    | 30cm           |        4 |    3 |    5 | Bolt Pistols and Chainswords        | (base contact) |                                                 | Know no fear, Jump Packs                                |
 | Heavy Support Squad                                    | INF    | 15cm           |        4 |    5 |    3 | Bolters                             | (Small Arms)   |                                                 | Know no fear                                            |
@@ -92,11 +96,11 @@ Average Uncertainty: 16.46
 | Rhino                                                  | AV     | 25cm           |        5 |    6 |    6 | Bolters                             | (Small Arms)   |                                                 |                                                         |
 | Spartan Assault Tank                                   | WE     | 25cm           |        4 |    6 |    5 | 2X Quad Lascannon                   | 45             | AT3+, FxF                                       | Know no fear, Reinforced Armour, Thick Rear Armour, DC2 |
 |                                                        |        |                |          |      |      | Twin-linked Heavy Bolter            | 30             | AP4+, FxF                                       |                                                         |
-| Thunderhawk Gunship                                    | AC/WE  | Bomber         |        4 |    6 |    4 | 2X Laser Destroyer                  | 45             | AT3+ AP6+, FxF                                  | Know no fear, PLANET_FALL, Reinforced Armour            |
+| Thunderhawk Gunship                                    | AC/WE  | Bomber         |        4 |    6 |    4 | 2X Laser Destroyer                  | 45             | AT3+ AP6+, FxF                                  | Know no fear, Planetfall, Reinforced Armour             |
 |                                                        |        |                |          |      |      | Twin-linked Lascannon               | 45             | AT4+ AA5+, FxF                                  |                                                         |
 |                                                        |        |                |          |      |      | 2X Twin-linked Heavy Bolter         | 30             | AP4+, FxF                                       |                                                         |
-|                                                        |        |                |          |      |      | Twin-linked Heavy Bolter            | 30             | AP4+, Traits.LEFT                               |                                                         |
-|                                                        |        |                |          |      |      | Twin-linked Heavy Bolter            | 30             | AP4+, Traits.RIGHT                              |                                                         |
+|                                                        |        |                |          |      |      | Twin-linked Heavy Bolter            | 30             | AP4+, Left Arc                                  |                                                         |
+|                                                        |        |                |          |      |      | Twin-linked Heavy Bolter            | 30             | AP4+, Right Arc                                 |                                                         |
 | Fire Raptor Gunship                                    | AC     | Fighter bomber |        5 |    0 |    0 | 2X Avenger Bolt Cannon              | 30             | AT5+ AP3+                                       | Know no fear, Reinforced Armour                         |
 |                                                        |        |                |          |      |      | 2X Tempest rockets                  | 15             | AP4+ AA6+                                       |                                                         |
 |                                                        |        |                |          |      |      | 2X Twin-linked Lascannon            | 45             | AT4+                                            |                                                         |
@@ -104,7 +108,7 @@ Average Uncertainty: 16.46
 |                                                        |        |                |          |      |      | (or) 2X Twin-linked Auto Cannon     | 45             | AT5+ AP4+                                       |                                                         |
 | Xiphon Interceptor                                     | AC     | Fighter        |        5 |    0 |    0 | 2X Rotary Missile Launcher          | 30             | AT4+ AA5+                                       | Know no fear                                            |
 |                                                        |        |                |          |      |      | Lascannon                           | 45             | AT5+                                            |                                                         |
-| Storm Eagle Attack Ship                                | AC/WE  | Fighter bomber |        5 |    6 |    5 | 2X --                               | 45             | AT4+                                            | Know no fear, Reinforced Armour, PLANET_FALL            |
+| Storm Eagle Attack Ship                                | AC/WE  | Fighter bomber |        5 |    6 |    5 | 2X --                               | 45             | AT4+                                            | Know no fear, Reinforced Armour, Planetfall             |
 |                                                        |        |                |          |      |      | --                                  | 45             | 1BP                                             |                                                         |
 |                                                        |        |                |          |      |      | --                                  | 30             | AP4+ AA5+                                       |                                                         |
 | Contemptor Dreadnought                                 | AV     | 15cm           |        3 |    4 |    4 | Power Fist                          | (base contact) | Macro-Weapon, Extra Attack +1                   | Know no fear, Walker                                    |
@@ -137,7 +141,7 @@ Average Uncertainty: 16.46
 |                                                        |        |                |          |      |      | 2X Heavy Bolter                     | 30             | AP5+, FxF                                       |                                                         |
 |                                                        |        |                |          |      |      | (or) 2X Lascannon                   | 45             | AT5+, FxF                                       |                                                         |
 |                                                        |        |                |          |      |      | (or) 2X Auto Cannon                 | 45             | AT6+ AP5+, FxF                                  |                                                         |
-| Fellblade Super Heavy Tank                             | WE     | 20cm           |        4 |    5 |    5 | Fellblade Cannon                    | 75             | AT2+ AP2+, Macro-Weapon, Traits.TITAN_KILLER_1  | Know no fear, Reinforced Armour, Thick Rear Armour, DC4 |
+| Fellblade Super Heavy Tank                             | WE     | 20cm           |        4 |    5 |    5 | Fellblade Cannon                    | 75             | AT2+ AP2+, Macro-Weapon, Titan Killer (1)       | Know no fear, Reinforced Armour, Thick Rear Armour, DC4 |
 |                                                        |        |                |          |      |      | 2X Quad Lascannon                   | 45             | AT3+, FxF                                       |                                                         |
 |                                                        |        |                |          |      |      | Twin-linked Heavy Bolter            | 30             | AP4+, FxF                                       |                                                         |
 |                                                        |        |                |          |      |      | Demolisher Cannon                   | 30             | AT4+ AP3+, Ignore Cover, FxF                    |                                                         |
