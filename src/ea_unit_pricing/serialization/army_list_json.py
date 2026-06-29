@@ -218,8 +218,8 @@ def build_army_json_files(
                 up["adds"] = [{"unitName": u.unit.name} for u in upgrade.adds]
             if isinstance(upgrade, UpgradeReplace):
                 up["replaces"] = {
-                    "toUnitName": upgrade.fromUnit.name if upgrade.fromUnit else "",
-                    "fromUnitName": upgrade.toUnit.name if upgrade.toUnit else "",
+                    "fromUnitName": upgrade.fromUnit.name if upgrade.fromUnit else "",
+                    "toUnitName": upgrade.toUnit.name if upgrade.toUnit else "",
                     "max": upgrade.max,
                 }
             if isinstance(upgrade, UpgradeCharacter):
