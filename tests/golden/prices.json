@@ -953,7 +953,7 @@
         "ff": 6,
         "traits": [
           "Skimmer",
-          "PLANET_FALL"
+          "Planetfall"
         ],
         "transport_capacity": 2
       },
@@ -1111,7 +1111,7 @@
             "aa": "6+"
           },
           "traits": [
-            "Rear"
+            "Rear Arc"
           ]
         }
       ]
@@ -1701,6 +1701,61 @@
     }
   },
   "legiones-astartes": {
+    "Praetor": {
+      "cost": 100,
+      "uncertainty": 0,
+      "quality": "Safe",
+      "unit_profile": {
+        "type": "CH",
+        "speed": "0cm",
+        "armour": 0,
+        "cc": 0,
+        "ff": 0,
+        "traits": [
+          "Supreme Commander",
+          "Invulnerable Save"
+        ]
+      },
+      "weapons": [
+        {
+          "name": "--",
+          "type": "Assault Weapons",
+          "range": "(bc)",
+          "traits": [
+            "Extra Attack +1",
+            "Macro-Weapon"
+          ]
+        }
+      ]
+    },
+    "Centurion": {
+      "cost": 50,
+      "uncertainty": 0,
+      "quality": "Safe",
+      "unit_profile": {
+        "type": "CH",
+        "speed": "0cm",
+        "armour": 0,
+        "cc": 0,
+        "ff": 0,
+        "traits": [
+          "Commander",
+          "Invulnerable Save",
+          "Leader"
+        ]
+      },
+      "weapons": [
+        {
+          "name": "--",
+          "type": "Assault Weapons",
+          "range": "(bc)",
+          "traits": [
+            "Extra Attack +1",
+            "Macro-Weapon"
+          ]
+        }
+      ]
+    },
     "Tactical Legionnaires Squad": {
       "cost": 40,
       "uncertainty": 9,
@@ -3330,7 +3385,7 @@
           },
           "traits": [
             "Macro-Weapon",
-            "Traits.TITAN_KILLER_1"
+            "Titan Killer (1)"
           ]
         },
         {
@@ -3531,7 +3586,7 @@
         "ff": 4,
         "traits": [
           "Know no fear",
-          "PLANET_FALL",
+          "Planetfall",
           "Reinforced Armour"
         ],
         "damage_capacity": 2,
@@ -3583,7 +3638,7 @@
             "ap": "4+"
           },
           "traits": [
-            "Traits.LEFT"
+            "Left Arc"
           ]
         },
         {
@@ -3594,7 +3649,7 @@
             "ap": "4+"
           },
           "traits": [
-            "Traits.RIGHT"
+            "Right Arc"
           ]
         }
       ]
@@ -3612,7 +3667,7 @@
         "traits": [
           "Know no fear",
           "Reinforced Armour",
-          "PLANET_FALL"
+          "Planetfall"
         ],
         "transport_capacity": 4
       },
