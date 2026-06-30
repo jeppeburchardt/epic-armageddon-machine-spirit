@@ -5916,7 +5916,52 @@
       ],
       "restrictions": [],
       "availableUpgrades": []
+    },
+    {
+      "name": "Infantry Tercio",
+      "group": "Line",
+      "units": [
+        {
+          "unitName": "Infantry Section",
+          "count": 8,
+          "min": 8,
+          "max": 8
+        }
+      ],
+      "restrictions": [],
+      "availableUpgrades": [
+        "Close Support",
+        "Transport"
+      ]
     }
   ],
-  "upgrades": []
+  "upgrades": [
+    {
+      "name": "Close Support",
+      "type": "add",
+      "transportWarning": false,
+      "maxTotal": 4,
+      "adds": [
+        {
+          "unitName": "Infantry with flamers"
+        }
+      ]
+    },
+    {
+      "name": "Transport",
+      "type": "add",
+      "transportWarning": true,
+      "adds": [
+        {
+          "unitName": "Dracosan with las cannon"
+        },
+        {
+          "unitName": "Dracosan with demolisher"
+        },
+        {
+          "unitName": "Arvus Lighter"
+        }
+      ]
+    }
+  ]
 }

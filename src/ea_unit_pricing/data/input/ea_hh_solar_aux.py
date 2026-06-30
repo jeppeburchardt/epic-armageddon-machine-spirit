@@ -11,6 +11,7 @@ from ea_unit_pricing.domain import (
     Traits,
     Unit,
     UnitType,
+    UpgradeAdd,
 )
 
 from .ea_hh_weapons import (
@@ -27,33 +28,31 @@ from .ea_hh_weapons import (
 
 solar_auxilia = Army("solar-auxilia", name="Solar Auxilia")
 
-solar_auxilia.add_unit(
-    Unit(
-        "Infantry Section",
-        3,
-        2,
-        UnitType.INFANTRY,
-        speed=15,
-        armour=5,
-        cc=6,
-        ff=5,
-        weapons=[SmallArms(name="Las-rifles")],
-    )
+infantry_section_unit = Unit(
+    "Infantry Section",
+    3,
+    2,
+    UnitType.INFANTRY,
+    speed=15,
+    armour=5,
+    cc=6,
+    ff=5,
+    weapons=[SmallArms(name="Las-rifles")],
 )
+solar_auxilia.add_unit(infantry_section_unit)
 
-solar_auxilia.add_unit(
-    Unit(
-        "Infantry with flamers",
-        3,
-        2,
-        UnitType.INFANTRY,
-        speed=15,
-        armour=5,
-        cc=6,
-        ff=4,
-        weapons=[RangedWeapon(15, name="Flamers", ap=5, traits=[Traits.IGNORE_COVER])],
-    )
+infantry_with_flamers_unit = Unit(
+    "Infantry with flamers",
+    3,
+    2,
+    UnitType.INFANTRY,
+    speed=15,
+    armour=5,
+    cc=6,
+    ff=4,
+    weapons=[RangedWeapon(15, name="Flamers", ap=5, traits=[Traits.IGNORE_COVER])],
 )
+solar_auxilia.add_unit(infantry_with_flamers_unit)
 
 solar_auxilia.add_unit(
     Unit(
@@ -350,41 +349,39 @@ malcador_battle_tank_unit = Unit(
 )
 solar_auxilia.add_unit(malcador_battle_tank_unit)
 
-solar_auxilia.add_unit(
-    Unit(
-        "Dracosan with las cannon",
-        3,
-        2,
-        UnitType.ARMORED_VEHICLE,
-        speed=20,
-        armour=4,
-        cc=6,
-        ff=5,
-        weapons=[
-            TwinLinkedLasCannon(),
-        ],
-        traits=[Traits.REINFORCED_ARMOUR],
-        transport_capacity=5,
-    )
+dracosan_with_las_cannon_unit = Unit(
+    "Dracosan with las cannon",
+    3,
+    2,
+    UnitType.ARMORED_VEHICLE,
+    speed=20,
+    armour=4,
+    cc=6,
+    ff=5,
+    weapons=[
+        TwinLinkedLasCannon(),
+    ],
+    traits=[Traits.REINFORCED_ARMOUR],
+    transport_capacity=5,
 )
+solar_auxilia.add_unit(dracosan_with_las_cannon_unit)
 
-solar_auxilia.add_unit(
-    Unit(
-        "Dracosan with demolisher",
-        3,
-        2,
-        UnitType.ARMORED_VEHICLE,
-        speed=20,
-        armour=4,
-        cc=6,
-        ff=4,
-        weapons=[
-            DemolisherCannon(),
-        ],
-        traits=[Traits.REINFORCED_ARMOUR],
-        transport_capacity=2,
-    )
+dracosan_with_demolisher_unit = Unit(
+    "Dracosan with demolisher",
+    3,
+    2,
+    UnitType.ARMORED_VEHICLE,
+    speed=20,
+    armour=4,
+    cc=6,
+    ff=4,
+    weapons=[
+        DemolisherCannon(),
+    ],
+    traits=[Traits.REINFORCED_ARMOUR],
+    transport_capacity=2,
 )
+solar_auxilia.add_unit(dracosan_with_demolisher_unit)
 
 solar_auxilia.add_unit(
     Unit(
@@ -436,21 +433,20 @@ solar_auxilia.add_unit(
     )
 )
 
-solar_auxilia.add_unit(
-    Unit(
-        "Arvus Lighter",
-        3,
-        2,
-        UnitType.ARMORED_VEHICLE,
-        speed=30,
-        armour=5,
-        cc=0,
-        ff=6,
-        weapons=[SmallArms(name="Multi-Laser")],
-        traits=[Traits.SKIMMER, Traits.PLANET_FALL],
-        transport_capacity=2,
-    )
+arvus_lighter_unit = Unit(
+    "Arvus Lighter",
+    3,
+    2,
+    UnitType.ARMORED_VEHICLE,
+    speed=30,
+    armour=5,
+    cc=0,
+    ff=6,
+    weapons=[SmallArms(name="Multi-Laser")],
+    traits=[Traits.SKIMMER, Traits.PLANET_FALL],
+    transport_capacity=2,
 )
+solar_auxilia.add_unit(arvus_lighter_unit)
 
 solar_auxilia.add_unit(
     Unit(
@@ -722,3 +718,33 @@ malcador_battle_tank_detachment = Detachment(
     units=[DetachmentUnit(malcador_battle_tank_unit, count=2, min=2, max=4)],
 )
 solar_auxilia.add_detachment(malcador_battle_tank_detachment)
+
+## Close Support upgrade
+close_support_upgrade = UpgradeAdd(
+    name="Close Support",
+    adds=[DetachmentUnit(infantry_with_flamers_unit)],
+    max_total=4,
+)
+solar_auxilia.add_upgrade(close_support_upgrade)
+
+## Transport upgrade
+infantry_tercio_transport_upgrade = UpgradeAdd(
+    name="Transport",
+    transport_warning=True,
+    adds=[
+        DetachmentUnit(dracosan_with_las_cannon_unit),
+        DetachmentUnit(dracosan_with_demolisher_unit),
+        DetachmentUnit(arvus_lighter_unit),
+    ],
+)
+solar_auxilia.add_upgrade(infantry_tercio_transport_upgrade)
+
+## Infantry Tercio detachment
+infantry_tercio_detachment = Detachment(
+    name="Infantry Tercio",
+    group="Line",
+    units=[DetachmentUnit(infantry_section_unit, count=8, min=8, max=8)],
+)
+infantry_tercio_detachment.add_upgrade(close_support_upgrade)
+infantry_tercio_detachment.add_upgrade(infantry_tercio_transport_upgrade)
+solar_auxilia.add_detachment(infantry_tercio_detachment)
