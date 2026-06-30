@@ -313,43 +313,42 @@ solar_auxilia.add_unit(
     )
 )
 
-solar_auxilia.add_unit(
-    Unit(
-        "Malcador Battle Tank",
-        3,
-        2,
-        UnitType.ARMORED_VEHICLE,
-        speed=15,
-        armour=4,
-        cc=6,
-        ff=5,
-        weapons=[
-            MultipleChoiceWeapon(
-                [
-                    BattleCannon(traits=[Traits.FIXED_FORWARD]),
-                    VanquisherBattleCannon(traits=[Traits.FIXED_FORWARD]),
-                    TwinLinkedLasCannon(traits=[Traits.FIXED_FORWARD]),
-                ],
-                name="Turret",
-            ),
-            MultipleChoiceWeapon(
-                [
-                    DemolisherCannon(traits=[Traits.FIXED_FORWARD]),
-                    LasCannon(traits=[Traits.FIXED_FORWARD]),
-                ],
-                name="Hull Mount",
-            ),
-            MultipleChoiceWeapon(
-                [
-                    Multiplier(2, LasCannon(traits=[Traits.FIXED_FORWARD])),
-                    Multiplier(2, AutoCannon(traits=[Traits.FIXED_FORWARD])),
-                ],
-                name="Sponsons",
-            ),
-        ],
-        traits=[Traits.REINFORCED_ARMOUR, Traits.THICK_REAR_ARMOUR],
-    )
+malcador_battle_tank_unit = Unit(
+    "Malcador Battle Tank",
+    3,
+    2,
+    UnitType.ARMORED_VEHICLE,
+    speed=15,
+    armour=4,
+    cc=6,
+    ff=5,
+    weapons=[
+        MultipleChoiceWeapon(
+            [
+                BattleCannon(traits=[Traits.FIXED_FORWARD]),
+                VanquisherBattleCannon(traits=[Traits.FIXED_FORWARD]),
+                TwinLinkedLasCannon(traits=[Traits.FIXED_FORWARD]),
+            ],
+            name="Turret",
+        ),
+        MultipleChoiceWeapon(
+            [
+                DemolisherCannon(traits=[Traits.FIXED_FORWARD]),
+                LasCannon(traits=[Traits.FIXED_FORWARD]),
+            ],
+            name="Hull Mount",
+        ),
+        MultipleChoiceWeapon(
+            [
+                Multiplier(2, LasCannon(traits=[Traits.FIXED_FORWARD])),
+                Multiplier(2, AutoCannon(traits=[Traits.FIXED_FORWARD])),
+            ],
+            name="Sponsons",
+        ),
+    ],
+    traits=[Traits.REINFORCED_ARMOUR, Traits.THICK_REAR_ARMOUR],
 )
+solar_auxilia.add_unit(malcador_battle_tank_unit)
 
 solar_auxilia.add_unit(
     Unit(
@@ -715,3 +714,11 @@ leman_russ_support_tank_detachment = Detachment(
     units=[DetachmentUnit(leman_russ_battle_tank_unit, count=4, min=4, max=4)],
 )
 solar_auxilia.add_detachment(leman_russ_support_tank_detachment)
+
+## Malcador Battle Tank detachment
+malcador_battle_tank_detachment = Detachment(
+    name="Malcador Battle Tank Detachment",
+    group="Support",
+    units=[DetachmentUnit(malcador_battle_tank_unit, count=2, min=2, max=4)],
+)
+solar_auxilia.add_detachment(malcador_battle_tank_detachment)

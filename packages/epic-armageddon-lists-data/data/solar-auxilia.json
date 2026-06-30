@@ -5902,6 +5902,20 @@
       ],
       "restrictions": [],
       "availableUpgrades": []
+    },
+    {
+      "name": "Malcador Battle Tank Detachment",
+      "group": "Support",
+      "units": [
+        {
+          "unitName": "Malcador Battle Tank",
+          "count": 2,
+          "min": 2,
+          "max": 4
+        }
+      ],
+      "restrictions": [],
+      "availableUpgrades": []
     }
   ],
   "upgrades": []
