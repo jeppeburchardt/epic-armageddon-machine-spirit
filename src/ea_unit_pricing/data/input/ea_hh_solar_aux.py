@@ -2,6 +2,8 @@ from ea_unit_pricing.domain import (
     AircraftSpeed,
     Army,
     AssaultWeapon,
+    Detachment,
+    DetachmentUnit,
     MultipleChoiceWeapon,
     Multiplier,
     RangedWeapon,
@@ -209,23 +211,22 @@ solar_auxilia.add_unit(
 
 # Cyclops
 
-solar_auxilia.add_unit(
-    Unit(
-        "Leman Russ Battle Tank",
-        3,
-        2,
-        UnitType.ARMORED_VEHICLE,
-        speed=25,
-        armour=4,
-        cc=6,
-        ff=4,
-        weapons=[
-            BattleCannon(),
-            MultipleChoiceWeapon([HeavyBolter(stat_modifiers={"ff": -1}), LasCannon()]),
-        ],
-        traits=[Traits.REINFORCED_ARMOUR],
-    )
+leman_russ_battle_tank_unit = Unit(
+    "Leman Russ Battle Tank",
+    3,
+    2,
+    UnitType.ARMORED_VEHICLE,
+    speed=25,
+    armour=4,
+    cc=6,
+    ff=4,
+    weapons=[
+        BattleCannon(),
+        MultipleChoiceWeapon([HeavyBolter(stat_modifiers={"ff": -1}), LasCannon()]),
+    ],
+    traits=[Traits.REINFORCED_ARMOUR],
 )
+solar_auxilia.add_unit(leman_russ_battle_tank_unit)
 solar_auxilia.add_unit(
     Unit(
         "Leman Russ Vanquisher",
@@ -698,3 +699,11 @@ solar_auxilia.add_unit(
         aircraft_speed=AircraftSpeed.BOMBER,
     )
 )
+
+## Leman Russ Tank detachment
+leman_russ_tank_detachment = Detachment(
+    name="Leman Russ Tank Detachment",
+    group="Line",
+    units=[DetachmentUnit(leman_russ_battle_tank_unit, count=8, min=8, max=8)],
+)
+solar_auxilia.add_detachment(leman_russ_tank_detachment)
