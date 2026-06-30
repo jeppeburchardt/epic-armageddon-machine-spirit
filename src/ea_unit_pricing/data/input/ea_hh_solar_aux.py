@@ -707,3 +707,11 @@ leman_russ_tank_detachment = Detachment(
     units=[DetachmentUnit(leman_russ_battle_tank_unit, count=8, min=8, max=8)],
 )
 solar_auxilia.add_detachment(leman_russ_tank_detachment)
+
+## Leman Russ Support Tank detachment
+leman_russ_support_tank_detachment = Detachment(
+    name="Leman Russ Support Tank Detachment",
+    group="Support",
+    units=[DetachmentUnit(leman_russ_battle_tank_unit, count=4, min=4, max=4)],
+)
+solar_auxilia.add_detachment(leman_russ_support_tank_detachment)

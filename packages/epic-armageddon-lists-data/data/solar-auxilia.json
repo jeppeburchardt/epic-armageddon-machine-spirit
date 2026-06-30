@@ -5888,6 +5888,20 @@
       ],
       "restrictions": [],
       "availableUpgrades": []
+    },
+    {
+      "name": "Leman Russ Support Tank Detachment",
+      "group": "Support",
+      "units": [
+        {
+          "unitName": "Leman Russ Battle Tank",
+          "count": 4,
+          "min": 4,
+          "max": 4
+        }
+      ],
+      "restrictions": [],
+      "availableUpgrades": []
     }
   ],
   "upgrades": []
