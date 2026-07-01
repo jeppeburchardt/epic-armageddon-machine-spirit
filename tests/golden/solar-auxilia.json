@@ -5874,6 +5874,94 @@
       "damageCapacity": 3
     }
   ],
-  "detachments": [],
-  "upgrades": []
+  "detachments": [
+    {
+      "name": "Leman Russ Tank Detachment",
+      "group": "Line",
+      "units": [
+        {
+          "unitName": "Leman Russ Battle Tank",
+          "count": 8,
+          "min": 8,
+          "max": 8
+        }
+      ],
+      "restrictions": [],
+      "availableUpgrades": []
+    },
+    {
+      "name": "Leman Russ Support Tank Detachment",
+      "group": "Support",
+      "units": [
+        {
+          "unitName": "Leman Russ Battle Tank",
+          "count": 4,
+          "min": 4,
+          "max": 4
+        }
+      ],
+      "restrictions": [],
+      "availableUpgrades": []
+    },
+    {
+      "name": "Malcador Battle Tank Detachment",
+      "group": "Support",
+      "units": [
+        {
+          "unitName": "Malcador Battle Tank",
+          "count": 2,
+          "min": 2,
+          "max": 4
+        }
+      ],
+      "restrictions": [],
+      "availableUpgrades": []
+    },
+    {
+      "name": "Infantry Tercio",
+      "group": "Line",
+      "units": [
+        {
+          "unitName": "Infantry Section",
+          "count": 8,
+          "min": 8,
+          "max": 8
+        }
+      ],
+      "restrictions": [],
+      "availableUpgrades": [
+        "Close Support",
+        "Transport"
+      ]
+    }
+  ],
+  "upgrades": [
+    {
+      "name": "Close Support",
+      "type": "add",
+      "transportWarning": false,
+      "maxTotal": 4,
+      "adds": [
+        {
+          "unitName": "Infantry with flamers"
+        }
+      ]
+    },
+    {
+      "name": "Transport",
+      "type": "add",
+      "transportWarning": true,
+      "adds": [
+        {
+          "unitName": "Dracosan with las cannon"
+        },
+        {
+          "unitName": "Dracosan with demolisher"
+        },
+        {
+          "unitName": "Arvus Lighter"
+        }
+      ]
+    }
+  ]
 }

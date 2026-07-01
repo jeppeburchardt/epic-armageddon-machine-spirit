@@ -2,6 +2,8 @@ from ea_unit_pricing.domain import (
     AircraftSpeed,
     Army,
     AssaultWeapon,
+    Detachment,
+    DetachmentUnit,
     MultipleChoiceWeapon,
     Multiplier,
     RangedWeapon,
@@ -9,6 +11,7 @@ from ea_unit_pricing.domain import (
     Traits,
     Unit,
     UnitType,
+    UpgradeAdd,
 )
 
 from .ea_hh_weapons import (
@@ -25,33 +28,31 @@ from .ea_hh_weapons import (
 
 solar_auxilia = Army("solar-auxilia", name="Solar Auxilia")
 
-solar_auxilia.add_unit(
-    Unit(
-        "Infantry Section",
-        3,
-        2,
-        UnitType.INFANTRY,
-        speed=15,
-        armour=5,
-        cc=6,
-        ff=5,
-        weapons=[SmallArms(name="Las-rifles")],
-    )
+infantry_section_unit = Unit(
+    "Infantry Section",
+    3,
+    2,
+    UnitType.INFANTRY,
+    speed=15,
+    armour=5,
+    cc=6,
+    ff=5,
+    weapons=[SmallArms(name="Las-rifles")],
 )
+solar_auxilia.add_unit(infantry_section_unit)
 
-solar_auxilia.add_unit(
-    Unit(
-        "Infantry with flamers",
-        3,
-        2,
-        UnitType.INFANTRY,
-        speed=15,
-        armour=5,
-        cc=6,
-        ff=4,
-        weapons=[RangedWeapon(15, name="Flamers", ap=5, traits=[Traits.IGNORE_COVER])],
-    )
+infantry_with_flamers_unit = Unit(
+    "Infantry with flamers",
+    3,
+    2,
+    UnitType.INFANTRY,
+    speed=15,
+    armour=5,
+    cc=6,
+    ff=4,
+    weapons=[RangedWeapon(15, name="Flamers", ap=5, traits=[Traits.IGNORE_COVER])],
 )
+solar_auxilia.add_unit(infantry_with_flamers_unit)
 
 solar_auxilia.add_unit(
     Unit(
@@ -209,23 +210,22 @@ solar_auxilia.add_unit(
 
 # Cyclops
 
-solar_auxilia.add_unit(
-    Unit(
-        "Leman Russ Battle Tank",
-        3,
-        2,
-        UnitType.ARMORED_VEHICLE,
-        speed=25,
-        armour=4,
-        cc=6,
-        ff=4,
-        weapons=[
-            BattleCannon(),
-            MultipleChoiceWeapon([HeavyBolter(stat_modifiers={"ff": -1}), LasCannon()]),
-        ],
-        traits=[Traits.REINFORCED_ARMOUR],
-    )
+leman_russ_battle_tank_unit = Unit(
+    "Leman Russ Battle Tank",
+    3,
+    2,
+    UnitType.ARMORED_VEHICLE,
+    speed=25,
+    armour=4,
+    cc=6,
+    ff=4,
+    weapons=[
+        BattleCannon(),
+        MultipleChoiceWeapon([HeavyBolter(stat_modifiers={"ff": -1}), LasCannon()]),
+    ],
+    traits=[Traits.REINFORCED_ARMOUR],
 )
+solar_auxilia.add_unit(leman_russ_battle_tank_unit)
 solar_auxilia.add_unit(
     Unit(
         "Leman Russ Vanquisher",
@@ -312,79 +312,76 @@ solar_auxilia.add_unit(
     )
 )
 
-solar_auxilia.add_unit(
-    Unit(
-        "Malcador Battle Tank",
-        3,
-        2,
-        UnitType.ARMORED_VEHICLE,
-        speed=15,
-        armour=4,
-        cc=6,
-        ff=5,
-        weapons=[
-            MultipleChoiceWeapon(
-                [
-                    BattleCannon(traits=[Traits.FIXED_FORWARD]),
-                    VanquisherBattleCannon(traits=[Traits.FIXED_FORWARD]),
-                    TwinLinkedLasCannon(traits=[Traits.FIXED_FORWARD]),
-                ],
-                name="Turret",
-            ),
-            MultipleChoiceWeapon(
-                [
-                    DemolisherCannon(traits=[Traits.FIXED_FORWARD]),
-                    LasCannon(traits=[Traits.FIXED_FORWARD]),
-                ],
-                name="Hull Mount",
-            ),
-            MultipleChoiceWeapon(
-                [
-                    Multiplier(2, LasCannon(traits=[Traits.FIXED_FORWARD])),
-                    Multiplier(2, AutoCannon(traits=[Traits.FIXED_FORWARD])),
-                ],
-                name="Sponsons",
-            ),
-        ],
-        traits=[Traits.REINFORCED_ARMOUR, Traits.THICK_REAR_ARMOUR],
-    )
+malcador_battle_tank_unit = Unit(
+    "Malcador Battle Tank",
+    3,
+    2,
+    UnitType.ARMORED_VEHICLE,
+    speed=15,
+    armour=4,
+    cc=6,
+    ff=5,
+    weapons=[
+        MultipleChoiceWeapon(
+            [
+                BattleCannon(traits=[Traits.FIXED_FORWARD]),
+                VanquisherBattleCannon(traits=[Traits.FIXED_FORWARD]),
+                TwinLinkedLasCannon(traits=[Traits.FIXED_FORWARD]),
+            ],
+            name="Turret",
+        ),
+        MultipleChoiceWeapon(
+            [
+                DemolisherCannon(traits=[Traits.FIXED_FORWARD]),
+                LasCannon(traits=[Traits.FIXED_FORWARD]),
+            ],
+            name="Hull Mount",
+        ),
+        MultipleChoiceWeapon(
+            [
+                Multiplier(2, LasCannon(traits=[Traits.FIXED_FORWARD])),
+                Multiplier(2, AutoCannon(traits=[Traits.FIXED_FORWARD])),
+            ],
+            name="Sponsons",
+        ),
+    ],
+    traits=[Traits.REINFORCED_ARMOUR, Traits.THICK_REAR_ARMOUR],
 )
+solar_auxilia.add_unit(malcador_battle_tank_unit)
 
-solar_auxilia.add_unit(
-    Unit(
-        "Dracosan with las cannon",
-        3,
-        2,
-        UnitType.ARMORED_VEHICLE,
-        speed=20,
-        armour=4,
-        cc=6,
-        ff=5,
-        weapons=[
-            TwinLinkedLasCannon(),
-        ],
-        traits=[Traits.REINFORCED_ARMOUR],
-        transport_capacity=5,
-    )
+dracosan_with_las_cannon_unit = Unit(
+    "Dracosan with las cannon",
+    3,
+    2,
+    UnitType.ARMORED_VEHICLE,
+    speed=20,
+    armour=4,
+    cc=6,
+    ff=5,
+    weapons=[
+        TwinLinkedLasCannon(),
+    ],
+    traits=[Traits.REINFORCED_ARMOUR],
+    transport_capacity=5,
 )
+solar_auxilia.add_unit(dracosan_with_las_cannon_unit)
 
-solar_auxilia.add_unit(
-    Unit(
-        "Dracosan with demolisher",
-        3,
-        2,
-        UnitType.ARMORED_VEHICLE,
-        speed=20,
-        armour=4,
-        cc=6,
-        ff=4,
-        weapons=[
-            DemolisherCannon(),
-        ],
-        traits=[Traits.REINFORCED_ARMOUR],
-        transport_capacity=2,
-    )
+dracosan_with_demolisher_unit = Unit(
+    "Dracosan with demolisher",
+    3,
+    2,
+    UnitType.ARMORED_VEHICLE,
+    speed=20,
+    armour=4,
+    cc=6,
+    ff=4,
+    weapons=[
+        DemolisherCannon(),
+    ],
+    traits=[Traits.REINFORCED_ARMOUR],
+    transport_capacity=2,
 )
+solar_auxilia.add_unit(dracosan_with_demolisher_unit)
 
 solar_auxilia.add_unit(
     Unit(
@@ -436,21 +433,20 @@ solar_auxilia.add_unit(
     )
 )
 
-solar_auxilia.add_unit(
-    Unit(
-        "Arvus Lighter",
-        3,
-        2,
-        UnitType.ARMORED_VEHICLE,
-        speed=30,
-        armour=5,
-        cc=0,
-        ff=6,
-        weapons=[SmallArms(name="Multi-Laser")],
-        traits=[Traits.SKIMMER, Traits.PLANET_FALL],
-        transport_capacity=2,
-    )
+arvus_lighter_unit = Unit(
+    "Arvus Lighter",
+    3,
+    2,
+    UnitType.ARMORED_VEHICLE,
+    speed=30,
+    armour=5,
+    cc=0,
+    ff=6,
+    weapons=[SmallArms(name="Multi-Laser")],
+    traits=[Traits.SKIMMER, Traits.PLANET_FALL],
+    transport_capacity=2,
 )
+solar_auxilia.add_unit(arvus_lighter_unit)
 
 solar_auxilia.add_unit(
     Unit(
@@ -698,3 +694,57 @@ solar_auxilia.add_unit(
         aircraft_speed=AircraftSpeed.BOMBER,
     )
 )
+
+## Leman Russ Tank detachment
+leman_russ_tank_detachment = Detachment(
+    name="Leman Russ Tank Detachment",
+    group="Line",
+    units=[DetachmentUnit(leman_russ_battle_tank_unit, count=8, min=8, max=8)],
+)
+solar_auxilia.add_detachment(leman_russ_tank_detachment)
+
+## Leman Russ Support Tank detachment
+leman_russ_support_tank_detachment = Detachment(
+    name="Leman Russ Support Tank Detachment",
+    group="Support",
+    units=[DetachmentUnit(leman_russ_battle_tank_unit, count=4, min=4, max=4)],
+)
+solar_auxilia.add_detachment(leman_russ_support_tank_detachment)
+
+## Malcador Battle Tank detachment
+malcador_battle_tank_detachment = Detachment(
+    name="Malcador Battle Tank Detachment",
+    group="Support",
+    units=[DetachmentUnit(malcador_battle_tank_unit, count=2, min=2, max=4)],
+)
+solar_auxilia.add_detachment(malcador_battle_tank_detachment)
+
+## Close Support upgrade
+close_support_upgrade = UpgradeAdd(
+    name="Close Support",
+    adds=[DetachmentUnit(infantry_with_flamers_unit)],
+    max_total=4,
+)
+solar_auxilia.add_upgrade(close_support_upgrade)
+
+## Transport upgrade
+infantry_tercio_transport_upgrade = UpgradeAdd(
+    name="Transport",
+    transport_warning=True,
+    adds=[
+        DetachmentUnit(dracosan_with_las_cannon_unit),
+        DetachmentUnit(dracosan_with_demolisher_unit),
+        DetachmentUnit(arvus_lighter_unit),
+    ],
+)
+solar_auxilia.add_upgrade(infantry_tercio_transport_upgrade)
+
+## Infantry Tercio detachment
+infantry_tercio_detachment = Detachment(
+    name="Infantry Tercio",
+    group="Line",
+    units=[DetachmentUnit(infantry_section_unit, count=8, min=8, max=8)],
+)
+infantry_tercio_detachment.add_upgrade(close_support_upgrade)
+infantry_tercio_detachment.add_upgrade(infantry_tercio_transport_upgrade)
+solar_auxilia.add_detachment(infantry_tercio_detachment)
